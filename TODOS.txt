@@ -1,0 +1,11 @@
+3.Combinaciones de carga (Por suma o superposición)
+4. Join frame
+13.Mensajes a la barra de estado
+8. Documentar pdelta
+9. Replicar Rotado / Función Array
+10.Busqueda/Selección por características
+11.Grupos de elementos
+12.Activar/Desactivar botones según escenario
+15.Mostrar solo selección / sacar selección de la vista
+14.Eliminar reflections de Table Views y Tree Views
+

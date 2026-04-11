@@ -1,0 +1,95 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0-windows10.0.26100.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>Resources\Icon1.ico</ApplicationIcon>
+    <PlatformTarget>x64</PlatformTarget>
+    <StartupObject>CEF.Program</StartupObject>
+    <Platforms>AnyCPU;x64</Platforms>
+    <ProduceReferenceAssembly>False</ProduceReferenceAssembly>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn>1701;1702,C58618;C58602;CS8602;CS8622;CS8618;CS8600;CS0649;IDE</NoWarn>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <DebugType>portable</DebugType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <NoWarn>1701;1702,C58618;C58602;CS8602;CS8622;CS8618;CS8600;CS0649;IDE</NoWarn>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <DebugType>portable</DebugType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <NoWarn>1701;1702,C58618;C58602;CS8602;CS8622;CS8618;CS8600;CS0649;IDE</NoWarn>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <DebugType>portable</DebugType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <NoWarn>1701;1702,C58618;C58602;CS8602;CS8622;CS8618;CS8600;CS0649;IDE</NoWarn>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <DebugType>portable</DebugType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="dbApp\**" />
+    <EmbeddedResource Remove="dbApp\**" />
+    <None Remove="dbApp\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="datamgr\CalcDB.cs" />
+    <Compile Remove="Dialogs\Units - copia.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="GraphicWindows\modelViewRenderStyles.resx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Resources\Icon1.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Dialogs\AsMFC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Dialogs\AsInsertPointBar.cs" />
+    <Compile Update="Dialogs\AsReleasesBarras.cs" />
+    <Compile Update="Dialogs\VisorBD_Table.cs" />
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  
+
+</Project>

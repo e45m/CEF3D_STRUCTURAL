@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "CEF": {
+      "commandName": "Project",
+      "nativeDebugging": false
+    }
+  }
+}

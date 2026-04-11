@@ -1,0 +1,11 @@
+I18n.cs
+Strings.g.cs
+Resources.Designer.cs
+Settings.Designer.cs
+dtaMgrLoadSave.cs
+ModelDB.cs
+DataMngr.cs
+drawTools.cs
+
+
+

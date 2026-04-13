@@ -322,9 +322,9 @@ public class addNodLoad: Form
         var fx = uc.forceFromUserUnits(Fx.Text);
         var fy = uc.forceFromUserUnits(Fy.Text);
         var fz = uc.forceFromUserUnits(Fz.Text);
-        var mx = uc.forceFromUserUnits(Mx.Text);
-        var my = uc.forceFromUserUnits(My.Text);
-        var mz = uc.forceFromUserUnits(Mz.Text);
+        var mx = uc.momentFromUserUnits(Mx.Text);
+        var my = uc.momentFromUserUnits(My.Text);
+        var mz = uc.momentFromUserUnits(Mz.Text);
 
         for (i = 0; i < N; i++)
         {

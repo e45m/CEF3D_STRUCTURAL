@@ -192,7 +192,8 @@ public static class Mdta//meta data
     public const string DefaultText = "Default";
     public const string DefaultCombitationText = "Comb1";
     //---
-    public static readonly IReadOnlySet<string> forceFields = new HashSet<string>() { "Fx", "Fy", "Fz", "Mx", "My", "Mz", "Fxi", "Fyi", "Fzi", "Mxi", "Myi", "Mzi", "Fxj", "Fyj", "Fzj", "Mxj", "Myj", "Mzj", "W" };
+    public static readonly IReadOnlySet<string> forceFields = new HashSet<string>() { "Fx", "Fy", "Fz",  "Fxi", "Fyi", "Fzi", "Fxj", "Fyj", "Fzj", "W" };
+    public static readonly IReadOnlySet<string> momentFields = new HashSet<string>() {  "Mx", "My", "Mz", "Mxi", "Myi", "Mzi", "Mxj", "Myj", "Mzj" };
     public static readonly IReadOnlySet<string> lenFields = new HashSet<string>() { "a", "b", "dx", "dy", "dz", "Distance", "h", "tw", "tf", "ryy", "rzz", "ux", "uy", "uz", "X", "Y", "Z", "offsetY", "offsetZ", "Coord" };
     public static readonly IReadOnlySet<string> areaFields = new HashSet<string>() { "Ag", "Acyy", "Aczz" };
     public static readonly IReadOnlySet<string> pressFields = new HashSet<string>() { "E", "G", "fc", "fy", "fu" };

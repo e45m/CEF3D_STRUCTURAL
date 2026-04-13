@@ -169,6 +169,12 @@ public class viewModelDBTree : Form
             return true;
 
         }
+        if (Mdta.momentFields.Contains(dataCellObj.Name ?? ""))
+        {
+            valor = uc.momentToUserUnits(vc);
+            return true;
+
+        }
         if (Mdta.pressFields.Contains(dataCellObj.Name ?? ""))
         {
             valor = uc.pressToUserUnits(vc);
@@ -216,6 +222,12 @@ public class viewModelDBTree : Form
         if (Mdta.forceFields.Contains(dataCellObj.Name ?? ""))
         {
             valor = uc.forceFromUserUnits(vc);
+            return true;
+
+        }
+        if (Mdta.momentFields.Contains(dataCellObj.Name ?? ""))
+        {
+            valor = uc.momentFromUserUnits(vc);
             return true;
 
         }

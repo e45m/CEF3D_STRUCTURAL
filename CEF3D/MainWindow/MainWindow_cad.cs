@@ -45,6 +45,8 @@ public partial class MainWindow
         var id = App.model.nodes.Count>0?App.model.nodes.Max(n => n.ID) + 1:1;
         var np = new node() { ID = id,label=$"{id}", X= coords[0], Y = coords[1],Z= coords[2] };
         App.model.nodes.Add(np);
+        var nr = new nodalRestraint { ID = id };
+        App.model.nodalRestraints.Add(nr);
 
         reloadAllCanvasWindows();
 

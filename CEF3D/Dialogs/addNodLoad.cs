@@ -328,9 +328,11 @@ public class addNodLoad: Form
 
         for (i = 0; i < N; i++)
         {
+
+ 
             var nl = new nodalLoad()
             {
-                ID = App.model.nodalLoads.Max(l => l.ID) + 1,
+                ID = App.model.nodalLoads.Count,
                 NodeID = App.model.nodes[Sel[i]].ID,
                 Case = App.model.loadCases[Caso.SelectedIndex].ID,
                 Fx = fx,

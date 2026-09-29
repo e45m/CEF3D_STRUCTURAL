@@ -72,7 +72,7 @@ public  class defineNewCoordSys:Form
         // 
         // Imagen
         // 
-        Imagen.Image = Properties.Resources.Ejes;
+        Imagen.Image = CEF.Properties.Resources.Ejes;
         Imagen.Location = new Point(18, 12);
         Imagen.Margin = new Padding(4, 3, 4, 3);
         Imagen.Padding = new Padding(4, 3, 4, 3);

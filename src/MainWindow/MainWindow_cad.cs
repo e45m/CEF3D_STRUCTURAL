@@ -1,6 +1,5 @@
 using CEF.matrixImpl;
 using System.Runtime.Intrinsics.X86;
-using Windows.Media.Protection.PlayReady;
 using static CEF.modelView;
 using static CEF.viewFrame;
 using static System.Math;

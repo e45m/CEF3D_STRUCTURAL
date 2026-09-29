@@ -1,0 +1,9 @@
+.git
+src/obj/*
+src/bin/*
+doc/*
+*.xlsx
+*.pdf
+CEF3D/.vs/*
+Verificacion/*
+TODOS.txt

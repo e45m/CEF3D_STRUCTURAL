@@ -1,16 +1,1 @@
-1.Corregir moment... en vez de force ... en las forms de entrada de cargas puntuales barra y cargas en nudos, 
-corregir el listado de campor de fuerza y crear el de momentos en datamgr, en la función de los table view y tree view agregar el 
-filtro para moment fields. 
-
-
-3.Combinaciones de carga (Por suma o superposición)
-4. Join frame
-13.Mensajes a la barra de estado
-8. Documentar pdelta
-9. Replicar Rotado / Función Array
-10.Busqueda/Selección por características
-11.Grupos de elementos
-12.Activar/Desactivar botones según escenario
-15.Mostrar solo selección / sacar selección de la vista
-14.Eliminar reflections de Table Views y Tree Views
-
+([System.Text.Encoding]::ASCII.GetString((Get-SecureBootUEFI db).bytes) -match 'Microsoft Corporation UEFI CA 2011')

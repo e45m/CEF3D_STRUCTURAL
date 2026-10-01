@@ -6,4 +6,5 @@ doc/*
 *.pdf
 CEF3D/.vs/*
 Verificacion/*
+tmpfiles/*
 TODOS.txt

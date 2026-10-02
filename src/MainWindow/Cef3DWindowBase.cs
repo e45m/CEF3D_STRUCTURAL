@@ -159,7 +159,7 @@ public  class Cef3DWindowBase: Form
         tsUnitsSel = new ToolStripComboBox();
         tsUnitsSel.SelectedIndexChanged += App.mainWindow.setUnitsFromMenu;
         mUnidades.DropDownItems.Add(tsUnitsSel);
-        tsUnitsSel.Items.AddRange(uc.supportedUnits);
+        tsUnitsSel.Items.AddRange(Uc.supportedUnits);
         mModelo.DropDownItems.Add(mUnidades);
 
         // ===== ANALISIS =====

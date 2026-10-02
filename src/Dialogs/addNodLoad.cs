@@ -297,8 +297,8 @@ public class addNodLoad: Form
         for (int i = 0; i < N; i++)
         {
             var indNod = idselNods[i];
-            node node = App.model.nodes[indNod];
-            var nodID = node.ID;
+            Node Node = App.model.nodes[indNod];
+            var nodID = Node.ID;
 
             var loads = App.model.nodalLoads.
                 Where(l => l.NodeID == nodID && l.Case == Case).Select(l => l.ID).ToList();
@@ -319,12 +319,12 @@ public class addNodLoad: Form
         int N = Selection.nodesMaxIndx + 1;
         var Sel = Selection.getNodesColection();
 
-        var fx = uc.forceFromUserUnits(Fx.Text);
-        var fy = uc.forceFromUserUnits(Fy.Text);
-        var fz = uc.forceFromUserUnits(Fz.Text);
-        var mx = uc.momentFromUserUnits(Mx.Text);
-        var my = uc.momentFromUserUnits(My.Text);
-        var mz = uc.momentFromUserUnits(Mz.Text);
+        var fx = Uc.forceFromUserUnits(Fx.Text);
+        var fy = Uc.forceFromUserUnits(Fy.Text);
+        var fz = Uc.forceFromUserUnits(Fz.Text);
+        var mx = Uc.momentFromUserUnits(Mx.Text);
+        var my = Uc.momentFromUserUnits(My.Text);
+        var mz = Uc.momentFromUserUnits(Mz.Text);
 
         for (i = 0; i < N; i++)
         {

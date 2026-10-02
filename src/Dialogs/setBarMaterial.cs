@@ -105,7 +105,7 @@ public class setBarMaterial : Form
     {
         cbMaterials.Items.Clear();
 
-        foreach (var m in App.model.materials)
+        foreach (var m in App.model.Materials)
             cbMaterials.Items.Add($"{m.ID}: {m.Name}");
 
         if (cbMaterials.Items.Count > 0)
@@ -120,7 +120,7 @@ public class setBarMaterial : Form
     {
         if (cbMaterials.SelectedIndex < 0) return;
 
-        var m = App.model.materials[cbMaterials.SelectedIndex];
+        var m = App.model.Materials[cbMaterials.SelectedIndex];
 
         ShowMaterial(m);
     }
@@ -134,7 +134,7 @@ public class setBarMaterial : Form
 
         App.takeUndoSnapShot();
 
-        var selectedMaterial = App.model.materials[cbMaterials.SelectedIndex];
+        var selectedMaterial = App.model.Materials[cbMaterials.SelectedIndex];
 
         int nBar = Selection.barMaxIndex;
         var sel = Selection.getBarsColection();
@@ -143,10 +143,10 @@ public class setBarMaterial : Form
 
         foreach (var i in sel)
         {
-            var bar = App.model.bars[i];
+            var Bar = App.model.bars[i];
 
-            bar.MaterialID = selectedMaterial.ID;
-            bar.MaterialName = selectedMaterial.Name;
+            Bar.MaterialID = selectedMaterial.ID;
+            Bar.MaterialName = selectedMaterial.Name;
         }
 
         Close();
@@ -156,19 +156,19 @@ public class setBarMaterial : Form
 
     #region UI Helpers
 
-    private void ShowMaterial(material m)
+    private void ShowMaterial(Material m)
     {
         txtNombre.Text = m.Name;
         cbTipo.SelectedIndex = m.Type;
 
-        txtE.Text =uc.forcePerUnitAreaToUserUnits(m.E).ToString();
-        txtG.Text =uc.forcePerUnitAreaToUserUnits(m.G).ToString();
+        txtE.Text =Uc.forcePerUnitAreaToUserUnits(m.E).ToString();
+        txtG.Text =Uc.forcePerUnitAreaToUserUnits(m.G).ToString();
         txtV.Text = m.v.ToString();//adimentional
-        txtW.Text =uc.forceToUserUnits(m.W).ToString();
-        txtM.Text = uc.massToUserUnits(m.M).ToString();
-        txtFc.Text =uc.forcePerUnitAreaToUserUnits(m.fc).ToString();
-        txtFy.Text =uc.forcePerUnitAreaToUserUnits(m.fy).ToString();
-        txtFu.Text =uc.forcePerUnitAreaToUserUnits(m.fu).ToString();
+        txtW.Text =Uc.forceToUserUnits(m.W).ToString();
+        txtM.Text = Uc.massToUserUnits(m.M).ToString();
+        txtFc.Text =Uc.forcePerUnitAreaToUserUnits(m.fc).ToString();
+        txtFy.Text =Uc.forcePerUnitAreaToUserUnits(m.fy).ToString();
+        txtFu.Text =Uc.forcePerUnitAreaToUserUnits(m.fu).ToString();
     }
 
     #endregion

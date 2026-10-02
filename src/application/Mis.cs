@@ -15,7 +15,7 @@ namespace CEF
         }
 
 
-        public static double calcDist(in node a,in node b) =>
+        public static double calcDist(in Node a,in Node b) =>
             Math. Sqrt(Math.Pow(b.X - a.X, 2d) + Math.Pow(b.Y - a.Y, 2d) + Math.Pow(b.Z - a.Z, 2d));
 
         

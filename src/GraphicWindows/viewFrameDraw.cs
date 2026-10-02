@@ -177,9 +177,9 @@ public partial class viewFrame
 
     private void drawGrid(point3D[] sP, double delta, Graphics g, Pen gridPen)
     {
-        var Cx = new List<coordinate>();
-        var Cy = new List<coordinate>();
-        var Cz = new List<coordinate>();
+        var Cx = new List<Coordinate>();
+        var Cy = new List<Coordinate>();
+        var Cz = new List<Coordinate>();
         for (int i = 0; i < App.model.gridCoordsX.Count; i++)
         {
             if ((App.model.gridCoordsX[i].coordSys ) == (App.currCoordSist ))
@@ -275,7 +275,7 @@ public partial class viewFrame
                 {
                     case 1:
                     case 2:
-                        var secc = App.model.sections.First(s => s.ID == barra.SectionID);
+                        var secc = App.model.Sections.First(s => s.ID == barra.SectionID);
                         switch (ms.viewRenderMode)
                         {
                             case 1:

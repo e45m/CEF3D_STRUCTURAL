@@ -24,7 +24,7 @@ public enum ModelUnits
     K
 }
 
-internal static class uc//unitsconverter
+internal static class Uc//unitsconverter
 {
     public static string[] supportedUnits  = [
             "kN,kg,m,C", //Default and data base used

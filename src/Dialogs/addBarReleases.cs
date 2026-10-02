@@ -74,7 +74,7 @@ public  class addBarReleases:Form
         for (int i = 0; i <=N; i++)
             {
                 indB = Sel[i];
-                bar barra = App.model.bars[indB];
+                Bar barra = App.model.bars[indB];
                  barra.releases = value;
             }
             if (this.ParentForm is MainWindow cedm)

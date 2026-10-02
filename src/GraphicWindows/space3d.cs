@@ -7,7 +7,7 @@ using static System.Math;
 namespace CEF;
 
 using Line3 = barGeom;
-using Point3 = node;
+using Point3 = Node;
 using View = viewFrame.View;
 
 public class space3d
@@ -139,7 +139,7 @@ public class space3d
 
 
 
-        App.appData.Puntos = new CEF.DtaTable<node>();
+        App.appData.Puntos = new CEF.DtaTable<Node>();
         
         i_ = 0; 
         for (k = 0; k < ScZ; k++) 
@@ -405,14 +405,14 @@ public class space3d
         return null;
     }
 
-    public static  node checkNewNode(node nodo, double tol= 0.01)
+    public static  Node checkNewNode(Node nodo, double tol= 0.01)
     {
         if (nodo == null) return null;
        
         var isNode = App.model.nodes.FirstOrDefault(n => (Math.Abs(n.X - nodo.X) < tol &&
                                                              Math.Abs(n.Y - nodo.Y) < tol &&
                                                              Math.Abs(n.Z - nodo.Z) < tol),
-                                                             new node() { ID = -1 });
+                                                             new Node() { ID = -1 });
 
         if (isNode.ID != -1) return isNode;
 

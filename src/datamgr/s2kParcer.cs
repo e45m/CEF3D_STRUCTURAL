@@ -23,17 +23,17 @@ namespace CEF.datamgr
             tableDic.Add("LOAD PATTERN DEFINITIONS", "");
             tableDic.Add("COMBINATION DEFINITIONS", "");
             tableDic.Add("CONNECTIVITY - FRAME", "");
-            tableDic.Add("FRAME SECTION ASSIGNMENTS", "");
+            tableDic.Add("FRAME Section ASSIGNMENTS", "");
             tableDic.Add("FRAME LOADS - DISTRIBUTED", "");
-            tableDic.Add("FRAME SECTION PROPERTIES 01 - GENERAL", "");
+            tableDic.Add("FRAME Section PROPERTIES 01 - GENERAL", "");
             tableDic.Add("JOINT COORDINATES", "");
             tableDic.Add("JOINT RESTRAINT ASSIGNMENTS", "");
             tableDic.Add("GRID LINES", "");
             tableDic.Add("LOAD CASE DEFINITIONS", "");
-            tableDic.Add("MATERIAL PROPERTIES 01 - GENERAL", "");
-            tableDic.Add("MATERIAL PROPERTIES 02 - BASIC MECHANICAL PROPERTIES", "");
-            tableDic.Add("MATERIAL PROPERTIES 03A - STEEL DATA", "");
-            tableDic.Add("MATERIAL PROPERTIES 03B - CONCRETE DATA", "");
+            tableDic.Add("Material PROPERTIES 01 - GENERAL", "");
+            tableDic.Add("Material PROPERTIES 02 - BASIC MECHANICAL PROPERTIES", "");
+            tableDic.Add("Material PROPERTIES 03A - STEEL DATA", "");
+            tableDic.Add("Material PROPERTIES 03B - CONCRETE DATA", "");
             tableDic.Add("CONSTRAINT DEFINITIONS - DIAPHRAGM", "");
             tableDic.Add("JOINT CONSTRAINT ASSIGNMENTS", "");
             if (!File.Exists(filePath))
@@ -60,12 +60,12 @@ namespace CEF.datamgr
             tables += tableDic["JOINT RESTRAINT ASSIGNMENTS"];
             tables += tableDic["CONSTRAINT DEFINITIONS - DIAPHRAGM"]; 
             tables += tableDic["JOINT CONSTRAINT ASSIGNMENTS"]; 
-            tables += tableDic["MATERIAL PROPERTIES 01 - GENERAL"];
-            tables += tableDic["MATERIAL PROPERTIES 02 - BASIC MECHANICAL PROPERTIES"];
-            tables += tableDic["MATERIAL PROPERTIES 03A - STEEL DATA"];
-            tables += tableDic["MATERIAL PROPERTIES 03B - CONCRETE DATA"];
-            tables += tableDic["FRAME SECTION ASSIGNMENTS"];
-            tables += tableDic["FRAME SECTION PROPERTIES 01 - GENERAL"];
+            tables += tableDic["Material PROPERTIES 01 - GENERAL"];
+            tables += tableDic["Material PROPERTIES 02 - BASIC MECHANICAL PROPERTIES"];
+            tables += tableDic["Material PROPERTIES 03A - STEEL DATA"];
+            tables += tableDic["Material PROPERTIES 03B - CONCRETE DATA"];
+            tables += tableDic["FRAME Section ASSIGNMENTS"];
+            tables += tableDic["FRAME Section PROPERTIES 01 - GENERAL"];
             tables += tableDic["CONNECTIVITY - FRAME"];
             tables += tableDic["CASE - MODAL 1 - GENERAL"];
             tables += tableDic["CASE - STATIC 1 - LOAD ASSIGNMENTS"];
@@ -127,13 +127,13 @@ namespace CEF.datamgr
                     case "CONNECTIVITY - FRAME":
                         parse_Table_CONNECTIVITY_FRAME(line);
                         break;
-                    case "FRAME SECTION ASSIGNMENTS":
+                    case "FRAME Section ASSIGNMENTS":
                         parse_Table_FRAME_SECTION_ASSIGNMENTS(line);
                         break;
                     case "FRAME LOADS - DISTRIBUTED":
                         parse_Table_FRAME_LOADS_DISTRIBUTED(line);
                         break;
-                    case "FRAME SECTION PROPERTIES 01 - GENERAL":
+                    case "FRAME Section PROPERTIES 01 - GENERAL":
                         parse_Table_FRAME_SECTION_PROPERTIES_01_GENERAL(line);
                         break;
                     case "JOINT COORDINATES":
@@ -147,14 +147,14 @@ namespace CEF.datamgr
                         break;
                     case "LOAD CASE DEFINITIONS":
                         break;
-                    case "MATERIAL PROPERTIES 01 - GENERAL":
+                    case "Material PROPERTIES 01 - GENERAL":
                         break;
-                    case "MATERIAL PROPERTIES 02 - BASIC MECHANICAL PROPERTIES":
+                    case "Material PROPERTIES 02 - BASIC MECHANICAL PROPERTIES":
                         parse_Table_MATERIAL_PROPERTIES_02_BASIC_MECHANICAL_PROPERTIES(line);
                         break;
-                    case "MATERIAL PROPERTIES 03A - STEEL DATA":
+                    case "Material PROPERTIES 03A - STEEL DATA":
                         break;
-                    case "MATERIAL PROPERTIES 03B - CONCRETE DATA":
+                    case "Material PROPERTIES 03B - CONCRETE DATA":
                         break;
                     case "JOINT CONSTRAINT ASSIGNMENTS":
                         parse_Table_JOINT_CONSTRAINT_ASSIGNMENTS(line);
@@ -167,11 +167,11 @@ namespace CEF.datamgr
                 }
                 continue;
             }
-            foreach (var bar in modelDB.bars)
+            foreach (var Bar in modelDB.bars)
             {
-                bar.SectionID = modelDB.sections.FirstOrDefault(m => m.Name == bar.SectionName, new section { ID = 0 }).ID;
-                bar.MaterialName = sectMaterial[bar.SectionID];
-                bar.MaterialID = modelDB.materials.FirstOrDefault(m => m.Name == bar.MaterialName, new material { ID = 0 }).ID;
+                Bar.SectionID = modelDB.Sections.FirstOrDefault(m => m.Name == Bar.SectionName, new Section { ID = 0 }).ID;
+                Bar.MaterialName = sectMaterial[Bar.SectionID];
+                Bar.MaterialID = modelDB.Materials.FirstOrDefault(m => m.Name == Bar.MaterialName, new Material { ID = 0 }).ID;
             }
             foreach (var load in modelDB.barDistrLoads)
             {
@@ -200,7 +200,7 @@ namespace CEF.datamgr
                         App.currUnits = string.Join(",", new[] { sapCurrUnits[0], "kg", sapCurrUnits[1], sapCurrUnits[2] });
                     }
 
-                    uc.setUc(App.currUnits);
+                    Uc.setUc(App.currUnits);
                     flag = false;
 
                 }
@@ -315,7 +315,7 @@ namespace CEF.datamgr
         {
             var rx = new Regex(@"(\w+)=(""[^""]+""|[^\s]+)");
             var m = rx.Matches(line);
-            var b= new bar();
+            var b= new Bar();
             foreach (Match x in m)
             {
                 string varName = x.Groups[1].Value;
@@ -327,12 +327,12 @@ namespace CEF.datamgr
                         b.label = value;
                         break;
                     case "JointI":
-                        b.startNode = modelDB.nodes.FirstOrDefault(p => p.label == value, new node {ID = -1 }).ID;
-                        if (b.startNode == -1) throw new Exception($"Error parsing frama {b.ID}, node {value} does not have al ID");
+                        b.startNode = modelDB.nodes.FirstOrDefault(p => p.label == value, new Node {ID = -1 }).ID;
+                        if (b.startNode == -1) throw new Exception($"Error parsing frama {b.ID}, Node {value} does not have al ID");
                         break;
                     case "JointJ":
-                        b.endNode = modelDB.nodes.FirstOrDefault(p => p.label == value, new node { ID = -1 }).ID;
-                        if (b.endNode == -1) throw new Exception($"Error parsing frama {b.ID}, node {value} does not have al ID");
+                        b.endNode = modelDB.nodes.FirstOrDefault(p => p.label == value, new Node { ID = -1 }).ID;
+                        if (b.endNode == -1) throw new Exception($"Error parsing frama {b.ID}, Node {value} does not have al ID");
                         break;
                     case "IsCurved":
                         break;
@@ -340,7 +340,7 @@ namespace CEF.datamgr
                         break;
                 }
             }
-            var res = modelDB.bars.FirstOrDefault(ba => ba.label == b.label, new bar { ID = -1 });
+            var res = modelDB.bars.FirstOrDefault(ba => ba.label == b.label, new Bar { ID = -1 });
             if(res.ID==-1){
                 modelDB.bars.Add(b);
             }
@@ -355,7 +355,7 @@ namespace CEF.datamgr
       void   parse_Table_FRAME_SECTION_ASSIGNMENTS(string line) {
             var rx = new Regex(@"(\w+)=(""[^""]+""|[^\s]+)");
             var m = rx.Matches(line);
-            var b = new bar();
+            var b = new Bar();
             foreach (Match x in m)
             {
                 string varName = x.Groups[1].Value;
@@ -368,13 +368,13 @@ namespace CEF.datamgr
                         break;
                     case "AnalSect":
                        b.SectionName = value;
-                       b.SectionID = modelDB.sections.FirstOrDefault(s=>s.Name==value,new section { ID=-1}).ID;
-                       b.MaterialName =modelDB.materials.FirstOrDefault(m=>m.ID==0,new material { ID = -1, Name=""}).Name;
+                       b.SectionID = modelDB.Sections.FirstOrDefault(s=>s.Name==value,new Section { ID=-1}).ID;
+                       b.MaterialName =modelDB.Materials.FirstOrDefault(m=>m.ID==0,new Material { ID = -1, Name=""}).Name;
                        b.MaterialID = 0;
                         break;
                 }
             }
-            var res = modelDB.bars.FirstOrDefault(ba => ba.ID == b.ID, new bar { ID = -1 });
+            var res = modelDB.bars.FirstOrDefault(ba => ba.ID == b.ID, new Bar { ID = -1 });
             if (res.ID == -1)
             {
                 modelDB.bars.Add(b);
@@ -409,7 +409,7 @@ namespace CEF.datamgr
                 {
                     case "Frame":
                         s.ID = modelDB.barDistrLoads.Count ;
-                        s.BarID =modelDB.bars.FirstOrDefault(b=>b.label == value, new bar { ID=-1}).ID ;
+                        s.BarID =modelDB.bars.FirstOrDefault(b=>b.label == value, new Bar { ID=-1}).ID ;
                         if (s.BarID == -1) throw new Exception($"Error parsing frama {value}, does not have al ID");
                         break;
                     case "LoadPat":
@@ -424,28 +424,28 @@ namespace CEF.datamgr
                     case "DistType":
                         break;
                     case "RelDistA":
-                        s.a = uc.lenFromUserUnits(value);
+                        s.a = Uc.lenFromUserUnits(value);
                         break;
                     case "RelDistB":
-                        s.b = uc.lenFromUserUnits(value);
+                        s.b = Uc.lenFromUserUnits(value);
                         break;
                     case "Area":
-                        s.b = uc.lenFromUserUnits(value);
+                        s.b = Uc.lenFromUserUnits(value);
                         break;
                     case "FOverLA":
                         switch (dir)
                         {
                             case "X":
-                                s.Fx = uc.forceFromUserUnits(value);
+                                s.Fx = Uc.forceFromUserUnits(value);
                                 break;
                             case "Y":
-                                s.Fy = uc.forceFromUserUnits(value);
+                                s.Fy = Uc.forceFromUserUnits(value);
                                 break;
                             case "Z":
-                                s.Fz = uc.forceFromUserUnits(value);
+                                s.Fz = Uc.forceFromUserUnits(value);
                                 break;
                             case "Gravity":
-                                s.Fz = -uc.forceFromUserUnits(value);
+                                s.Fz = -Uc.forceFromUserUnits(value);
                                 break;
                         }
                         break;
@@ -457,7 +457,7 @@ namespace CEF.datamgr
         void parse_Table_FRAME_SECTION_PROPERTIES_01_GENERAL(string line)
         {
             var rx = new Regex(@"(\w+)=(""[^""]+""|[^\s]+)");
-            var s = new section();
+            var s = new Section();
             if (line.EndsWith("_"))
             {
                 preLine += line;
@@ -473,7 +473,7 @@ namespace CEF.datamgr
                 switch (varName)
                 {
                     case "SectionName":
-                        s.ID = modelDB.sections.Count;
+                        s.ID = modelDB.Sections.Count;
                         s.Name = value;
                         break;
                     case "Shape":
@@ -490,62 +490,62 @@ namespace CEF.datamgr
                         s.Type = (int)t;
                         break;
                     case "t3":
-                        s.h = uc.lenToUserUnits(value);
+                        s.h = Uc.lenToUserUnits(value);
                         break;
                     case "t2":
-                        s.b = uc.lenToUserUnits(value);
+                        s.b = Uc.lenToUserUnits(value);
                         break;
                     case "tf":
-                        s.tf = uc.lenToUserUnits(value);
+                        s.tf = Uc.lenToUserUnits(value);
                         break;
                     case "tw":
-                        s.tw = uc.lenToUserUnits(value);
+                        s.tw = Uc.lenToUserUnits(value);
                         break;
                     case "Area":
-                        s.Ag = uc.areaToUserUnits(value);
+                        s.Ag = Uc.areaToUserUnits(value);
                         break;
                     case "I23":
-                        s.Iyz = uc.len4ToUserUnits(value);
+                        s.Iyz = Uc.len4ToUserUnits(value);
                         break;
                     case "I22":
-                        s.Izz = uc.len4ToUserUnits(value);
+                        s.Izz = Uc.len4ToUserUnits(value);
                         break;
                     case "I33":
-                        s.Iyy = uc.len4ToUserUnits(value);
+                        s.Iyy = Uc.len4ToUserUnits(value);
                         break;
                     case "AS3":
-                        s.Acyy = uc.areaToUserUnits(value);
+                        s.Acyy = Uc.areaToUserUnits(value);
                         break;
                     case "AS2":
-                        s.Aczz = uc.areaToUserUnits(value);
+                        s.Aczz = Uc.areaToUserUnits(value);
                         break;
                     case "S22":
-                        s.Szz = uc.len3ToUserUnits(value);
+                        s.Szz = Uc.len3ToUserUnits(value);
                         break;
                     case "S33":
-                        s.Syy = uc.len3ToUserUnits(value);
+                        s.Syy = Uc.len3ToUserUnits(value);
                         break;
                     case "R22":
-                        s.rzz = uc.lenToUserUnits(value);
+                        s.rzz = Uc.lenToUserUnits(value);
                         break;
                     case "R33":
-                        s.ryy = uc.lenToUserUnits(value);
+                        s.ryy = Uc.lenToUserUnits(value);
                         break;
                     case "TorsConst":
-                        s.Tor = uc.len4ToUserUnits(value);
+                        s.Tor = Uc.len4ToUserUnits(value);
                         break;
                     case "Material":
                         sectMaterial.Add(s.ID,value);
                         break;
                 }
             }
-            modelDB.sections.Add(s);
+            modelDB.Sections.Add(s);
         }
         void parse_Table_JOINT_COORDINATES(string line)
         {
             var rx = new Regex(@"(\w+)=(""[^""]+""|[^\s]+)");
             var m = rx.Matches(line);
-            var n = new node();
+            var n = new Node();
             var r = new nodalRestraint();
             foreach (Match x in m)
             {
@@ -558,13 +558,13 @@ namespace CEF.datamgr
                         n.label = value;
                         break;
                     case "XorR":
-                        n.X = uc.lenToUserUnits(value);
+                        n.X = Uc.lenToUserUnits(value);
                         break;
                     case "Y":
-                        n.Y = uc.lenToUserUnits(value);
+                        n.Y = Uc.lenToUserUnits(value);
                         break;
                     case "Z":
-                        n.Z = uc.lenToUserUnits(value);
+                        n.Z = Uc.lenToUserUnits(value);
                         break;
                     case "CoordSys":
                         break;
@@ -592,7 +592,7 @@ namespace CEF.datamgr
                 switch (varName)
                 {
                     case "Joint":
-                        id = modelDB.nodes.FirstOrDefault(n => n.label == value, new node { ID = -1 }).ID;
+                        id = modelDB.nodes.FirstOrDefault(n => n.label == value, new Node { ID = -1 }).ID;
                         idx = modelDB.nodalRestraints.FindIndexByID(id);
                         if (id == -1 || idx == -1) throw new Exception("Restraint index does not exists");
                         break;
@@ -641,15 +641,15 @@ namespace CEF.datamgr
                         switch (ad)
                         {
                             case "X":
-                                modelDB.gridCoordsX.Add(new coordinate(){ ID= xid, Coord = uc.lenToUserUnits(value),coordSys=sc});
+                                modelDB.gridCoordsX.Add(new Coordinate(){ ID= xid, Coord = Uc.lenToUserUnits(value),coordSys=sc});
                                 xid++;
                                 break;
                             case "Y":
-                                modelDB.gridCoordsY.Add(new coordinate() { ID = yid, Coord = uc.lenToUserUnits(value), coordSys = sc });
+                                modelDB.gridCoordsY.Add(new Coordinate() { ID = yid, Coord = Uc.lenToUserUnits(value), coordSys = sc });
                                 yid++;
                                 break;
                             case "Z":
-                                modelDB.gridCoordsZ.Add(new coordinate() { ID = zid, Coord = uc.lenToUserUnits(value), coordSys = sc });
+                                modelDB.gridCoordsZ.Add(new Coordinate() { ID = zid, Coord = Uc.lenToUserUnits(value), coordSys = sc });
                                 zid++;
                                 break;
                         }
@@ -660,7 +660,7 @@ namespace CEF.datamgr
         void parse_Table_MATERIAL_PROPERTIES_02_BASIC_MECHANICAL_PROPERTIES(string line)
         {
             var rx = new Regex(@"(\w+)=(""[^""]+""|[^\s]+)");
-            var s = new material();
+            var s = new Material();
             if (line.EndsWith("_"))
             {
                 preLine += line;
@@ -676,27 +676,27 @@ namespace CEF.datamgr
                 switch (varName)
                 {
                     case "Material":
-                        s.ID = modelDB.materials.Count;
+                        s.ID = modelDB.Materials.Count;
                         s.Name = value;
                         break;
                     case "UnitWeight":
-                        s.W = uc.forceToUserUnits(value);
+                        s.W = Uc.forceToUserUnits(value);
                         break;
                     case "UnitMass":
-                        s.M = uc.massToUserUnits(value);
+                        s.M = Uc.massToUserUnits(value);
                         break;
                     case "E1":
-                        s.E = uc.pressToUserUnits(value);
+                        s.E = Uc.pressToUserUnits(value);
                         break;
                     case "G12":
-                        s.G = uc.pressToUserUnits(value);
+                        s.G = Uc.pressToUserUnits(value);
                         break;
                     case "U12":
                         s.v = double.Parse(value);//adimentional
                         break;
                 }
             }
-            modelDB.materials.Add(s);
+            modelDB.Materials.Add(s);
         }
         void parse_Table_CONSTRAINT_DEFINITIONS_DIAPHRAGM(string line) 
         {

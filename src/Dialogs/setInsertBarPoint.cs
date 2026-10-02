@@ -139,7 +139,7 @@ public  class setInsertBarPoint : Form
         for (int i = 0; i <= N; i++)
         {
             indB = Sel[i];
-            bar barra = App.model.bars[indB];
+            Bar barra = App.model.bars[indB];
             barra.offsetY = cBOffsetY.SelectedIndex;
             barra.offsetZ = cBOffsetZ.SelectedIndex;
             if (flagGiro)

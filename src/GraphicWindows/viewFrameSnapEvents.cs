@@ -22,10 +22,10 @@ public partial class viewFrame
 
             if (snapToEnds)
             {
-                var bar = App.model.bars[barIndx];
+                var Bar = App.model.bars[barIndx];
 
-                var na = App.model.nodes.First(n => n.ID == bar.startNode);
-                var nb = App.model.nodes.First(n => n.ID == bar.endNode);
+                var na = App.model.nodes.First(n => n.ID == Bar.startNode);
+                var nb = App.model.nodes.First(n => n.ID == Bar.endNode);
 
                 var p1 = new point3D() { Id = -2, x3d = na.X, y3d = na.Y, z3d = na.Z };
                 var p2 = new point3D() { Id = -2, x3d = nb.X, y3d = nb.Y, z3d = nb.Z };
@@ -43,9 +43,9 @@ public partial class viewFrame
 
             if (snapToCenter)
             {
-                var bar = App.model.bars[barIndx];
-                var na = App.model.nodes.First(n => n.ID == bar.startNode);
-                var nb = App.model.nodes.First(n => n.ID == bar.endNode);
+                var Bar = App.model.bars[barIndx];
+                var na = App.model.nodes.First(n => n.ID == Bar.startNode);
+                var nb = App.model.nodes.First(n => n.ID == Bar.endNode);
                 var p1 = new point3D() { Id = -2, x3d = (na.X+ nb.X)/2, y3d = (na.Y+ nb.Y)/2, z3d = (na.Z+ nb.Z)/2 };
 
                 p3DSet2DCoord(ref p1);
@@ -58,9 +58,9 @@ public partial class viewFrame
 
             if (snapToNear)
             {
-                var bar = App.model.bars[barIndx];
-                var na = App.model.nodes.First(n => n.ID == bar.startNode);
-                var nb = App.model.nodes.First(n => n.ID == bar.endNode);
+                var Bar = App.model.bars[barIndx];
+                var na = App.model.nodes.First(n => n.ID == Bar.startNode);
+                var nb = App.model.nodes.First(n => n.ID == Bar.endNode);
 
                 var p1 = new point3D() { Id = -2, x3d = na.X, y3d = na.Y, z3d = na.Z };
                 var p2 = new point3D() { Id = -2, x3d = nb.X, y3d = nb.Y, z3d = nb.Z };
@@ -88,10 +88,10 @@ public partial class viewFrame
 
             if (snapToPerp && firstLinePoint.Id != -1)
             {
-                var bar = App.model.bars[barIndx];
+                var Bar = App.model.bars[barIndx];
 
-                var na = App.model.nodes.First(n => n.ID == bar.startNode);
-                var nb = App.model.nodes.First(n => n.ID == bar.endNode);
+                var na = App.model.nodes.First(n => n.ID == Bar.startNode);
+                var nb = App.model.nodes.First(n => n.ID == Bar.endNode);
 
             var v = new point3D() { x3d = nb.X - na.X, y3d = nb.Y - na.Y, z3d = nb.Z - na.Z };
             var nc = firstLinePoint;

@@ -16,7 +16,7 @@ public partial class MainWindow: Cef3DWindowBase
         App.visualModelStylesInitialized = false;
         
         App.currUnits = "kN,kg,m,C";
-        uc.setUc(App.currUnits);     
+        Uc.setUc(App.currUnits);     
         
     }
 

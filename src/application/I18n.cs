@@ -29,8 +29,8 @@ internal static class I18n
                 ["nodalRestraints"] = nodalRestraints,
                 ["nodes"] = nodes,
                 ["nodalLoads"] = nodalLoads,
-                ["materials"] = materials,
-                ["sections"] = sections,
+                ["Materials"] = Materials,
+                ["Sections"] = Sections,
                 ["bars"] = bars,
                 ["barDistrLoads"] = barDistrLoads,
                 ["barPunctLoads"] = barPunctLoads,
@@ -181,8 +181,7 @@ internal static class I18n
     public const string nodalRestraints = "Restricciones en Nodos";
     public const string nodes = "Nodos";
     public const string nodalLoads = "Cargas en Nodos";
-    public const string materials = "Materiales";
-    public const string sections = "Secciones";
+
     public const string bars = "Barras";
     public const string barDistrLoads = "Cargas Distribuidas en Barras";
     public const string barPunctLoads = "Cargas Puntuales en Barras";
@@ -379,7 +378,7 @@ internal static class I18n
     public const string SplitByLengthOrElements = "Split by length or elements";
     public const string SplitAtIntersectionWithSelectedBars = "Split at intersection with selected bars";
     public const string SplitAtIntersectionWithSelectedNodes = "Split at intersection with selected nodes";
-    public const string MoveNodeGraphically = "Move node graphically";
+    public const string MoveNodeGraphically = "Move Node graphically";
     public const string RemoveOrphanNodes = "Remove orphan nodes";
     public const string RemoveOverlappingNodes = "Remove overlapping nodes";
     public const string MergeSelectedBars = "Merge selected bars";
@@ -472,8 +471,7 @@ internal static class I18n
     public const string nodalRestraints = "Nodal Restraints";
     public const string nodes = "Nodes";
     public const string nodalLoads = "Nodal Loads";
-    public const string materials = "Materials";
-    public const string sections = "Sections";
+
     public const string bars = "Bars";
     public const string barDistrLoads = "Distributed Loads on Bars";
     public const string barPunctLoads = "Point Loads on Bars";
@@ -589,8 +587,8 @@ internal static class I18n
 
     public const string min = "min";
     public const string max = "max";
-    public const string ValueAtStartNode = "Value at start node";
-    public const string ValueAtEndNode = "Value at end node";
+    public const string ValueAtStartNode = "Value at start Node";
+    public const string ValueAtEndNode = "Value at end Node";
     public const string BatchImput = "Use text commands";
     //Visual Styles texts
     public const string CategoryScope = "Scope";

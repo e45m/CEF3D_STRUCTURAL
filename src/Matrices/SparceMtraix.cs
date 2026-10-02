@@ -14,7 +14,7 @@ internal partial class SparseMatrix : cefDictionary
         Rows = SystemSize;
         Columns = Rows;
         setBucketSize(SystemSize);
-        buckets = new bucket[sizeBuckets];
+        buckets = new CEFBucket[sizeBuckets];
         Keys = [];
     }
     public SparseMatrix(int rows, int cols)
@@ -22,7 +22,7 @@ internal partial class SparseMatrix : cefDictionary
         Rows = rows;
         Columns = cols;
         setBucketSize(10 * rows);
-        buckets = new bucket[sizeBuckets];
+        buckets = new CEFBucket[sizeBuckets];
         Keys = [];
     }
     [MethodImpl(MethodImplOptions.AggressiveInlining | MethodImplOptions.AggressiveOptimization)]
@@ -55,14 +55,14 @@ internal partial class SparseMatrix : cefDictionary
     }
     public void makeI()
     {
-        buckets = new bucket[sizeBuckets];
+        buckets = new CEFBucket[sizeBuckets];
         Keys = [];
         for (int i = 0; i < Rows; i++)
             TryAdd(makeKey(i, i), 1.0d);
     }
     public void makeZero()
     {
-        buckets = new bucket[sizeBuckets];
+        buckets = new CEFBucket[sizeBuckets];
         Keys = [];
     }
     internal BandedMatrix ToBanded()

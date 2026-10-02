@@ -3,15 +3,15 @@ namespace CEF.Dictionary;
 class cefDictionary
 {
     public List<long> Keys;
-    internal class bucket
+    internal class CEFBucket
     {
         public double value;
         public long key;
-        public bucket next;
+        public CEFBucket next;
         public bool used;
-        public bucket() { value = 0d; used = false; next = null; key = -1; }
+        public CEFBucket() { value = 0d; used = false; next = null; key = -1; }
     }
-    public bucket[] buckets;
+    public CEFBucket[] buckets;
     public long sizeBuckets;
     internal static long MixHash(long k)
     {
@@ -26,17 +26,17 @@ class cefDictionary
     {
         long b = getBucket(key);
         value = 0d;
-        bucket node = buckets[b];
-        if (node == null)
+        CEFBucket Node = buckets[b];
+        if (Node == null)
             return false;
-        while (node != null)
+        while (Node != null)
         {
-            if (node.used && node.key == key)
+            if (Node.used && Node.key == key)
             {
-                value = node.value;
+                value = Node.value;
                 return true;
             }
-            node = node.next;
+            Node = Node.next;
         }
         return false;
     }
@@ -45,30 +45,30 @@ class cefDictionary
     {
         long b = getBucket(key);
         if (buckets[b] == null)
-            buckets[b] = new bucket();
-        bucket node = buckets[b];
-        bucket prev = null;
+            buckets[b] = new CEFBucket();
+        CEFBucket Node = buckets[b];
+        CEFBucket prev = null;
         while (true)
         {
-            if (!node.used)
+            if (!Node.used)
             {
-                node.key = key;
-                node.value = value;
-                node.used = true;
+                Node.key = key;
+                Node.value = value;
+                Node.used = true;
                 Keys.Add(key);
                 return true;
             }
-            if (node.key == key)
+            if (Node.key == key)
             {
-                node.value = value;
+                Node.value = value;
                 return true;
             }
-            if (node.next == null)
+            if (Node.next == null)
             {
-                node.next = new bucket();
+                Node.next = new CEFBucket();
             }
-            prev = node;
-            node = node.next;
+            prev = Node;
+            Node = Node.next;
         }
     }
     [MethodImpl(MethodImplOptions.AggressiveInlining | MethodImplOptions.AggressiveOptimization)]

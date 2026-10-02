@@ -158,7 +158,7 @@ public partial class viewFrame
                     {
                         App.takeUndoSnapShot();
                         var id = App.model.nodes.Count > 0 ? App.model.nodes.Max(n => n.ID) + 1 : 1;
-                        var np = new node() { ID = id, label = $"{id}", 
+                        var np = new Node() { ID = id, label = $"{id}", 
                             X = currSnapedPoint.x3d, Y = currSnapedPoint.y3d, Z = currSnapedPoint.z3d };
                         App.model.nodes.Add(np);
                         reloadCanvas();
@@ -169,7 +169,7 @@ public partial class viewFrame
                     {
                         App.takeUndoSnapShot();
                         var id = App.model.nodes.Count > 0 ? App.model.nodes.Max(n => n.ID) + 1 : 1;
-                        var np = new node()
+                        var np = new Node()
                         {
                             ID = id,
                             label = $"{id}",

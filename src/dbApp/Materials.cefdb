@@ -1,5 +1,5 @@
 CEF3D_File_ver=0
-materials
+Materials
 ID=1	Name=AceroG50	Type=0	v=0.3	E=204000000	G=78000000	M=7800	W=78	fc=0	Fy=350000	Fu=450000	
 ID=0	Name=AceroA36	Type=0	v=0.3	E=200000000	G=78000000	M=7800	W=78	fc=0	Fy=250000	Fu=300000	
 ID=2	Name=Concreto21MPa	Type=1	v=0.2	E=1311449.58	G=763.76	M=2400	W=24	fc=21000	Fy=0	Fu=0	

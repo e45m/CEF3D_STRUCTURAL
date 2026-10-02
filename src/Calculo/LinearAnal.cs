@@ -66,7 +66,7 @@ internal class LinearAnal
             addBarsToSystem(barra);
         return CalcState.OK;
     }
-    private void addBarsToSystem(bar bar)
+    private void addBarsToSystem(Bar Bar)
     {
         const int elemDim = 12;
         int i, j, kK1, kK2,  row, col;
@@ -75,15 +75,15 @@ internal class LinearAnal
         double[,] elemStiffness = new double[elemDim, elemDim];
         double[,] elemglobal = new double[elemDim, elemDim];
         var nodes = m_mDB.nodes;
-        kK1 = nodes.FindIndexByID(bar.startNode);
-        kK2 = nodes.FindIndexByID(bar.endNode);
+        kK1 = nodes.FindIndexByID(Bar.startNode);
+        kK2 = nodes.FindIndexByID(Bar.endNode);
         if (kK1 != -1 && kK2 != -1)        
             for (i = 0; i < 6; i++)
             {   index[i] = kK1 * DOFbyNode + i;
                 index[i + 6] = kK2 * DOFbyNode + i;
             }
-        barrElement.getTransMatrix( bar,  trans);
-        barrElement.getKedMatrix(bar,  elemStiffness);
+        barrElement.getTransMatrix( Bar,  trans);
+        barrElement.getKedMatrix(Bar,  elemStiffness);
         elemglobal = MatrixMath.M_multT(MatrixMath.M_mult(trans, elemStiffness), trans); 
         for (i = 0; i < elemDim; i++)
             for (j = 0; j <= i; j++)
@@ -290,13 +290,13 @@ internal class LinearAnal
             Q[indexA + 5] += load.Mz;
         }
         var basrs = m_mDB.bars;
-        foreach(var bar in basrs)
+        foreach(var Bar in basrs)
         {
-            var indxI = nodes.FindIndexByID(bar.startNode);
-            var indxJ = nodes.FindIndexByID(bar.endNode);
+            var indxI = nodes.FindIndexByID(Bar.startNode);
+            var indxJ = nodes.FindIndexByID(Bar.endNode);
             if (indxI == -1 || indxJ == -1) 
                 throw new Exception();
-            barrElement.getLoadVector(bar, ref loadVector,currLoadCase);
+            barrElement.getLoadVector(Bar, ref loadVector,currLoadCase);
             indxI *= DOFbyNode;
             indxJ *= DOFbyNode;
           Q[indxI + 0] += loadVector[0];
@@ -320,11 +320,11 @@ internal class LinearAnal
         var reactions = m_mDB.nodalReactions;
         var displacements =  m_mDB.nodalDisplacements;
         var idx = 0;
-        foreach (var node in nodes)
+        foreach (var Node in nodes)
         {
-            idx = nodes.FindIndexByID(node.ID); ;
+            idx = nodes.FindIndexByID(Node.ID); ;
             var displ = new nodalDisplacement();
-            displ.ID = node.ID;
+            displ.ID = Node.ID;
             displ.Case = currLoadCase;
             displ.dx = p[DOFbyNode * idx + 0];
             displ.dy = p[DOFbyNode * idx + 1];
@@ -334,7 +334,7 @@ internal class LinearAnal
             displ.rz = p[DOFbyNode * idx + 5];
             displacements.Add(displ);
             var reac= new nodalReaction();
-            reac.ID = node.ID;
+            reac.ID = Node.ID;
             reac.Case = currLoadCase;
             reac.Fx = d[DOFbyNode * idx + 0];
             reac.Fy = d[DOFbyNode * idx + 1];
@@ -345,8 +345,8 @@ internal class LinearAnal
             reactions.Add(reac);
         }
         var bars = m_mDB.bars;
-        foreach (var bar in bars)
-            barrElement.getInternalForcesVector(bar, currLoadCase);
+        foreach (var Bar in bars)
+            barrElement.getInternalForcesVector(Bar, currLoadCase);
     }
     internal /*async Task<bool> */void solveSystem(IProgress<(int, string)> progress =null)
       {

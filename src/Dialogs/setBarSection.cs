@@ -122,14 +122,14 @@ public class setBarSection : Form
     {
         cbSections.Items.Clear();
 
-        foreach (var s in App.model.sections)
+        foreach (var s in App.model.Sections)
             cbSections.Items.Add($"{s.ID}: {s.Name}");
 
         if (cbSections.Items.Count > 0)
             cbSections.SelectedIndex = 0;
       
 
-        ShowSection(App.model.sections[0]);
+        ShowSection(App.model.Sections[0]);
     }
 
 
@@ -138,7 +138,7 @@ public class setBarSection : Form
     {
         if (cbSections.SelectedIndex < 0) return;
 
-        var s = App.model.sections[cbSections.SelectedIndex];
+        var s = App.model.Sections[cbSections.SelectedIndex];
 
         ShowSection(s);
     }
@@ -152,7 +152,7 @@ public class setBarSection : Form
 
         App.takeUndoSnapShot();
 
-        var selected = App.model.sections[cbSections.SelectedIndex];
+        var selected = App.model.Sections[cbSections.SelectedIndex];
 
         int nBar = Selection.barMaxIndex;
         var sel =  Selection.getBarsColection();
@@ -161,10 +161,10 @@ public class setBarSection : Form
 
         foreach (var i in sel)
         {
-            var bar = App.model.bars[i];
+            var Bar = App.model.bars[i];
 
-            bar.SectionID = selected.ID;
-            bar.SectionName = selected.Name;
+            Bar.SectionID = selected.ID;
+            Bar.SectionName = selected.Name;
         }
 
         Close();
@@ -172,33 +172,33 @@ public class setBarSection : Form
 
 
 
-    private void ShowSection(section s)
+    private void ShowSection(Section s)
     {
         txtNombre.Text = s.Name;
         cbTipo.SelectedIndex = Array.FindIndex(
             Enum.GetValues<sectType>().Select(v => (int)v).ToArray(),
             v => v == s.Type);
 
-        txtH.Text = uc.lenToUserUnits(s.h).ToString();
-        txtB.Text = uc.lenToUserUnits(s.b).ToString();
-        txtTw.Text = uc.lenToUserUnits(s.tw).ToString();
-        txtTf.Text = uc.lenToUserUnits(s.tf).ToString();
+        txtH.Text = Uc.lenToUserUnits(s.h).ToString();
+        txtB.Text = Uc.lenToUserUnits(s.b).ToString();
+        txtTw.Text = Uc.lenToUserUnits(s.tw).ToString();
+        txtTf.Text = Uc.lenToUserUnits(s.tf).ToString();
 
-        txtAg.Text = uc.areaToUserUnits(s.Ag).ToString();
-        txtIyy.Text = uc.len4ToUserUnits(s.Iyy).ToString();
-        txtIzz.Text = uc.len4ToUserUnits(s.Izz).ToString();
-        txtIyz.Text = uc.len4ToUserUnits(s.Iyz).ToString();
-        txtTor.Text = uc.len4ToUserUnits(s.Tor).ToString();
+        txtAg.Text = Uc.areaToUserUnits(s.Ag).ToString();
+        txtIyy.Text = Uc.len4ToUserUnits(s.Iyy).ToString();
+        txtIzz.Text = Uc.len4ToUserUnits(s.Izz).ToString();
+        txtIyz.Text = Uc.len4ToUserUnits(s.Iyz).ToString();
+        txtTor.Text = Uc.len4ToUserUnits(s.Tor).ToString();
 
-        txtAcyy.Text = uc.areaToUserUnits(s.Acyy).ToString();
-        txtAczz.Text = uc.areaToUserUnits(s.Aczz).ToString();
-        txtSyy.Text = uc.len3ToUserUnits(s.Syy).ToString();
-        txtSzz.Text = uc.len3ToUserUnits(s.Szz).ToString();
+        txtAcyy.Text = Uc.areaToUserUnits(s.Acyy).ToString();
+        txtAczz.Text = Uc.areaToUserUnits(s.Aczz).ToString();
+        txtSyy.Text = Uc.len3ToUserUnits(s.Syy).ToString();
+        txtSzz.Text = Uc.len3ToUserUnits(s.Szz).ToString();
 
-        txtPyy.Text = uc.len4ToUserUnits(s.Pyy).ToString();
-        txtPzz.Text = uc.len4ToUserUnits(s.Pzz).ToString();
-        txtRyy.Text = uc.lenToUserUnits(s.ryy).ToString();
-        txtRzz.Text = uc.lenToUserUnits(s.rzz).ToString();
+        txtPyy.Text = Uc.len4ToUserUnits(s.Pyy).ToString();
+        txtPzz.Text = Uc.len4ToUserUnits(s.Pzz).ToString();
+        txtRyy.Text = Uc.lenToUserUnits(s.ryy).ToString();
+        txtRzz.Text = Uc.lenToUserUnits(s.rzz).ToString();
 
     }
 }

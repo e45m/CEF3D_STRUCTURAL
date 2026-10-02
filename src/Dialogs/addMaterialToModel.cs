@@ -140,14 +140,14 @@ public class addMaterialToModel : Form
         txtNombre.Text = m.Name;
         cbTipo.SelectedIndex = m.Type;
 
-        txtE.Text = uc.forcePerUnitAreaToUserUnits(m.E).ToString();
-        txtG.Text = uc.forcePerUnitAreaToUserUnits(m.G).ToString();
+        txtE.Text = Uc.forcePerUnitAreaToUserUnits(m.E).ToString();
+        txtG.Text = Uc.forcePerUnitAreaToUserUnits(m.G).ToString();
         txtV.Text = m.v.ToString();//adimentional
-        txtW.Text =uc.forceToUserUnits( m.W).ToString();
-        txtM.Text = uc.massToUserUnits(m.M).ToString();
-        txtFc.Text = uc.forcePerUnitAreaToUserUnits(m.fc).ToString();
-        txtFy.Text = uc.forcePerUnitAreaToUserUnits(m.fy).ToString();
-        txtFu.Text = uc.forcePerUnitAreaToUserUnits(m.fu).ToString();
+        txtW.Text =Uc.forceToUserUnits( m.W).ToString();
+        txtM.Text = Uc.massToUserUnits(m.M).ToString();
+        txtFc.Text = Uc.forcePerUnitAreaToUserUnits(m.fc).ToString();
+        txtFy.Text = Uc.forcePerUnitAreaToUserUnits(m.fy).ToString();
+        txtFu.Text = Uc.forcePerUnitAreaToUserUnits(m.fu).ToString();
 
         lblIndex.Text = $"{index + 1} / {App.appData.libMaterials.Count}";
     }
@@ -161,7 +161,7 @@ public class addMaterialToModel : Form
 
         mat.ID = ResolveId(mat.ID);
 
-        App.model.materials.Add(mat);
+        App.model.Materials.Add(mat);
 
     }
 
@@ -200,7 +200,7 @@ public class addMaterialToModel : Form
             var mat = ReadFromUI();
             mat.ID = ResolveId(mat.ID);
             ApplyRules(mat);
-            App.model.materials.Add(mat);
+            App.model.Materials.Add(mat);
            
         };
 
@@ -233,26 +233,26 @@ public class addMaterialToModel : Form
 
 
 
-    private material ReadFromUI()
+    private Material ReadFromUI()
     {
-        return new material
+        return new Material
         {
             Name = txtNombre.Text,
             Type = cbTipo.SelectedIndex,
-            E = uc.pressFromUserUnits(Parse(txtE)),
-            G = uc.pressFromUserUnits(Parse(txtG)),
+            E = Uc.pressFromUserUnits(Parse(txtE)),
+            G = Uc.pressFromUserUnits(Parse(txtG)),
             v = Parse(txtV),//v is adimentional
-            W = uc.forceFromUserUnits(Parse(txtW)),
-            M = uc.massFromUserUnits(Parse(txtM)),
-            fc = uc.pressFromUserUnits(Parse(txtFc)),
-            fy = uc.pressFromUserUnits(Parse(txtFy)),
-            fu = uc.pressFromUserUnits(Parse(txtFu))
+            W = Uc.forceFromUserUnits(Parse(txtW)),
+            M = Uc.massFromUserUnits(Parse(txtM)),
+            fc = Uc.pressFromUserUnits(Parse(txtFc)),
+            fy = Uc.pressFromUserUnits(Parse(txtFy)),
+            fu = Uc.pressFromUserUnits(Parse(txtFu))
         };
     }
 
-    private material materialClone(material m)
+    private Material materialClone(Material m)
     {
-        return new material
+        return new Material
         {
             ID = m.ID,
             Name = m.Name,
@@ -270,13 +270,13 @@ public class addMaterialToModel : Form
 
     private int ResolveId(int id)
     {
-        if (App.model.materials.Any(m => m.ID == id))
-            return App.model.materials.Max(m => m.ID) + 1;
+        if (App.model.Materials.Any(m => m.ID == id))
+            return App.model.Materials.Max(m => m.ID) + 1;
 
         return id;
     }
 
-    private void ApplyRules(material m)
+    private void ApplyRules(Material m)
     {
         switch ((materialType)m.Type)
         {

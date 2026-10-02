@@ -360,7 +360,7 @@ public class adddBarLoad:Form
         for (int i = 0; i < N; i++)
         {
             var indB = idselBars[i];
-            bar barra = App.model.bars[indB];
+            Bar barra = App.model.bars[indB];
             var barID = barra.ID;
 
             var loads = App.model.barDistrLoads.
@@ -383,22 +383,22 @@ public class adddBarLoad:Form
         double L;
         double f1, f2, f3;
         var Sel = Selection.getBarsColection();
-        f1 = uc.forceFromUserUnits(Fx.Text);
-        f2 = uc.forceFromUserUnits(Fy.Text);
-        f3 = uc.forceFromUserUnits(Fz.Text);
+        f1 = Uc.forceFromUserUnits(Fx.Text);
+        f2 = Uc.forceFromUserUnits(Fy.Text);
+        f3 = Uc.forceFromUserUnits(Fz.Text);
         for (int i = 0; i < N; i++)
         {
             indB = Sel[i];
-            bar bar = App.model.bars[indB];
-            Ni = bar.startNode;
-            Nj = bar.endNode;
-            node nodoI = App.model.nodes[Ni];
-            node nodoJ = App.model.nodes[Nj];
+            Bar Bar = App.model.bars[indB];
+            Ni = Bar.startNode;
+            Nj = Bar.endNode;
+            Node nodoI = App.model.nodes[Ni];
+            Node nodoJ = App.model.nodes[Nj];
             L = Mis.calcDist(nodoI, nodoJ);
             var load = new barDistrLoad()
             {
                 ID = App.model.barDistrLoads.Count,
-                BarID = bar.ID,
+                BarID = Bar.ID,
                 Case = App.model.loadCases[Caso.SelectedIndex].ID,
                 Type = RBGlobal.Checked ? 0 : 1,
                 a = RDDist.Checked ? Mis.stringToDouble(a.Text) / L : Mis.stringToDouble(a.Text),

@@ -1,7 +1,7 @@
 ﻿using System.Runtime.InteropServices;
 namespace CEF.matrixImpl
 {
-    internal class tests
+    internal class Tests
     {
         class ConsoleOut
         {

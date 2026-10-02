@@ -75,8 +75,8 @@ public class viewModelDBTree : Form
 
 
                                    parseMetadata.getEnumFieldDisplayValue(typeof(loadCase), Enum.GetNames<LoadCaseType>(), "Type", dataCellObj, rowObj, ref valor);
-                                   parseMetadata.getEnumFieldDisplayValue(typeof(section), Enum.GetNames<sectType>(), "Type", dataCellObj, rowObj, ref valor);
-                                   parseMetadata.getEnumFieldDisplayValue(typeof(material), Enum.GetNames<materialType>(), "Type", dataCellObj, rowObj, ref valor);
+                                   parseMetadata.getEnumFieldDisplayValue(typeof(Section), Enum.GetNames<sectType>(), "Type", dataCellObj, rowObj, ref valor);
+                                   parseMetadata.getEnumFieldDisplayValue(typeof(Material), Enum.GetNames<materialType>(), "Type", dataCellObj, rowObj, ref valor);
                                    parseMetadata.getEnumFieldDisplayValue(typeof(nodalConstraint), Enum.GetNames<MFCType>(), "Type", dataCellObj, rowObj, ref valor);
                                    parseMetadata.useUserUnits(ref valor, dataCellObj);
 
@@ -121,8 +121,8 @@ public class viewModelDBTree : Form
             var (obj, fi) = tf;
             if ("ID" == fi.Name) return;
             if (typeof(loadCase) == obj.GetType() && "Type" == fi.Name) return;//TODO: Function to use the string enum to user UI
-            if (typeof(section) == obj.GetType() && "Type" == fi.Name) return;
-            if (typeof(material) == obj.GetType() && "Type" == fi.Name) return;
+            if (typeof(Section) == obj.GetType() && "Type" == fi.Name) return;
+            if (typeof(Material) == obj.GetType() && "Type" == fi.Name) return;
             if (typeof(nodalConstraint) == obj.GetType() && "Type" == fi.Name) return;
             object newText = Mis.InputBox("Tree view", "Ingres el valor");
             if (newText.ToString() == "") return;
@@ -163,46 +163,46 @@ public class viewModelDBTree : Form
 
         if (Mdta.forceFields.Contains(dataCellObj.Name ?? ""))
         {
-            valor = uc.forceToUserUnits(vc);
+            valor = Uc.forceToUserUnits(vc);
             return true;
 
         }
         if (Mdta.momentFields.Contains(dataCellObj.Name ?? ""))
         {
-            valor = uc.momentToUserUnits(vc);
+            valor = Uc.momentToUserUnits(vc);
             return true;
 
         }
         if (Mdta.pressFields.Contains(dataCellObj.Name ?? ""))
         {
-            valor = uc.pressToUserUnits(vc);
+            valor = Uc.pressToUserUnits(vc);
             return true;
 
 
         }
         if (Mdta.lenFields.Contains(dataCellObj.Name ?? ""))
         {
-            valor = uc.lenToUserUnits(vc);
+            valor = Uc.lenToUserUnits(vc);
             return true;
 
 
         }
         if (Mdta.areaFields.Contains(dataCellObj.Name ?? ""))
         {
-            valor = uc.areaToUserUnits(vc);
+            valor = Uc.areaToUserUnits(vc);
             return true;
 
 
         }
         if (Mdta.len3Fields.Contains(dataCellObj.Name ?? ""))
         {
-            valor = uc.len3ToUserUnits(vc);
+            valor = Uc.len3ToUserUnits(vc);
             return true;
 
         }
         if (Mdta.len4Fields.Contains(dataCellObj.Name ?? ""))
         {
-            valor = uc.len4ToUserUnits(vc);
+            valor = Uc.len4ToUserUnits(vc);
             return true;
 
         }
@@ -219,46 +219,46 @@ public class viewModelDBTree : Form
 
         if (Mdta.forceFields.Contains(dataCellObj.Name ?? ""))
         {
-            valor = uc.forceFromUserUnits(vc);
+            valor = Uc.forceFromUserUnits(vc);
             return true;
 
         }
         if (Mdta.momentFields.Contains(dataCellObj.Name ?? ""))
         {
-            valor = uc.momentFromUserUnits(vc);
+            valor = Uc.momentFromUserUnits(vc);
             return true;
 
         }
         if (Mdta.pressFields.Contains(dataCellObj.Name ?? ""))
         {
-            valor = uc.pressFromUserUnits(vc);
+            valor = Uc.pressFromUserUnits(vc);
             return true;
 
 
         }
         if (Mdta.lenFields.Contains(dataCellObj.Name ?? ""))
         {
-            valor = uc.lenFromUserUnits(vc);
+            valor = Uc.lenFromUserUnits(vc);
             return true;
 
 
         }
         if (Mdta.areaFields.Contains(dataCellObj.Name ?? ""))
         {
-            valor = uc.areaFromUserUnits(vc);
+            valor = Uc.areaFromUserUnits(vc);
             return true;
 
 
         }
         if (Mdta.len3Fields.Contains(dataCellObj.Name ?? ""))
         {
-            valor = uc.len3FromUserUnits(vc);
+            valor = Uc.len3FromUserUnits(vc);
             return true;
 
         }
         if (Mdta.len4Fields.Contains(dataCellObj.Name ?? ""))
         {
-            valor = uc.len4FromUserUnits(vc);
+            valor = Uc.len4FromUserUnits(vc);
             return true;
 
         }

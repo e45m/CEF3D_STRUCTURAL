@@ -365,7 +365,7 @@ public class addpBarLoad: Form
         for (int i = 0; i < N; i++)
         {
             var indB = idselBars[i];
-            bar barra = App.model.bars[indB];
+            Bar barra = App.model.bars[indB];
             var barID = barra.ID;
 
             var loads = App.model.barPunctLoads.
@@ -388,12 +388,12 @@ public class addpBarLoad: Form
         int Ni, Nj, indB;
         double  L;
 
-        var fx = uc.forceFromUserUnits(Fx.Text);
-        var fy = uc.forceFromUserUnits(Fy.Text);
-        var fz = uc.forceFromUserUnits(Fz.Text);
-        var mx = uc.momentFromUserUnits(Mx.Text);
-        var my = uc.momentFromUserUnits(My.Text);
-        var mz = uc.momentFromUserUnits(Mz.Text);
+        var fx = Uc.forceFromUserUnits(Fx.Text);
+        var fy = Uc.forceFromUserUnits(Fy.Text);
+        var fz = Uc.forceFromUserUnits(Fz.Text);
+        var mx = Uc.momentFromUserUnits(Mx.Text);
+        var my = Uc.momentFromUserUnits(My.Text);
+        var mz = Uc.momentFromUserUnits(Mz.Text);
 
         for (int i = 0; i < N; i++)
         {

@@ -2,7 +2,7 @@
 
 static class cadTools
 {
-    public static bool NodeDelete(ref ModelDB db, node p)
+    public static bool NodeDelete(ref ModelDB db, Node p)
     {
         var isFree = !db.bars.Any(b => b.endNode == p.ID || b.startNode == p.ID);
         if (isFree) {
@@ -38,17 +38,17 @@ static class cadTools
         var p = db.nodes[idx];
         return NodeDelete(ref db, p);
     }
-    public static bool BarDelete(ref ModelDB db, bar bar) {
+    public static bool BarDelete(ref ModelDB db, Bar Bar) {
         var isFree = true;
         if (isFree)
         {
-            var idx1 = db.bars.FindIndexByID(bar.ID);
+            var idx1 = db.bars.FindIndexByID(Bar.ID);
             var idx = -1;
-            var id = bar.ID;
+            var id = Bar.ID;
             if (idx1 != -1){
-            var cdb = db.barDistrLoads.Where(b => b.BarID == bar.ID).ToList();
-            var cpb = db.barPunctLoads.Where(b => b.BarID == bar.ID).ToList();
-            var ctb = db.barThermalLoads.Where(b => b.barID == bar.ID).ToList();
+            var cdb = db.barDistrLoads.Where(b => b.BarID == Bar.ID).ToList();
+            var cpb = db.barPunctLoads.Where(b => b.BarID == Bar.ID).ToList();
+            var ctb = db.barThermalLoads.Where(b => b.barID == Bar.ID).ToList();
             foreach (var i in cdb)
             {
                 idx = db.barDistrLoads.FindIndexByID(i.ID);
@@ -72,8 +72,8 @@ static class cadTools
     public static bool BarDelete(ref ModelDB db, int id)
     {
         var idx = db.bars.FindIndexByID(id);
-        var bar = db.bars[idx];
-        return BarDelete(ref db, bar);
+        var Bar = db.bars[idx];
+        return BarDelete(ref db, Bar);
     }
     public static bool NodeLoadDelete(ref ModelDB db, nodalLoad p)
     {
@@ -87,9 +87,9 @@ static class cadTools
         var l = db.nodalLoads[idx];
         return NodeLoadDelete(ref db, l);
     }
-    public static bool BarDistrLoadDelete(ref ModelDB db, barDistrLoad bar)
+    public static bool BarDistrLoadDelete(ref ModelDB db, barDistrLoad Bar)
     {
-        return BarDistrLoadDelete(ref db, bar.ID);
+        return BarDistrLoadDelete(ref db, Bar.ID);
     }
     public static bool BarDistrLoadDelete(ref ModelDB db, int id)
     {
@@ -97,9 +97,9 @@ static class cadTools
         db.barDistrLoads.RemoveAt(idx);
         return true;
     }
-    public static bool BarPunLoadDelete(ref ModelDB db, barPunctLoad bar)
+    public static bool BarPunLoadDelete(ref ModelDB db, barPunctLoad Bar)
     {
-        BarPunLoadDelete(ref db, bar.ID);
+        BarPunLoadDelete(ref db, Bar.ID);
         return false;
     }
     public static bool BarPunLoadDelete(ref ModelDB db, int id)
@@ -108,7 +108,7 @@ static class cadTools
         db.barPunctLoads.RemoveAt(idx);
         return true;
     }
-    public static int  IsNode(ModelDB db, node p, double tol = 0.01)
+    public static int  IsNode(ModelDB db, Node p, double tol = 0.01)
     {
         var id = -1;
         var n = db.nodes.FirstOrDefault(p1 =>
@@ -117,26 +117,26 @@ static class cadTools
             var y = Math.Abs(p.Y - p1.Y) < tol;
             var z = Math.Abs(p.Z - p1.Z) < tol;
             return x && y && z;
-        },/*Default*/new node () { ID=-1});
-        if (n is node mn)
+        },/*Default*/new Node () { ID=-1});
+        if (n is Node mn)
             id = mn.ID;
         return id;
     }
-    public static bool NodeEqual(node p1, node p, double tol = 0.01)
+    public static bool NodeEqual(Node p1, Node p, double tol = 0.01)
     {
         var x = Math.Abs(p.X - p1.X) < tol;
         var y = Math.Abs(p.Y - p1.Y) < tol;
         var z = Math.Abs(p.Z - p1.Z) < tol;
         return x && y && z;
     }
-    public static bool nodeCopy(ref ModelDB db, node nudo, double ofx, double ofy, double ofz,
+    public static bool nodeCopy(ref ModelDB db, Node nudo, double ofx, double ofy, double ofz,
         bool copyLoads=true,bool copyRestr = true, bool copyConstraints = true )
     {
 
         var idx = db.nodes.FindIndexByID(nudo.ID);
         var id = nudo.ID;
 
-        var nnudo = new node()
+        var nnudo = new Node()
         {
             ID = -2,
             label = "",
@@ -227,9 +227,9 @@ static class cadTools
         return true;
        
     }
-    public static bool nodeMove(ref ModelDB db, node nudo, double ofx, double ofy, double ofz)
+    public static bool nodeMove(ref ModelDB db, Node nudo, double ofx, double ofy, double ofz)
     {
-        node p1 = new();
+        Node p1 = new();
         p1.X = nudo.X + ofx;
         p1.Y = nudo.Y + ofy;
         p1.Z = nudo.Z + ofz;
@@ -258,12 +258,12 @@ static class cadTools
         }
         return true;
     }
-    public static bool barMove(ref ModelDB db, bar bar, double ofx, double ofy, double ofz)
+    public static bool barMove(ref ModelDB db, Bar Bar, double ofx, double ofy, double ofz)
     {
-        node p1 = new();
-        node p2 = new();
-        var p01 = db.nodes.First(p => p.ID == bar.startNode);
-        var p02 = db.nodes.First(p => p.ID == bar.endNode);
+        Node p1 = new();
+        Node p2 = new();
+        var p01 = db.nodes.First(p => p.ID == Bar.startNode);
+        var p02 = db.nodes.First(p => p.ID == Bar.endNode);
         p1.X = p01.X + ofx;
         p1.Y = p01.Y + ofy;
         p1.Z = p01.Z + ofz;
@@ -294,17 +294,17 @@ static class cadTools
             db.nodes.Add(p2);
             db.nodalRestraints.Add(new nodalRestraint { ID = p2.ID, });
         }
-        var idx = db.bars.FindIndexByID(bar.ID);
+        var idx = db.bars.FindIndexByID(Bar.ID);
         db.bars[idx].startNode = p1.ID;
         db.bars[idx].endNode = p2.ID;
         return true;
     }
-    public static bool barRotate(ref ModelDB db, bar bar, double afx, double afy, double afz, double[] rp)
+    public static bool barRotate(ref ModelDB db, Bar Bar, double afx, double afy, double afz, double[] rp)
     {
-        node p1 = new();
-        node p2 = new();
-        var p01 = db.nodes.First(p => p.ID == bar.startNode);
-        var p02 = db.nodes.First(p => p.ID == bar.endNode);
+        Node p1 = new();
+        Node p2 = new();
+        var p01 = db.nodes.First(p => p.ID == Bar.startNode);
+        var p02 = db.nodes.First(p => p.ID == Bar.endNode);
         var v1 = new double[,]{ {p01.X -  rp[0] }, { p01.Y - rp[1] }, { p01.Z - rp[2] },{ 1 } };
         var v2 = new double[,]{ {p02.X -  rp[0] }, { p02.Y - rp[1] }, { p02.Z - rp[2] },{ 1 } };
         var MT = getTMatrix(afx, afy, afz);
@@ -326,18 +326,18 @@ static class cadTools
         var indx1 = db.nodes.FindIndexByID(IsNode(db, p1));
         var indx2 = db.nodes.FindIndexByID(IsNode(db, p2));
 
-        var idx = db.bars.FindIndexByID(bar.ID);
+        var idx = db.bars.FindIndexByID(Bar.ID);
         db.bars[idx].startNode = db.nodes[indx1].ID;
         db.bars[idx].endNode = db.nodes[indx2].ID;
         return true;
     }
-    public static bool barCopy(ref ModelDB db, bar bar, double ofx, double ofy, double ofz)
+    public static bool barCopy(ref ModelDB db, Bar Bar, double ofx, double ofy, double ofz)
     {
-        var nbar = new bar();
-        node p1 = new();
-        node p2 = new();
-        var p01 = db.nodes.First(p => p.ID == bar.startNode);
-        var p02 = db.nodes.First(p => p.ID == bar.endNode);
+        var nbar = new Bar();
+        Node p1 = new();
+        Node p2 = new();
+        var p01 = db.nodes.First(p => p.ID == Bar.startNode);
+        var p02 = db.nodes.First(p => p.ID == Bar.endNode);
         p1.X = p01.X + ofx;
         p1.Y = p01.Y + ofy;
         p1.Z = p01.Z + ofz;
@@ -370,24 +370,24 @@ static class cadTools
         nbar.ID = db.bars.Max(b => b.ID) + 1; ; 
         nbar.startNode = p1.ID;
         nbar.endNode = p2.ID;
-        nbar.SectionID = bar.SectionID;
+        nbar.SectionID = Bar.SectionID;
         nbar.label = $"{nbar.ID}";
-        nbar.SectionName = bar.SectionName;
-        nbar.MaterialID = bar.MaterialID;
-        nbar.MaterialName = bar.MaterialName;
-        nbar.releases = bar.releases;
-        nbar.offsetZ = bar.offsetZ;
-        nbar.offsetY = bar.offsetY;
-        nbar.Rotation = bar.Rotation;
-        nbar.unused = bar.unused;
+        nbar.SectionName = Bar.SectionName;
+        nbar.MaterialID = Bar.MaterialID;
+        nbar.MaterialName = Bar.MaterialName;
+        nbar.releases = Bar.releases;
+        nbar.offsetZ = Bar.offsetZ;
+        nbar.offsetY = Bar.offsetY;
+        nbar.Rotation = Bar.Rotation;
+        nbar.unused = Bar.unused;
         db.bars.Add(nbar);
         return true;
     }
-    public static bool barDivide(ref ModelDB db, bar bar,
+    public static bool barDivide(ref ModelDB db, Bar Bar,
         double maxLen = -1, int minSegments = -1)
     {
-        var p01 = db.nodes.First(p => p.ID == bar.startNode);
-        var p02 = db.nodes.First(p => p.ID == bar.endNode);
+        var p01 = db.nodes.First(p => p.ID == Bar.startNode);
+        var p02 = db.nodes.First(p => p.ID == Bar.endNode);
         var L = Math.Sqrt(Math.Pow(p02.X - p01.X, 2) +
             Math.Pow(p02.Y - p01.Y, 2) +
             Math.Pow(p02.Z - p01.Z, 2));
@@ -402,11 +402,11 @@ static class cadTools
         (p02.Y-p01.Y)/n,
         (p02.Z-p01.Z)/n,
         };
-        List<node> pList = [];
+        List<Node> pList = [];
         pList.Add(p01);
         for (int i = 1; i < n; i++)
         {
-            var nod = new node {
+            var nod = new Node {
                 ID = db.nodes.Max(n => n.ID) + 1 + i,
                 label = $"{p01.ID}Seg-{i}",
                 X = p01.X + vec[0] * i,
@@ -417,18 +417,18 @@ static class cadTools
         }
         pList.Add(p02);
 
-        divideBarInPoinList(ref db,bar,pList);
+        divideBarInPoinList(ref db,Bar,pList);
        
         return true;
 
         }
 
 
-    public static bool barDivideAB(ref ModelDB db, bar bar,
+    public static bool barDivideAB(ref ModelDB db, Bar Bar,
         double a_L)
     {
-        var p01 = db.nodes.First(p => p.ID == bar.startNode);
-        var p02 = db.nodes.First(p => p.ID == bar.endNode);
+        var p01 = db.nodes.First(p => p.ID == Bar.startNode);
+        var p02 = db.nodes.First(p => p.ID == Bar.endNode);
         var L = Math.Sqrt(Math.Pow(p02.X - p01.X, 2) +
             Math.Pow(p02.Y - p01.Y, 2) +
             Math.Pow(p02.Z - p01.Z, 2));
@@ -443,10 +443,10 @@ static class cadTools
         (p02.Y-p01.Y)/n,
         (p02.Z-p01.Z)/n,
         };
-        List<node> pList = [];
+        List<Node> pList = [];
         pList.Add(p01);
 
-            var nod = new node
+            var nod = new Node
             {
                 ID = db.nodes.Max(n => n.ID) + 1 ,
                 label = $"{p01.ID}Seg-{1}",
@@ -458,22 +458,22 @@ static class cadTools
         
         pList.Add(p02);
 
-        divideBarInPoinList(ref db, bar, pList);
+        divideBarInPoinList(ref db, Bar, pList);
 
         return true;
 
     }
-   public static void divideBarInPoinList(ref ModelDB db, bar bar, List<node> pList)
+   public static void divideBarInPoinList(ref ModelDB db, Bar Bar, List<Node> pList)
     {
 
         // List<Nodo> pList = [];
-        List<bar> bList = [];
+        List<Bar> bList = [];
         List<barDistrLoad> lcdb = [];
         List<barPunctLoad> lcpb = [];
         List<barThermalLoad> lctb = [];
-        var cdb = db.barDistrLoads.Where(c => c.BarID == bar.ID).ToList();
-        var cpb = db.barPunctLoads.Where(c => c.BarID == bar.ID).ToList();
-        var ctb = db.barThermalLoads.Where(c => c.barID == bar.ID).ToList();
+        var cdb = db.barDistrLoads.Where(c => c.BarID == Bar.ID).ToList();
+        var cpb = db.barPunctLoads.Where(c => c.BarID == Bar.ID).ToList();
+        var ctb = db.barThermalLoads.Where(c => c.barID == Bar.ID).ToList();
         var n = pList.Count-1;
         for (int i = 1; i < n; i++)
         {
@@ -483,20 +483,20 @@ static class cadTools
 
         for (int i = 0; i < n; i++)
         {
-            var nbar = new bar();
+            var nbar = new Bar();
             nbar.ID = db.bars.Max(n => n.ID) + 1 + i;
             nbar.label = $"{nbar.ID}Seg-{i}";
             nbar.startNode = pList[i].ID;
             nbar.endNode = pList[i + 1].ID;
-            nbar.SectionID = bar.SectionID;
+            nbar.SectionID = Bar.SectionID;
             nbar.label = $"{nbar.ID}";
-            nbar.SectionName = bar.SectionName;
-            nbar.MaterialID = bar.MaterialID;
-            nbar.MaterialName = bar.MaterialName;
-            nbar.offsetZ = bar.offsetZ;
-            nbar.offsetY = bar.offsetY;
-            nbar.Rotation = bar.Rotation;
-            nbar.unused = bar.unused;
+            nbar.SectionName = Bar.SectionName;
+            nbar.MaterialID = Bar.MaterialID;
+            nbar.MaterialName = Bar.MaterialName;
+            nbar.offsetZ = Bar.offsetZ;
+            nbar.offsetY = Bar.offsetY;
+            nbar.Rotation = Bar.Rotation;
+            nbar.unused = Bar.unused;
             bList.Add(nbar);
             foreach (var dl in cdb)
             {
@@ -568,14 +568,14 @@ static class cadTools
                 lctb.Add(nl);
             }
         }
-        var rel = bar.releases;
+        var rel = Bar.releases;
         int mask = (1 << 6) - 1;
         var der = rel & mask;
         var izq = rel & (mask << 6);
         bList[0].releases = der;
         bList[n - 1].releases = izq;
-        int idx = db.bars.FindIndexByID(bar.ID);
-        if (idx == -1) throw new Exception($"Barra {bar.ID}ID = -1");
+        int idx = db.bars.FindIndexByID(Bar.ID);
+        if (idx == -1) throw new Exception($"Barra {Bar.ID}ID = -1");
         db.bars.RemoveAt(idx
             );
         foreach (var dl in cdb)
@@ -638,7 +638,7 @@ static class cadTools
 }
 
 
-    public static double[] calSecProfile(section secc, int segms = 1, int offsety = 0, int offsetz = 0)
+    public static double[] calSecProfile(Section secc, int segms = 1, int offsety = 0, int offsetz = 0)
     {
         double[] pv = Array.Empty<double>();
         var tipo = (sectType)secc.Type;

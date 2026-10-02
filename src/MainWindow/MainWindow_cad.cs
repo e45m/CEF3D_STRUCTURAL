@@ -42,7 +42,7 @@ public partial class MainWindow
         App.takeUndoSnapShot();
 
         var id = App.model.nodes.Count>0?App.model.nodes.Max(n => n.ID) + 1:1;
-        var np = new node() { ID = id,label=$"{id}", X= coords[0], Y = coords[1],Z= coords[2] };
+        var np = new Node() { ID = id,label=$"{id}", X= coords[0], Y = coords[1],Z= coords[2] };
         App.model.nodes.Add(np);
         var nr = new nodalRestraint { ID = id };
         App.model.nodalRestraints.Add(nr);
@@ -82,7 +82,7 @@ public partial class MainWindow
                 var na = App.model.nodes[S1[0]];
                 var nb = App.model.nodes[S1[1]];
                 var dis = Math.Round(Mis.calcDist(na, nb), 3);
-                text += $"n1: {na.ID} n2: {nb.ID} l = {uc.lenToUserUnits(dis)} \n";
+                text += $"n1: {na.ID} n2: {nb.ID} l = {Uc.lenToUserUnits(dis)} \n";
 
             MessageBox.Show(text, I18n.Distance);
         }
@@ -111,7 +111,7 @@ public partial class MainWindow
                 var na = App.model.nodes.First(p => p.ID == ba.startNode);
                 var nb = App.model.nodes.First(p => p.ID == ba.endNode);
                 var dis = Math.Round(Mis.calcDist(na, nb), 3);
-                text += $"{I18n.Bar}  {ba.ID} n1:  {na.ID} n2:  {nb.ID}   l = {uc.lenToUserUnits(dis)} \n" ;
+                text += $"{I18n.Bar}  {ba.ID} n1:  {na.ID} n2:  {nb.ID}   l = {Uc.lenToUserUnits(dis)} \n" ;
 
             }
                 MessageBox.Show(text, I18n.Info);
@@ -181,9 +181,9 @@ public partial class MainWindow
             if (!double.TryParse(tbOY.Text, out ofy)) ofy = 0;
             if (!double.TryParse(tbOZ.Text, out ofz)) ofz = 0;
 
-            ofx = uc.lenFromUserUnits(ofx);
-            ofy = uc.lenFromUserUnits(ofy);
-            ofz = uc.lenFromUserUnits(ofz);
+            ofx = Uc.lenFromUserUnits(ofx);
+            ofy = Uc.lenFromUserUnits(ofy);
+            ofz = Uc.lenFromUserUnits(ofz);
 
         }
         App.takeUndoSnapShot();
@@ -247,9 +247,9 @@ public partial class MainWindow
             if (!double.TryParse(tbOZ.Text, out ofz)) ofz = 0; ;
 
 
-            ofx = uc.lenFromUserUnits(ofx);
-            ofy = uc.lenFromUserUnits(ofy);
-            ofz = uc.lenFromUserUnits(ofz);
+            ofx = Uc.lenFromUserUnits(ofx);
+            ofy = Uc.lenFromUserUnits(ofy);
+            ofz = Uc.lenFromUserUnits(ofz);
 
         }
         App.takeUndoSnapShot();
@@ -319,7 +319,7 @@ public partial class MainWindow
     {
         var n = Selection.barsMaxIndx + 1;
         var S = Selection.getBarsColection();
-        var sid = new bar[n];
+        var sid = new Bar[n];
         Selection.Clear();
 
         double afx ;
@@ -373,9 +373,9 @@ public partial class MainWindow
             if (!double.TryParse(tbz.Text, out z)) z = 0;
 
 
-           x = uc.lenFromUserUnits(x);
-           y = uc.lenFromUserUnits(y);
-           z = uc.lenFromUserUnits(z);
+           x = Uc.lenFromUserUnits(x);
+           y = Uc.lenFromUserUnits(y);
+           z = Uc.lenFromUserUnits(z);
         }
         App.takeUndoSnapShot();
 
@@ -436,9 +436,9 @@ public partial class MainWindow
             if (!double.TryParse(tbDirX.Text, out dx)) dx = 0;
             if (!double.TryParse(tbDirY.Text, out dy)) dz = 0;
 
-            dx = uc.lenFromUserUnits(dx);
-            dy = uc.lenFromUserUnits(dy);
-            dz = uc.lenFromUserUnits(dz);
+            dx = Uc.lenFromUserUnits(dx);
+            dy = Uc.lenFromUserUnits(dy);
+            dz = Uc.lenFromUserUnits(dz);
 
             App.takeUndoSnapShot();
 
@@ -531,8 +531,8 @@ public partial class MainWindow
         int[] bars =  Selection.getBarsColection();
         var pointBars = bars?.ToList().SelectMany(b =>
         {
-            var bar = App.model.bars.First(br => br.ID == b);
-            return new[] { bar.startNode, bar.endNode };
+            var Bar = App.model.bars.First(br => br.ID == b);
+            return new[] { Bar.startNode, Bar.endNode };
         }).ToList()?? null;
 
         if (points == null && pointBars == null) return;
@@ -597,7 +597,7 @@ public partial class MainWindow
             if(rbDist.Checked)
             {
                 dist = true;
-                val = uc.lenFromUserUnits(val);
+                val = Uc.lenFromUserUnits(val);
             }
             else
             {
@@ -619,7 +619,7 @@ public partial class MainWindow
         {
             var b = App.model.bars.FirstOrDefault(
                 b => b.ID == sid[i],
-                new bar { ID = -1 });
+                new Bar { ID = -1 });
             if (sid[i] == -1 || b.ID == -1) break;
 
             if (dist)
@@ -647,11 +647,11 @@ public partial class MainWindow
         int[] selectedNods = Selection.getNodesColection();
 
         var selBars = new barGeom[n];
-        var selNods = new node[m];
+        var selNods = new Node[m];
 
         App.takeUndoSnapShot();
 
-        Dictionary<int, List<node>> Puntos = [];
+        Dictionary<int, List<Node>> Puntos = [];
         int j = 0;
         foreach (int i in selectedBars)
         {
@@ -711,11 +711,11 @@ public partial class MainWindow
         int[] selectedNods = Selection.getNodesColection();
 
         var selBars = new barGeom[n];
-        var selNods = new node[m];
+        var selNods = new Node[m];
       
         App.takeUndoSnapShot();
 
-        Dictionary<int , List<node>> Puntos = [];
+        Dictionary<int , List<Node>> Puntos = [];
 
         int j = 0;
         foreach(int i in selectedBars)
@@ -776,11 +776,11 @@ public partial class MainWindow
         int[] selectedNods = Selection.getNodesColection();
 
         var selBars = new barGeom[n];
-        var selNods = new node[m];
+        var selNods = new Node[m];
 
         App.takeUndoSnapShot();
 
-        Dictionary<int, List<node>> Puntos = [];
+        Dictionary<int, List<Node>> Puntos = [];
 
         int j = 0;
         foreach (int i in selectedBars)
@@ -926,7 +926,7 @@ public partial class MainWindow
                     (bg1.Bar.startNode == nj2.ID || bg1.Bar.endNode == nj2.ID)) 
                   return true;
 
-                node checkIntersect(barGeom b, node n)
+                Node checkIntersect(barGeom b, Node n)
                 {
                   return ( b.Bar.startNode == n.ID || b.Bar.endNode == n.ID)? null: space3d.NodeIntersect(b, n);
 

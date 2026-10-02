@@ -276,19 +276,19 @@ public  class defineNewCoordSys:Form
         cgz = CoordSisDataset.Tables["Z_Grid"].Rows.Count;
 
         for (i = 0; i < cgx; i++)        
-            App.model.gridCoordsX.Add(new coordinate() { ID = App.model.gridCoordsX.Count ,
+            App.model.gridCoordsX.Add(new Coordinate() { ID = App.model.gridCoordsX.Count ,
                 Coord = (double)(CoordSisDataset.Tables["X_Grid"].Rows[i]["Coord"])
             ,coordSys = nuevosist
             });
         
         for (i = 0; i < cgy; i++)        
-            App.model.gridCoordsY.Add(new coordinate() { ID = App.model.gridCoordsY.Count ,
+            App.model.gridCoordsY.Add(new Coordinate() { ID = App.model.gridCoordsY.Count ,
                 Coord = (double)(CoordSisDataset.Tables["Y_Grid"].Rows[i]["Coord"]),
                 coordSys = nuevosist
             });
                 
         for (i = 0; i < cgz; i++)
-             App.model.gridCoordsZ.Add(new coordinate() {  ID = App.model.gridCoordsZ.Count,
+             App.model.gridCoordsZ.Add(new Coordinate() {  ID = App.model.gridCoordsZ.Count,
                 Coord = (double)(CoordSisDataset.Tables["Z_Grid"].Rows[i]["Coord"]) ,
                 coordSys = nuevosist
             });        

@@ -120,7 +120,7 @@ public partial class viewFrame
     {
         var id = App.model.nodes.Count > 0 ? App.model.nodes.Max( n => n.ID) + 1 : 1;
         nodeIndex.Id = id;
-        var newNode = new node()
+        var newNode = new Node()
         {
             ID =  nodeIndex.Id,
             label = $"{id}",
@@ -150,22 +150,22 @@ public partial class viewFrame
         int ID_Seccion_Por_Omision = App.sectionDefaultID;
         if (ID_Material_Por_Omision == -1)
         {
-            if (App.model.materials.Count == 0)  
-            App.model.materials.Add(new material() { Name = "None", ID = 0} );
-            ID_Material_Por_Omision = App.model.materials[0].ID;
+            if (App.model.Materials.Count == 0)  
+            App.model.Materials.Add(new Material() { Name = "None", ID = 0} );
+            ID_Material_Por_Omision = App.model.Materials[0].ID;
         }
         if (ID_Seccion_Por_Omision == -1)
         {
-            if (App.model.sections.Count == 0) 
-            App.model.sections.Add(new section() { Name = "None", ID = 0});
-            ID_Seccion_Por_Omision = App.model.sections[0].ID;
+            if (App.model.Sections.Count == 0) 
+            App.model.Sections.Add(new Section() { Name = "None", ID = 0});
+            ID_Seccion_Por_Omision = App.model.Sections[0].ID;
         }
-        string Nombre_Material_Por_Omision = App.model.materials.First(m => m.ID == ID_Material_Por_Omision).Name;
-        string Nombre_Seccion_Por_Omision = App.model.sections.First(s => s.ID == ID_Seccion_Por_Omision).Name;
+        string Nombre_Material_Por_Omision = App.model.Materials.First(m => m.ID == ID_Material_Por_Omision).Name;
+        string Nombre_Seccion_Por_Omision = App.model.Sections.First(s => s.ID == ID_Seccion_Por_Omision).Name;
         int DivBarra = App.model.getParamValue(Mdta.divideIntoSections);
 
         var _id = App.model.bars.Count > 0 ? App.model.bars.Max( b => b.ID) + 1 : 1;
-        var newBar = new bar()
+        var newBar = new Bar()
         {
             ID = _id,
             label = $"{_id} ",
@@ -185,7 +185,7 @@ public partial class viewFrame
         resetCanvasGeometry();
     }
 
-    point3D getPointFromDataBase(node pp)
+    point3D getPointFromDataBase(Node pp)
     {
        
        var p =  new point3D() {

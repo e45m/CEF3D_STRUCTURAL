@@ -28,11 +28,11 @@ internal static class DataMagrIO
         W("programParams",
             mdb.programParams.Select(x =>
                 $"Name={x.Name}\tValue={x.Value}"));
-        W("materials",
-            mdb.materials.Select(x =>
+        W("Materials",
+            mdb.Materials.Select(x =>
                 $"ID={x.ID}\tName={x.Name}\tType={x.Type}\tv={x.v}\tE={x.E}\tG={x.G}\tM={x.M}\tW={x.W}\tfc={x.fc}\tfy={x.fy}\tfu={x.fu}"));
-        W("sections",
-            mdb.sections.Select(x =>
+        W("Sections",
+            mdb.Sections.Select(x =>
                 $"ID={x.ID}\tName={x.Name}\tType={x.Type}\th={x.h}\tb={x.b}\ttw={x.tw}\ttf={x.tf}\tAg={x.Ag}\tIyy={x.Iyy}\tIzz={x.Izz}\tIyz={x.Iyz}\tTor={x.Tor}\tAcyy={x.Acyy}\tAczz={x.Aczz}\tSyy={x.Syy}\tSzz={x.Szz}\tPyy={x.Pyy}\tPzz={x.Pzz}\tryy={x.ryy}\trzz={x.rzz}"));
         W("gridCoordsX", mdb.gridCoordsX.Select(x => $"ID={x.ID}\tCoord={x.Coord}\tcoordSys={x.coordSys}"));
         W("gridCoordsY", mdb.gridCoordsY.Select(x => $"ID={x.ID}\tCoord={x.Coord}\tcoordSys={x.coordSys}"));
@@ -60,10 +60,10 @@ internal static class DataMagrIO
                 $"ID={x.ID}\tNodeID={x.NodeID}\tCase={x.Case}\tFx={x.Fx}\tFy={x.Fy}\tFz={x.Fz}\tMx={x.Mx}\tMy={x.My}\tMz={x.Mz}"));
         W("barDistrLoads",
             mdb.barDistrLoads.Select(x =>
-                $"ID={x.ID}\ta={x.a}\tb={x.b}\tBarID={x.BarID}\tCase={x.Case}\tFx={x.Fx}\tFy={x.Fy}\tFz={x.Fz}\tMx={x.Mx}\tMy={x.My}\tMz={x.Mz}"));
+                $"ID={x.ID}\ta={x.a}\tb={x.b}\tBarID={x.BarID}\tCase={x.Case}\tType={x.Type}\tFx={x.Fx}\tFy={x.Fy}\tFz={x.Fz}\tMx={x.Mx}\tMy={x.My}\tMz={x.Mz}"));
         W("barPunctLoads",
             mdb.barPunctLoads.Select(x =>
-                $"ID={x.ID}\ta={x.a}\tBarID={x.BarID}\tCase={x.Case}\tFx={x.Fx}\tFy={x.Fy}\tFz={x.Fz}\tMx={x.Mx}\tMy={x.My}\tMz={x.Mz}"));
+                $"ID={x.ID}\ta={x.a}\tBarID={x.BarID}\tCase={x.Case}\tType={x.Type}\tFx={x.Fx}\tFy={x.Fy}\tFz={x.Fz}\tMx={x.Mx}\tMy={x.My}\tMz={x.Mz}"));
         W("barThermalLoads",
             mdb.barThermalLoads.Select(x =>
                 $"ID={x.ID}\tbarID={x.barID}\tCase={x.Case}\textTheperature={x.extTheperature}\tintThemperature={x.intThemperature}\tb={x.b}\th={x.h}"));
@@ -128,11 +128,11 @@ internal static class DataMagrIO
                 case "programParams":
                     programParams(line);
                     break;
-                case "materials":
-                    materials(line);
+                case "Materials":
+                    Materials(line);
                     break;
-                case "sections":
-                    sections(line);
+                case "Sections":
+                    Sections(line);
                     break;
                 case "gridCoordsX":
                     gridCoordsX(line);
@@ -207,9 +207,9 @@ internal static class DataMagrIO
         }
         mdb.programParams.Add(reg);
     }
-    static void materials(string linea)
+    static void Materials(string linea)
     {
-       var reg = new material();
+       var reg = new Material();
         var l = linea.Split("\t");
         foreach (var x in l)
         {
@@ -254,11 +254,11 @@ internal static class DataMagrIO
                     break;
             }
         }
-        mdb.materials.Add(reg);
+        mdb.Materials.Add(reg);
     }
-    static void sections(string linea)
+    static void Sections(string linea)
     {
-        var reg = new section();
+        var reg = new Section();
         var l = linea.Split("\t");
         foreach (var x in l)
         {
@@ -348,11 +348,11 @@ internal static class DataMagrIO
                     break;
             }
         }
-        mdb.sections.Add(reg);
+        mdb.Sections.Add(reg);
     }
     static void gridCoordsX(string linea)
     {
-         var reg = new coordinate();
+         var reg = new Coordinate();
         var l = linea.Split("\t");
         foreach (var x in l)
         {
@@ -377,7 +377,7 @@ internal static class DataMagrIO
     }
     static void gridCoordsY(string linea)
     {
-        var reg = new coordinate();
+        var reg = new Coordinate();
         var l = linea.Split("\t");
         foreach (var x in l)
         {
@@ -402,7 +402,7 @@ internal static class DataMagrIO
     }
     static void gridCoordsZ(string linea)
     {
-        var reg = new coordinate();
+        var reg = new Coordinate();
         var l = linea.Split("\t");
         foreach (var x in l)
         {
@@ -427,7 +427,7 @@ internal static class DataMagrIO
     }
     static void nodes(string linea)
     {
-        var reg = new node();
+        var reg = new Node();
         var l = linea.Split("\t");
         foreach (var x in l)
         {
@@ -458,7 +458,7 @@ internal static class DataMagrIO
     }
     static void bars(string linea)
     {
-        var reg = new bar();
+        var reg = new Bar();
         var l = linea.Split("\t");
         foreach (var x in l)
         {
@@ -702,7 +702,10 @@ internal static class DataMagrIO
                 case "BarID":
                     reg.BarID = int.Parse(value);
                     break;
-                case "Case":
+                case "Type":
+                    reg.Type = int.Parse(value);
+                    break;                
+				case "Case":
                     reg.Case = int.Parse(value);
                     break;
                 case "Fx":
@@ -747,6 +750,9 @@ internal static class DataMagrIO
                     break;
                 case "BarID":
                     reg.BarID = int.Parse(value);
+                    break;
+				case "Type":
+                    reg.Type = int.Parse(value);
                     break;
                 case "Case":
                     reg.Case = int.Parse(value);

@@ -3,7 +3,7 @@
 namespace CEF.BarrElement;
 internal class barrElement
 {
-    internal bar mBar { get; set; }
+    internal Bar mBar { get; set; }
     private static Dictionary<int,Dictionary<int,List<barDistrLoad>>> barDistrLoadsIndx = [];
     private static Dictionary<int,Dictionary<int,List<barPunctLoad>>> barPunctoadsIndx = [];
     private static Dictionary<int,Dictionary<int,List<nodalLoad>>> nodalLoadsIndx = [];
@@ -38,7 +38,7 @@ internal class barrElement
         flagDics = true;
     }
    static double[,] T1gTM = new double[3, 3];
-    internal static void getTransMatrix(bar barra,  double[,] trans)
+    internal static void getTransMatrix(Bar barra,  double[,] trans)
     {
         var m_mBD = App.model;
         int i, j, i2, indxI, indxJ;
@@ -103,7 +103,7 @@ internal class barrElement
     }
     static double[,] T = new double[12, 12];
     static double[,] strans = new double[3, 3];
-    internal static void getKedMatrix(bar mBar, double[,] ke)
+    internal static void getKedMatrix(Bar mBar, double[,] ke)
     {
         var m_mBD = App.model;
         int i, j, indI, indJ;
@@ -119,14 +119,14 @@ internal class barrElement
         deltay = nJ.Y - nI.Y;
         deltaz = nJ.Z - nI.Z;
         L = Math.Sqrt(deltax * deltax + deltay * deltay + deltaz * deltaz);
-        var materialId = m_mBD.materials.FindIndexByID(mBar.MaterialID);
-        var SectionId = m_mBD.sections.FindIndexByID(mBar.SectionID);
+        var materialId = m_mBD.Materials.FindIndexByID(mBar.MaterialID);
+        var SectionId = m_mBD.Sections.FindIndexByID(mBar.SectionID);
         if ((materialId == -1))
             throw new Exception($"Error en la asignacion de los materiales:  barra {mBar.ID}  \nMaterial ID:  {mBar.MaterialID} ");
         if ((SectionId == -1))
             throw new Exception($"Error en la asignacion de seccion:  barra {mBar.ID}  \nSeccion ID:  {mBar.SectionID} ");
-        var material = m_mBD.materials[materialId];
-        var section = m_mBD.sections[SectionId];
+        var Material = m_mBD.Materials[materialId];
+        var Section = m_mBD.Sections[SectionId];
         double dy = 0;
         double dz = 0;
         switch (mBar.offsetY)
@@ -135,10 +135,10 @@ internal class barrElement
                 dy = 0.0;
                 break;
             case 1:
-                dy = -section.b / 2;
+                dy = -Section.b / 2;
                 break;
             case 2:
-                dy = section.b / 2;
+                dy = Section.b / 2;
                 break;
         }
         switch (mBar.offsetZ)
@@ -147,22 +147,22 @@ internal class barrElement
                 dz = 0.0;
                 break;
             case 1:
-                dz = -section.h / 2;
+                dz = -Section.h / 2;
                 break;
             case 2:
-                dz = section.h / 2;
+                dz = Section.h / 2;
                 break;
         }
-        double Iyy_t = section.Iyy + section.Ag * dz * dz;
-        double Izz_t = section.Izz + section.Ag * dy * dy;
-        double EA_L = material.E * section.Ag / L;
-        double EIzX12_L3 = 12 * material.E * Izz_t / (L * L * L);
-        double EIyX12_L3 = 12 * material.E * Iyy_t / (L * L * L);
-        double EIyX4_L = 4 * material.E * Iyy_t/L;
-        double EIzX4_L = 4 * material.E * Izz_t/L;
-        double EIzX6_L2 = 6 * material.E * Izz_t / (L * L);
-        double EIyX6_L2 = 6 * material.E * Iyy_t / (L * L);
-        double GJ_L = material.G * section.Tor / L;
+        double Iyy_t = Section.Iyy + Section.Ag * dz * dz;
+        double Izz_t = Section.Izz + Section.Ag * dy * dy;
+        double EA_L = Material.E * Section.Ag / L;
+        double EIzX12_L3 = 12 * Material.E * Izz_t / (L * L * L);
+        double EIyX12_L3 = 12 * Material.E * Iyy_t / (L * L * L);
+        double EIyX4_L = 4 * Material.E * Iyy_t/L;
+        double EIzX4_L = 4 * Material.E * Izz_t/L;
+        double EIzX6_L2 = 6 * Material.E * Izz_t / (L * L);
+        double EIyX6_L2 = 6 * Material.E * Iyy_t / (L * L);
+        double GJ_L = Material.G * Section.Tor / L;
         Array.Clear(ke, 0, ke.Length);
         ke[0, 0] = EA_L;
         ke[6, 0] = -EA_L;
@@ -262,7 +262,7 @@ internal class barrElement
     static double[] _b = new double[elemDim];
     static double [] ha = new double[6];
     static double [] hb = new double[6];
-    internal static void getLoadVector(bar mBar, ref double[] loadVect, int currLoadCase)
+    internal static void getLoadVector(Bar mBar, ref double[] loadVect, int currLoadCase)
     {
         var m_mDB = App.model;
         const int elemDim = 12;
@@ -419,7 +419,7 @@ internal class barrElement
     static double[] localLoadVect = new double[elemDim];
     static double[] nodalForces = new double[elemDim];
     static double[,] elemKMtrx = new double[elemDim, elemDim];
-    internal static void getInternalPdForcesVector(bar barra, int casoCargaActual, 
+    internal static void getInternalPdForcesVector(Bar barra, int casoCargaActual, 
         in double[] p, 
         out double Ax1, out double Ax2, out double L, out int idxI, out int idxJ)
     {
@@ -489,7 +489,7 @@ internal class barrElement
         }
         Ax1 = nodalForces[0]; Ax2 =  nodalForces[6];
     }
-    internal static void getInternalForcesVector(bar mBar, int casoCargaActual)
+    internal static void getInternalForcesVector(Bar mBar, int casoCargaActual)
     {
         var m_mDB = App.model;
         Array.Clear(trans, 0, trans.Length);

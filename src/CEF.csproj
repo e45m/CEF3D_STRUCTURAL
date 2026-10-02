@@ -10,8 +10,8 @@
 	<!-- <WarningLevel>0</WarningLevel> -->
 
 	<NoWarn>
-		$(NoWarn);
-		CS8981 <!-- Type name contains only lowercase ASCII characters -->
+		$(NoWarn)
+		<!--CS8981  Type name contains only lowercase ASCII characters -->
 
 	</NoWarn>
 

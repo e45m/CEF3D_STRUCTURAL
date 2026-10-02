@@ -134,7 +134,7 @@ public partial class MainWindow
 
      var send = (ToolStripComboBox)sender;
        
-     uc.ChangeUc(send.Text);
+     Uc.ChangeUc(send.Text);
      App.model.setParamText(Mdta.units, send.Text);
      modelView A; 
      List<Form> listChild;

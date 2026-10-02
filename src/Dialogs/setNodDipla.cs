@@ -307,8 +307,8 @@ public  class setNodDipla : Form
         for (int i = 0; i < N; i++)
         {
             var indNod = idselNods[i];
-            node node = App.model.nodes[indNod];
-            var nodID = node.ID;
+            Node Node = App.model.nodes[indNod];
+            var nodID = Node.ID;
 
             var loads = App.model.nodalDisplacements.
                 Where(l => l.ID == nodID && l.Case == Case).Select(l => l.ID).ToList();
@@ -334,12 +334,12 @@ public  class setNodDipla : Form
         {
             index = App.model.nodes[Sel[i]].ID;
             App.model.nodalDisplacements[index].ID = Sel[i];
-            App.model.nodalDisplacements[index].dx = uc.lenFromUserUnits(dx.Text);
-            App.model.nodalDisplacements[index].dy = uc.lenFromUserUnits(dy.Text);
-            App.model.nodalDisplacements[index].dz = uc.lenFromUserUnits(dz.Text);
-            App.model.nodalDisplacements[index].rx = uc.lenFromUserUnits(rx.Text);
-            App.model.nodalDisplacements[index].ry = uc.lenFromUserUnits(ry.Text);
-            App.model.nodalDisplacements[index].rz = uc.lenFromUserUnits(rz.Text);
+            App.model.nodalDisplacements[index].dx = Uc.lenFromUserUnits(dx.Text);
+            App.model.nodalDisplacements[index].dy = Uc.lenFromUserUnits(dy.Text);
+            App.model.nodalDisplacements[index].dz = Uc.lenFromUserUnits(dz.Text);
+            App.model.nodalDisplacements[index].rx = Uc.lenFromUserUnits(rx.Text);
+            App.model.nodalDisplacements[index].ry = Uc.lenFromUserUnits(ry.Text);
+            App.model.nodalDisplacements[index].rz = Uc.lenFromUserUnits(rz.Text);
         }
     }
     }

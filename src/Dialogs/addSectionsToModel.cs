@@ -167,26 +167,26 @@ public class addSectionsToModel : Form
         txtNombre.Text = s.Name;
         cbTipo.SelectedIndex = Array.FindIndex(secTypeVals,v=>v== s.Type);
 
-        txtH.Text =uc.lenToUserUnits(s.h).ToString();
-        txtB.Text = uc.lenToUserUnits(s.b).ToString();
-        txtTw.Text = uc.lenToUserUnits(s.tw).ToString();
-        txtTf.Text = uc.lenToUserUnits(s.tf).ToString();
+        txtH.Text =Uc.lenToUserUnits(s.h).ToString();
+        txtB.Text = Uc.lenToUserUnits(s.b).ToString();
+        txtTw.Text = Uc.lenToUserUnits(s.tw).ToString();
+        txtTf.Text = Uc.lenToUserUnits(s.tf).ToString();
 
-        txtAg.Text =uc.areaToUserUnits(s.Ag).ToString();
-        txtIyy.Text =uc.len4ToUserUnits(s.Iyy).ToString();
-        txtIzz.Text = uc.len4ToUserUnits(s.Izz).ToString();
-        txtIyz.Text = uc.len4ToUserUnits(s.Iyz).ToString();
-        txtTor.Text = uc.len4ToUserUnits(s.Tor).ToString();
+        txtAg.Text =Uc.areaToUserUnits(s.Ag).ToString();
+        txtIyy.Text =Uc.len4ToUserUnits(s.Iyy).ToString();
+        txtIzz.Text = Uc.len4ToUserUnits(s.Izz).ToString();
+        txtIyz.Text = Uc.len4ToUserUnits(s.Iyz).ToString();
+        txtTor.Text = Uc.len4ToUserUnits(s.Tor).ToString();
 
-        txtAcyy.Text =uc.areaToUserUnits(s.Acyy).ToString();
-        txtAczz.Text =uc.areaToUserUnits(s.Aczz).ToString();
-        txtSyy.Text = uc.len3ToUserUnits(s.Syy).ToString();
-        txtSzz.Text = uc.len3ToUserUnits(s.Szz).ToString();
+        txtAcyy.Text =Uc.areaToUserUnits(s.Acyy).ToString();
+        txtAczz.Text =Uc.areaToUserUnits(s.Aczz).ToString();
+        txtSyy.Text = Uc.len3ToUserUnits(s.Syy).ToString();
+        txtSzz.Text = Uc.len3ToUserUnits(s.Szz).ToString();
 
-        txtPyy.Text =uc.len4ToUserUnits(s.Pyy).ToString();
-        txtPzz.Text =uc.len4ToUserUnits(s.Pzz).ToString();
-        txtRyy.Text =uc.lenToUserUnits(s.ryy).ToString();
-        txtRzz.Text =uc.lenToUserUnits(s.rzz).ToString();
+        txtPyy.Text =Uc.len4ToUserUnits(s.Pyy).ToString();
+        txtPzz.Text =Uc.len4ToUserUnits(s.Pzz).ToString();
+        txtRyy.Text =Uc.lenToUserUnits(s.ryy).ToString();
+        txtRzz.Text =Uc.lenToUserUnits(s.rzz).ToString();
 
         lblIndex.Text = $"{index + 1} / {App.appData.libSections.Count}";
 
@@ -200,7 +200,7 @@ public class addSectionsToModel : Form
 
         sec.ID = ResolveId(sec.ID);
 
-        App.model.sections.Add(sec);
+        App.model.Sections.Add(sec);
 
     }
 
@@ -238,7 +238,7 @@ public class addSectionsToModel : Form
             var sec = ReadFromUI();
             sec.ID = ResolveId(sec.ID);
             ApplyRules(sec);
-            App.model.sections.Add(sec);
+            App.model.Sections.Add(sec);
             ShowSection(_currentIndex);
 
 
@@ -297,7 +297,7 @@ public class addSectionsToModel : Form
 
         ApplyRules(sec);
 
-        App.model.sections.Add(sec);
+        App.model.Sections.Add(sec);
 
     }
 
@@ -309,61 +309,61 @@ public class addSectionsToModel : Form
 
         ApplyRules(s);     
 
-        txtH.Text = uc.lenToUserUnits(s.h).ToString();
-        txtB.Text = uc.lenToUserUnits(s.b).ToString();
-        txtTw.Text = uc.lenToUserUnits(s.tw).ToString();
-        txtTf.Text = uc.lenToUserUnits(s.tf).ToString();
+        txtH.Text = Uc.lenToUserUnits(s.h).ToString();
+        txtB.Text = Uc.lenToUserUnits(s.b).ToString();
+        txtTw.Text = Uc.lenToUserUnits(s.tw).ToString();
+        txtTf.Text = Uc.lenToUserUnits(s.tf).ToString();
 
-        txtAg.Text = uc.areaToUserUnits(s.Ag).ToString();
-        txtIyy.Text = uc.len4ToUserUnits(s.Iyy).ToString();
-        txtIzz.Text = uc.len4ToUserUnits(s.Izz).ToString();
-        txtIyz.Text = uc.len4ToUserUnits(s.Iyz).ToString();
-        txtTor.Text = uc.len4ToUserUnits(s.Tor).ToString();
+        txtAg.Text = Uc.areaToUserUnits(s.Ag).ToString();
+        txtIyy.Text = Uc.len4ToUserUnits(s.Iyy).ToString();
+        txtIzz.Text = Uc.len4ToUserUnits(s.Izz).ToString();
+        txtIyz.Text = Uc.len4ToUserUnits(s.Iyz).ToString();
+        txtTor.Text = Uc.len4ToUserUnits(s.Tor).ToString();
 
-        txtAcyy.Text = uc.areaToUserUnits(s.Acyy).ToString();
-        txtAczz.Text = uc.areaToUserUnits(s.Aczz).ToString();
-        txtSyy.Text = uc.len3ToUserUnits(s.Syy).ToString();
-        txtSzz.Text = uc.len3ToUserUnits(s.Szz).ToString();
+        txtAcyy.Text = Uc.areaToUserUnits(s.Acyy).ToString();
+        txtAczz.Text = Uc.areaToUserUnits(s.Aczz).ToString();
+        txtSyy.Text = Uc.len3ToUserUnits(s.Syy).ToString();
+        txtSzz.Text = Uc.len3ToUserUnits(s.Szz).ToString();
 
-        txtPyy.Text = uc.len4ToUserUnits(s.Pyy).ToString();
-        txtPzz.Text = uc.len4ToUserUnits(s.Pzz).ToString();
-        txtRyy.Text = uc.lenToUserUnits(s.ryy).ToString();
-        txtRzz.Text = uc.lenToUserUnits(s.rzz).ToString();
+        txtPyy.Text = Uc.len4ToUserUnits(s.Pyy).ToString();
+        txtPzz.Text = Uc.len4ToUserUnits(s.Pzz).ToString();
+        txtRyy.Text = Uc.lenToUserUnits(s.ryy).ToString();
+        txtRzz.Text = Uc.lenToUserUnits(s.rzz).ToString();
 
     }
 
 
-    private section ReadFromUI()
+    private Section ReadFromUI()
     {
-        return new section
+        return new Section
         {
             Name = txtNombre.Text,
 
             Type = secTypeVals [ cbTipo.SelectedIndex],
 
-            h = uc.lenFromUserUnits(txtH.Text),
-            b = uc.lenFromUserUnits(txtB.Text),
-            tw =uc.lenFromUserUnits (txtTw.Text),
-            tf =uc.lenFromUserUnits(txtTf.Text),
-            Ag = uc.areaFromUserUnits(txtAg.Text),
-            Iyy = uc.len4FromUserUnits(txtIyy.Text),
-            Izz = uc.len4FromUserUnits(txtIzz.Text),
-            Iyz = uc.len4FromUserUnits(txtIyz.Text),
-            Tor = uc.len4FromUserUnits(txtTor.Text),
-            Acyy = uc.areaFromUserUnits(txtAcyy.Text),
-            Aczz = uc.areaFromUserUnits(txtAczz.Text),
-            Syy = uc.len4FromUserUnits(txtSyy.Text),
-            Szz = uc.len4FromUserUnits(txtSzz.Text),
-            Pyy = uc.len4FromUserUnits(txtPyy.Text),
-            Pzz = uc.len4FromUserUnits(txtPzz.Text),
-            ryy = uc.lenFromUserUnits(txtRyy.Text),
-            rzz = uc.lenFromUserUnits(txtRzz.Text)
+            h = Uc.lenFromUserUnits(txtH.Text),
+            b = Uc.lenFromUserUnits(txtB.Text),
+            tw =Uc.lenFromUserUnits (txtTw.Text),
+            tf =Uc.lenFromUserUnits(txtTf.Text),
+            Ag = Uc.areaFromUserUnits(txtAg.Text),
+            Iyy = Uc.len4FromUserUnits(txtIyy.Text),
+            Izz = Uc.len4FromUserUnits(txtIzz.Text),
+            Iyz = Uc.len4FromUserUnits(txtIyz.Text),
+            Tor = Uc.len4FromUserUnits(txtTor.Text),
+            Acyy = Uc.areaFromUserUnits(txtAcyy.Text),
+            Aczz = Uc.areaFromUserUnits(txtAczz.Text),
+            Syy = Uc.len4FromUserUnits(txtSyy.Text),
+            Szz = Uc.len4FromUserUnits(txtSzz.Text),
+            Pyy = Uc.len4FromUserUnits(txtPyy.Text),
+            Pzz = Uc.len4FromUserUnits(txtPzz.Text),
+            ryy = Uc.lenFromUserUnits(txtRyy.Text),
+            rzz = Uc.lenFromUserUnits(txtRzz.Text)
         };
     }
 
-    private static section sectClone(section s)
+    private static Section sectClone(Section s)
     {
-        return new section
+        return new Section
         {
             ID = s.ID,
             Name = s.Name,
@@ -390,10 +390,10 @@ public class addSectionsToModel : Form
 
     private int ResolveId(int id)
     {
-        if (App.model.sections.Any(s => s.ID == id))
-            return App.model.sections.Max(s => s.ID) + 1;
+        if (App.model.Sections.Any(s => s.ID == id))
+            return App.model.Sections.Max(s => s.ID) + 1;
 
-        return id == 0 ? App.model.sections.Max(s => s.ID) + 1 : id;
+        return id == 0 ? App.model.Sections.Max(s => s.ID) + 1 : id;
     }
 
    
@@ -403,7 +403,7 @@ public class addSectionsToModel : Form
         return double.TryParse(tb.Text, out var v) ? v : 0;
     }
 
-    private void ApplyRules(section s)
+    private void ApplyRules(Section s)
     {
         switch ((sectType)s.Type)
         {
@@ -464,7 +464,7 @@ public class addSectionsToModel : Form
 
     #region HELPERS
 
-    private void RectProps(section s)
+    private void RectProps(Section s)
     {
         if (s.b <= 0 || s.h <= 0) return;
 
@@ -486,7 +486,7 @@ public class addSectionsToModel : Form
         s.Iyz = 0;
     }
 
-    private void CircProps(section s)
+    private void CircProps(Section s)
     {
         if (s.b <= 0) return;
 
@@ -510,7 +510,7 @@ public class addSectionsToModel : Form
         s.Iyz = 0;
     }
 
-    private void HolRectProps(section s)
+    private void HolRectProps(Section s)
     {
         if (s.b <= 0 || s.h <= 0 || s.tw <= 0 || s.tf <= 0) return;
 
@@ -536,7 +536,7 @@ public class addSectionsToModel : Form
         s.Iyz = 0;
     }
 
-    private void HolCircProps(section s)
+    private void HolCircProps(Section s)
     {
         if (s.b <= 0 || s.tw <= 0) return;
 
@@ -562,7 +562,7 @@ public class addSectionsToModel : Form
         s.Iyz = 0;
     }
 
-    private void AngleProps(section s)
+    private void AngleProps(Section s)
     {
         if (s.b <= 0 || s.h <= 0 || s.tw <= 0) return;
 
@@ -583,7 +583,7 @@ public class addSectionsToModel : Form
         if (s.Aczz <= 0) s.Aczz = s.tw * s.b;
     }
 
-    private void IShapeProps(section s)
+    private void IShapeProps(Section s)
     {
         if (s.b <= 0 || s.h <= 0 || s.tw <= 0 || s.tf <= 0) return;
 
@@ -607,7 +607,7 @@ public class addSectionsToModel : Form
         s.Iyz = 0;
     }
 
-    private void CShapeProps(section s)
+    private void CShapeProps(Section s)
     {
         if (s.b <= 0 || s.h <= 0 || s.tw <= 0 || s.tf <= 0) return;
 

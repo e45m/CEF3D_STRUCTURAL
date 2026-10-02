@@ -126,9 +126,9 @@ public  class viewModelDBTable: Form
 
                     if (parseMetadata.getEnumFieldDisplayValue(typeof(loadCase), Enum.GetNames<LoadCaseType>(), "Type",
                         flds[c], obj, ref valores[c])) continue;
-                    if (parseMetadata.getEnumFieldDisplayValue(typeof(section), Enum.GetNames<sectType>(), "Type",
+                    if (parseMetadata.getEnumFieldDisplayValue(typeof(Section), Enum.GetNames<sectType>(), "Type",
                         flds[c], obj, ref valores[c])) continue;
-                    if (parseMetadata.getEnumFieldDisplayValue(typeof(material), Enum.GetNames<materialType>(), "Type",
+                    if (parseMetadata.getEnumFieldDisplayValue(typeof(Material), Enum.GetNames<materialType>(), "Type",
                         flds[c], obj, ref valores[c])) continue;
                     if (parseMetadata.getEnumFieldDisplayValue(typeof(nodalConstraint), Enum.GetNames<MFCType>(), "Type",
                         flds[c], obj, ref valores[c])) continue;
@@ -159,8 +159,8 @@ public  class viewModelDBTable: Form
         if (txt == null) return;
         if ("ID" == fld.Name) return; 
         if (typeof(loadCase) == obj.GetType() && "Type" == fld.Name) return;//TODO: Function to use the string enum to user UI
-        if (typeof(section) == obj.GetType() && "Type" == fld.Name) return; 
-        if (typeof(material) == obj.GetType() && "Type" == fld.Name) return; 
+        if (typeof(Section) == obj.GetType() && "Type" == fld.Name) return; 
+        if (typeof(Material) == obj.GetType() && "Type" == fld.Name) return; 
         if (typeof(nodalConstraint) == obj.GetType() && "Type" == fld.Name) return;
 
         parseMetadata.useDefautlDBUnits(ref txt, fld);

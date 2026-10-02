@@ -52,24 +52,24 @@ internal class LinearAnalPlusPdelta : LinearAnal
         var d = base.getd();
         var bars = m_mDB.bars;
         var vForces = new double[12];
-        foreach (var bar in bars)
+        foreach (var Bar in bars)
         {
             for (int i = 0; i < 12; i++)
                 for (int j = 0; j < 12; j++)
                    { 
                     KgEl[i, j] = 0d;
                 }
-            barrElement.getInternalPdForcesVector(bar, Case, p,
+            barrElement.getInternalPdForcesVector(Bar, Case, p,
                                                     out double Ax1, out double Ax2, out double L,
                                                     out int idxI, out int idxJ
                                                     );
             Ax1 *= F;
             Ax2 *= F;
-            var sectID = bar.SectionID;
+            var sectID = Bar.SectionID;
             if (sectID == -1) throw new Exception();
-            var secIndx = m_mDB.sections.FindIndexByID(sectID);
+            var secIndx = m_mDB.Sections.FindIndexByID(sectID);
             if (secIndx == -1) throw new Exception();
-            var sec = m_mDB.sections[secIndx];
+            var sec = m_mDB.Sections[secIndx];
             var A = sec.Ag;
             var Iy = sec.Iyy;
             var Iz = sec.Izz;
@@ -116,7 +116,7 @@ internal class LinearAnalPlusPdelta : LinearAnal
             KgEl[11, 7] = -a2;
             KgEl[11, 11] = a3;
             double[,] trans = new double[12,12]; 
-            barrElement.getTransMatrix(bar, trans);
+            barrElement.getTransMatrix(Bar, trans);
             KgElg = MatrixMath.M_multT(MatrixMath.M_mult(trans, KgEl), trans);
             for (int i = 0; i < 6; i++)
             {

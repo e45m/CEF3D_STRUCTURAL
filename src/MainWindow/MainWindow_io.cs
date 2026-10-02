@@ -31,7 +31,7 @@ public partial class MainWindow
         space3d.createGrid(this);
 
         App.setParamProgramDefaults();
-        uc.setUc(App.currUnits);
+        Uc.setUc(App.currUnits);
         App.mainWindow.tsUnitsSel.Text = App.currUnits;       
         
         var vas = new modelView(); 
@@ -71,7 +71,7 @@ public partial class MainWindow
             App.initialized = true;
             space3d.createGrid(this);
             App.currUnits = App.model.getParamText(Mdta.units);
-            uc.setUc(App.currUnits);
+            Uc.setUc(App.currUnits);
             var vas = new modelView(); 
             vas.Text = vas.Text + " [" + App.modelViewInstances + "]"+App.activeFileName; 
             vas.Show(App.mainWindow); 
@@ -146,13 +146,13 @@ public partial class MainWindow
                 App.currUnits = string.Join(",", new[] { sapCurrUnits[0], "kg", sapCurrUnits[1], sapCurrUnits[2] });
             }
 
-            uc.setUc(App.currUnits);
+            Uc.setUc(App.currUnits);
             App.mainWindow.tsUnitsSel.Text = App.currUnits;
             App.setParamProgramDefaults();
             App.startUndoRecording();
             App.initialized = true;
             space3d.createGrid(this);
-            uc.setUc(App.currUnits);
+            Uc.setUc(App.currUnits);
             var vas = new modelView(); 
             vas.Text = vas.Text + " [" + App.modelViewInstances + "]"+App.activeFileName; 
                 vas.Show(this); 

@@ -18,8 +18,8 @@ public class ModelDB
         loadCases = [];
         nodalDisplacements = [];
         nodalReactions = [];
-        materials = [];
-        sections = [];
+        Materials = [];
+        Sections = [];
         nodalRestraints = [];
         nodes = [];
         bars = [];
@@ -31,13 +31,13 @@ public class ModelDB
 
     }
     public DtaTable<programParam> programParams;    
-    public DtaTable<material> materials ;       
-    public DtaTable<section> sections ;       
-    public DtaTable<coordinate> gridCoordsX ;       
-    public DtaTable<coordinate> gridCoordsY ;       
-    public DtaTable<coordinate> gridCoordsZ ;       
-    public DtaTable<node> nodes ;       
-    public DtaTable<bar> bars ;       
+    public DtaTable<Material> Materials ;       
+    public DtaTable<Section> Sections ;       
+    public DtaTable<Coordinate> gridCoordsX ;       
+    public DtaTable<Coordinate> gridCoordsY ;       
+    public DtaTable<Coordinate> gridCoordsZ ;       
+    public DtaTable<Node> nodes ;       
+    public DtaTable<Bar> bars ;       
     public DtaTable<nodalRestraint> nodalRestraints ;       
     public DtaTable<nodalConstraint> nodalConstraints ;       
     public DtaTable<loadCase> loadCases ;       
@@ -133,7 +133,7 @@ public class ModelDB
     {
         var sb = new StringBuilder();
         sb.AppendLine("0");
-        sb.AppendLine("SECTION");
+        sb.AppendLine("Section");
         sb.AppendLine("2");
         sb.AppendLine("ENTITIES");
         if (this.nodes != null)
@@ -206,7 +206,7 @@ public static class Mdta//meta data
 
 
 
-public class coordinate: IHasID
+public class Coordinate: IHasID
 {
     int IHasID.ID { get => ID; }
     public int ID;
@@ -278,7 +278,7 @@ public class nodalReaction : IHasID
     public double My;
     public double Mz;
 }
-public class material : IHasID
+public class Material : IHasID
 {
     int IHasID.ID { get => ID; }
     public int ID;
@@ -293,7 +293,7 @@ public class material : IHasID
     public double fy;
     public double fu;
 }
-public class section : IHasID
+public class Section : IHasID
 {
     int IHasID.ID { get => ID; }
     public int ID;
@@ -328,7 +328,7 @@ public class nodalRestraint : IHasID
     public int ry;
     public int rz;
 }
-public class node : IHasID
+public class Node : IHasID
 {
     int IHasID.ID { get => ID; }
     public int ID;
@@ -339,7 +339,7 @@ public class node : IHasID
 	
 	
 }
-public class bar : IHasID
+public class Bar : IHasID
 {
     int IHasID.ID { get => ID; }
     public int ID;
@@ -434,9 +434,9 @@ public class nodalConstraint : IHasID
 
 public struct barGeom
 {
-    public bar Bar;
-    public node P1;
-    public node P2;
+    public Bar Bar;
+    public Node P1;
+    public Node P2;
     public double len;
 
 }

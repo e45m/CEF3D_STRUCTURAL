@@ -57,12 +57,12 @@ internal class Mfc
                 var y = Math.Abs(c.masterY - p1.Y) < tol;
                 var z = Math.Abs(c.masterZ - p1.Z) < tol;
                 return x && y && z;
-            },/*Default*/new node() { ID = -1 });
-            if (n is node mn)
+            },/*Default*/new Node() { ID = -1 });
+            if (n is Node mn)
                 id = mn.ID;
             if (id == -1)
             {
-                var mnode = new node()
+                var mnode = new Node()
                 {
                     ID = c.masterID,
                     label = $"{Restr.label}*",
@@ -108,10 +108,10 @@ internal class Mfc
                    if (slaveID == masterID) continue;
                     var indexNode = nodes.FindIndexByID(slaveID);
                     var slaveGdlStart = indexNode*GDLxNUDO;
-                    var node = nodes[indexNode];
-                    double dx =  node.X -xmaster ;
-                    double dy =  node.Y -ymaster ;
-                    double dz =  node.Z -zmaster ;
+                    var Node = nodes[indexNode];
+                    double dx =  Node.X -xmaster ;
+                    double dy =  Node.Y -ymaster ;
+                    double dz =  Node.Z -zmaster ;
                 switch ((MFCType)mfc.type)
                         {
                             case MFCType.diaphragm:

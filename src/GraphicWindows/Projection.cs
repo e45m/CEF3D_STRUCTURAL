@@ -55,8 +55,7 @@ public class Projection
     public double z { get; set; }
     private double[] M_;
     private double[] M_1;
-    private double[] I;
-    private bool isIvalid;
+
     double Ca; 
     double Sa ; 
     double Cb ;

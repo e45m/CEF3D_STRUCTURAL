@@ -18,7 +18,7 @@ internal class Resources {
 
     private static Stream GetResourceStream(string fileName) {
         string resourceName = ResourcePrefix + fileName;
-        Stream? stream = CurrentAssembly.GetManifestResourceStream(resourceName);
+        Stream stream = CurrentAssembly.GetManifestResourceStream(resourceName);
         if (stream == null) {
             throw new InvalidOperationException($"No se encontró el recurso incrustado: {resourceName}");
         }

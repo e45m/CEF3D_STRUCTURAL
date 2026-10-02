@@ -73,7 +73,6 @@ internal static class uc//unitsconverter
     static double area ;
     static double volume ;
     static double temp ;
-    static double scFact;
 
     public static ModelUnits activeForceU { get; private set; }
     public static ModelUnits activeMassU { get; private set; }

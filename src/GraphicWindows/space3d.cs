@@ -353,7 +353,7 @@ public class space3d
     public static double Dot(Point3 a, Point3 b) => a.X * b.X + a.Y * b.Y + a.Z * b.Z;
     public static double Norm2(Point3 a) => Dot(a, a);
     const double EPS = 1e-9;
-    public static Point3? Intersect(Line3 b, Line3 br)
+    public static Point3 Intersect(Line3 b, Line3 br)
     {
         var v1 = Sub(b.P2, b.P1);
         var v2 = Sub(br.P2, br.P1);
@@ -383,7 +383,7 @@ public class space3d
         return p;
     }
 
-    public static Point3? NodeIntersect(Line3 b, Point3 ip)
+    public static Point3 NodeIntersect(Line3 b, Point3 ip)
     {
         var v1 = Sub(b.P2, b.P1);
        
@@ -405,7 +405,7 @@ public class space3d
         return null;
     }
 
-    public static  node? checkNewNode(node? nodo, double tol= 0.01)
+    public static  node checkNewNode(node nodo, double tol= 0.01)
     {
         if (nodo == null) return null;
        

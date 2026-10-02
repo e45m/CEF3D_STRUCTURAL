@@ -320,7 +320,7 @@ public class adddBarLoad:Form
         ResumeLayout(false);
     }
 
-    private void BtnReplace_Click(object? sender, EventArgs e)
+    private void BtnReplace_Click(object sender, EventArgs e)
     {
         App.takeUndoSnapShot();
 
@@ -333,7 +333,7 @@ public class adddBarLoad:Form
 
     }
 
-    private void BtnDel_Click(object? sender, EventArgs e)
+    private void BtnDel_Click(object sender, EventArgs e)
     {
         App.takeUndoSnapShot();
 
@@ -350,7 +350,6 @@ public class adddBarLoad:Form
     private void deleteDLoad()
     {
         int N = Selection.barMaxIndex + 1;
-        double L;
         var Sel = Selection.getBarsColection();
         if (Sel == null) return;
 

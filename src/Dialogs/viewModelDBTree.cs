@@ -5,7 +5,6 @@ namespace CEF;
 public class viewModelDBTree : Form
 {
     private TreeView treeView1;
-    private int currIndex = 0;
     public viewModelDBTree()
     {
         treeView1 = new TreeView();
@@ -52,7 +51,6 @@ public class viewModelDBTree : Form
                     var regsInTableData = regsInTableObj.GetValue(dtaTable) as IEnumerable<object>;
                     if (regsInTableData != null)
                     {
-                        int jj = 0;
                         foreach (var rowObj in regsInTableData)
                         {
                             TreeNode nodeDtableRow = null;

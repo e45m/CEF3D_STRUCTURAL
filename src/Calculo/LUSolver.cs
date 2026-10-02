@@ -130,7 +130,7 @@ internal class LUSolver
             diag = S_[row][row - str[row]];
             if (diag<eps && diag>-eps)
             {
-                throw new Exception();
+                throw new Exception("Diagonal value near to zero");
             }
             if (diag < 0.0)
             {

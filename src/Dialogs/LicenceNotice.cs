@@ -15,6 +15,8 @@ Efren Sandoval Mora (2026). All rights reserved.
 This program is provided 'as is', without any warranty of results or usefulness. 
 The results and its use are the sole responsibility of the user.
 Contact: ing.easm@gmail.com";
+	Label licenceLabel;
+
     private void InitializeComponent()
     {
        
@@ -51,9 +53,7 @@ Contact: ing.easm@gmail.com";
         Load += reponerTexto;
         
     }
-    internal System.Windows.Forms.Timer Timer1;
-    internal Label licenceLabel;
-    private bool T1;
+
     public LicenceNotice()
     {
         InitializeComponent();

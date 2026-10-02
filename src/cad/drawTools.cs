@@ -270,7 +270,6 @@ static class cadTools
         p2.X = p02.X + ofx;
         p2.Y = p02.Y + ofy;
         p2.Z = p02.Z + ofz;
-        var tol = 0.05;
         var existe1 = IsNode(db, p1);
         var existe2 = IsNode(db, p2);
         if (existe1 != -1)
@@ -476,7 +475,6 @@ static class cadTools
         var cpb = db.barPunctLoads.Where(c => c.BarID == bar.ID).ToList();
         var ctb = db.barThermalLoads.Where(c => c.barID == bar.ID).ToList();
         var n = pList.Count-1;
-        var skiped = 0;
         for (int i = 1; i < n; i++)
         {
             
@@ -554,7 +552,6 @@ static class cadTools
                 var b = dl.b;
                 var sti = 1 / n * (i);
                 var stj = 1 / n * (i + 1);
-                var newA = 0d;
                 var newB = 1d;
                 if (b < stj)
                     newB = (b - sti) / (stj - sti);

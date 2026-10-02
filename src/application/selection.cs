@@ -55,7 +55,7 @@ public class Selection
         selectedAreas = [];
         selectedSolids = [];
     }
-    public static int[]? getNodesColection()
+    public static int[] getNodesColection()
     {
         if (nodesMaxIndx != -1)
         {
@@ -63,7 +63,7 @@ public class Selection
         }
         return null;
     }
-    public static int[]? getBarsColection()
+    public static int[] getBarsColection()
     {
         if (barsMaxIndx != -1)
         {
@@ -72,7 +72,7 @@ public class Selection
         return null;
 
     }
-    public static int[]? getAreasColection()
+    public static int[] getAreasColection()
     {
         if (areaMaxIndx != -1)
         {
@@ -81,7 +81,7 @@ public class Selection
         return null;
 
     }
-    public static int[]? getSolidsColection()
+    public static int[] getSolidsColection()
     {
         if (solidMaxIndx != -1)
         {

@@ -77,9 +77,7 @@ namespace CEF.datamgr
         public void ImprtS2kFile_ordeningTables()
         {
             captureTables();
-            int indx = 0;
-            bool fl = true;
-            int nf = 0;
+
             modelDB.InitThisClassProperies();
             if (!File.Exists(filePath))
                 throw new FileNotFoundException("Archivo no encontrado", filePath);

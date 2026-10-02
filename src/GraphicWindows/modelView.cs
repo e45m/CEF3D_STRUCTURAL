@@ -136,13 +136,13 @@ public class modelView : Cef3DWindowBase
         }
         Containers[0].Select();
     }
-    private void ModelView_FormClosing(object? sender, FormClosingEventArgs e)
+    private void ModelView_FormClosing(object sender, FormClosingEventArgs e)
     {
         App.modelViewInstances--;
         if (App.modelViewInstances == 0)
             App.mainWindow.Visible = true;
     }
-    private void ModelView_Resize(object? sender, EventArgs e)
+    private void ModelView_Resize(object sender, EventArgs e)
     {
         mvHeight = Height;
         mvWidth = Width;

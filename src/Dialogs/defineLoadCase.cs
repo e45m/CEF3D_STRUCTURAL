@@ -165,7 +165,7 @@ public  class defineLoadCase:Form
 
 
 
-    private void BttDel_Click(object? sender, EventArgs e)
+    private void BttDel_Click(object sender, EventArgs e)
     {
         App.takeUndoSnapShot();
         int i = App.model.loadCases.Max(c => c.ID) + 1;
@@ -179,7 +179,7 @@ public  class defineLoadCase:Form
         };
         var caseCombo = new ComboBox() { Left = 30, Top = 10, Width = 120 };
         foreach(DataGridViewRow r in DataGridView1.Rows){
-            var val = r.Cells[1].Value?.ToString() ?? null;
+            var val = r.Cells[1].Value.ToString();//If .Value does not existe trouble
             if(val!=null)
             caseCombo.Items.Add(val);
         }

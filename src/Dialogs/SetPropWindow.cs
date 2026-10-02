@@ -67,11 +67,11 @@ public partial class SetPropWindow
         m_Form.Load += load;
         
     }
-    internal void Show(IWin32Window? own=null)
+    internal void Show(IWin32Window own=null)
     {
         m_Form.Show(own);
     }
-    internal void ShowDialog(IWin32Window? own = null)
+    internal void ShowDialog(IWin32Window own = null)
     {
         m_Form.ShowDialog(own);
     }

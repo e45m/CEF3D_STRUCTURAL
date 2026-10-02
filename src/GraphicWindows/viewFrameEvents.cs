@@ -222,7 +222,6 @@ public partial class viewFrame
 
     private void canvasMouseWheel(object sender, MouseEventArgs e)
     {
-        var cut = 0.05;
         var sign = (e.Delta / 120);
         var dh = 10 * sign;
         var dv = 10 * sign;
@@ -399,7 +398,6 @@ public partial class viewFrame
 
     void altKeysParse(object sender, KeyEventArgs e)
     {
-        return;
         switch (e.KeyCode)
         {
             case Keys.F4:

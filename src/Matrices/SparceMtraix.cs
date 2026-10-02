@@ -43,7 +43,7 @@ internal partial class SparseMatrix : cefDictionary
         TryGetValue(key, out double val);    
         TryAdd(key, val + value);
     }
-    public double this[int n, int m]
+    new public double this[int n, int m] //shaded function
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         get => getValue(n, m);

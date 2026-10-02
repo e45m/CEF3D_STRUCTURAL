@@ -34,10 +34,6 @@ public partial class viewFrame
     private static bool  drawingLineFlag = true;
     private bool  DrBarrBttOn;
     private Selection Sel = new();
-    private float[] poits2DColection;
-    private float[] nodes2DColection;
-    private double[] vPointsCol;
-    private double[] vNodesCol;
     private int[] barConecty;
     private int gridXPointsCount;
     private int gridYPointsCount;

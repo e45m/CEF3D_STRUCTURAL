@@ -350,7 +350,6 @@ internal class LinearAnal
     }
     internal /*async Task<bool> */void solveSystem(IProgress<(int, string)> progress =null)
       {
-        var sw = Stopwatch.StartNew();
         if (App.model.nodalConstraints.Count is 0)       {
             solver = new LUSolver.LUSolver(S, e, 1e-11);
             solver.factorizeLU();

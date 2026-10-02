@@ -155,10 +155,8 @@ public  class addNodalMFC:Form
     internal Button No;
     internal Button ok;
     internal ComboBox RestType;
-    internal Label Label6;
     internal TextBox TbListaNodos;
     internal Label label1;
-    internal TextBox Mz;
     internal GroupBox groupBox2;
     internal Label label3;
     internal Label label2;

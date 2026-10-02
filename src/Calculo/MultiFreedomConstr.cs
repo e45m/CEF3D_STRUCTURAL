@@ -7,7 +7,6 @@ internal class Mfc
     const int GDLxNUDO = 6;
     internal struct Restriction
     {
-        internal int ID;
         internal int type; 
         internal int masterID;
         internal double masterX;

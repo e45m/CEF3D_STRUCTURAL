@@ -17,7 +17,7 @@ public  class Cef3DWindowBase: Form
     internal static ToolStripProgressBar ProgressStatus;
 
     internal MenuStrip MainMenuCEF;
-    internal ToolStripComboBox tsUnitsSel, tsActCoordSystem, tsActLoadCase;
+    internal ToolStripComboBox tsUnitsSel;
 
     public Cef3DWindowBase()
     {

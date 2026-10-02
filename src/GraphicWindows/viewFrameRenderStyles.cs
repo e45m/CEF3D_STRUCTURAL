@@ -139,13 +139,11 @@ internal class ModelStyles()
         Ligth
     }
     private float fontScale;
-    private int vrm;
     internal ModelStyles(float FontScale,int dfc) : this()
         {
             Theme_ =(CanvasTheme) dfc; 
             fontScale = FontScale;
             sectionsPerElement = 3;
-            vrm = 0;
             showNodesID = false;
             showGrid = true;
             showBarsLoads = true;

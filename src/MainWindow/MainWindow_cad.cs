@@ -122,7 +122,6 @@ public partial class MainWindow
 
     internal void loadCoordSysNamesList(object sender, EventArgs e)
    {
-       int i;
        string dumm;
         var send = (ToolStripComboBox)sender;
        send.Items.Clear();
@@ -673,7 +672,6 @@ public partial class MainWindow
 
         Selection.Clear();
 
-        var tol = 0.1;
         for (var i = 0; i < n; i++)
         {
             var b = selBars[i];
@@ -740,7 +738,6 @@ public partial class MainWindow
         Selection.Clear();
         int k = App.model.nodes.Max(n => n.ID) + 1;
 
-        var tol = 0.1 ;
         for (var i = 0; i < n; i++)
         {
             var b = selBars[i];
@@ -806,7 +803,7 @@ public partial class MainWindow
         Selection.Clear();
         int k = App.model.nodes.Max(n => n.ID) + 1;
 
-        var tol = 0.1;
+
         for (var i = 0; i < n; i++)
         {
             var b = selBars[i];
@@ -858,7 +855,7 @@ public partial class MainWindow
         App.takeUndoSnapShot();
         var toDelete = new List<int>();
         var visited = new List<int>();
-        var tol = 0.05;
+		double tol = 0.1;
         foreach (var n in App.model.nodes)
         {
             if (visited.Contains(n.ID)) continue;
@@ -885,7 +882,7 @@ public partial class MainWindow
         App.takeUndoSnapShot();
         var toDelete = new List<int>();
         var visited = new List<int>();
-        var tol = 0.05 ;
+		double tol = 0.1;
         foreach (var n in App.model.nodes)
         {
             if (visited.Contains(n.ID)) continue;
@@ -910,7 +907,6 @@ public partial class MainWindow
         App.takeUndoSnapShot();
         var toSelect = new List<int>();
         var visited = new List<int>();
-        var tol = 0.05 ;
         foreach (var b1 in App.model.bars)
         {
             if (visited.Contains(b1.ID)) continue;
@@ -930,7 +926,7 @@ public partial class MainWindow
                     (bg1.Bar.startNode == nj2.ID || bg1.Bar.endNode == nj2.ID)) 
                   return true;
 
-                node? checkIntersect(barGeom b, node n)
+                node checkIntersect(barGeom b, node n)
                 {
                   return ( b.Bar.startNode == n.ID || b.Bar.endNode == n.ID)? null: space3d.NodeIntersect(b, n);
 

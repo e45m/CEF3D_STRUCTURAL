@@ -221,7 +221,7 @@ public  class defineNewCoordSys:Form
     private CEF.MainWindow _parent = null;
     DataSet CoordSisDataset;
 
-    private void BtRemove(object? sender, EventArgs e)
+    private void BtRemove(object sender, EventArgs e)
     {
         
         if (nuevosist == "Default") return;
@@ -324,7 +324,6 @@ public  class defineNewCoordSys:Form
         GrillaZ.DataMember = "Z_Grid";
 
 
-        int i;
         string dumm = cbSCName.Text;
         if(string.IsNullOrEmpty(dumm))
         dumm = App.model.gridCoordsX[0].coordSys;
@@ -362,7 +361,7 @@ public  class defineNewCoordSys:Form
        
     }
 
-    private void CbSCNameChanged(object? sender, EventArgs e)
+    private void CbSCNameChanged(object sender, EventArgs e)
     {
        
         nuevosist = cbSCName.Text;
@@ -443,7 +442,7 @@ public  class defineNewCoordSys:Form
         cbSCName.Text = nuevosist;
     }
 
-    private void Space_Click(object? sender, EventArgs e)
+    private void Space_Click(object sender, EventArgs e)
     {
         var s = (Button)sender;
         var name = s.Name;

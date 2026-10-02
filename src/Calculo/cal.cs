@@ -7,17 +7,18 @@ internal class Calculo
     private ModelDB m_mDB;
     private LinearAnal LinearModel;
     private LinearAnalPlusPdelta pdeltaModel;
-    public async  void Calcular(ModelDB mDB, 
+   
+   public async  void Calcular(ModelDB mDB, 
         bool PdOn = false, 
-        IProgress<(int, string)> progress =null) 
+    IProgress<(int, string)> progress =null) 
     {
-        var sw = Stopwatch.StartNew();
-        m_mDB = mDB;
+       var sw = Stopwatch.StartNew();
+       m_mDB = mDB;
        m_mDB.SortNodesbyCoordinates();
         ; 
         if (!PdOn)
         {
-            await Task.Run(() => OnlyLinearAnalysis(progress));
+           await Task.Run(() => OnlyLinearAnalysis(progress));
             sw.Stop();
         }
         else {
@@ -25,9 +26,8 @@ internal class Calculo
         }
     }
     public void OnlyLinearAnalysis(IProgress<(int, string)> progress) {
-        var sw = Stopwatch.StartNew();
         App.stopUndoRecording();
-        LinearModel = new LinearAnal( m_mDB);
+        LinearModel = new LinearAnal(m_mDB);
         LinearModel.solveSystem(progress);
         for (int i = 0; i<App.model.loadCases.Count;i++)
         {

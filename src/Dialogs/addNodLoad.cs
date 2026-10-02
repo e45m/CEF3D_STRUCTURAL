@@ -6,7 +6,7 @@ public class addNodLoad: Form
 
     internal Button ok, No, btnDel, btnReplace;
     internal GroupBox GroupBox1;
-    internal TextBox Fz, Fy, Fx, a, Mz, My, Mx;
+    internal TextBox Fz, Fy, Fx,  Mz, My, Mx;
     internal Label Label9, Label6,  Label3,  Label4,  Label5,  Label2,  Label1;
     internal ComboBox Caso;
 
@@ -259,7 +259,7 @@ public class addNodLoad: Form
         Close();
     }
 
-    private void BtnReplace_Click(object? sender, EventArgs e)
+    private void BtnReplace_Click(object sender, EventArgs e)
     {
         App.takeUndoSnapShot();
 
@@ -272,7 +272,7 @@ public class addNodLoad: Form
 
     }
 
-    private void BtnDel_Click(object? sender, EventArgs e)
+    private void BtnDel_Click(object sender, EventArgs e)
     {
         App.takeUndoSnapShot();
 

@@ -269,7 +269,7 @@ public  class setNodDipla : Form
     {
         Close();
     }
-    private void BtnReplace_Click(object? sender, EventArgs e)
+    private void BtnReplace_Click(object sender, EventArgs e)
     {
         App.takeUndoSnapShot();
 
@@ -282,7 +282,7 @@ public  class setNodDipla : Form
 
     }
 
-    private void BtnDel_Click(object? sender, EventArgs e)
+    private void BtnDel_Click(object sender, EventArgs e)
     {
         App.takeUndoSnapShot();
 

@@ -147,7 +147,6 @@ public partial class MainWindow
  }
     internal void loadLoadCasesList(object sender, EventArgs e)
     {
-        int i;
         var send = (ToolStripComboBox)sender;
         send.Items.Clear();
         var cases = App.model.loadCases.

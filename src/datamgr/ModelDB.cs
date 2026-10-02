@@ -87,7 +87,7 @@ public class ModelDB
     }
 
     internal void SetSuperpositionCombosResults() {
-      throw new NotImplementedException();
+		//This code does nothing is to be implemented
         foreach (var cc in loadCombs)
         {
             var nc = new loadCase()
@@ -212,7 +212,6 @@ public class coordinate: IHasID
     public int ID;
     public double Coord;
     public string coordSys;
-
     
 }
 public class barThermalLoad : IHasID
@@ -256,7 +255,7 @@ public class loadCase : IHasID
 }
 public class nodalDisplacement : IHasID
 {
-    int IHasID.ID { get => ((int)cefDictionary.makeKey(ID, Case)); }
+    int IHasID.ID { get => ((int)(((long)ID << 24) | (uint)Case));  }
 
     public int ID;
     public int Case;
@@ -337,6 +336,8 @@ public class node : IHasID
     public double X;
     public double Y;
     public double Z;
+	
+	
 }
 public class bar : IHasID
 {

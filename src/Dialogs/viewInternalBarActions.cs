@@ -6,7 +6,7 @@ public  class viewInternalBarActions:Form
 
 
 
-    internal Label lblElID,lblElemento, lblElement, lblCase, lblMin, lblMax, lbl_J, lbl_I, lblElType, lblNudos, lblLength, lblAction;
+    internal Label lblElement, lblCase, lblMin, lblMax, lbl_J, lbl_I, lblAction;
     internal TextBox EleTipo, EleNudos, EleLong,EleId, minVal,maxVal, valJ, valI;
     internal ComboBox cb_selElem, loadCase, cb_internalAction;
     internal Button exit;
@@ -127,7 +127,6 @@ public  class viewInternalBarActions:Form
 
 
     public static int CifDec = 9;
-    private int[] s;
     public viewInternalBarActions()
     {
         InitializeComponent();

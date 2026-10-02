@@ -60,7 +60,6 @@ public partial class viewFrame
         }
 
 
-            int i;
         fontScale = (float)(10d * projection.Scale); 
         fontScale = fontScale < 4.0f ? 4.0f : fontScale < 10.0f ? fontScale : 10.0f;
         loadEscFact = fontScale / (screenDiagonal / 2d);        

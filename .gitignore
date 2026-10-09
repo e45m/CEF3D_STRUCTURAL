@@ -1,0 +1,12 @@
+.git
+.netcoredbg_hist
+src/obj/*
+src/bin/*
+doc/*
+*.xlsx
+*.pdf
+*.bat
+CEF3D/.vs/*
+Verificacion/*
+tmpfiles/*
+TODOS.txt

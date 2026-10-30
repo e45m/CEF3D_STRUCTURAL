@@ -20,6 +20,15 @@
 
 <hr>
 
+
+<h3>Video Channel</h3>
+
+<p>
+    The <a href="https://www.youtube.com/@CEF3DSTRUCTURAL">CEF3D STRUCTURAL YouTube channel</a> 
+    exists to demonstrate what the program does.
+</p>
+
+
 <h3>Legal Disclaimer</h3>
 
 <p>

@@ -6,6 +6,9 @@ public class AppDB
     public DtaTable<Material> libMaterials;
     public DtaTable<Section> libSections;
     public DtaTable<Node> Puntos;
+
+    public DtaTable<barInternForce> barStatiosForces;
+    public bool biFSeted;
     public AppDB()
     {
         InitThisClassProperies();
@@ -15,9 +18,11 @@ public class AppDB
         libMaterials = [];
         libSections = [];            
         Puntos = [];
+        barStatiosForces = [];
+        biFSeted = false;
     }
 
-    public void LoadModelFile(string ruta, bool reload = true)
+    public void LoadModelFile(string ruta)
     {
         DataMagrIO.mdb = new ModelDB();
         DataMagrIO.ruta = ruta;
@@ -26,9 +31,20 @@ public class AppDB
         libSections = DataMagrIO.mdb.sections;
     }
 
-    public void LoadModelFileReflection(string ruta, bool reload = true)
+    public void LoadSectionsDataBase(string ruta)
     {
-        LoadModelFile(ruta);
+        DataMagrIO.mdb = new ModelDB();
+        DataMagrIO.ruta = ruta;
+        DataMagrIO.LoadModelFile();      
+        libSections = DataMagrIO.mdb.sections;
+    }
+        public void LoadMaterialsDataBase(string ruta)
+    {
+        DataMagrIO.mdb = new ModelDB();
+        DataMagrIO.ruta = ruta;
+        DataMagrIO.LoadModelFile();
+       libMaterials = DataMagrIO.mdb.materials;
+      
     }
 
 }

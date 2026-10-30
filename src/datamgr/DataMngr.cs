@@ -3,8 +3,9 @@ using System.Linq.Expressions;
 namespace CEF;
 public interface IHasID
 {
-    int ID { get;  }
+    public int ID { get;  }
 }
+
 public class DtaTable<T> : IEnumerable<T> where T: class, IHasID
 {
     private T[] _items;
@@ -19,6 +20,27 @@ public class DtaTable<T> : IEnumerable<T> where T: class, IHasID
             }
         catch { return -1; }
     }
+
+private static int currId;
+    public  int NextID()
+    {
+        if (_items == null) return -1;
+        if (_items.Length == 0 ) 
+        {
+        currId = 0;
+        return 0;}
+        try {
+            if (!_idMap.ContainsKey(++currId))
+        {            
+            return currId; // 
+        }else {
+            currId = _items.Max(i=>i.ID)+1;
+             return currId;
+        }
+            }
+        catch { return -1; }
+    }
+
     public void FastFillMap()
     {
         for (int i = 0; i < _count; i++)
@@ -44,10 +66,7 @@ public class DtaTable<T> : IEnumerable<T> where T: class, IHasID
         }
         _idMap = newMap;
     }
-    public int FindIndexByID(int id, int loadcase)
-    {
-        return FindIndexByID((int)(((long)id << 24) | (uint)loadcase));
-    }
+
 
     public int FindIndexByID(int id)
     {

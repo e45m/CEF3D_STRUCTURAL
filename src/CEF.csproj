@@ -10,11 +10,12 @@
 	<!-- <WarningLevel>0</WarningLevel> -->
 
 	<NoWarn>
-		$(NoWarn)
-		<!--CS8981  Type name contains only lowercase ASCII characters -->
+		$(NoWarn),
+    	
 
 	</NoWarn>
-	<ApplicationIcon>Resources/Icon1.ico</ApplicationIcon>
+
+	<ApplicationIcon>UserInterface/Resources/Icon1.ico</ApplicationIcon>
 	
   </PropertyGroup>
     <!-- Configuración específica para DEBUG -->
@@ -34,8 +35,11 @@
   
   
 <ItemGroup>
-  <EmbeddedResource Include="Resources\**" />
+  <EmbeddedResource Include="UserInterface\Resources\**" />
   <None Include="dbApp\**">
+    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+  </None>
+  <None Include="locals\**">
     <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
   </None>
 </ItemGroup>

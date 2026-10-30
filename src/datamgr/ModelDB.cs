@@ -1,4 +1,5 @@
 ﻿using CEF.Dictionary;
+using System.Diagnostics.Metrics;
 using System.Text;
 namespace CEF;
 public class ModelDB
@@ -28,6 +29,8 @@ public class ModelDB
         nodalLoads = [];
         barInternForces = [];
         nodalConstraints = [];
+        areas= [];
+        areaSections = [];
 
     }
     public DtaTable<programParam> programParams;    
@@ -49,6 +52,8 @@ public class ModelDB
     public DtaTable<nodalDisplacement> nodalDisplacements ;       
     public DtaTable<nodalReaction> nodalReactions ;       
     public DtaTable<barInternForce> barInternForces ;       
+    public DtaTable<Area> areas ;       
+    public DtaTable<areaSection> areaSections ;       
    
     internal int getParamValue(string varName)
     {
@@ -86,19 +91,14 @@ public class ModelDB
         return -1; 
     }
 
-    internal void SetSuperpositionCombosResults() {
-		//This code does nothing is to be implemented
-        foreach (var cc in loadCombs)
-        {
-            var nc = new loadCase()
-            {
-                ID = loadCases.Max(c => c.ID) + 1,
-                Name = $"comb_{cc.Name}",
-                Type = cc.Type
-            };
-        }
+    //Using this implementation limits the modelo to 2MM NODES or 12MM GDL
+    public static int calcCombinedIndex(int ID, int other){
+        //if(ID>2000000 || other>1000) return -1;
+        return  (ID << 10) | other;
     }
-
+    public static int calcIDfromCombinedIndex(int hash)=> hash >> 10;
+    public static int calcOtherfromCombinedIndex(int hash)=> hash & 1023;
+       
 
     internal void SortNodesbyCoordinates()
     {
@@ -133,7 +133,7 @@ public class ModelDB
     {
         var sb = new StringBuilder();
         sb.AppendLine("0");
-        sb.AppendLine("Section");
+        sb.AppendLine("SECTION");
         sb.AppendLine("2");
         sb.AppendLine("ENTITIES");
         if (this.nodes != null)
@@ -182,7 +182,7 @@ public class ModelDB
 
 public class Coordinate: IHasID
 {
-    int IHasID.ID { get => ID; }
+    int IHasID.ID { get =>ID; }
     public int ID;
     public double Coord;
     public string coordSys;
@@ -191,8 +191,9 @@ public class Coordinate: IHasID
 public class barThermalLoad : IHasID
 {
     int IHasID.ID { get => ID; }
+
     public int ID;
-    public int barID;
+    public int BarID;
     public int Case;
     public double extTheperature;
     public double intThemperature;
@@ -229,9 +230,9 @@ public class loadCase : IHasID
 }
 public class nodalDisplacement : IHasID
 {
-    int IHasID.ID { get => ((int)(((long)ID << 24) | (uint)Case));  }
-
+    int IHasID.ID { get => ID; }
     public int ID;
+    public int NodeID;//Change to nodeID
     public int Case;
     public double dx;
     public double dy;
@@ -242,8 +243,9 @@ public class nodalDisplacement : IHasID
 }
 public class nodalReaction : IHasID
 {
-    int IHasID.ID { get => ((int)(((long)ID << 24) | (uint)Case)); }
-    public int ID;
+    int IHasID.ID { get => ID; } 
+    public int ID;//change to nodeID
+    public int NodeID;//change to nodeID
     public int Case;
     public double Fx;
     public double Fy;
@@ -273,6 +275,8 @@ public class Section : IHasID
     public int ID;
     public string Name;
     public int Type;
+    public string MaterialName;
+    public int MaterialID;
     public double h;
     public double b;
     public double tw;
@@ -320,9 +324,7 @@ public class Bar : IHasID
     public string label;
     public int startNode;
     public int endNode;
-    public int MaterialID;
     public int SectionID;
-    public string MaterialName;
     public string SectionName;
     public int unused;
     public double Rotation;
@@ -349,6 +351,7 @@ public class barDistrLoad : IHasID
 public class barPunctLoad : IHasID
 {
     int IHasID.ID { get => ID; }
+    
     public int ID;
     public int BarID;
     public int Case;
@@ -364,6 +367,7 @@ public class barPunctLoad : IHasID
 public class nodalLoad : IHasID
 {
     int IHasID.ID { get => ID; }
+
     public int ID;
     public int NodeID;
     public int Case;
@@ -376,9 +380,8 @@ public class nodalLoad : IHasID
 }
 public class barInternForce : IHasID
 {
-    int IHasID.ID { get => ((int)( ((long) BarID << 24) | (uint) Case));
- }
-
+    int IHasID.ID { get => ID; }
+    public int ID;
     public int BarID;
     public int Case;
     public int Subdivision;
@@ -414,3 +417,60 @@ public struct barGeom
     public double len;
 
 }
+
+public class areaSection : IHasID
+{
+   int IHasID.ID { get => ID; }
+   public int ID;
+   public string label;
+   public int Kind; //Kind of area thin, thick, shell, membrane, etc, multilayer..    
+   public int MaterialID;
+   public string MaterialName;
+   public double Thickness;
+
+
+}
+
+public class Area : IHasID
+{
+   int IHasID.ID { get => ID; }
+   public int ID;
+   public int SectionID;//area section contains all the kinds and posibilities this struct only defines general geon and info
+   public string SectionName;
+   public string label;   
+   public  int Node1, Node2, Node3; //N4 is allways the first Counter Clock wise is postive fase
+   public int sign; //+1 is normail orientation -1 inverted axes   
+}
+
+public class areaLoad : IHasID
+{
+    int IHasID.ID { get => ID; }
+    public int ID;
+    public int AreaID;
+    public int Case;
+    public int Type;//Local or Global
+    public double n1;//Force pararallel vector n1,n2,n3
+    public double n2;
+    public double n3;
+    //Local axes 1
+    public double Fn;//Force/unit 
+    
+
+}
+
+public class areaInternalForces : IHasID
+{
+    int IHasID.ID { get => ID; }
+    public int ID;
+    public int Case;
+    
+    public double F1;
+    public double F2;
+    public double F3;
+    public double M1;
+    public double M2;
+    public double M3;
+    //...???
+
+}
+

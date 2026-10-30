@@ -9,4 +9,5 @@ doc/*
 CEF3D/.vs/*
 Verificacion/*
 tmpfiles/*
-TODOS.txt
+*.txt
+*.resx

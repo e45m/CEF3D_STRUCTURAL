@@ -27,7 +27,7 @@ public partial class viewFrame
         //projection.Scale = 1f;
 		projection.resetProjection();
         projection.setM();
-        mainWindow.setMSglob(projection.Scale);
+        mainWindow.setMSglob(1f);
         ms = App.visualModelStyles.Clone();
         setUpGridCoords();        
         InvalidateScene();

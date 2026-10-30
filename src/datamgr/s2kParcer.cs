@@ -1,4 +1,5 @@
 ﻿using System.Text.RegularExpressions;
+using Accessibility;
 namespace CEF.datamgr
 {
     internal class s2kparser
@@ -107,6 +108,7 @@ namespace CEF.datamgr
                     Table = Regex.Match(line, @"TABLE:\s*""([^""]+)""").Groups[1].Value;
                     continue;
                 }
+                
                 switch (Table)
                 {
                     case "PROGRAM CONTROL":
@@ -147,8 +149,10 @@ namespace CEF.datamgr
                         break;
                     case "LOAD CASE DEFINITIONS":
                         break;
-                    case "MATERIAL PROPERTIES 01 - GENERAL":
-                        break;
+                    case "MATERIAL PROPERTIES 01 - GENERAL": 
+                                     
+                     break;                      
+                        
                     case "MATERIAL PROPERTIES 02 - BASIC MECHANICAL PROPERTIES":
                         parse_Table_MATERIAL_PROPERTIES_02_BASIC_MECHANICAL_PROPERTIES(line);
                         break;
@@ -170,8 +174,11 @@ namespace CEF.datamgr
             foreach (var Bar in modelDB.bars)
             {
                 Bar.SectionID = modelDB.sections.FirstOrDefault(m => m.Name == Bar.SectionName, new Section { ID = 0 }).ID;
-                
-                Bar.MaterialID = modelDB.materials.FirstOrDefault(m => m.Name == Bar.MaterialName, new Material { ID = 0 }).ID;
+                              
+                // Bar.MaterialName = sectMaterial[Bar.SectionID];                
+                // Bar.MaterialID = modelDB.materials.FirstOrDefault(m => m.Name == Bar.MaterialName, new Material { ID = 0 }).ID;
+
+
             }
             foreach (var load in modelDB.barDistrLoads)
             {
@@ -188,6 +195,8 @@ namespace CEF.datamgr
                 string varName = x.Groups[1].Value;
                 string value = x.Groups[2].Value;
                 modelDB.programParams.Add(new programParam { Name = varName, Value = value });
+               
+               //TODO: Remove App... from here
                 if(varName == "CurrUnits")
                 {
                     var sapCurrUnits =value.Replace(" ", "").Split(",").ToArray();
@@ -249,10 +258,10 @@ namespace CEF.datamgr
                 switch (varName)
                 {
                     case "LoadPat":
-                        caso.ID = modelDB.loadCases.Count;
+                        caso.ID = modelDB.loadCases.NextID();
                        caso.Name = value;
                         break;
-                    case "DesignType":
+                    case "DesignType"://Table 01 General...
                         var res = value switch
                         {
                             "Dead" => LoadCaseType.Dead,
@@ -308,7 +317,7 @@ namespace CEF.datamgr
                         break;
                 }
             }
-            c.ID = modelDB.loadCombs.Count + 1;
+            c.ID = modelDB.loadCombs.NextID();
             modelDB.loadCombs.Add(c);
         }
         void parse_Table_CONNECTIVITY_FRAME(string line)
@@ -323,7 +332,7 @@ namespace CEF.datamgr
                 switch (varName)
                 {
                     case "Frame":
-                        b.ID = modelDB.bars.Count ; ;
+                        b.ID = modelDB.bars.NextID() ; 
                         b.label = value;
                         break;
                     case "JointI":
@@ -363,14 +372,13 @@ namespace CEF.datamgr
                 switch (varName)
                 {
                     case "Frame":
-                        b.ID = modelDB.bars.Count ; 
+                        b.ID = modelDB.bars.NextID() ; 
                         b.label = value;
                         break;
                     case "AnalSect":
                        b.SectionName = value;
                        b.SectionID = modelDB.sections.FirstOrDefault(s=>s.Name==value,new Section { ID=-1}).ID;
-                       b.MaterialName =modelDB.materials.FirstOrDefault(m=>m.ID==0,new Material { ID = -1, Name=""}).Name;
-                       b.MaterialID = 0;
+
                         break;
                 }
             }
@@ -385,8 +393,7 @@ namespace CEF.datamgr
                 res.label = b.label;
                 res.SectionName = b.SectionName;
                 res.SectionID = b.SectionID;
-                res.MaterialID = b.MaterialID;
-                res.MaterialName = b.MaterialName;
+
             }
         }
         void   parse_Table_FRAME_LOADS_DISTRIBUTED(string line) {
@@ -408,7 +415,7 @@ namespace CEF.datamgr
                 switch (varName)
                 {
                     case "Frame":
-                        s.ID = modelDB.barDistrLoads.Count ;
+                        s.ID = modelDB.barDistrLoads.NextID() ;
                         s.BarID =modelDB.bars.FirstOrDefault(b=>b.label == value, new Bar { ID=-1}).ID ;
                         if (s.BarID == -1) throw new Exception($"Error parsing frama {value}, does not have al ID");
                         break;
@@ -473,7 +480,7 @@ namespace CEF.datamgr
                 switch (varName)
                 {
                     case "SectionName":
-                        s.ID = modelDB.sections.Count;
+                        s.ID = modelDB.sections.NextID();
                         s.Name = value;
                         break;
                     case "Shape":
@@ -554,7 +561,7 @@ namespace CEF.datamgr
                 switch (varName)
                 {
                     case "Joint":
-                        n.ID = modelDB.nodes.Count; ;
+                        n.ID = modelDB.nodes.NextID(); ;
                         n.label = value;
                         break;
                     case "XorR":
@@ -657,6 +664,8 @@ namespace CEF.datamgr
                 }
             }
         }
+
+       
         void parse_Table_MATERIAL_PROPERTIES_02_BASIC_MECHANICAL_PROPERTIES(string line)
         {
             var rx = new Regex(@"(\w+)=(""[^""]+""|[^\s]+)");
@@ -676,8 +685,17 @@ namespace CEF.datamgr
                 switch (varName)
                 {
                     case "Material":
-                        s.ID = modelDB.materials.Count;
+                        s.ID = modelDB.materials.NextID();
                         s.Name = value;
+                        break;
+                    case "Type":
+                        s.Type =(int)(  value switch  {
+                            "Concrete"=> materialType.Concrete,
+                            "Steel"=>materialType.Steel,
+                            "Tendon"=>materialType.Tendon,
+                            "Rebar"=>materialType.Rebar,
+                            _=>materialType.Steel  });
+                        
                         break;
                     case "UnitWeight":
                         s.W = Uc.forceToUserUnits(value);
@@ -709,7 +727,7 @@ namespace CEF.datamgr
                     switch (varName)
                     {
                         case "Name":
-                        int id = modelDB.nodalConstraints.Count;
+                        int id = modelDB.nodalConstraints.NextID();
                         modelDB.nodalConstraints.Add(new nodalConstraint() { ID = id, label = value, Type = 0 });
                             break;
                     }

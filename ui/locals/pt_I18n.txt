@@ -1,0 +1,305 @@
+Sobre
+Arquivo
+Novo
+Abrir
+Salvar
+Salvar como
+Exportar...
+Exportar para DXF
+Importar...
+Importar SAP2000 S2K
+Sair
+Editar
+Copiar
+Replicar
+Mover
+Girar
+Excluir
+Dividir
+Dividir por comprimento ou elementos
+Dividir na interseção com barras selecionadas
+Dividir na interseção com nós selecionados
+Mover nó graficamente
+Remover nós órfãos
+Remover nós sobrepostos
+Mesclar barras selecionadas
+Desfazer
+Desenhar
+Nó
+Nó (graficamente)
+Barra
+Selecionar
+Selecionar nós sobrepostos
+Selecionar barras sobrepostas
+Selecionar tudo
+Desmarcar tudo
+Modelo
+Materiais
+Seções
+Nós
+Condições de contorno
+Cargas
+Deslocamentos
+Restrições cinemáticas
+Barras
+Cargas...
+Cargas distribuídas
+Cargas pontuais
+Liberar grau de liberdade
+Pontos de inserção
+Sistemas de coordenadas
+Novo/Editar...
+Casos de carga
+Editar/Criar/Excluir
+Selecionar caso ativo
+Combinações de carga
+Bancos de dados
+Visão em árvore
+Visão em tabela
+Unidades
+Análise
+Análise linear elástica
+Análise linear com P-Δ
+Opções
+Resultados
+Ver tabelas
+Deslocamentos dos nós
+Reações dos nós
+Esforços internos das barras
+Diagramas
+Limpar resultados
+Exibir
+Opções de exibição
+Restaurar vista
+Quadros de vista
+1
+2
+3
+4
+Vistas
+XY
+XZ
+YZ
+3D
+Zoom
+Zoom janela
+Zoom extensão
+Zoom na seleção
+Informações
+Medir distância entre dois nós
+Informações das barras selecionadas
+Janelas
+Nova janela
+Ajuda
+Manual de referência
+Licença
+Teste
+Pnt
+Fim
+Cen
+Prx
+Per
+Coordenadas X
+Coordenadas Y
+Coordenadas Z
+Cargas térmicas em barras
+Parâmetros do programa
+Combinações de carga
+Casos de carga
+Deslocamentos nodais
+Reações nodais
+Restrições nodais
+Nós
+Cargas nodais
+Barras
+Cargas distribuídas em barras
+Cargas pontuais em barras
+Esforços internos em barras
+Restrições cinemáticas
+Nome
+Tipo
+Valor
+Coordenada
+Sistema de coordenadas
+Rótulo
+Nó inicial
+Nó final
+Caso
+Distância
+ID do material
+ID da seção
+Nome do material
+Nome da seção
+Não utilizado
+Rotação
+Liberações de GDL
+Ponto de inserção Y
+Ponto de inserção Z
+Nó mestre
+Lista de nós
+Novo nó
+Insira as coordenadas, exemplo: 1.2,3.4,4.5
+Exatamente dois pontos devem ser selecionados
+Insira os deslocamentos para x, y, z
+Deslocamento X
+Deslocamento Y
+Deslocamento Z
+Insira os ângulos de rotação em ° ex.: 45:
+Rotação X (r1)
+Rotação Y (r2)
+Rotação Z (r3)
+Insira a direção de replicação:
+Direção X
+Direção Y
+Direção Z
+Insira o centro de rotação:
+Centro X
+Centro Y
+Centro Z
+Insira os espaçamentos separados por ,.
+Exemplo: 2@3.5 ou 1,5.3,3
+Espaçamentos: 
+Dividir usando elementos L/l: 
+Dividir em elementos de máx. x 
+Insira o número de divisões: 
+Dividir em elementos de máx. x 
+Nenhuma barra sobreposta encontrada
+OK
+Cancelar
+Carregar BD
+Editar/Criar
+<
+>
+Não foi possível carregar o banco de dados.
+Diafragma
+Placa
+Corpo
+Solda
+Viga
+Igual
+Verifique os dados de entrada
+Substituir
+Atribuir cargas nodais
+Atribuir cargas pontuais às barras
+Fração
+Global
+Local
+Calcular propriedades
+Adicionar
+Novo caso de carga
+Atribuir material às barras
+Atribuir seção
+Restringir
+Engastado
+Livre
+Articulado
+Rolete
+Ângulo de rotação (°)
+Centro
+Cima (+zz)
+Baixo (-zz)
+Esquerda (-yy)
+Direita (+yy)
+mín
+máx
+Valor no nó inicial
+Valor no nó final
+Usar comandos de texto
+Escopo
+Tela
+Elementos do modelo
+Selecionar
+Aparência
+Cargas
+Resultados
+Fontes e texto
+Elementos auxiliares
+Estilos
+Aplicar a todas as janelas
+Aplicar a novas janelas
+Cor de fundo da tela
+Cor dos nós
+Cor da sombra das barras
+Espessura dos nós
+Cor das linhas das barras
+Espessura das linhas das barras
+Cor de seleção
+Cor das cargas
+Cor das cargas pontuais
+Cor da forma deformada
+Cor de fundo dos apoios
+Fonte
+Cor das linhas da grade
+Espessura das linhas da grade
+Divisões de renderização
+Mostrar ID dos nós
+Mostrar grade
+Mostrar cargas nas barras
+Mostrar forma deformada
+Mostrar cargas nos nós
+Mostrar nós
+Mostrar nós selecionados
+Estilo de renderização
+Estilo das linhas da grade
+Tema visual
+Escala de deformação dx, dy, dz
+Escala de deformação rx, ry, rz
+Número de segmentos na renderização, rec. 6
+0/Outro- Linhas, 1- Extrudado, 2- Wireframe
+Estilo geral da tela
+Elemento
+Resumo do elemento
+Comprimento
+Caso/Combinação
+Ação
+Sem resultados para a seleção
+Tudo (N, Vy, Vz, Mx, My, Mz)
+Plano XY: N, Vy, Mz
+Plano XZ: N, Vz, My
+Cortantes: Vy, Vz
+Momentos: My, Mz
+N - Axial
+Vy - Cortante ao longo de y
+Vz - Cortante ao longo de z
+Mx - Torção
+My - Momento em torno de y
+Mz - Momento em torno de z 
+Buscar
+Caso
+IDs (1,5,10-20)
+Tudo
+Ocultar linhas zeradas
+Copiar
+Linhas
+Insira o valor
+Valor inválido
+Selecionar material
+Material
+Novo...
+Banco de dados CEF
+Não há materiais no modelo. Crie ou importe um primeiro.
+Área
+Seções de área
+Áreas
+Dividir áreas em NX x NY
+Dividir áreas nos nós selecionados
+Selecionar áreas sobrepostas
+Atribuir seção às áreas
+Cargas com padrão de coordenadas
+Liberações de borda de área
+Esforços de área
+Informações das áreas selecionadas
+Divisões ao longo dos nós 1-2 (NX)
+Divisões ao longo dos nós 1-4 (NY)
+Seções de área
+Opções de análise
+Malha automática de áreas
+Malha automática de barras
+Fator
+Esforços internos de área
+Inverter nós da barra 
+Alinhar seleção de barras com a primeira barra selecionada
+Inverter eixos da área (trocar faces)
+Alinhar área com a primeira área selecionada
+Deslocar nós da área no sentido anti-horário
+Conectividade

@@ -1,0 +1,305 @@
+About
+File
+New
+Open
+Save
+Save As
+Export...
+Export to DXF
+Import...
+Import SAP2000 S2K
+Exit
+Edit
+Copy
+Replicate
+Move
+Rotate
+Delete
+Split
+Split by length or elements
+Split at intersection with selected bars
+Split at intersection with selected nodes
+Move Node graphically
+Remove orphan nodes
+Remove overlapping nodes
+Merge selected bars
+Undo
+Draw
+Node
+Node (graphically)
+Bar
+Select
+Select overlapping nodes
+Select overlapping bars
+Select all
+Deselect all
+Model
+Materials
+Sections
+Nodes
+Boundary Conditions
+Loads
+Displacements
+Kinematic Constraints
+Bars
+Loads...
+Distributed Loads
+Point Loads
+Release Degree of Freedom
+Insertion Points
+Coordinate Systems
+New/Edit...
+Load Cases
+Edit/Create/Delete
+Select Active Case
+Load Combinations
+Databases
+Tree View
+Table View
+Units
+Analysis
+Linear Elastic Analysis
+Linear Analysis with P-Δ
+Options
+Results
+View Tables
+Node Displacements
+Node Reactions
+Bar Internal Forces
+Diagrams
+Clear Results
+View
+Display Options
+Restore View
+Viewframes
+1
+2
+3
+4
+Views
+XY
+XZ
+YZ
+3D
+Zoom
+Zoom Window
+Zoom Extents
+Zoom to Selection
+Info
+Measure distance between two nodes
+Selected bars information
+Windows
+New window
+Help
+Reference Manual
+License
+Test
+Pnt
+End
+Cen
+Nea
+Per
+X Coordinates
+Y Coordinates
+Z Coordinates
+Bar Thermal Loads
+Program Parameters
+Load Combinations
+Load Cases
+Nodal Displacements
+Nodal Reactions
+Nodal Restraints
+Nodes
+Nodal Loads
+Bars
+Distributed Loads on Bars
+Point Loads on Bars
+Internal Forces in Bars
+Kinematic Constraints
+Name
+Type
+Value
+Coordinate
+Coordinate System
+Label
+Start Node
+End Node
+Case
+Distance
+Material ID
+Section ID
+Material Name
+Section Name
+Unused
+Rotation
+DOF Releases
+Insertion Point Y
+Insertion Point Z
+Master Node
+Node List
+New Node
+Enter coordinates, example: 1.2,3.4,4.5
+Exactly two points must be selected
+Enter offsets for x, y, z
+Offset X
+Offset Y
+Offset Z
+Enter rotation angles in ° e.g.: 45:
+Rotation X (r1)
+Rotation Y (r2)
+Rotation Z (r3)
+Enter replication direction:
+Direction X
+Direction Y
+Direction Z
+Enter rotation center:
+Center X
+Center Y
+Center Z
+Enter spacings separated by ,.
+Example: 2@3.5 or 1,5.3,3
+Spacings: 
+Divide using L/l elements: 
+Divide into elements of max x 
+Enter number of divisions: 
+Divide into elements of max x 
+No overlapping bars found
+OK
+Cancel
+Load DB
+Edit/Create
+<
+>
+Could not load database.
+Diaphragm
+Plate
+Body
+Weld
+Beam
+Equal
+Check input data
+Replace
+Assign Nodal Loads
+Assign Point Bar Loads
+Fraction
+Global
+Local
+Calculate Properties
+Add
+New Load Case
+Assign Material to Bars
+Assign Section
+Restrain
+Fixed
+Free
+Hinge
+Roller
+Rotation Angle (°)
+Center
+Up (+zz)
+Down (-zz)
+Left (-yy)
+Right (+yy)
+min
+max
+Value at start Node
+Value at end Node
+Use text commands
+Scope
+Canvas
+Model Elements
+Select
+Appearance
+Loads
+Results
+Fonts and Text
+Auxiliary Elements
+Styles
+Apply to all windows
+Apply to new windows
+Canvas background color
+Nodes color
+Bars shadow color
+Nodes thickness
+Bar lines color
+Bar lines thickness
+Selection color
+Loads color
+Point loads color
+Deformed shape color
+Supports background color
+Font
+Grid line color
+Grid line thickness
+Rendering divisions
+Show nodes ID
+Show grid
+Show loads on bars
+Show deformed shape
+Show loads on nodes
+Show nodes
+Show selected nodes
+Rendering style
+Grid lines style
+Visual theme
+Deformation scale dx, dy, dz
+Deformation scale rx, ry, rz
+Number of segments in Render, rec. 6
+0/Other- Lines, 1- Extruded, 2- Wireframe
+General canvas style
+Element
+Element summary
+Length
+Case/Combination
+Action
+No results for the selection
+All (N, Vy, Vz, Mx, My, Mz)
+XY plane: N, Vy, Mz
+XZ plane: N, Vz, My
+Shears: Vy, Vz
+Moments: My, Mz
+N - Axial
+Vy - Shear along y
+Vz - Shear along z
+Mx - Torsion
+My - Moment about y
+Mz - Moment about z 
+Search
+Case
+IDs (1,5,10-20)
+All
+Hide zero rows
+Copy
+Rows
+Enter the value
+Invalid value
+Select material
+Material
+New...
+CEF database
+There are no materials in the model. Create or import one first.
+Area
+Area Sections
+Areas
+Divide areas into NX x NY
+Divide areas at selected nodes
+Select overlapping areas
+Assign Section to Areas
+Coordinate Pattern Loads
+Area Edge Releases
+Area Forces
+Selected areas information
+Divisions along nodes 1-2 (NX)
+Divisions along nodes 1-4 (NY)
+Area Sections
+AnalysisOptions
+Automesh Areas
+Automesh Bars
+Factor
+Area Internal Forces
+Invert Bar Nodes 
+Align Bar Selection With First selected Bar
+Invert Area Axes (Swap Faces)
+Align Area With First Selected Area
+Shift Area Nodes Counter Clockwise
+Conectivity

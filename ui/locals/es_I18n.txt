@@ -1,0 +1,305 @@
+Acerca de
+Archivo
+Nuevo
+Abrir
+Guardar
+Guardar como
+Exportar...
+Exportar a DXF
+Importar...
+Importar SAP2000 S2K
+Salir
+Editar
+Copiar
+Replicar
+Mover
+Rotar
+Eliminar
+Dividir
+Dividir por longitud o elementos
+Dividir en la intersección con barras seleccionadas
+Dividir en la intersección con nodos seleccionados
+Mover nodo gráficamente
+Eliminar nodos huérfanos
+Eliminar nodos superpuestos
+Fusionar barras seleccionadas
+Deshacer
+Dibujar
+Nodo
+Nodo (gráficamente)
+Barra
+Seleccionar
+Seleccionar nodos superpuestos
+Seleccionar barras superpuestas
+Seleccionar todo
+Deseleccionar todo
+Modelo
+Materiales
+Secciones
+Nodos
+Condiciones de borde
+Cargas
+Desplazamientos
+Restricciones cinemáticas
+Barras
+Cargas...
+Cargas distribuidas
+Cargas puntuales
+Liberar grado de libertad
+Puntos de inserción
+Sistemas de coordenadas
+Nuevo/Editar...
+Casos de carga
+Editar/Crear/Eliminar
+Seleccionar caso activo
+Combinaciones de carga
+Bases de datos
+Vista de árbol
+Vista de tabla
+Unidades
+Análisis
+Análisis lineal elástico
+Análisis lineal con P-Δ
+Opciones
+Resultados
+Ver tablas
+Desplazamientos de nodos
+Reacciones de nodos
+Fuerzas internas de barras
+Diagramas
+Borrar resultados
+Ver
+Opciones de visualización
+Restaurar vista
+Marcos de vista
+1
+2
+3
+4
+Vistas
+XY
+XZ
+YZ
+3D
+Zoom
+Zoom ventana
+Zoom extensión
+Zoom a la selección
+Información
+Medir distancia entre dos nodos
+Información de barras seleccionadas
+Ventanas
+Nueva ventana
+Ayuda
+Manual de referencia
+Licencia
+Prueba
+Pto
+Fin
+Cen
+Cer
+Per
+Coordenadas X
+Coordenadas Y
+Coordenadas Z
+Cargas térmicas en barras
+Parámetros del programa
+Combinaciones de carga
+Casos de carga
+Desplazamientos nodales
+Reacciones nodales
+Restricciones nodales
+Nodos
+Cargas nodales
+Barras
+Cargas distribuidas en barras
+Cargas puntuales en barras
+Fuerzas internas en barras
+Restricciones cinemáticas
+Nombre
+Tipo
+Valor
+Coordenada
+Sistema de coordenadas
+Etiqueta
+Nodo inicial
+Nodo final
+Caso
+Distancia
+ID de material
+ID de sección
+Nombre del material
+Nombre de la sección
+Sin uso
+Rotación
+Liberaciones de GDL
+Punto de inserción Y
+Punto de inserción Z
+Nodo maestro
+Lista de nodos
+Nuevo nodo
+Ingrese coordenadas, ejemplo: 1.2,3.4,4.5
+Debe seleccionar exactamente dos puntos
+Ingrese desfases para x, y, z
+Desfase X
+Desfase Y
+Desfase Z
+Ingrese ángulos de rotación en ° p. ej.: 45:
+Rotación X (r1)
+Rotación Y (r2)
+Rotación Z (r3)
+Ingrese dirección de replicación:
+Dirección X
+Dirección Y
+Dirección Z
+Ingrese centro de rotación:
+Centro X
+Centro Y
+Centro Z
+Ingrese espaciamientos separados por ,.
+Ejemplo: 2@3.5 o 1,5.3,3
+Espaciamientos: 
+Dividir usando elementos L/l: 
+Dividir en elementos de máx. x 
+Ingrese número de divisiones: 
+Dividir en elementos de máx. x 
+No se encontraron barras superpuestas
+Aceptar
+Cancelar
+Cargar BD
+Editar/Crear
+<
+>
+No se pudo cargar la base de datos.
+Diafragma
+Placa
+Cuerpo
+Soldadura
+Viga
+Igual
+Verifique los datos de entrada
+Reemplazar
+Asignar cargas nodales
+Asignar cargas puntuales a barras
+Fracción
+Global
+Local
+Calcular propiedades
+Agregar
+Nuevo caso de carga
+Asignar material a barras
+Asignar sección
+Restringir
+Empotrado
+Libre
+Articulado
+Rodillo
+Ángulo de rotación (°)
+Centro
+Arriba (+zz)
+Abajo (-zz)
+Izquierda (-yy)
+Derecha (+yy)
+mín
+máx
+Valor en nodo inicial
+Valor en nodo final
+Usar comandos de texto
+Alcance
+Lienzo
+Elementos del modelo
+Seleccionar
+Apariencia
+Cargas
+Resultados
+Fuentes y texto
+Elementos auxiliares
+Estilos
+Aplicar a todas las ventanas
+Aplicar a nuevas ventanas
+Color de fondo del lienzo
+Color de nodos
+Color de sombra de barras
+Grosor de nodos
+Color de líneas de barras
+Grosor de líneas de barras
+Color de selección
+Color de cargas
+Color de cargas puntuales
+Color de la forma deformada
+Color de fondo de apoyos
+Fuente
+Color de líneas de cuadrícula
+Grosor de líneas de cuadrícula
+Divisiones de renderizado
+Mostrar ID de nodos
+Mostrar cuadrícula
+Mostrar cargas en barras
+Mostrar forma deformada
+Mostrar cargas en nodos
+Mostrar nodos
+Mostrar nodos seleccionados
+Estilo de renderizado
+Estilo de líneas de cuadrícula
+Tema visual
+Escala de deformación dx, dy, dz
+Escala de deformación rx, ry, rz
+Número de segmentos en el render, rec. 6
+0/Otro- Líneas, 1- Extruido, 2- Alambre
+Estilo general del lienzo
+Elemento
+Resumen del elemento
+Longitud
+Caso/Combinación
+Acción
+Sin resultados para la selección
+Todo (N, Vy, Vz, Mx, My, Mz)
+Plano XY: N, Vy, Mz
+Plano XZ: N, Vz, My
+Cortantes: Vy, Vz
+Momentos: My, Mz
+N - Axial
+Vy - Cortante a lo largo de y
+Vz - Cortante a lo largo de z
+Mx - Torsión
+My - Momento respecto a y
+Mz - Momento respecto a z 
+Buscar
+Caso
+IDs (1,5,10-20)
+Todo
+Ocultar filas en cero
+Copiar
+Filas
+Ingrese el valor
+Valor inválido
+Seleccionar material
+Material
+Nuevo...
+Base de datos CEF
+No hay materiales en el modelo. Cree o importe uno primero.
+Área
+Secciones de área
+Áreas
+Dividir áreas en NX x NY
+Dividir áreas en nodos seleccionados
+Seleccionar áreas superpuestas
+Asignar sección a áreas
+Cargas con patrón de coordenadas
+Liberaciones de borde de área
+Fuerzas de área
+Información de áreas seleccionadas
+Divisiones a lo largo de nodos 1-2 (NX)
+Divisiones a lo largo de nodos 1-4 (NY)
+Secciones de área
+Opciones de análisis
+Malla automática de áreas
+Malla automática de barras
+Factor
+Fuerzas internas de área
+Invertir nodos de barra 
+Alinear selección de barras con la primera barra seleccionada
+Invertir ejes de área (intercambiar caras)
+Alinear área con la primera área seleccionada
+Desplazar nodos de área en sentido antihorario
+Conectividad

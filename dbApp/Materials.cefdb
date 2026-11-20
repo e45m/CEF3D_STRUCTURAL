@@ -1,0 +1,7 @@
+CEF3D_File_ver=0
+materials
+ID=1	Name=AISCG50	Type=0	v=0.3	E=204000000	G=78000000	M=7800	W=78	fc=0	fy=350000	fu=450000	
+ID=0	Name=AISCA36	Type=0	v=0.3	E=200000000	G=78000000	M=7800	W=78	fc=0	fy=250000	fu=300000	
+ID=2	Name=Concrete21MPa	Type=1	v=0.2	E=1311449.58	G=763.76	M=2400	W=24	fc=21000	fy=0	fu=0	
+ID=3	Name=Concrete28MPa	Type=1	v=0.2	E=1748599.44	G=881.91	M=2400	W=24	fc=28000	fy=0	fu=0	
+ID=4	Name=Concrete36MPa	Type=1	v=0.2	E=2248199.279	G=1000	M=2400	W=24	fc=36000	fy=0	fu=0	

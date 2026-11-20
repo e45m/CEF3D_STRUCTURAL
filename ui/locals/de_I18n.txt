@@ -1,0 +1,305 @@
+Info
+Datei
+Neu
+Öffnen
+Speichern
+Speichern unter
+Exportieren...
+Als DXF exportieren
+Importieren...
+SAP2000-S2K importieren
+Beenden
+Bearbeiten
+Kopieren
+Replizieren
+Verschieben
+Drehen
+Löschen
+Teilen
+Nach Länge oder Elementen teilen
+Am Schnittpunkt mit ausgewählten Stäben teilen
+Am Schnittpunkt mit ausgewählten Knoten teilen
+Knoten grafisch verschieben
+Verwaiste Knoten entfernen
+Überlappende Knoten entfernen
+Ausgewählte Stäbe zusammenführen
+Rückgängig
+Zeichnen
+Knoten
+Knoten (grafisch)
+Stab
+Auswählen
+Überlappende Knoten auswählen
+Überlappende Stäbe auswählen
+Alle auswählen
+Auswahl aufheben
+Modell
+Materialien
+Querschnitte
+Knoten
+Randbedingungen
+Lasten
+Verschiebungen
+Kinematische Zwangsbedingungen
+Stäbe
+Lasten...
+Streckenlasten
+Punktlasten
+Freiheitsgrad lösen
+Einfügepunkte
+Koordinatensysteme
+Neu/Bearbeiten...
+Lastfälle
+Bearbeiten/Erstellen/Löschen
+Aktiven Lastfall auswählen
+Lastkombinationen
+Datenbanken
+Baumansicht
+Tabellenansicht
+Einheiten
+Berechnung
+Linear-elastische Berechnung
+Lineare Berechnung mit P-Δ
+Optionen
+Ergebnisse
+Tabellen anzeigen
+Knotenverschiebungen
+Knotenreaktionen
+Stabschnittgrößen
+Diagramme
+Ergebnisse löschen
+Ansicht
+Anzeigeoptionen
+Ansicht zurücksetzen
+Ansichtsrahmen
+1
+2
+3
+4
+Ansichten
+XY
+XZ
+YZ
+3D
+Zoom
+Fenster zoomen
+Gesamtansicht
+Auf Auswahl zoomen
+Information
+Abstand zwischen zwei Knoten messen
+Informationen zu ausgewählten Stäben
+Fenster
+Neues Fenster
+Hilfe
+Referenzhandbuch
+Lizenz
+Test
+Pkt
+End
+Mit
+Näh
+Lot
+X-Koordinaten
+Y-Koordinaten
+Z-Koordinaten
+Thermische Stablasten
+Programmparameter
+Lastkombinationen
+Lastfälle
+Knotenverschiebungen
+Knotenreaktionen
+Knotenlagerungen
+Knoten
+Knotenlasten
+Stäbe
+Streckenlasten auf Stäben
+Punktlasten auf Stäben
+Schnittgrößen in Stäben
+Kinematische Zwangsbedingungen
+Name
+Typ
+Wert
+Koordinate
+Koordinatensystem
+Bezeichnung
+Startknoten
+Endknoten
+Fall
+Abstand
+Material-ID
+Querschnitts-ID
+Materialname
+Querschnittsname
+Unbenutzt
+Drehung
+FHG-Freigaben
+Einfügepunkt Y
+Einfügepunkt Z
+Hauptknoten
+Knotenliste
+Neuer Knoten
+Koordinaten eingeben, Beispiel: 1.2,3.4,4.5
+Es müssen genau zwei Punkte ausgewählt sein
+Versätze für x, y, z eingeben
+Versatz X
+Versatz Y
+Versatz Z
+Drehwinkel in ° eingeben, z. B.: 45:
+Drehung X (r1)
+Drehung Y (r2)
+Drehung Z (r3)
+Replikationsrichtung eingeben:
+Richtung X
+Richtung Y
+Richtung Z
+Drehzentrum eingeben:
+Zentrum X
+Zentrum Y
+Zentrum Z
+Abstände durch , getrennt eingeben.
+Beispiel: 2@3.5 oder 1,5.3,3
+Abstände: 
+Teilen mit L/l Elementen: 
+In Elemente mit max. x teilen 
+Anzahl der Teilungen eingeben: 
+In Elemente mit max. x teilen 
+Keine überlappenden Stäbe gefunden
+OK
+Abbrechen
+DB laden
+Bearbeiten/Erstellen
+<
+>
+Datenbank konnte nicht geladen werden.
+Diaphragma
+Platte
+Körper
+Schweißnaht
+Balken
+Gleich
+Eingabedaten prüfen
+Ersetzen
+Knotenlasten zuweisen
+Punktlasten auf Stäben zuweisen
+Anteil
+Global
+Lokal
+Eigenschaften berechnen
+Hinzufügen
+Neuer Lastfall
+Material Stäben zuweisen
+Querschnitt zuweisen
+Lagern
+Eingespannt
+Frei
+Gelenk
+Rollenlager
+Drehwinkel (°)
+Zentrum
+Oben (+zz)
+Unten (-zz)
+Links (-yy)
+Rechts (+yy)
+min
+max
+Wert am Startknoten
+Wert am Endknoten
+Textbefehle verwenden
+Bereich
+Zeichenfläche
+Modellelemente
+Auswählen
+Darstellung
+Lasten
+Ergebnisse
+Schriftarten und Text
+Hilfselemente
+Stile
+Auf alle Fenster anwenden
+Auf neue Fenster anwenden
+Hintergrundfarbe der Zeichenfläche
+Knotenfarbe
+Schattenfarbe der Stäbe
+Knotenstärke
+Linienfarbe der Stäbe
+Linienstärke der Stäbe
+Auswahlfarbe
+Lastenfarbe
+Punktlastenfarbe
+Farbe der verformten Form
+Hintergrundfarbe der Lager
+Schriftart
+Rasterlinienfarbe
+Rasterlinienstärke
+Render-Unterteilungen
+Knoten-IDs anzeigen
+Raster anzeigen
+Lasten auf Stäben anzeigen
+Verformte Form anzeigen
+Lasten auf Knoten anzeigen
+Knoten anzeigen
+Ausgewählte Knoten anzeigen
+Darstellungsstil
+Rasterlinienstil
+Visuelles Design
+Verformungsmaßstab dx, dy, dz
+Verformungsmaßstab rx, ry, rz
+Anzahl der Segmente im Render, empf. 6
+0/Andere- Linien, 1- Extrudiert, 2- Drahtmodell
+Allgemeiner Stil der Zeichenfläche
+Element
+Elementübersicht
+Länge
+Fall/Kombination
+Aktion
+Keine Ergebnisse für die Auswahl
+Alle (N, Vy, Vz, Mx, My, Mz)
+XY-Ebene: N, Vy, Mz
+XZ-Ebene: N, Vz, My
+Querkräfte: Vy, Vz
+Momente: My, Mz
+N - Normalkraft
+Vy - Querkraft entlang y
+Vz - Querkraft entlang z
+Mx - Torsion
+My - Moment um y
+Mz - Moment um z 
+Suchen
+Fall
+IDs (1,5,10-20)
+Alle
+Nullzeilen ausblenden
+Kopieren
+Zeilen
+Wert eingeben
+Ungültiger Wert
+Material auswählen
+Material
+Neu...
+CEF-Datenbank
+Das Modell enthält keine Materialien. Erstellen oder importieren Sie zuerst eines.
+Fläche
+Flächenquerschnitte
+Flächen
+Flächen in NX x NY teilen
+Flächen an ausgewählten Knoten teilen
+Überlappende Flächen auswählen
+Flächen Querschnitt zuweisen
+Koordinatenmusterlasten
+Flächenrandfreigaben
+Flächenkräfte
+Informationen zu ausgewählten Flächen
+Unterteilungen entlang der Knoten 1-2 (NX)
+Unterteilungen entlang der Knoten 1-4 (NY)
+Flächenquerschnitte
+Analyseoptionen
+Flächen automatisch vernetzen
+Stäbe automatisch vernetzen
+Faktor
+Flächenschnittgrößen
+Stabknoten umkehren 
+Stabauswahl am ersten ausgewählten Stab ausrichten
+Flächenachsen umkehren (Seiten tauschen)
+Fläche an der ersten ausgewählten Fläche ausrichten
+Flächenknoten gegen den Uhrzeigersinn verschieben
+Konnektivität

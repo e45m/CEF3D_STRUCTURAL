@@ -1,0 +1,305 @@
+Informazioni su
+File
+Nuovo
+Apri
+Salva
+Salva con nome
+Esporta...
+Esporta in DXF
+Importa...
+Importa SAP2000 S2K
+Esci
+Modifica
+Copia
+Replica
+Sposta
+Ruota
+Elimina
+Dividi
+Dividi per lunghezza o elementi
+Dividi all'intersezione con le aste selezionate
+Dividi all'intersezione con i nodi selezionati
+Sposta nodo graficamente
+Rimuovi nodi orfani
+Rimuovi nodi sovrapposti
+Unisci aste selezionate
+Annulla
+Disegna
+Nodo
+Nodo (graficamente)
+Asta
+Seleziona
+Seleziona nodi sovrapposti
+Seleziona aste sovrapposte
+Seleziona tutto
+Deseleziona tutto
+Modello
+Materiali
+Sezioni
+Nodi
+Condizioni al contorno
+Carichi
+Spostamenti
+Vincoli cinematici
+Aste
+Carichi...
+Carichi distribuiti
+Carichi puntuali
+Rilascia grado di libertà
+Punti di inserimento
+Sistemi di coordinate
+Nuovo/Modifica...
+Casi di carico
+Modifica/Crea/Elimina
+Seleziona caso attivo
+Combinazioni di carico
+Database
+Vista ad albero
+Vista tabella
+Unità
+Analisi
+Analisi lineare elastica
+Analisi lineare con P-Δ
+Opzioni
+Risultati
+Visualizza tabelle
+Spostamenti dei nodi
+Reazioni dei nodi
+Sollecitazioni interne delle aste
+Diagrammi
+Cancella risultati
+Visualizza
+Opzioni di visualizzazione
+Ripristina vista
+Riquadri di vista
+1
+2
+3
+4
+Viste
+XY
+XZ
+YZ
+3D
+Zoom
+Zoom finestra
+Zoom estensione
+Zoom sulla selezione
+Info
+Misura la distanza tra due nodi
+Informazioni sulle aste selezionate
+Finestre
+Nuova finestra
+Aiuto
+Manuale di riferimento
+Licenza
+Test
+Pnt
+Fin
+Cen
+Vic
+Per
+Coordinate X
+Coordinate Y
+Coordinate Z
+Carichi termici sulle aste
+Parametri del programma
+Combinazioni di carico
+Casi di carico
+Spostamenti nodali
+Reazioni nodali
+Vincoli nodali
+Nodi
+Carichi nodali
+Aste
+Carichi distribuiti sulle aste
+Carichi puntuali sulle aste
+Sollecitazioni interne nelle aste
+Vincoli cinematici
+Nome
+Tipo
+Valore
+Coordinata
+Sistema di coordinate
+Etichetta
+Nodo iniziale
+Nodo finale
+Caso
+Distanza
+ID materiale
+ID sezione
+Nome materiale
+Nome sezione
+Non utilizzato
+Rotazione
+Rilasci di GDL
+Punto di inserimento Y
+Punto di inserimento Z
+Nodo master
+Elenco nodi
+Nuovo nodo
+Inserire le coordinate, esempio: 1.2,3.4,4.5
+Devono essere selezionati esattamente due punti
+Inserire gli offset per x, y, z
+Offset X
+Offset Y
+Offset Z
+Inserire gli angoli di rotazione in ° es.: 45:
+Rotazione X (r1)
+Rotazione Y (r2)
+Rotazione Z (r3)
+Inserire la direzione di replica:
+Direzione X
+Direzione Y
+Direzione Z
+Inserire il centro di rotazione:
+Centro X
+Centro Y
+Centro Z
+Inserire le spaziature separate da ,.
+Esempio: 2@3.5 o 1,5.3,3
+Spaziature: 
+Dividi usando elementi L/l: 
+Dividi in elementi di max x 
+Inserire il numero di divisioni: 
+Dividi in elementi di max x 
+Nessuna asta sovrapposta trovata
+OK
+Annulla
+Carica DB
+Modifica/Crea
+<
+>
+Impossibile caricare il database.
+Diaframma
+Piastra
+Corpo
+Saldatura
+Trave
+Uguale
+Verificare i dati inseriti
+Sostituisci
+Assegna carichi nodali
+Assegna carichi puntuali alle aste
+Frazione
+Globale
+Locale
+Calcola proprietà
+Aggiungi
+Nuovo caso di carico
+Assegna materiale alle aste
+Assegna sezione
+Vincola
+Incastro
+Libero
+Cerniera
+Carrello
+Angolo di rotazione (°)
+Centro
+Su (+zz)
+Giù (-zz)
+Sinistra (-yy)
+Destra (+yy)
+min
+max
+Valore al nodo iniziale
+Valore al nodo finale
+Usa comandi di testo
+Ambito
+Area di disegno
+Elementi del modello
+Seleziona
+Aspetto
+Carichi
+Risultati
+Caratteri e testo
+Elementi ausiliari
+Stili
+Applica a tutte le finestre
+Applica alle nuove finestre
+Colore di sfondo dell'area di disegno
+Colore dei nodi
+Colore dell'ombra delle aste
+Spessore dei nodi
+Colore delle linee delle aste
+Spessore delle linee delle aste
+Colore di selezione
+Colore dei carichi
+Colore dei carichi puntuali
+Colore della deformata
+Colore di sfondo dei vincoli
+Carattere
+Colore delle linee della griglia
+Spessore delle linee della griglia
+Divisioni di rendering
+Mostra ID dei nodi
+Mostra griglia
+Mostra carichi sulle aste
+Mostra deformata
+Mostra carichi sui nodi
+Mostra nodi
+Mostra nodi selezionati
+Stile di rendering
+Stile delle linee della griglia
+Tema visivo
+Scala di deformazione dx, dy, dz
+Scala di deformazione rx, ry, rz
+Numero di segmenti nel rendering, cons. 6
+0/Altro- Linee, 1- Estruso, 2- Wireframe
+Stile generale dell'area di disegno
+Elemento
+Riepilogo dell'elemento
+Lunghezza
+Caso/Combinazione
+Azione
+Nessun risultato per la selezione
+Tutto (N, Vy, Vz, Mx, My, Mz)
+Piano XY: N, Vy, Mz
+Piano XZ: N, Vz, My
+Tagli: Vy, Vz
+Momenti: My, Mz
+N - Assiale
+Vy - Taglio lungo y
+Vz - Taglio lungo z
+Mx - Torsione
+My - Momento attorno a y
+Mz - Momento attorno a z 
+Cerca
+Caso
+ID (1,5,10-20)
+Tutto
+Nascondi righe a zero
+Copia
+Righe
+Inserire il valore
+Valore non valido
+Seleziona materiale
+Materiale
+Nuovo...
+Database CEF
+Non ci sono materiali nel modello. Crearne o importarne uno prima.
+Area
+Sezioni di area
+Aree
+Dividi aree in NX x NY
+Dividi aree ai nodi selezionati
+Seleziona aree sovrapposte
+Assegna sezione alle aree
+Carichi a pattern di coordinate
+Rilasci di bordo dell'area
+Forze di area
+Informazioni sulle aree selezionate
+Divisioni lungo i nodi 1-2 (NX)
+Divisioni lungo i nodi 1-4 (NY)
+Sezioni di area
+Opzioni di analisi
+Mesh automatica delle aree
+Mesh automatica delle aste
+Fattore
+Sollecitazioni interne di area
+Inverti nodi dell'asta 
+Allinea la selezione di aste alla prima asta selezionata
+Inverti assi dell'area (scambia facce)
+Allinea l'area alla prima area selezionata
+Sposta i nodi dell'area in senso antiorario
+Connettività

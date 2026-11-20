@@ -1,0 +1,305 @@
+À propos
+Fichier
+Nouveau
+Ouvrir
+Enregistrer
+Enregistrer sous
+Exporter...
+Exporter en DXF
+Importer...
+Importer SAP2000 S2K
+Quitter
+Édition
+Copier
+Répliquer
+Déplacer
+Pivoter
+Supprimer
+Diviser
+Diviser par longueur ou éléments
+Diviser à l'intersection avec les barres sélectionnées
+Diviser à l'intersection avec les nœuds sélectionnés
+Déplacer un nœud graphiquement
+Supprimer les nœuds orphelins
+Supprimer les nœuds superposés
+Fusionner les barres sélectionnées
+Annuler
+Dessiner
+Nœud
+Nœud (graphiquement)
+Barre
+Sélectionner
+Sélectionner les nœuds superposés
+Sélectionner les barres superposées
+Tout sélectionner
+Tout désélectionner
+Modèle
+Matériaux
+Sections
+Nœuds
+Conditions aux limites
+Charges
+Déplacements
+Contraintes cinématiques
+Barres
+Charges...
+Charges réparties
+Charges ponctuelles
+Libérer un degré de liberté
+Points d'insertion
+Systèmes de coordonnées
+Nouveau/Modifier...
+Cas de charge
+Modifier/Créer/Supprimer
+Sélectionner le cas actif
+Combinaisons de charges
+Bases de données
+Vue arborescente
+Vue tableau
+Unités
+Analyse
+Analyse linéaire élastique
+Analyse linéaire avec P-Δ
+Options
+Résultats
+Afficher les tableaux
+Déplacements des nœuds
+Réactions des nœuds
+Efforts internes des barres
+Diagrammes
+Effacer les résultats
+Affichage
+Options d'affichage
+Restaurer la vue
+Cadres de vue
+1
+2
+3
+4
+Vues
+XY
+XZ
+YZ
+3D
+Zoom
+Zoom fenêtre
+Zoom étendu
+Zoom sur la sélection
+Infos
+Mesurer la distance entre deux nœuds
+Informations sur les barres sélectionnées
+Fenêtres
+Nouvelle fenêtre
+Aide
+Manuel de référence
+Licence
+Test
+Pnt
+Ext
+Cen
+Prx
+Per
+Coordonnées X
+Coordonnées Y
+Coordonnées Z
+Charges thermiques des barres
+Paramètres du programme
+Combinaisons de charges
+Cas de charge
+Déplacements nodaux
+Réactions nodales
+Appuis nodaux
+Nœuds
+Charges nodales
+Barres
+Charges réparties sur barres
+Charges ponctuelles sur barres
+Efforts internes dans les barres
+Contraintes cinématiques
+Nom
+Type
+Valeur
+Coordonnée
+Système de coordonnées
+Libellé
+Nœud de départ
+Nœud d'arrivée
+Cas
+Distance
+ID du matériau
+ID de la section
+Nom du matériau
+Nom de la section
+Inutilisé
+Rotation
+Libérations de DDL
+Point d'insertion Y
+Point d'insertion Z
+Nœud maître
+Liste de nœuds
+Nouveau nœud
+Saisissez les coordonnées, exemple : 1.2,3.4,4.5
+Exactement deux points doivent être sélectionnés
+Saisissez les décalages pour x, y, z
+Décalage X
+Décalage Y
+Décalage Z
+Saisissez les angles de rotation en ° p. ex. : 45 :
+Rotation X (r1)
+Rotation Y (r2)
+Rotation Z (r3)
+Saisissez la direction de réplication :
+Direction X
+Direction Y
+Direction Z
+Saisissez le centre de rotation :
+Centre X
+Centre Y
+Centre Z
+Saisissez les espacements séparés par ,.
+Exemple : 2@3.5 ou 1,5.3,3
+Espacements : 
+Diviser en utilisant des éléments L/l : 
+Diviser en éléments de max. x 
+Saisissez le nombre de divisions : 
+Diviser en éléments de max. x 
+Aucune barre superposée trouvée
+OK
+Annuler
+Charger BD
+Modifier/Créer
+<
+>
+Impossible de charger la base de données.
+Diaphragme
+Plaque
+Corps
+Soudure
+Poutre
+Égal
+Vérifiez les données saisies
+Remplacer
+Affecter les charges nodales
+Affecter les charges ponctuelles aux barres
+Fraction
+Global
+Local
+Calculer les propriétés
+Ajouter
+Nouveau cas de charge
+Affecter le matériau aux barres
+Affecter la section
+Bloquer
+Encastré
+Libre
+Articulé
+Appui simple
+Angle de rotation (°)
+Centre
+Haut (+zz)
+Bas (-zz)
+Gauche (-yy)
+Droite (+yy)
+min
+max
+Valeur au nœud de départ
+Valeur au nœud d'arrivée
+Utiliser les commandes texte
+Portée
+Zone de dessin
+Éléments du modèle
+Sélectionner
+Apparence
+Charges
+Résultats
+Polices et texte
+Éléments auxiliaires
+Styles
+Appliquer à toutes les fenêtres
+Appliquer aux nouvelles fenêtres
+Couleur d'arrière-plan de la zone de dessin
+Couleur des nœuds
+Couleur d'ombre des barres
+Épaisseur des nœuds
+Couleur des lignes des barres
+Épaisseur des lignes des barres
+Couleur de sélection
+Couleur des charges
+Couleur des charges ponctuelles
+Couleur de la déformée
+Couleur d'arrière-plan des appuis
+Police
+Couleur des lignes de grille
+Épaisseur des lignes de grille
+Divisions de rendu
+Afficher les ID des nœuds
+Afficher la grille
+Afficher les charges sur les barres
+Afficher la déformée
+Afficher les charges sur les nœuds
+Afficher les nœuds
+Afficher les nœuds sélectionnés
+Style de rendu
+Style des lignes de grille
+Thème visuel
+Échelle de déformation dx, dy, dz
+Échelle de déformation rx, ry, rz
+Nombre de segments dans le rendu, rec. 6
+0/Autre- Lignes, 1- Extrudé, 2- Filaire
+Style général de la zone de dessin
+Élément
+Résumé de l'élément
+Longueur
+Cas/Combinaison
+Action
+Aucun résultat pour la sélection
+Tout (N, Vy, Vz, Mx, My, Mz)
+Plan XY : N, Vy, Mz
+Plan XZ : N, Vz, My
+Cisaillements : Vy, Vz
+Moments : My, Mz
+N - Axial
+Vy - Cisaillement selon y
+Vz - Cisaillement selon z
+Mx - Torsion
+My - Moment autour de y
+Mz - Moment autour de z 
+Rechercher
+Cas
+IDs (1,5,10-20)
+Tout
+Masquer les lignes à zéro
+Copier
+Lignes
+Saisissez la valeur
+Valeur invalide
+Sélectionner le matériau
+Matériau
+Nouveau...
+Base de données CEF
+Le modèle ne contient aucun matériau. Créez-en ou importez-en un d'abord.
+Surface
+Sections de surface
+Surfaces
+Diviser les surfaces en NX x NY
+Diviser les surfaces aux nœuds sélectionnés
+Sélectionner les surfaces superposées
+Affecter la section aux surfaces
+Charges à motif de coordonnées
+Libérations de bord de surface
+Efforts de surface
+Informations sur les surfaces sélectionnées
+Divisions le long des nœuds 1-2 (NX)
+Divisions le long des nœuds 1-4 (NY)
+Sections de surface
+Options d'analyse
+Maillage automatique des surfaces
+Maillage automatique des barres
+Facteur
+Efforts internes de surface
+Inverser les nœuds de barre 
+Aligner la sélection de barres sur la première barre sélectionnée
+Inverser les axes de surface (échanger les faces)
+Aligner la surface sur la première surface sélectionnée
+Décaler les nœuds de surface dans le sens antihoraire
+Connectivité

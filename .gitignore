@@ -1,7 +1,9 @@
+.gitignore
 .git
 .netcoredbg_hist
-src/obj/*
-src/bin/*
+.vscode/*
+/obj/*
+/bin/*
 doc/*
 *.xlsx
 *.pdf
@@ -9,5 +11,6 @@ doc/*
 CEF3D/.vs/*
 Verificacion/*
 tmpfiles/*
-*.txt
-*.resx
+*.html
+*.csv
+TODOS.txt

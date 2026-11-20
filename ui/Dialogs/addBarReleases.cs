@@ -1,0 +1,82 @@
+﻿using System;
+using System.Windows.Forms;
+using static System.Math;
+using static CEF.ModelDB;
+namespace CEF;
+public  class addBarReleases:Form
+{
+    
+    internal CheckBox [] cbRels;
+
+    private void InitializeComponent()
+    { 
+        cbRels = new CheckBox[12];
+        var cbNames =new string[] { "u", "v", "w", "r1", "r2", "r3", "u", "v", "w", "r1", "r2", "r3" };
+
+        int x, y;
+        for(int i=0; i < 12; i++)
+        {
+            x = 50+(i<6?0:100);
+            y = 50+i*30- (i < 6 ? 0 :6*30);
+            cbRels[i] = new() { AutoSize = true, Location = new Point(x, y), Margin = new Padding(4, 3, 4, 3), Size = new Size(33, 19), TabIndex = 5, Text = cbNames[i], UseVisualStyleBackColor = true };           
+        }
+
+      var  label1 = new Label() { Text = I18n.startNode,AutoSize = true, Location = new Point( 40, 20), Size = new Size(44, 15), TabIndex = 8,};
+      var  label2 = new Label() { Text = I18n.endNode,AutoSize = true, Location = new Point(140, 20), Size = new Size(44, 15), TabIndex = 9,};
+
+      var  bttOk = dlgStyle.button(I18n.DlgOKText,40,250,80,true);
+        bttOk.Click += ok_Click;
+
+      var  bttNo = dlgStyle.button(I18n.DlgCancelText,140,250,80);
+        bttNo.Click += No_Click;
+        
+        AcceptButton = bttOk;
+        CancelButton = bttNo;
+
+        AutoScaleDimensions = new SizeF(7F, 15F);
+        AutoScaleMode = AutoScaleMode.Font;
+        ClientSize = new Size(250, 300);
+
+        Controls.AddRange(new Control[] {label1,label2, bttNo, bttOk });
+        Controls.AddRange(cbRels);
+
+        dlgStyle.applyForm(this);
+
+        Text = I18n.ReleaseDegreeOfFreedom;
+      
+    } 
+
+    public double MaxQ;
+    public addBarReleases()
+    {
+        InitializeComponent();
+    }
+    private void No_Click(object sender, EventArgs e)
+    {
+        Close();   
+    }
+    private void ok_Click(object sender, EventArgs e)
+    {
+        App.takeUndoSnapShot();
+
+        int N = Selection.barMaxIndex;
+        int  indB;        
+        var Sel = Selection.getBarsColection();
+        var value = 0b0;
+        for (int i = 0; i < 12; i++)
+            if (cbRels[i].Checked)
+                value += (1 << (11 - i));
+
+        for (int i = 0; i <=N; i++)
+            {
+                indB = Sel[i];
+                Bar barra = Engine.getModel().bars[indB];
+                 barra.releases = value;
+            }
+            if (this.ParentForm is MainWindow cedm)
+                    cedm.reloadAllCanvasWindows();
+        Close();
+    }
+
+}
+

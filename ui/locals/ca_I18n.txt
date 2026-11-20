@@ -1,0 +1,305 @@
+Quant a
+Fitxer
+Nou
+Obre
+Desa
+Desa com a
+Exporta...
+Exporta a DXF
+Importa...
+Importa SAP2000 S2K
+Surt
+Edita
+Copia
+Replica
+Mou
+Gira
+Elimina
+Divideix
+Divideix per longitud o elements
+Divideix a la intersecció amb barres seleccionades
+Divideix a la intersecció amb nodes seleccionats
+Mou node gràficament
+Elimina nodes orfes
+Elimina nodes superposats
+Fusiona barres seleccionades
+Desfés
+Dibuixa
+Node
+Node (gràficament)
+Barra
+Selecciona
+Selecciona nodes superposats
+Selecciona barres superposades
+Selecciona-ho tot
+Deselecciona-ho tot
+Model
+Materials
+Seccions
+Nodes
+Condicions de contorn
+Càrregues
+Desplaçaments
+Restriccions cinemàtiques
+Barres
+Càrregues...
+Càrregues distribuïdes
+Càrregues puntuals
+Allibera grau de llibertat
+Punts d'inserció
+Sistemes de coordenades
+Nou/Edita...
+Casos de càrrega
+Edita/Crea/Elimina
+Selecciona el cas actiu
+Combinacions de càrrega
+Bases de dades
+Vista d'arbre
+Vista de taula
+Unitats
+Anàlisi
+Anàlisi lineal elàstica
+Anàlisi lineal amb P-Δ
+Opcions
+Resultats
+Mostra taules
+Desplaçaments de nodes
+Reaccions de nodes
+Esforços interns de barres
+Diagrames
+Esborra resultats
+Visualitza
+Opcions de visualització
+Restaura la vista
+Marcs de vista
+1
+2
+3
+4
+Vistes
+XY
+XZ
+YZ
+3D
+Zoom
+Zoom finestra
+Zoom extensió
+Zoom a la selecció
+Informació
+Mesura la distància entre dos nodes
+Informació de barres seleccionades
+Finestres
+Nova finestra
+Ajuda
+Manual de referència
+Llicència
+Prova
+Pnt
+Fi
+Cen
+Prp
+Per
+Coordenades X
+Coordenades Y
+Coordenades Z
+Càrregues tèrmiques en barres
+Paràmetres del programa
+Combinacions de càrrega
+Casos de càrrega
+Desplaçaments nodals
+Reaccions nodals
+Restriccions nodals
+Nodes
+Càrregues nodals
+Barres
+Càrregues distribuïdes en barres
+Càrregues puntuals en barres
+Esforços interns en barres
+Restriccions cinemàtiques
+Nom
+Tipus
+Valor
+Coordenada
+Sistema de coordenades
+Etiqueta
+Node inicial
+Node final
+Cas
+Distància
+ID de material
+ID de secció
+Nom del material
+Nom de la secció
+Sense ús
+Rotació
+Alliberaments de GDL
+Punt d'inserció Y
+Punt d'inserció Z
+Node mestre
+Llista de nodes
+Nou node
+Introduïu les coordenades, exemple: 1.2,3.4,4.5
+Cal seleccionar exactament dos punts
+Introduïu els desplaçaments per a x, y, z
+Desplaçament X
+Desplaçament Y
+Desplaçament Z
+Introduïu els angles de rotació en ° p. ex.: 45:
+Rotació X (r1)
+Rotació Y (r2)
+Rotació Z (r3)
+Introduïu la direcció de replicació:
+Direcció X
+Direcció Y
+Direcció Z
+Introduïu el centre de rotació:
+Centre X
+Centre Y
+Centre Z
+Introduïu els espaiaments separats per ,.
+Exemple: 2@3.5 o 1,5.3,3
+Espaiaments: 
+Divideix amb elements L/l: 
+Divideix en elements de màx. x 
+Introduïu el nombre de divisions: 
+Divideix en elements de màx. x 
+No s'han trobat barres superposades
+D'acord
+Cancel·la
+Carrega BD
+Edita/Crea
+<
+>
+No s'ha pogut carregar la base de dades.
+Diafragma
+Placa
+Cos
+Soldadura
+Biga
+Igual
+Comproveu les dades d'entrada
+Substitueix
+Assigna càrregues nodals
+Assigna càrregues puntuals a barres
+Fracció
+Global
+Local
+Calcula propietats
+Afegeix
+Nou cas de càrrega
+Assigna material a barres
+Assigna secció
+Restringeix
+Encastat
+Lliure
+Articulat
+Corró
+Angle de rotació (°)
+Centre
+Amunt (+zz)
+Avall (-zz)
+Esquerra (-yy)
+Dreta (+yy)
+mín
+màx
+Valor al node inicial
+Valor al node final
+Utilitza ordres de text
+Abast
+Llenç
+Elements del model
+Selecciona
+Aparença
+Càrregues
+Resultats
+Tipus de lletra i text
+Elements auxiliars
+Estils
+Aplica a totes les finestres
+Aplica a les finestres noves
+Color de fons del llenç
+Color dels nodes
+Color de l'ombra de les barres
+Gruix dels nodes
+Color de les línies de les barres
+Gruix de les línies de les barres
+Color de selecció
+Color de les càrregues
+Color de les càrregues puntuals
+Color de la forma deformada
+Color de fons dels suports
+Tipus de lletra
+Color de les línies de la quadrícula
+Gruix de les línies de la quadrícula
+Divisions de renderització
+Mostra l'ID dels nodes
+Mostra la quadrícula
+Mostra càrregues en barres
+Mostra la forma deformada
+Mostra càrregues en nodes
+Mostra nodes
+Mostra nodes seleccionats
+Estil de renderització
+Estil de les línies de la quadrícula
+Tema visual
+Escala de deformació dx, dy, dz
+Escala de deformació rx, ry, rz
+Nombre de segments al render, rec. 6
+0/Altre- Línies, 1- Extruït, 2- Filferro
+Estil general del llenç
+Element
+Resum de l'element
+Longitud
+Cas/Combinació
+Acció
+Sense resultats per a la selecció
+Tot (N, Vy, Vz, Mx, My, Mz)
+Pla XY: N, Vy, Mz
+Pla XZ: N, Vz, My
+Tallants: Vy, Vz
+Moments: My, Mz
+N - Axial
+Vy - Tallant al llarg de y
+Vz - Tallant al llarg de z
+Mx - Torsió
+My - Moment al voltant de y
+Mz - Moment al voltant de z 
+Cerca
+Cas
+IDs (1,5,10-20)
+Tot
+Amaga files a zero
+Copia
+Files
+Introduïu el valor
+Valor no vàlid
+Selecciona material
+Material
+Nou...
+Base de dades CEF
+No hi ha materials al model. Creeu-ne o importeu-ne un primer.
+Àrea
+Seccions d'àrea
+Àrees
+Divideix àrees en NX x NY
+Divideix àrees als nodes seleccionats
+Selecciona àrees superposades
+Assigna secció a àrees
+Càrregues amb patró de coordenades
+Alliberaments de vora d'àrea
+Forces d'àrea
+Informació d'àrees seleccionades
+Divisions al llarg dels nodes 1-2 (NX)
+Divisions al llarg dels nodes 1-4 (NY)
+Seccions d'àrea
+Opcions d'anàlisi
+Malla automàtica d'àrees
+Malla automàtica de barres
+Factor
+Esforços interns d'àrea
+Inverteix els nodes de la barra 
+Alinea la selecció de barres amb la primera barra seleccionada
+Inverteix els eixos de l'àrea (intercanvia cares)
+Alinea l'àrea amb la primera àrea seleccionada
+Desplaça els nodes de l'àrea en sentit antihorari
+Connectivitat

@@ -1,0 +1,305 @@
+Honi buruz
+Fitxategia
+Berria
+Ireki
+Gorde
+Gorde honela
+Esportatu...
+Esportatu DXF formatuan
+Inportatu...
+Inportatu SAP2000 S2K
+Irten
+Editatu
+Kopiatu
+Erreplikatu
+Mugitu
+Biratu
+Ezabatu
+Zatitu
+Zatitu luzeraren edo elementuen arabera
+Zatitu hautatutako barrekin ebakitzen den lekuan
+Zatitu hautatutako nodoekin ebakitzen den lekuan
+Mugitu nodoa grafikoki
+Kendu nodo umezurtzak
+Kendu gainjarritako nodoak
+Batu hautatutako barrak
+Desegin
+Marraztu
+Nodoa
+Nodoa (grafikoki)
+Barra
+Hautatu
+Hautatu gainjarritako nodoak
+Hautatu gainjarritako barrak
+Hautatu dena
+Desautatu dena
+Eredua
+Materialak
+Sekzioak
+Nodoak
+Muga-baldintzak
+Kargak
+Desplazamenduak
+Murrizketa zinematikoak
+Barrak
+Kargak...
+Karga banatuak
+Karga puntualak
+Askatu askatasun-maila
+Txertatze-puntuak
+Koordenatu-sistemak
+Berria/Editatu...
+Karga-kasuak
+Editatu/Sortu/Ezabatu
+Hautatu kasu aktiboa
+Karga-konbinazioak
+Datu-baseak
+Zuhaitz-ikuspegia
+Taula-ikuspegia
+Unitateak
+Analisia
+Analisi lineal elastikoa
+Analisi lineala P-Δ-rekin
+Aukerak
+Emaitzak
+Ikusi taulak
+Nodoen desplazamenduak
+Nodoen erreakzioak
+Barren barne-indarrak
+Diagramak
+Garbitu emaitzak
+Ikusi
+Bistaratze-aukerak
+Berrezarri ikuspegia
+Ikuspegi-markoak
+1
+2
+3
+4
+Ikuspegiak
+XY
+XZ
+YZ
+3D
+Zooma
+Leiho-zooma
+Hedadura-zooma
+Zooma hautapenera
+Informazioa
+Neurtu bi nodoren arteko distantzia
+Hautatutako barren informazioa
+Leihoak
+Leiho berria
+Laguntza
+Erreferentzia-eskuliburua
+Lizentzia
+Proba
+Pnt
+Amu
+Zen
+Hur
+Pep
+X koordenatuak
+Y koordenatuak
+Z koordenatuak
+Barren karga termikoak
+Programaren parametroak
+Karga-konbinazioak
+Karga-kasuak
+Nodo-desplazamenduak
+Nodo-erreakzioak
+Nodo-murrizketak
+Nodoak
+Nodo-kargak
+Barrak
+Barretako karga banatuak
+Barretako karga puntualak
+Barretako barne-indarrak
+Murrizketa zinematikoak
+Izena
+Mota
+Balioa
+Koordenatua
+Koordenatu-sistema
+Etiketa
+Hasierako nodoa
+Amaierako nodoa
+Kasua
+Distantzia
+Materialaren IDa
+Sekzioaren IDa
+Materialaren izena
+Sekzioaren izena
+Erabili gabe
+Biraketa
+AM askapenak
+Txertatze-puntua Y
+Txertatze-puntua Z
+Nodo nagusia
+Nodo-zerrenda
+Nodo berria
+Sartu koordenatuak, adibidez: 1.2,3.4,4.5
+Bi puntu zehatz hautatu behar dira
+Sartu x, y, z desplazamenduak
+X desplazamendua
+Y desplazamendua
+Z desplazamendua
+Sartu biraketa-angeluak °-tan, adib.: 45:
+X biraketa (r1)
+Y biraketa (r2)
+Z biraketa (r3)
+Sartu erreplikazio-norabidea:
+X norabidea
+Y norabidea
+Z norabidea
+Sartu biraketa-zentroa:
+X zentroa
+Y zentroa
+Z zentroa
+Sartu tarteak ,-z bereizita.
+Adibidea: 2@3.5 edo 1,5.3,3
+Tarteak: 
+Zatitu L/l elementuekin: 
+Zatitu gehienez x-ko elementutan 
+Sartu zatiketa kopurua: 
+Zatitu gehienez x-ko elementutan 
+Ez da gainjarritako barrarik aurkitu
+Ados
+Utzi
+Kargatu DB
+Editatu/Sortu
+<
+>
+Ezin izan da datu-basea kargatu.
+Diafragma
+Plaka
+Gorputza
+Soldadura
+Habea
+Berdina
+Egiaztatu sarrerako datuak
+Ordezkatu
+Esleitu nodo-kargak
+Esleitu karga puntualak barrei
+Zatia
+Orokorra
+Lokala
+Kalkulatu propietateak
+Gehitu
+Karga-kasu berria
+Esleitu materiala barrei
+Esleitu sekzioa
+Murriztu
+Giltzatua
+Askea
+Artikulatua
+Arrabola
+Biraketa-angelua (°)
+Zentroa
+Gora (+zz)
+Behera (-zz)
+Ezkerra (-yy)
+Eskuina (+yy)
+min
+max
+Balioa hasierako nodoan
+Balioa amaierako nodoan
+Erabili testu-komandoak
+Eremua
+Oihala
+Ereduaren elementuak
+Hautatu
+Itxura
+Kargak
+Emaitzak
+Letra-tipoak eta testua
+Elementu laguntzaileak
+Estiloak
+Aplikatu leiho guztietan
+Aplikatu leiho berrietan
+Oihalaren atzeko planoaren kolorea
+Nodoen kolorea
+Barren itzalaren kolorea
+Nodoen lodiera
+Barren lerroen kolorea
+Barren lerroen lodiera
+Hautapenaren kolorea
+Kargen kolorea
+Karga puntualen kolorea
+Forma deformatuaren kolorea
+Euskarrien atzeko planoaren kolorea
+Letra-tipoa
+Sareta-lerroen kolorea
+Sareta-lerroen lodiera
+Errenderizazio-zatiketak
+Erakutsi nodoen IDa
+Erakutsi sareta
+Erakutsi kargak barretan
+Erakutsi forma deformatua
+Erakutsi kargak nodoetan
+Erakutsi nodoak
+Erakutsi hautatutako nodoak
+Errenderizazio-estiloa
+Sareta-lerroen estiloa
+Itxura bisuala
+Deformazio-eskala dx, dy, dz
+Deformazio-eskala rx, ry, rz
+Segmentu kopurua errenderizazioan, gomendatua 6
+0/Beste- Lerroak, 1- Estrusioa, 2- Alambre-sarea
+Oihalaren estilo orokorra
+Elementua
+Elementuaren laburpena
+Luzera
+Kasua/Konbinazioa
+Ekintza
+Ez dago emaitzarik hautapenerako
+Guztia (N, Vy, Vz, Mx, My, Mz)
+XY planoa: N, Vy, Mz
+XZ planoa: N, Vz, My
+Ebakidurak: Vy, Vz
+Momentuak: My, Mz
+N - Axiala
+Vy - Ebakidura y ardatzean
+Vz - Ebakidura z ardatzean
+Mx - Torsioa
+My - y inguruko momentua
+Mz - z inguruko momentua 
+Bilatu
+Kasua
+IDak (1,5,10-20)
+Guztia
+Ezkutatu zero-errenkadak
+Kopiatu
+Errenkadak
+Sartu balioa
+Balio baliogabea
+Hautatu materiala
+Materiala
+Berria...
+CEF datu-basea
+Ereduan ez dago materialik. Sortu edo inportatu bat lehenik.
+Area
+Area-sekzioak
+Areak
+Zatitu areak NX x NY zatitan
+Zatitu areak hautatutako nodoetan
+Hautatu gainjarritako areak
+Esleitu sekzioa areei
+Koordenatu-patroiko kargak
+Areen ertz-askapenak
+Area-indarrak
+Hautatutako areen informazioa
+Zatiketak 1-2 nodoen luzeran (NX)
+Zatiketak 1-4 nodoen luzeran (NY)
+Area-sekzioak
+Analisi-aukerak
+Areen sare automatikoa
+Barren sare automatikoa
+Faktorea
+Areen barne-indarrak
+Alderantzikatu barraren nodoak 
+Lerrokatu barra-hautapena hautatutako lehen barrarekin
+Alderantzikatu areen ardatzak (aurpegiak trukatu)
+Lerrokatu area hautatutako lehen areekin
+Lerratu areen nodoak erlojuaren kontrako norantzan
+Konektibitatea

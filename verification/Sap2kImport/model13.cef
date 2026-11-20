@@ -1,0 +1,1658 @@
+﻿CEF3D_File_ver=0
+programParams
+Name=ProgramName	Value=SAP2000
+Name=Version	Value=22.2.0
+Name=CurrUnits	Value="KN, m, C"
+Name=SteelCode	Value="AISC 360-16"
+Name=ConcCode	Value="ACI 318-14"
+Name=AlumCode	Value="AA-ASD 2000"
+Name=ColdCode	Value=AISI-ASD96
+Name=RegenHinge	Value=Yes
+Name=Units	Value=kN,kg,m,C
+Name=Analyzed	Value=0
+Name=SelfWeight Case	Value=0
+Name=ActiveLoad Case	Value=0
+Name=Frame Divisions	Value=3
+Name=Pdelta Iters	Value=1
+Name=Pdelta Load Comb	Value={0}{1}
+materials
+ID=1	Name=3000Psi	Type=0	v=0.2	E=21525562.373565	G=8968984.32231875	M=2.40276960558926	W=23.5631216161854	fc=0	fy=0	fu=0
+ID=2	Name=4000Psi	Type=0	v=0.2	E=24855578.0600518	G=10356490.8583549	M=2.40276960558926	W=23.5631216161854	fc=0	fy=0	fu=0
+ID=3	Name=A416Gr270	Type=0	v=0	E=196500599.8512	G=0	M=7.84904737995992	W=76.9728639422648	fc=0	fy=0	fu=0
+ID=4	Name=A572Gr50	Type=0	v=0.3	E=199947978.795958	G=76903068.767676	M=7.84904737995992	W=76.9728639422648	fc=0	fy=0	fu=0
+ID=5	Name=A615Gr60	Type=0	v=0	E=199947978.795958	G=0	M=7.84904737995992	W=76.9728639422648	fc=0	fy=0	fu=0
+sections
+ID=1	Name=100x100x6	Type=0	MaterialID=4	MaterialName=A572Gr50	h=0.1	b=0.1	tw=0.006	tf=0.006	Ag=0.002256	Iyy=3.335872E-06	Izz=3.335872E-06	Iyz=0	Tor=4.983504E-06	Acyy=0.0012	Aczz=0.0012	Syy=6.671744E-05	Szz=6.671744E-05	Pyy=0	Pzz=0	ryy=0.038453435043786	rzz=0.038453435043786
+ID=2	Name=100x40x6	Type=0	MaterialID=4	MaterialName=A572Gr50	h=0.1	b=0.04	tw=0.006	tf=0.006	Ag=0.001536	Iyy=1.743232E-06	Izz=3.72352E-07	Iyz=0	Tor=9.576015E-07	Acyy=0.00048	Aczz=0.0012	Syy=3.486464E-05	Szz=1.86176E-05	Pyy=0	Pzz=0	ryy=0.0336885242577746	rzz=0.0155697356004097
+ID=3	Name=10x80x6	Type=0	MaterialID=4	MaterialName=A572Gr50	h=0.1	b=0.08	tw=0.006	tf=0.006	Ag=0.002016	Iyy=2.804992E-06	Izz=1.960832E-06	Iyz=0	Tor=3.45613828571429E-06	Acyy=0.00096	Aczz=0.0012	Syy=5.609984E-05	Szz=4.90208E-05	Pyy=0	Pzz=0	ryy=0.0373010064122281	rzz=0.0311870954183765
+ID=4	Name=80x40x5	Type=0	MaterialID=4	MaterialName=A572Gr50	h=0.08	b=0.04	tw=0.005	tf=0.005	Ag=0.0011	Iyy=8.49166666666667E-07	Izz=2.69166666666667E-07	Iyz=0	Tor=6.26420454545454E-07	Acyy=0.0004	Aczz=0.0008	Syy=2.12291666666667E-05	Szz=1.34583333333333E-05	Pyy=0	Pzz=0	ryy=0.0277843426585856	rzz=0.0156427928995103
+ID=5	Name=PDCIM	Type=0	MaterialID=1	MaterialName=3000Psi	h=0.3	b=0.3	tw=0	tf=0	Ag=0.09	Iyy=0.000675	Izz=0.000675	Iyz=0	Tor=0.00114075	Acyy=0.075	Aczz=0.075	Syy=0.0045	Szz=0.0045	Pyy=0	Pzz=0	ryy=0.0866025403784439	rzz=0.0866025403784439
+gridCoordsX
+ID=1	Coord=0	coordSys=Default
+ID=2	Coord=1.5	coordSys=Default
+ID=3	Coord=3.99	coordSys=Default
+ID=4	Coord=4.69	coordSys=Default
+ID=5	Coord=6.59	coordSys=Default
+ID=6	Coord=8.54	coordSys=Default
+ID=7	Coord=10.24	coordSys=Default
+ID=8	Coord=12.99	coordSys=Default
+ID=9	Coord=13.7	coordSys=Default
+gridCoordsY
+ID=1	Coord=0	coordSys=Default
+ID=2	Coord=1.28	coordSys=Default
+ID=3	Coord=2.79	coordSys=Default
+ID=4	Coord=4.89	coordSys=Default
+ID=5	Coord=6.44	coordSys=Default
+ID=6	Coord=9.42	coordSys=Default
+ID=7	Coord=11.85	coordSys=Default
+ID=8	Coord=13.7	coordSys=Default
+ID=9	Coord=15.55	coordSys=Default
+ID=10	Coord=17.04	coordSys=Default
+ID=11	Coord=18.45	coordSys=Default
+ID=12	Coord=19.79	coordSys=Default
+gridCoordsZ
+ID=1	Coord=-1	coordSys=Default
+ID=2	Coord=-0.2	coordSys=Default
+ID=3	Coord=0	coordSys=Default
+ID=4	Coord=2.7	coordSys=Default
+ID=5	Coord=3.12	coordSys=Default
+ID=6	Coord=3.5	coordSys=Default
+ID=7	Coord=4.52	coordSys=Default
+nodes
+ID=1	label=1	X=6.59	Y=19.79	Z=-1
+ID=4	label=4	X=10.24	Y=18.45	Z=-1
+ID=5	label=5	X=8.54	Y=18.45	Z=-1
+ID=6	label=6	X=12.99	Y=17.04	Z=-1
+ID=7	label=7	X=10.24	Y=17.04	Z=-1
+ID=8	label=8	X=8.54	Y=17.04	Z=-1
+ID=9	label=9	X=6.59	Y=17.04	Z=-1
+ID=13	label=13	X=12.99	Y=15.55	Z=-1
+ID=14	label=14	X=10.24	Y=15.55	Z=-1
+ID=15	label=15	X=7.09	Y=15.55	Z=-1
+ID=16	label=16	X=7.09	Y=13.7	Z=-1
+ID=17	label=17	X=7.09	Y=11.85	Z=-1
+ID=18	label=18	X=2.63	Y=4.85	Z=0
+ID=19	label=19	X=9.79	Y=4.85	Z=0
+ID=20	label=20	X=7.09	Y=9.42	Z=-1
+ID=21	label=21	X=7.09	Y=6.94	Z=-1
+ID=22	label=22	X=7.09	Y=4.89	Z=-1
+ID=23	label=23	X=7.09	Y=2.79	Z=-1
+ID=24	label=24	X=7.59	Y=1.28	Z=-1
+ID=25	label=25	X=7.59	Y=0	Z=-1
+ID=26	label=26	X=9.09	Y=1.28	Z=-1
+ID=27	label=27	X=9.09	Y=0	Z=-1
+ID=28	label=28	X=10.24	Y=13.7	Z=-1
+ID=29	label=29	X=10.24	Y=11.85	Z=-1
+ID=30	label=30	X=10.24	Y=9.42	Z=-1
+ID=31	label=31	X=10.24	Y=6.44	Z=-1
+ID=32	label=32	X=10.24	Y=4.89	Z=-1
+ID=33	label=33	X=10.24	Y=2.79	Z=-1
+ID=34	label=34	X=12.49	Y=13.7	Z=-1
+ID=35	label=35	X=12.49	Y=11.85	Z=-1
+ID=36	label=38	X=12.49	Y=15.55	Z=-1
+ID=37	label=40	X=11.99	Y=11.85	Z=-1
+ID=38	label=41	X=11.99	Y=9.42	Z=-1
+ID=39	label=42	X=11.99	Y=6.44	Z=-1
+ID=40	label=44	X=13.49	Y=6.44	Z=-1
+ID=41	label=45	X=13.49	Y=4.89	Z=-1
+ID=42	label=47	X=13.49	Y=2.79	Z=-1
+ID=43	label=48	X=12.99	Y=2.79	Z=-1
+ID=44	label=49	X=12.99	Y=1.28	Z=-1
+ID=47	label=52	X=0	Y=6.94	Z=-1
+ID=48	label=53	X=0	Y=4.89	Z=-1
+ID=49	label=54	X=0	Y=2.79	Z=-1
+ID=50	label=55	X=0	Y=0	Z=-1
+ID=52	label=57	X=4.69	Y=6.94	Z=-1
+ID=53	label=58	X=3.19	Y=6.94	Z=-1
+ID=54	label=59	X=4.69	Y=4.89	Z=-1
+ID=55	label=60	X=3.19	Y=4.89	Z=-1
+ID=56	label=61	X=4.69	Y=2.79	Z=-1
+ID=57	label=62	X=4.69	Y=1.28	Z=-1
+ID=58	label=63	X=3.19	Y=2.79	Z=-1
+ID=59	label=64	X=3.19	Y=1.28	Z=-1
+ID=60	label=65	X=3.19	Y=4.44089209850063E-16	Z=-1
+ID=61	label=244	X=2.63	Y=4.85	Z=1
+ID=62	label=245	X=9.79	Y=4.85	Z=1
+ID=63	label=246	X=6.59	Y=19.79	Z=0
+ID=64	label=249	X=10.24	Y=18.45	Z=0
+ID=65	label=250	X=8.54	Y=18.45	Z=0
+ID=66	label=251	X=12.99	Y=17.04	Z=0
+ID=67	label=252	X=10.24	Y=17.04	Z=0
+ID=68	label=253	X=8.54	Y=17.04	Z=0
+ID=69	label=254	X=6.59	Y=17.04	Z=0
+ID=70	label=258	X=12.99	Y=15.55	Z=0
+ID=71	label=259	X=10.24	Y=15.55	Z=0
+ID=72	label=260	X=7.09	Y=15.55	Z=0
+ID=73	label=261	X=7.09	Y=13.7	Z=0
+ID=74	label=262	X=7.09	Y=11.85	Z=0
+ID=75	label=263	X=7.09	Y=9.42	Z=0
+ID=76	label=264	X=7.09	Y=6.94	Z=0
+ID=77	label=265	X=7.09	Y=4.89	Z=0
+ID=78	label=266	X=7.09	Y=2.79	Z=0
+ID=79	label=267	X=7.59	Y=1.28	Z=0
+ID=80	label=268	X=7.59	Y=0	Z=0
+ID=81	label=269	X=9.09	Y=1.28	Z=0
+ID=82	label=270	X=9.09	Y=0	Z=0
+ID=83	label=271	X=10.24	Y=13.7	Z=0
+ID=84	label=272	X=10.24	Y=11.85	Z=0
+ID=85	label=273	X=10.24	Y=9.42	Z=0
+ID=86	label=274	X=10.24	Y=6.44	Z=0
+ID=87	label=275	X=10.24	Y=4.89	Z=0
+ID=88	label=276	X=10.24	Y=2.79	Z=0
+ID=89	label=277	X=12.49	Y=13.7	Z=0
+ID=90	label=278	X=12.49	Y=11.85	Z=0
+ID=91	label=279	X=12.49	Y=15.55	Z=0
+ID=92	label=280	X=11.99	Y=11.85	Z=0
+ID=93	label=281	X=11.99	Y=9.42	Z=0
+ID=94	label=282	X=11.99	Y=6.44	Z=0
+ID=95	label=283	X=13.49	Y=6.44	Z=0
+ID=96	label=284	X=13.49	Y=4.89	Z=0
+ID=97	label=285	X=13.49	Y=2.79	Z=0
+ID=98	label=286	X=12.99	Y=2.79	Z=0
+ID=99	label=287	X=12.99	Y=1.28	Z=0
+ID=100	label=290	X=0	Y=6.94	Z=0
+ID=101	label=291	X=0	Y=4.89	Z=0
+ID=102	label=292	X=0	Y=2.79	Z=0
+ID=103	label=293	X=0	Y=0	Z=0
+ID=104	label=295	X=4.69	Y=6.94	Z=0
+ID=105	label=296	X=3.19	Y=6.94	Z=0
+ID=106	label=297	X=4.69	Y=4.89	Z=0
+ID=107	label=298	X=3.19	Y=4.89	Z=0
+ID=108	label=299	X=4.69	Y=2.79	Z=0
+ID=109	label=300	X=4.69	Y=1.28	Z=0
+ID=110	label=301	X=3.19	Y=2.79	Z=0
+ID=111	label=302	X=3.19	Y=1.28	Z=0
+ID=112	label=303	X=3.19	Y=4.44089209850063E-16	Z=0
+ID=113	label=304	X=6.59	Y=18.45	Z=0
+ID=114	label=305	X=10.24	Y=1.28	Z=0
+ID=115	label=306	X=0	Y=1.28	Z=0
+ID=116	label=310	X=13.0132284164429	Y=17.3549652099609	Z=0
+ID=117	label=311	X=10.24	Y=17.3549652099609	Z=0
+ID=118	label=312	X=7.09	Y=1.28	Z=0
+ID=119	label=313	X=7.09	Y=6.44	Z=0
+ID=120	label=314	X=10.24	Y=6.94	Z=0
+ID=121	label=315	X=11.99	Y=6.94	Z=0
+ID=122	label=316	X=1.5	Y=0	Z=0
+ID=123	label=317	X=1.5	Y=1.28	Z=0
+ID=124	label=318	X=1.5	Y=2.79	Z=0
+ID=125	label=319	X=1.5	Y=4.89	Z=0
+ID=126	label=320	X=1.5	Y=6.44	Z=0
+ID=127	label=321	X=1.5	Y=6.94	Z=0
+ID=128	label=322	X=9.09	Y=2.79	Z=0
+ID=129	label=323	X=9.12066542322673	Y=4.85991606780405	Z=0
+ID=130	label=324	X=9.12066542322673	Y=6.44	Z=0
+ID=131	label=325	X=9.12066542322672	Y=6.94	Z=0
+ID=132	label=326	X=11.99	Y=4.89	Z=0
+ID=133	label=327	X=11.99	Y=2.79	Z=0
+ID=134	label=328	X=11.99	Y=1.28	Z=0
+ID=135	label=329	X=7.08999999999999	Y=18.45	Z=0
+ID=136	label=330	X=7.08999999999999	Y=17.3549652099609	Z=0
+ID=137	label=331	X=6.59	Y=17.3549652099609	Z=0
+ID=138	label=332	X=1.5	Y=4.86718631178707	Z=0
+ID=139	label=333	X=8.54	Y=17.3549652099609	Z=0
+ID=140	label=334	X=2.63	Y=4.85	Z=2.7
+ID=141	label=335	X=9.79	Y=4.85	Z=2.7
+ID=142	label=336	X=7.09	Y=6.94	Z=2.7
+ID=143	label=337	X=7.09	Y=4.89	Z=2.7
+ID=144	label=338	X=7.09	Y=2.79	Z=2.7
+ID=145	label=339	X=7.59	Y=1.28	Z=2.7
+ID=146	label=340	X=7.59	Y=0	Z=2.7
+ID=147	label=341	X=9.09	Y=1.28	Z=2.7
+ID=148	label=342	X=9.09	Y=0	Z=2.7
+ID=149	label=343	X=10.24	Y=6.44	Z=2.7
+ID=150	label=344	X=10.24	Y=4.89	Z=2.7
+ID=151	label=345	X=10.24	Y=2.79	Z=2.7
+ID=152	label=346	X=11.99	Y=6.44	Z=2.7
+ID=153	label=347	X=13.49	Y=6.44	Z=2.7
+ID=154	label=348	X=13.49	Y=4.89	Z=2.7
+ID=155	label=349	X=13.49	Y=2.79	Z=2.7
+ID=156	label=350	X=12.99	Y=2.79	Z=2.7
+ID=157	label=351	X=12.99	Y=1.28	Z=2.7
+ID=158	label=352	X=0	Y=6.94	Z=2.7
+ID=159	label=353	X=0	Y=4.89	Z=2.7
+ID=160	label=354	X=0	Y=2.79	Z=2.7
+ID=161	label=355	X=0	Y=0	Z=2.7
+ID=162	label=356	X=4.69	Y=6.94	Z=2.7
+ID=163	label=357	X=3.19	Y=6.94	Z=2.7
+ID=164	label=358	X=4.69	Y=4.89	Z=2.7
+ID=165	label=359	X=3.19	Y=4.89	Z=2.7
+ID=166	label=360	X=4.69	Y=2.79	Z=2.7
+ID=167	label=361	X=4.69	Y=1.28	Z=2.7
+ID=168	label=362	X=3.19	Y=2.79	Z=2.7
+ID=169	label=363	X=3.19	Y=1.28	Z=2.7
+ID=170	label=364	X=3.19	Y=4.44089209850063E-16	Z=2.7
+ID=171	label=365	X=10.24	Y=1.28	Z=2.7
+ID=172	label=366	X=0	Y=1.28	Z=2.7
+ID=173	label=367	X=7.09	Y=1.28	Z=2.7
+ID=174	label=368	X=7.09	Y=6.44	Z=2.7
+ID=175	label=369	X=10.24	Y=6.94	Z=2.7
+ID=176	label=370	X=11.99	Y=6.94	Z=2.7
+ID=177	label=371	X=1.5	Y=0	Z=2.7
+ID=178	label=372	X=1.5	Y=1.28	Z=2.7
+ID=179	label=373	X=1.5	Y=2.79	Z=2.7
+ID=180	label=374	X=1.5	Y=4.89	Z=2.7
+ID=181	label=375	X=1.5	Y=6.44	Z=2.7
+ID=182	label=376	X=1.5	Y=6.94	Z=2.7
+ID=183	label=377	X=9.09	Y=2.79	Z=2.7
+ID=184	label=378	X=9.12066542322673	Y=4.85991606780405	Z=2.7
+ID=185	label=379	X=9.12066542322673	Y=6.44	Z=2.7
+ID=186	label=380	X=9.12066542322672	Y=6.94	Z=2.7
+ID=187	label=381	X=11.99	Y=4.89	Z=2.7
+ID=188	label=382	X=11.99	Y=2.79	Z=2.7
+ID=189	label=383	X=11.99	Y=1.28	Z=2.7
+ID=190	label=384	X=1.5	Y=4.86718631178707	Z=2.7
+ID=191	label=385	X=6.59	Y=19.79	Z=3.1
+ID=192	label=386	X=10.24	Y=18.45	Z=3.1
+ID=193	label=387	X=8.54	Y=18.45	Z=3.1
+ID=194	label=388	X=12.99	Y=17.04	Z=3.1
+ID=195	label=389	X=10.24	Y=17.04	Z=3.1
+ID=196	label=390	X=8.54	Y=17.04	Z=3.1
+ID=197	label=391	X=6.59	Y=17.04	Z=3.1
+ID=198	label=392	X=12.99	Y=15.55	Z=3.1
+ID=199	label=393	X=10.24	Y=15.55	Z=3.1
+ID=200	label=394	X=7.09	Y=15.55	Z=3.1
+ID=201	label=395	X=7.09	Y=13.7	Z=3.1
+ID=202	label=396	X=7.09	Y=11.85	Z=3.1
+ID=203	label=397	X=7.09	Y=9.42	Z=3.1
+ID=204	label=398	X=7.09	Y=6.94	Z=3.1
+ID=205	label=399	X=10.24	Y=13.7	Z=3.1
+ID=206	label=400	X=10.24	Y=11.85	Z=3.1
+ID=207	label=401	X=10.24	Y=9.42	Z=3.1
+ID=208	label=402	X=12.49	Y=13.7	Z=3.1
+ID=209	label=403	X=12.49	Y=11.85	Z=3.1
+ID=210	label=404	X=12.49	Y=15.55	Z=3.1
+ID=211	label=405	X=11.99	Y=11.85	Z=3.1
+ID=212	label=406	X=11.99	Y=9.42	Z=3.1
+ID=213	label=407	X=6.59	Y=18.45	Z=3.1
+ID=214	label=408	X=13.0132284164429	Y=17.3549652099609	Z=3.1
+ID=215	label=409	X=10.24	Y=17.3549652099609	Z=3.1
+ID=216	label=410	X=10.24	Y=6.94	Z=3.1
+ID=217	label=411	X=11.99	Y=6.94	Z=3.1
+ID=218	label=412	X=9.12066542322672	Y=6.94	Z=3.1
+ID=219	label=413	X=7.08999999999999	Y=18.45	Z=3.1
+ID=220	label=414	X=7.08999999999999	Y=17.3549652099609	Z=3.1
+ID=221	label=415	X=6.59	Y=17.3549652099609	Z=3.1
+ID=222	label=416	X=8.54	Y=17.3549652099609	Z=3.1
+ID=223	label=425	X=7.09	Y=6.94	Z=3.3
+ID=224	label=426	X=0	Y=6.94	Z=3.3
+ID=225	label=427	X=4.69	Y=6.94	Z=3.3
+ID=226	label=428	X=3.19	Y=6.94	Z=3.3
+ID=227	label=429	X=10.24	Y=6.94	Z=3.3
+ID=228	label=430	X=11.99	Y=6.94	Z=3.3
+ID=229	label=431	X=1.5	Y=6.94	Z=3.3
+ID=230	label=432	X=9.12066542322672	Y=6.94	Z=3.3
+ID=231	label=433	X=12.49	Y=11.85	Z=1
+ID=232	label=435	X=7.09	Y=15.55	Z=4.1
+ID=233	label=436	X=7.09	Y=13.7	Z=4.1
+ID=234	label=437	X=7.09	Y=11.85	Z=4.1
+ID=235	label=438	X=7.09	Y=9.42	Z=4.1
+ID=236	label=439	X=7.09	Y=6.94	Z=4.1
+ID=237	label=440	X=7.08999999999999	Y=17.3549652099609	Z=4.1
+ID=238	label=442	X=0	Y=4.89	Z=3.12
+ID=239	label=443	X=0	Y=2.79	Z=2.94121037463977
+ID=240	label=444	X=1.5	Y=4.89	Z=3.12
+ID=241	label=445	X=1.5	Y=2.79	Z=2.94121037463977
+ID=242	label=446	X=3.19	Y=4.89	Z=3.12
+ID=243	label=447	X=3.19	Y=2.79	Z=2.94121037463977
+ID=244	label=448	X=4.69	Y=0	Z=2.7
+ID=245	label=449	X=4.69	Y=4.89	Z=3.12
+ID=246	label=450	X=4.69	Y=2.79	Z=2.94121037463977
+ID=247	label=451	X=7.59	Y=6.94	Z=2.7
+ID=248	label=452	X=7.59	Y=4.89	Z=2.7
+ID=249	label=453	X=7.59	Y=2.79	Z=2.7
+ID=250	label=454	X=7.59	Y=6.94	Z=3.3
+ID=251	label=455	X=7.59	Y=4.89	Z=3.12
+ID=252	label=456	X=7.59	Y=2.79	Z=2.94121037463977
+ID=254	label=458	X=9.09	Y=4.89	Z=2.7
+ID=256	label=460	X=9.09	Y=4.89	Z=3.12
+ID=257	label=461	X=9.09	Y=2.79	Z=2.94121037463977
+ID=258	label=469	X=10.24	Y=0	Z=2.7
+ID=259	label=470	X=10.24	Y=4.89	Z=3.12
+ID=260	label=471	X=10.24	Y=2.79	Z=2.94121037463977
+ID=261	label=472	X=11.99	Y=2.665E-15	Z=2.7
+ID=262	label=473	X=11.99	Y=4.89	Z=3.12
+ID=263	label=474	X=11.99	Y=2.79	Z=2.94121037463977
+ID=264	label=475	X=13.49	Y=6.94	Z=2.7
+ID=265	label=476	X=13.49	Y=4.441E-16	Z=2.7
+ID=266	label=477	X=13.49	Y=1.28	Z=2.7
+ID=267	label=478	X=13.49	Y=6.94	Z=3.3
+ID=268	label=479	X=13.49	Y=4.89	Z=3.12
+ID=269	label=480	X=13.49	Y=2.79	Z=2.94121037463977
+ID=270	label=483	X=8.54	Y=17.3549652099609	Z=3.85520106636867
+ID=271	label=484	X=10.24	Y=17.3549652099609	Z=3.56819542004229
+ID=272	label=485	X=8.54	Y=15.5499652099609	Z=3.85520106636867
+ID=273	label=486	X=10.24	Y=15.5499652099609	Z=3.56819542004229
+ID=274	label=487	X=13.0132284164429	Y=15.5499652099609	Z=3.1
+ID=275	label=488	X=8.54	Y=15.5499652099609	Z=3.1
+ID=276	label=489	X=8.54	Y=13.6999652099609	Z=3.85520106636867
+ID=277	label=490	X=10.24	Y=13.6999652099609	Z=3.56819542004229
+ID=278	label=491	X=13.0132284164429	Y=13.6999652099609	Z=3.1
+ID=279	label=492	X=8.54	Y=13.6999652099609	Z=3.1
+ID=280	label=493	X=8.54	Y=11.8499652099609	Z=3.85520106636867
+ID=281	label=494	X=10.24	Y=11.8499652099609	Z=3.56819542004229
+ID=282	label=495	X=13.0132284164429	Y=11.8499652099609	Z=3.1
+ID=283	label=496	X=8.54	Y=11.8499652099609	Z=3.1
+ID=284	label=497	X=8.54	Y=9.41996520996094	Z=3.85520106636867
+ID=285	label=498	X=10.24	Y=9.41996520996094	Z=3.56819542004229
+ID=286	label=499	X=13.0132284164429	Y=9.41996520996094	Z=3.1
+ID=287	label=500	X=8.54	Y=9.41996520996094	Z=3.1
+ID=288	label=501	X=8.54	Y=6.93996520996094	Z=3.85520106636867
+ID=289	label=502	X=10.24	Y=6.93996520996094	Z=3.56819542004229
+ID=290	label=503	X=13.0132284164429	Y=6.93996520996094	Z=3.1
+ID=291	label=504	X=8.54	Y=6.93996520996094	Z=3.1
+ID=292	label=516	X=10.24	Y=17.3549652099609	Z=3.4
+ID=293	label=517	X=7.08999999999999	Y=17.3549652099609	Z=3.4
+ID=294	label=518	X=6.59	Y=17.3549652099609	Z=3.4
+ID=295	label=519	X=8.54	Y=17.3549652099609	Z=3.4
+bars
+ID=1	label=179	startNode=18	endNode=61	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=2	label=180	startNode=19	endNode=62	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=3	label=181	startNode=1	endNode=63	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=4	label=184	startNode=4	endNode=64	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=5	label=185	startNode=5	endNode=65	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=6	label=186	startNode=6	endNode=66	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=7	label=187	startNode=7	endNode=67	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=8	label=188	startNode=8	endNode=68	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=9	label=189	startNode=9	endNode=69	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=10	label=193	startNode=13	endNode=70	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=11	label=194	startNode=14	endNode=71	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=12	label=195	startNode=15	endNode=72	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=13	label=196	startNode=16	endNode=73	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=14	label=197	startNode=17	endNode=74	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=15	label=198	startNode=20	endNode=75	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=16	label=199	startNode=21	endNode=76	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=17	label=200	startNode=22	endNode=77	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=18	label=201	startNode=23	endNode=78	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=19	label=202	startNode=24	endNode=79	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=20	label=203	startNode=25	endNode=80	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=21	label=204	startNode=26	endNode=81	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=22	label=205	startNode=27	endNode=82	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=23	label=206	startNode=28	endNode=83	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=24	label=207	startNode=29	endNode=84	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=25	label=208	startNode=30	endNode=85	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=26	label=209	startNode=31	endNode=86	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=27	label=210	startNode=32	endNode=87	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=28	label=211	startNode=33	endNode=88	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=29	label=212	startNode=34	endNode=89	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=30	label=213	startNode=35	endNode=90	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=31	label=214	startNode=36	endNode=91	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=32	label=215	startNode=37	endNode=92	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=33	label=216	startNode=38	endNode=93	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=34	label=217	startNode=39	endNode=94	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=35	label=218	startNode=40	endNode=95	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=36	label=219	startNode=41	endNode=96	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=37	label=220	startNode=42	endNode=97	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=38	label=221	startNode=43	endNode=98	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=39	label=222	startNode=44	endNode=99	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=40	label=225	startNode=47	endNode=100	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=41	label=226	startNode=48	endNode=101	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=42	label=227	startNode=49	endNode=102	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=43	label=228	startNode=50	endNode=103	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=44	label=230	startNode=52	endNode=104	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=45	label=231	startNode=53	endNode=105	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=46	label=232	startNode=54	endNode=106	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=47	label=233	startNode=55	endNode=107	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=48	label=234	startNode=56	endNode=108	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=49	label=235	startNode=57	endNode=109	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=50	label=236	startNode=58	endNode=110	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=51	label=237	startNode=59	endNode=111	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=52	label=238	startNode=60	endNode=112	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=53	label=241	startNode=65	endNode=64	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=54	label=245	startNode=81	endNode=82	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=55	label=246	startNode=82	endNode=80	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=56	label=247	startNode=80	endNode=79	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=57	label=248	startNode=79	endNode=81	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=58	label=250	startNode=109	endNode=111	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=59	label=254	startNode=112	endNode=111	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=60	label=255	startNode=111	endNode=110	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=61	label=256	startNode=110	endNode=108	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=62	label=257	startNode=108	endNode=78	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=63	label=263	startNode=99	endNode=98	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=64	label=264	startNode=98	endNode=97	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=65	label=265	startNode=97	endNode=96	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=66	label=266	startNode=96	endNode=95	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=67	label=267	startNode=95	endNode=94	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=68	label=268	startNode=94	endNode=86	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=69	label=271	startNode=105	endNode=104	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=70	label=272	startNode=104	endNode=76	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=71	label=274	startNode=93	endNode=92	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=72	label=275	startNode=92	endNode=90	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=73	label=276	startNode=90	endNode=89	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=74	label=277	startNode=89	endNode=91	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=75	label=278	startNode=91	endNode=70	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=76	label=279	startNode=70	endNode=116	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=77	label=280	startNode=116	endNode=117	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=78	label=282	startNode=87	endNode=19	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=79	label=284	startNode=77	endNode=106	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=80	label=285	startNode=106	endNode=107	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=81	label=286	startNode=107	endNode=18	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=82	label=288	startNode=72	endNode=73	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=83	label=289	startNode=73	endNode=74	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=84	label=290	startNode=74	endNode=75	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=85	label=291	startNode=75	endNode=76	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=86	label=293	startNode=77	endNode=78	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=87	label=294	startNode=78	endNode=118	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=88	label=297	startNode=120	endNode=121	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=89	label=298	startNode=102	endNode=101	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=90	label=299	startNode=101	endNode=100	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=91	label=300	startNode=110	endNode=107	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=92	label=301	startNode=107	endNode=105	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=93	label=302	startNode=122	endNode=123	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=94	label=303	startNode=123	endNode=124	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=95	label=305	startNode=125	endNode=126	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=96	label=306	startNode=126	endNode=127	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=97	label=307	startNode=81	endNode=128	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=98	label=308	startNode=128	endNode=129	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=99	label=309	startNode=129	endNode=130	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=100	label=310	startNode=130	endNode=131	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=101	label=311	startNode=94	endNode=132	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=102	label=312	startNode=132	endNode=133	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=103	label=313	startNode=133	endNode=134	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=104	label=314	startNode=75	endNode=85	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=105	label=315	startNode=85	endNode=93	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=106	label=316	startNode=74	endNode=84	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=107	label=317	startNode=84	endNode=92	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=108	label=318	startNode=73	endNode=83	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=109	label=319	startNode=83	endNode=89	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=110	label=320	startNode=72	endNode=71	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=111	label=321	startNode=71	endNode=91	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=112	label=324	startNode=136	endNode=137	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=113	label=326	startNode=69	endNode=137	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=114	label=327	startNode=137	endNode=113	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=115	label=328	startNode=113	endNode=63	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=116	label=329	startNode=113	endNode=135	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=117	label=330	startNode=135	endNode=65	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=118	label=331	startNode=64	endNode=117	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=119	label=332	startNode=117	endNode=67	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=120	label=333	startNode=67	endNode=71	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=121	label=334	startNode=71	endNode=83	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=122	label=335	startNode=83	endNode=84	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=123	label=336	startNode=84	endNode=85	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=124	label=337	startNode=85	endNode=120	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=125	label=338	startNode=120	endNode=86	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=126	label=339	startNode=86	endNode=87	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=127	label=340	startNode=87	endNode=88	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=128	label=341	startNode=88	endNode=114	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=129	label=342	startNode=99	endNode=134	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=130	label=343	startNode=134	endNode=114	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=131	label=344	startNode=114	endNode=81	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=132	label=346	startNode=79	endNode=118	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=133	label=347	startNode=118	endNode=109	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=134	label=348	startNode=111	endNode=123	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=135	label=349	startNode=123	endNode=115	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=136	label=350	startNode=102	endNode=115	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=137	label=351	startNode=115	endNode=103	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=138	label=352	startNode=103	endNode=122	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=139	label=353	startNode=122	endNode=112	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=140	label=354	startNode=78	endNode=128	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=141	label=355	startNode=128	endNode=88	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=142	label=356	startNode=88	endNode=133	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=143	label=357	startNode=133	endNode=98	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=144	label=358	startNode=96	endNode=132	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=145	label=359	startNode=132	endNode=87	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=146	label=360	startNode=100	endNode=127	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=147	label=361	startNode=127	endNode=105	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=148	label=362	startNode=94	endNode=121	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=149	label=363	startNode=121	endNode=93	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=150	label=364	startNode=110	endNode=124	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=151	label=365	startNode=124	endNode=102	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=152	label=366	startNode=19	endNode=129	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=153	label=367	startNode=129	endNode=77	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=154	label=368	startNode=18	endNode=138	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=155	label=369	startNode=138	endNode=101	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=156	label=370	startNode=76	endNode=119	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=157	label=371	startNode=119	endNode=77	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=158	label=372	startNode=86	endNode=130	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=159	label=373	startNode=130	endNode=119	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=160	label=374	startNode=76	endNode=131	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=161	label=375	startNode=131	endNode=120	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=162	label=376	startNode=124	endNode=138	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=163	label=377	startNode=138	endNode=125	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=164	label=378	startNode=72	endNode=136	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=165	label=379	startNode=136	endNode=135	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=166	label=380	startNode=117	endNode=139	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=167	label=381	startNode=139	endNode=136	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=168	label=382	startNode=65	endNode=139	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=169	label=383	startNode=139	endNode=68	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=170	label=384	startNode=147	endNode=148	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=171	label=385	startNode=148	endNode=146	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=172	label=386	startNode=146	endNode=145	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=173	label=387	startNode=145	endNode=147	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=174	label=388	startNode=167	endNode=169	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=175	label=389	startNode=170	endNode=169	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=176	label=390	startNode=169	endNode=168	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=177	label=391	startNode=168	endNode=166	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=178	label=392	startNode=166	endNode=144	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=179	label=393	startNode=157	endNode=156	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=180	label=394	startNode=156	endNode=155	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=181	label=395	startNode=155	endNode=154	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=182	label=396	startNode=154	endNode=153	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=183	label=397	startNode=153	endNode=152	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=184	label=398	startNode=152	endNode=149	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=185	label=399	startNode=163	endNode=162	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=186	label=400	startNode=162	endNode=142	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=187	label=401	startNode=150	endNode=141	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=188	label=402	startNode=143	endNode=164	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=189	label=403	startNode=164	endNode=165	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=190	label=404	startNode=165	endNode=140	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=191	label=405	startNode=143	endNode=144	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=192	label=406	startNode=144	endNode=173	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=193	label=407	startNode=175	endNode=176	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=194	label=408	startNode=160	endNode=159	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=195	label=409	startNode=159	endNode=158	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=196	label=410	startNode=168	endNode=165	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=197	label=411	startNode=165	endNode=163	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=198	label=412	startNode=177	endNode=178	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=199	label=413	startNode=178	endNode=179	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=200	label=414	startNode=180	endNode=181	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=201	label=415	startNode=181	endNode=182	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=202	label=416	startNode=147	endNode=183	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=203	label=417	startNode=183	endNode=184	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=204	label=418	startNode=184	endNode=185	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=205	label=419	startNode=185	endNode=186	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=206	label=420	startNode=152	endNode=187	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=207	label=421	startNode=187	endNode=188	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=208	label=422	startNode=188	endNode=189	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=209	label=423	startNode=175	endNode=149	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=210	label=424	startNode=149	endNode=150	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=211	label=425	startNode=150	endNode=151	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=212	label=426	startNode=151	endNode=171	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=213	label=427	startNode=157	endNode=189	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=214	label=428	startNode=189	endNode=171	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=215	label=429	startNode=171	endNode=147	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=216	label=430	startNode=145	endNode=173	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=217	label=431	startNode=173	endNode=167	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=218	label=432	startNode=169	endNode=178	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=219	label=433	startNode=178	endNode=172	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=220	label=434	startNode=160	endNode=172	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=221	label=435	startNode=172	endNode=161	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=222	label=436	startNode=161	endNode=177	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=223	label=437	startNode=177	endNode=170	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=224	label=438	startNode=144	endNode=183	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=225	label=439	startNode=183	endNode=151	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=226	label=440	startNode=151	endNode=188	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=227	label=441	startNode=188	endNode=156	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=228	label=442	startNode=154	endNode=187	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=229	label=443	startNode=187	endNode=150	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=230	label=444	startNode=158	endNode=182	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=231	label=445	startNode=182	endNode=163	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=232	label=446	startNode=152	endNode=176	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=233	label=447	startNode=168	endNode=179	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=234	label=448	startNode=179	endNode=160	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=235	label=449	startNode=141	endNode=184	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=236	label=450	startNode=184	endNode=143	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=237	label=451	startNode=140	endNode=190	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=238	label=452	startNode=190	endNode=159	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=239	label=453	startNode=142	endNode=174	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=240	label=454	startNode=174	endNode=143	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=241	label=455	startNode=149	endNode=185	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=242	label=456	startNode=185	endNode=174	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=243	label=457	startNode=142	endNode=186	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=244	label=458	startNode=186	endNode=175	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=245	label=459	startNode=179	endNode=190	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=246	label=460	startNode=190	endNode=180	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=249	label=463	startNode=76	endNode=142	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=250	label=464	startNode=77	endNode=143	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=251	label=465	startNode=78	endNode=144	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=252	label=466	startNode=79	endNode=145	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=253	label=467	startNode=80	endNode=146	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=254	label=468	startNode=81	endNode=147	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=255	label=469	startNode=82	endNode=148	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=256	label=470	startNode=86	endNode=149	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=257	label=471	startNode=87	endNode=150	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=258	label=472	startNode=88	endNode=151	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=259	label=473	startNode=94	endNode=152	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=260	label=474	startNode=95	endNode=153	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=261	label=475	startNode=96	endNode=154	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=262	label=476	startNode=97	endNode=155	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=263	label=477	startNode=98	endNode=156	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=264	label=478	startNode=99	endNode=157	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=265	label=479	startNode=100	endNode=158	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=266	label=480	startNode=101	endNode=159	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=267	label=481	startNode=102	endNode=160	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=268	label=482	startNode=103	endNode=161	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=269	label=483	startNode=104	endNode=162	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=270	label=484	startNode=105	endNode=163	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=271	label=485	startNode=106	endNode=164	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=272	label=486	startNode=107	endNode=165	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=273	label=487	startNode=108	endNode=166	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=274	label=488	startNode=109	endNode=167	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=275	label=489	startNode=110	endNode=168	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=276	label=490	startNode=111	endNode=169	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=277	label=491	startNode=112	endNode=170	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=278	label=492	startNode=114	endNode=171	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=279	label=493	startNode=115	endNode=172	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=280	label=494	startNode=118	endNode=173	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=281	label=495	startNode=119	endNode=174	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=282	label=496	startNode=120	endNode=175	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=283	label=497	startNode=121	endNode=176	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=284	label=498	startNode=122	endNode=177	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=285	label=499	startNode=123	endNode=178	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=286	label=500	startNode=124	endNode=179	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=287	label=501	startNode=125	endNode=180	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=288	label=502	startNode=126	endNode=181	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=289	label=503	startNode=127	endNode=182	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=290	label=504	startNode=128	endNode=183	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=291	label=505	startNode=129	endNode=184	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=292	label=506	startNode=130	endNode=185	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=293	label=507	startNode=131	endNode=186	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=294	label=508	startNode=132	endNode=187	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=295	label=509	startNode=133	endNode=188	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=296	label=510	startNode=134	endNode=189	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=297	label=511	startNode=138	endNode=190	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=298	label=512	startNode=193	endNode=192	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=299	label=513	startNode=212	endNode=211	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=300	label=514	startNode=211	endNode=209	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=301	label=515	startNode=209	endNode=208	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=302	label=516	startNode=208	endNode=210	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=303	label=517	startNode=210	endNode=198	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=304	label=518	startNode=198	endNode=214	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=305	label=519	startNode=214	endNode=215	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=306	label=520	startNode=200	endNode=201	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=307	label=521	startNode=201	endNode=202	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=308	label=522	startNode=202	endNode=203	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=309	label=523	startNode=203	endNode=204	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=310	label=524	startNode=216	endNode=217	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=311	label=525	startNode=203	endNode=207	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=312	label=526	startNode=207	endNode=212	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=313	label=527	startNode=202	endNode=206	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=314	label=528	startNode=206	endNode=211	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=315	label=529	startNode=201	endNode=205	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=316	label=530	startNode=205	endNode=208	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=317	label=531	startNode=200	endNode=199	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=318	label=532	startNode=199	endNode=210	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=319	label=533	startNode=220	endNode=221	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=320	label=534	startNode=197	endNode=221	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=321	label=535	startNode=221	endNode=213	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=322	label=536	startNode=213	endNode=191	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=323	label=537	startNode=213	endNode=219	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=324	label=538	startNode=219	endNode=193	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=325	label=539	startNode=192	endNode=215	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=326	label=540	startNode=215	endNode=195	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=327	label=541	startNode=195	endNode=199	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=328	label=542	startNode=199	endNode=205	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=329	label=543	startNode=205	endNode=206	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=330	label=544	startNode=206	endNode=207	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=331	label=545	startNode=207	endNode=216	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=332	label=546	startNode=217	endNode=212	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=333	label=547	startNode=204	endNode=218	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=334	label=548	startNode=218	endNode=216	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=335	label=549	startNode=200	endNode=220	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=336	label=550	startNode=220	endNode=219	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=337	label=551	startNode=215	endNode=222	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=338	label=552	startNode=222	endNode=220	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=339	label=553	startNode=193	endNode=222	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=340	label=554	startNode=222	endNode=196	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=341	label=555	startNode=63	endNode=191	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=342	label=556	startNode=64	endNode=192	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=343	label=557	startNode=65	endNode=193	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=344	label=558	startNode=66	endNode=194	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=345	label=559	startNode=67	endNode=195	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=346	label=560	startNode=68	endNode=196	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=347	label=561	startNode=69	endNode=197	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=348	label=562	startNode=70	endNode=198	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=349	label=563	startNode=71	endNode=199	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=350	label=564	startNode=72	endNode=200	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=351	label=565	startNode=73	endNode=201	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=352	label=566	startNode=74	endNode=202	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=353	label=567	startNode=75	endNode=203	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=355	label=569	startNode=83	endNode=205	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=356	label=570	startNode=84	endNode=206	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=357	label=571	startNode=85	endNode=207	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=358	label=572	startNode=89	endNode=208	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=359	label=573	startNode=90	endNode=209	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=360	label=574	startNode=91	endNode=210	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=361	label=575	startNode=92	endNode=211	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=362	label=576	startNode=93	endNode=212	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=363	label=577	startNode=113	endNode=213	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=364	label=578	startNode=116	endNode=214	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=365	label=579	startNode=117	endNode=215	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=369	label=583	startNode=135	endNode=219	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=370	label=584	startNode=136	endNode=220	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=371	label=585	startNode=137	endNode=221	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=372	label=586	startNode=139	endNode=222	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=373	label=588	startNode=164	endNode=166	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=374	label=589	startNode=166	endNode=167	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=375	label=590	startNode=164	endNode=162	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=376	label=598	startNode=226	endNode=225	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=377	label=599	startNode=225	endNode=223	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=378	label=600	startNode=227	endNode=228	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=379	label=601	startNode=224	endNode=229	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=380	label=602	startNode=229	endNode=226	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=381	label=603	startNode=223	endNode=230	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=382	label=604	startNode=230	endNode=227	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=384	label=606	startNode=158	endNode=224	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=385	label=607	startNode=162	endNode=225	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=386	label=608	startNode=163	endNode=226	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=389	label=611	startNode=182	endNode=229	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=391	label=613	startNode=232	endNode=233	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=392	label=614	startNode=233	endNode=234	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=393	label=615	startNode=234	endNode=235	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=394	label=616	startNode=235	endNode=236	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=395	label=617	startNode=232	endNode=237	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=397	label=620	startNode=200	endNode=232	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=398	label=621	startNode=201	endNode=233	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=399	label=622	startNode=202	endNode=234	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=400	label=623	startNode=203	endNode=235	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=402	label=625	startNode=220	endNode=237	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=403	label=628	startNode=159	endNode=238	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=404	label=629	startNode=224	endNode=239	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=405	label=630	startNode=239	endNode=161	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=406	label=631	startNode=160	endNode=239	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=407	label=632	startNode=238	endNode=160	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=408	label=633	startNode=224	endNode=159	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=411	label=639	startNode=180	endNode=240	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=412	label=640	startNode=229	endNode=241	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=413	label=641	startNode=179	endNode=241	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=414	label=642	startNode=240	endNode=179	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=415	label=643	startNode=229	endNode=180	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=416	label=644	startNode=241	endNode=177	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=417	label=650	startNode=165	endNode=242	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=418	label=651	startNode=226	endNode=243	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=419	label=652	startNode=243	endNode=170	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=420	label=653	startNode=168	endNode=243	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=421	label=654	startNode=242	endNode=168	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=422	label=655	startNode=226	endNode=165	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=423	label=659	startNode=167	endNode=244	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=424	label=661	startNode=164	endNode=245	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=425	label=662	startNode=225	endNode=246	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=426	label=663	startNode=246	endNode=244	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=427	label=664	startNode=166	endNode=246	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=428	label=665	startNode=245	endNode=166	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=429	label=666	startNode=225	endNode=164	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=434	label=672	startNode=248	endNode=251	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=436	label=674	startNode=252	endNode=146	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=440	label=678	startNode=183	endNode=254	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=443	label=683	startNode=254	endNode=256	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=445	label=685	startNode=257	endNode=148	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=446	label=686	startNode=183	endNode=257	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=447	label=687	startNode=256	endNode=183	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=450	label=703	startNode=171	endNode=258	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=451	label=705	startNode=150	endNode=259	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=452	label=706	startNode=227	endNode=260	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=453	label=707	startNode=260	endNode=258	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=454	label=708	startNode=151	endNode=260	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=455	label=709	startNode=259	endNode=151	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=456	label=710	startNode=227	endNode=150	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=458	label=714	startNode=189	endNode=261	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=459	label=716	startNode=187	endNode=262	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=460	label=717	startNode=228	endNode=263	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=461	label=718	startNode=263	endNode=261	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=462	label=719	startNode=188	endNode=263	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=463	label=720	startNode=262	endNode=188	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=464	label=721	startNode=228	endNode=187	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=466	label=724	startNode=155	endNode=266	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=467	label=725	startNode=266	endNode=265	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=468	label=726	startNode=264	endNode=267	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=469	label=727	startNode=154	endNode=268	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=470	label=728	startNode=267	endNode=269	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=471	label=729	startNode=269	endNode=265	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=472	label=730	startNode=155	endNode=269	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=473	label=731	startNode=268	endNode=155	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=474	label=732	startNode=267	endNode=154	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=475	label=734	startNode=244	endNode=146	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=477	label=736	startNode=258	endNode=261	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=478	label=737	startNode=261	endNode=265	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=479	label=739	startNode=228	endNode=267	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=480	label=740	startNode=170	endNode=244	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=481	label=744	startNode=237	endNode=270	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=482	label=745	startNode=270	endNode=271	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=483	label=746	startNode=271	endNode=214	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=484	label=747	startNode=215	endNode=271	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=485	label=749	startNode=222	endNode=270	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=486	label=750	startNode=232	endNode=272	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=487	label=751	startNode=272	endNode=273	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=488	label=752	startNode=273	endNode=274	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=489	label=753	startNode=199	endNode=273	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=490	label=754	startNode=275	endNode=272	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=491	label=755	startNode=233	endNode=276	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=492	label=756	startNode=276	endNode=277	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=493	label=757	startNode=277	endNode=278	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=494	label=758	startNode=205	endNode=277	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=495	label=759	startNode=279	endNode=276	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=496	label=760	startNode=234	endNode=280	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=497	label=761	startNode=280	endNode=281	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=498	label=762	startNode=281	endNode=282	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=499	label=763	startNode=206	endNode=281	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=500	label=764	startNode=283	endNode=280	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=501	label=765	startNode=235	endNode=284	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=502	label=766	startNode=284	endNode=285	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=503	label=767	startNode=285	endNode=286	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=504	label=768	startNode=207	endNode=285	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=505	label=769	startNode=287	endNode=284	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=506	label=770	startNode=236	endNode=288	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=507	label=771	startNode=288	endNode=289	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=508	label=772	startNode=289	endNode=290	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=509	label=773	startNode=216	endNode=289	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=510	label=774	startNode=291	endNode=288	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=511	label=776	startNode=212	endNode=286	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=512	label=777	startNode=209	endNode=282	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=513	label=778	startNode=208	endNode=278	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=514	label=779	startNode=217	endNode=290	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=518	label=792	startNode=294	endNode=191	SectionID=1	SectionName=100x100x6	unused=0	Rotation=0	releases=0	offsetY=0	offsetZ=0
+nodalRestraints
+ID=1	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=4	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=5	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=6	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=7	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=8	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=9	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=13	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=14	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=15	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=16	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=17	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=18	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=19	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=20	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=21	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=22	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=23	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=24	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=25	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=26	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=27	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=28	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=29	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=30	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=31	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=32	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=33	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=34	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=35	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=36	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=37	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=38	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=39	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=40	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=41	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=42	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=43	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=44	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=47	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=48	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=49	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=50	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=52	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=53	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=54	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=55	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=56	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=57	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=58	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=59	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=60	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=61	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=62	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=63	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=64	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=65	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=66	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=67	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=68	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=69	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=70	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=71	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=72	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=73	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=74	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=75	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=76	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=77	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=78	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=79	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=80	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=81	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=82	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=83	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=84	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=85	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=86	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=87	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=88	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=89	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=90	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=91	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=92	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=93	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=94	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=95	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=96	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=97	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=98	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=99	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=100	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=101	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=102	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=103	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=104	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=105	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=106	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=107	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=108	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=109	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=110	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=111	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=112	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=113	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=114	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=115	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=116	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=117	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=118	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=119	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=120	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=121	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=122	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=123	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=124	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=125	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=126	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=127	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=128	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=129	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=130	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=131	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=132	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=133	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=134	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=135	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=136	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=137	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=138	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=139	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=140	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=141	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=142	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=143	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=144	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=145	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=146	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=147	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=148	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=149	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=150	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=151	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=152	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=153	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=154	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=155	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=156	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=157	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=158	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=159	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=160	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=161	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=162	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=163	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=164	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=165	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=166	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=167	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=168	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=169	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=170	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=171	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=172	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=173	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=174	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=175	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=176	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=177	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=178	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=179	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=180	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=181	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=182	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=183	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=184	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=185	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=186	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=187	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=188	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=189	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=190	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=191	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=192	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=193	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=194	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=195	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=196	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=197	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=198	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=199	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=200	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=201	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=202	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=203	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=204	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=205	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=206	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=207	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=208	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=209	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=210	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=211	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=212	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=213	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=214	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=215	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=216	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=217	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=218	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=219	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=220	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=221	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=222	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=223	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=224	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=225	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=226	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=227	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=228	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=229	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=230	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=231	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=232	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=233	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=234	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=235	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=236	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=237	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=238	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=239	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=240	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=241	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=242	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=243	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=244	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=245	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=246	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=247	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=248	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=249	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=250	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=251	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=252	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=254	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=256	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=257	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=258	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=259	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=260	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=261	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=262	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=263	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=264	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=265	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=266	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=267	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=268	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=269	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=270	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=271	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=272	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=273	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=274	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=275	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=276	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=277	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=278	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=279	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=280	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=281	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=282	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=283	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=284	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=285	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=286	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=287	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=288	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=289	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=290	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=291	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=292	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=293	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=294	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=295	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+nodalConstraints
+loadCases
+ID=1	Name=D	Type=0
+ID=2	Name=L	Type=1
+ID=3	Name=Lr	Type=18
+ID=4	Name=W	Type=5
+ID=5	Name=Ex	Type=6
+ID=6	Name=Ey	Type=6
+ID=7	Name=Fsx	Type=6
+ID=8	Name=Fsy	Type=6
+loadCombs
+ID=1	Name=B241	Type=0	Case=1	Factor=1.4
+ID=2	Name=B242	Type=0	Case=1	Factor=1.2
+ID=3	Name=B242	Type=0	Case=3	Factor=0.5
+ID=4	Name=B242	Type=0	Case=2	Factor=1
+ID=5	Name=B243a	Type=0	Case=1	Factor=1.2
+ID=6	Name=B243a	Type=0	Case=4	Factor=0.5
+ID=7	Name=B243a	Type=0	Case=3	Factor=1.6
+ID=8	Name=B243b	Type=0	Case=1	Factor=1.2
+ID=9	Name=B243b	Type=0	Case=2	Factor=1
+ID=10	Name=B243b	Type=0	Case=3	Factor=1.6
+ID=11	Name=B244	Type=0	Case=1	Factor=1.2
+ID=12	Name=B244	Type=0	Case=4	Factor=1
+ID=13	Name=B244	Type=0	Case=2	Factor=1
+ID=14	Name=B244	Type=0	Case=3	Factor=0.5
+ID=15	Name=B245x	Type=0	Case=1	Factor=1.2
+ID=16	Name=B245x	Type=0	Case=2	Factor=1
+ID=17	Name=B245x	Type=0	Case=5	Factor=1
+ID=18	Name=B245y	Type=0	Case=1	Factor=1.2
+ID=19	Name=B245y	Type=0	Case=2	Factor=1
+ID=20	Name=B245y	Type=0	Case=6	Factor=1
+ID=21	Name=B246	Type=0	Case=1	Factor=0.9
+ID=22	Name=B246	Type=0	Case=4	Factor=1
+ID=23	Name=B247x	Type=0	Case=1	Factor=0.9
+ID=24	Name=B247x	Type=0	Case=5	Factor=1
+ID=25	Name=B247y	Type=0	Case=1	Factor=0.9
+ID=26	Name=B247y	Type=0	Case=6	Factor=1
+ID=27	Name=B236x	Type=0	Case=1	Factor=1
+ID=28	Name=B236x	Type=0	Case=7	Factor=1
+ID=29	Name=B236y	Type=0	Case=1	Factor=1
+ID=30	Name=B236y	Type=0	Case=8	Factor=1
+ID=31	Name=B238x	Type=0	Case=1	Factor=1
+ID=32	Name=B238x	Type=0	Case=7	Factor=0.75
+ID=33	Name=B238x	Type=0	Case=2	Factor=0.75
+ID=34	Name=B238x	Type=0	Case=3	Factor=0.75
+ID=35	Name=B238y	Type=0	Case=1	Factor=1
+ID=36	Name=B238y	Type=0	Case=8	Factor=0.75
+ID=37	Name=B238y	Type=0	Case=2	Factor=0.75
+ID=38	Name=B238y	Type=0	Case=3	Factor=0.75
+ID=39	Name=B2310x	Type=0	Case=1	Factor=0.6
+ID=40	Name=B2310x	Type=0	Case=7	Factor=1
+ID=41	Name=B2310y	Type=0	Case=1	Factor=0.6
+ID=42	Name=B2310y	Type=0	Case=8	Factor=1
+ID=43	Name="B23-2 (D+L)"	Type=0	Case=1	Factor=1
+ID=44	Name="B23-2 (D+L)"	Type=0	Case=2	Factor=1
+nodalLoads
+barDistrLoads
+ID=1	BarID=53	l1=0	l2=0	BarID=53	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=2	BarID=53	l1=0	l2=0	BarID=53	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=3	BarID=54	l1=0	l2=0	BarID=54	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=4	BarID=54	l1=0	l2=0	BarID=54	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=5	BarID=55	l1=0	l2=0	BarID=55	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=6	BarID=55	l1=0	l2=0	BarID=55	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=7	BarID=56	l1=0	l2=0	BarID=56	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=8	BarID=56	l1=0	l2=0	BarID=56	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=9	BarID=57	l1=0	l2=0	BarID=57	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=10	BarID=57	l1=0	l2=0	BarID=57	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=11	BarID=58	l1=0	l2=0	BarID=58	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=12	BarID=58	l1=0	l2=0	BarID=58	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=13	BarID=59	l1=0	l2=0	BarID=59	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=14	BarID=59	l1=0	l2=0	BarID=59	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=15	BarID=60	l1=0	l2=0	BarID=60	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=16	BarID=60	l1=0	l2=0	BarID=60	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=17	BarID=61	l1=0	l2=0	BarID=61	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=18	BarID=61	l1=0	l2=0	BarID=61	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=19	BarID=62	l1=0	l2=0	BarID=62	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=20	BarID=62	l1=0	l2=0	BarID=62	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=21	BarID=63	l1=0	l2=0	BarID=63	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=22	BarID=63	l1=0	l2=0	BarID=63	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=23	BarID=64	l1=0	l2=0	BarID=64	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=24	BarID=64	l1=0	l2=0	BarID=64	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=25	BarID=65	l1=0	l2=0	BarID=65	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=26	BarID=65	l1=0	l2=0	BarID=65	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=27	BarID=66	l1=0	l2=0	BarID=66	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=28	BarID=66	l1=0	l2=0	BarID=66	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=29	BarID=67	l1=0	l2=0	BarID=67	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=30	BarID=67	l1=0	l2=0	BarID=67	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=31	BarID=68	l1=0	l2=0	BarID=68	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=32	BarID=68	l1=0	l2=0	BarID=68	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=33	BarID=69	l1=0	l2=0	BarID=69	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=34	BarID=69	l1=0	l2=0	BarID=69	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=35	BarID=70	l1=0	l2=0	BarID=70	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=36	BarID=70	l1=0	l2=0	BarID=70	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=37	BarID=71	l1=0	l2=0	BarID=71	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=38	BarID=71	l1=0	l2=0	BarID=71	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=39	BarID=72	l1=0	l2=0	BarID=72	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=40	BarID=72	l1=0	l2=0	BarID=72	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=41	BarID=73	l1=0	l2=0	BarID=73	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=42	BarID=73	l1=0	l2=0	BarID=73	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=43	BarID=74	l1=0	l2=0	BarID=74	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=44	BarID=74	l1=0	l2=0	BarID=74	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=45	BarID=75	l1=0	l2=0	BarID=75	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=46	BarID=75	l1=0	l2=0	BarID=75	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=47	BarID=76	l1=0	l2=0	BarID=76	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=48	BarID=76	l1=0	l2=0	BarID=76	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=49	BarID=77	l1=0	l2=0	BarID=77	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=50	BarID=77	l1=0	l2=0	BarID=77	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=51	BarID=78	l1=0	l2=0	BarID=78	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=52	BarID=78	l1=0	l2=0	BarID=78	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=53	BarID=79	l1=0	l2=0	BarID=79	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=54	BarID=79	l1=0	l2=0	BarID=79	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=55	BarID=80	l1=0	l2=0	BarID=80	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=56	BarID=80	l1=0	l2=0	BarID=80	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=57	BarID=81	l1=0	l2=0	BarID=81	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=58	BarID=81	l1=0	l2=0	BarID=81	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=59	BarID=82	l1=0	l2=0	BarID=82	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=60	BarID=82	l1=0	l2=0	BarID=82	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=61	BarID=83	l1=0	l2=0	BarID=83	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=62	BarID=83	l1=0	l2=0	BarID=83	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=63	BarID=84	l1=0	l2=0	BarID=84	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=64	BarID=84	l1=0	l2=0	BarID=84	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=65	BarID=85	l1=0	l2=0	BarID=85	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=66	BarID=85	l1=0	l2=0	BarID=85	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=67	BarID=86	l1=0	l2=0	BarID=86	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=68	BarID=86	l1=0	l2=0	BarID=86	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=69	BarID=87	l1=0	l2=0	BarID=87	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=70	BarID=87	l1=0	l2=0	BarID=87	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=71	BarID=88	l1=0	l2=0	BarID=88	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=72	BarID=88	l1=0	l2=0	BarID=88	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=73	BarID=89	l1=0	l2=0	BarID=89	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=74	BarID=89	l1=0	l2=0	BarID=89	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=75	BarID=90	l1=0	l2=0	BarID=90	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=76	BarID=90	l1=0	l2=0	BarID=90	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=77	BarID=91	l1=0	l2=0	BarID=91	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=78	BarID=91	l1=0	l2=0	BarID=91	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=79	BarID=92	l1=0	l2=0	BarID=92	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=80	BarID=92	l1=0	l2=0	BarID=92	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=81	BarID=93	l1=0	l2=0	BarID=93	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=82	BarID=93	l1=0	l2=0	BarID=93	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=83	BarID=94	l1=0	l2=0	BarID=94	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=84	BarID=94	l1=0	l2=0	BarID=94	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=85	BarID=95	l1=0	l2=0	BarID=95	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=86	BarID=95	l1=0	l2=0	BarID=95	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=87	BarID=96	l1=0	l2=0	BarID=96	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=88	BarID=96	l1=0	l2=0	BarID=96	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=89	BarID=97	l1=0	l2=0	BarID=97	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=90	BarID=97	l1=0	l2=0	BarID=97	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=91	BarID=98	l1=0	l2=0	BarID=98	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=92	BarID=98	l1=0	l2=0	BarID=98	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=93	BarID=99	l1=0	l2=0	BarID=99	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=94	BarID=99	l1=0	l2=0	BarID=99	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=95	BarID=100	l1=0	l2=0	BarID=100	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=96	BarID=100	l1=0	l2=0	BarID=100	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=97	BarID=101	l1=0	l2=0	BarID=101	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=98	BarID=101	l1=0	l2=0	BarID=101	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=99	BarID=102	l1=0	l2=0	BarID=102	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=100	BarID=102	l1=0	l2=0	BarID=102	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=101	BarID=103	l1=0	l2=0	BarID=103	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=102	BarID=103	l1=0	l2=0	BarID=103	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=103	BarID=104	l1=0	l2=0	BarID=104	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=104	BarID=104	l1=0	l2=0	BarID=104	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=105	BarID=105	l1=0	l2=0	BarID=105	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=106	BarID=105	l1=0	l2=0	BarID=105	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=107	BarID=106	l1=0	l2=0	BarID=106	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=108	BarID=106	l1=0	l2=0	BarID=106	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=109	BarID=107	l1=0	l2=0	BarID=107	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=110	BarID=107	l1=0	l2=0	BarID=107	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=111	BarID=108	l1=0	l2=0	BarID=108	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=112	BarID=108	l1=0	l2=0	BarID=108	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=113	BarID=109	l1=0	l2=0	BarID=109	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=114	BarID=109	l1=0	l2=0	BarID=109	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=115	BarID=110	l1=0	l2=0	BarID=110	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=116	BarID=110	l1=0	l2=0	BarID=110	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=117	BarID=111	l1=0	l2=0	BarID=111	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=118	BarID=111	l1=0	l2=0	BarID=111	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=119	BarID=112	l1=0	l2=0	BarID=112	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=120	BarID=112	l1=0	l2=0	BarID=112	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=121	BarID=113	l1=0	l2=0	BarID=113	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=122	BarID=113	l1=0	l2=0	BarID=113	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=123	BarID=114	l1=0	l2=0	BarID=114	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=124	BarID=114	l1=0	l2=0	BarID=114	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=125	BarID=115	l1=0	l2=0	BarID=115	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=126	BarID=115	l1=0	l2=0	BarID=115	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=127	BarID=116	l1=0	l2=0	BarID=116	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=128	BarID=116	l1=0	l2=0	BarID=116	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=129	BarID=117	l1=0	l2=0	BarID=117	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=130	BarID=117	l1=0	l2=0	BarID=117	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=131	BarID=118	l1=0	l2=0	BarID=118	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=132	BarID=118	l1=0	l2=0	BarID=118	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=133	BarID=119	l1=0	l2=0	BarID=119	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=134	BarID=119	l1=0	l2=0	BarID=119	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=135	BarID=120	l1=0	l2=0	BarID=120	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=136	BarID=120	l1=0	l2=0	BarID=120	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=137	BarID=121	l1=0	l2=0	BarID=121	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=138	BarID=121	l1=0	l2=0	BarID=121	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=139	BarID=122	l1=0	l2=0	BarID=122	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=140	BarID=122	l1=0	l2=0	BarID=122	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=141	BarID=123	l1=0	l2=0	BarID=123	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=142	BarID=123	l1=0	l2=0	BarID=123	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=143	BarID=124	l1=0	l2=0	BarID=124	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=144	BarID=124	l1=0	l2=0	BarID=124	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=145	BarID=125	l1=0	l2=0	BarID=125	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=146	BarID=125	l1=0	l2=0	BarID=125	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=147	BarID=126	l1=0	l2=0	BarID=126	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=148	BarID=126	l1=0	l2=0	BarID=126	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=149	BarID=127	l1=0	l2=0	BarID=127	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=150	BarID=127	l1=0	l2=0	BarID=127	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=151	BarID=128	l1=0	l2=0	BarID=128	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=152	BarID=128	l1=0	l2=0	BarID=128	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=153	BarID=129	l1=0	l2=0	BarID=129	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=154	BarID=129	l1=0	l2=0	BarID=129	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=155	BarID=130	l1=0	l2=0	BarID=130	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=156	BarID=130	l1=0	l2=0	BarID=130	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=157	BarID=131	l1=0	l2=0	BarID=131	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=158	BarID=131	l1=0	l2=0	BarID=131	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=159	BarID=132	l1=0	l2=0	BarID=132	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=160	BarID=132	l1=0	l2=0	BarID=132	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=161	BarID=133	l1=0	l2=0	BarID=133	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=162	BarID=133	l1=0	l2=0	BarID=133	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=163	BarID=134	l1=0	l2=0	BarID=134	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=164	BarID=134	l1=0	l2=0	BarID=134	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=165	BarID=135	l1=0	l2=0	BarID=135	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=166	BarID=135	l1=0	l2=0	BarID=135	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=167	BarID=136	l1=0	l2=0	BarID=136	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=168	BarID=136	l1=0	l2=0	BarID=136	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=169	BarID=137	l1=0	l2=0	BarID=137	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=170	BarID=137	l1=0	l2=0	BarID=137	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=171	BarID=138	l1=0	l2=0	BarID=138	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=172	BarID=138	l1=0	l2=0	BarID=138	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=173	BarID=139	l1=0	l2=0	BarID=139	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=174	BarID=139	l1=0	l2=0	BarID=139	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=175	BarID=140	l1=0	l2=0	BarID=140	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=176	BarID=140	l1=0	l2=0	BarID=140	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=177	BarID=141	l1=0	l2=0	BarID=141	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=178	BarID=141	l1=0	l2=0	BarID=141	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=179	BarID=142	l1=0	l2=0	BarID=142	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=180	BarID=142	l1=0	l2=0	BarID=142	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=181	BarID=143	l1=0	l2=0	BarID=143	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=182	BarID=143	l1=0	l2=0	BarID=143	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=183	BarID=144	l1=0	l2=0	BarID=144	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=184	BarID=144	l1=0	l2=0	BarID=144	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=185	BarID=145	l1=0	l2=0	BarID=145	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=186	BarID=145	l1=0	l2=0	BarID=145	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=187	BarID=146	l1=0	l2=0	BarID=146	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=188	BarID=146	l1=0	l2=0	BarID=146	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=189	BarID=147	l1=0	l2=0	BarID=147	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=190	BarID=147	l1=0	l2=0	BarID=147	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=191	BarID=148	l1=0	l2=0	BarID=148	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=192	BarID=148	l1=0	l2=0	BarID=148	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=193	BarID=149	l1=0	l2=0	BarID=149	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=194	BarID=149	l1=0	l2=0	BarID=149	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=195	BarID=150	l1=0	l2=0	BarID=150	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=196	BarID=150	l1=0	l2=0	BarID=150	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=197	BarID=151	l1=0	l2=0	BarID=151	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=198	BarID=151	l1=0	l2=0	BarID=151	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=199	BarID=152	l1=0	l2=0	BarID=152	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=200	BarID=152	l1=0	l2=0	BarID=152	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=201	BarID=153	l1=0	l2=0	BarID=153	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=202	BarID=153	l1=0	l2=0	BarID=153	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=203	BarID=154	l1=0	l2=0	BarID=154	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=204	BarID=154	l1=0	l2=0	BarID=154	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=205	BarID=155	l1=0	l2=0	BarID=155	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=206	BarID=155	l1=0	l2=0	BarID=155	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=207	BarID=156	l1=0	l2=0	BarID=156	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=208	BarID=156	l1=0	l2=0	BarID=156	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=209	BarID=157	l1=0	l2=0	BarID=157	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=210	BarID=157	l1=0	l2=0	BarID=157	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=211	BarID=158	l1=0	l2=0	BarID=158	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=212	BarID=158	l1=0	l2=0	BarID=158	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=213	BarID=159	l1=0	l2=0	BarID=159	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=214	BarID=159	l1=0	l2=0	BarID=159	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=215	BarID=160	l1=0	l2=0	BarID=160	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=216	BarID=160	l1=0	l2=0	BarID=160	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=217	BarID=161	l1=0	l2=0	BarID=161	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=218	BarID=161	l1=0	l2=0	BarID=161	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=219	BarID=162	l1=0	l2=0	BarID=162	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=220	BarID=162	l1=0	l2=0	BarID=162	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=221	BarID=163	l1=0	l2=0	BarID=163	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=222	BarID=163	l1=0	l2=0	BarID=163	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=223	BarID=164	l1=0	l2=0	BarID=164	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=224	BarID=164	l1=0	l2=0	BarID=164	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=225	BarID=165	l1=0	l2=0	BarID=165	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=226	BarID=165	l1=0	l2=0	BarID=165	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=227	BarID=166	l1=0	l2=0	BarID=166	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=228	BarID=166	l1=0	l2=0	BarID=166	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=229	BarID=167	l1=0	l2=0	BarID=167	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=230	BarID=167	l1=0	l2=0	BarID=167	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=231	BarID=168	l1=0	l2=0	BarID=168	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=232	BarID=168	l1=0	l2=0	BarID=168	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=233	BarID=169	l1=0	l2=0	BarID=169	Case=2	Type=0	Fx=0	Fy=0	Fz=-2.7
+ID=234	BarID=169	l1=0	l2=0	BarID=169	Case=1	Type=0	Fx=0	Fy=0	Fz=-3.75
+ID=235	BarID=170	l1=0	l2=0	BarID=170	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=236	BarID=171	l1=0	l2=0	BarID=171	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=237	BarID=172	l1=0	l2=0	BarID=172	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=238	BarID=173	l1=0	l2=0	BarID=173	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=239	BarID=174	l1=0	l2=0	BarID=174	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=240	BarID=175	l1=0	l2=0	BarID=175	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=241	BarID=176	l1=0	l2=0	BarID=176	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=242	BarID=177	l1=0	l2=0	BarID=177	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=243	BarID=178	l1=0	l2=0	BarID=178	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=244	BarID=179	l1=0	l2=0	BarID=179	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=245	BarID=180	l1=0	l2=0	BarID=180	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=246	BarID=181	l1=0	l2=0	BarID=181	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=247	BarID=182	l1=0	l2=0	BarID=182	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=248	BarID=183	l1=0	l2=0	BarID=183	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=249	BarID=184	l1=0	l2=0	BarID=184	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=250	BarID=185	l1=0	l2=0	BarID=185	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=251	BarID=186	l1=0	l2=0	BarID=186	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=252	BarID=187	l1=0	l2=0	BarID=187	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=253	BarID=188	l1=0	l2=0	BarID=188	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=254	BarID=189	l1=0	l2=0	BarID=189	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=255	BarID=190	l1=0	l2=0	BarID=190	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=256	BarID=191	l1=0	l2=0	BarID=191	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=257	BarID=192	l1=0	l2=0	BarID=192	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=258	BarID=193	l1=0	l2=0	BarID=193	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=259	BarID=194	l1=0	l2=0	BarID=194	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=260	BarID=195	l1=0	l2=0	BarID=195	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=261	BarID=196	l1=0	l2=0	BarID=196	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=262	BarID=197	l1=0	l2=0	BarID=197	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=263	BarID=198	l1=0	l2=0	BarID=198	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=264	BarID=199	l1=0	l2=0	BarID=199	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=265	BarID=200	l1=0	l2=0	BarID=200	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=266	BarID=201	l1=0	l2=0	BarID=201	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=267	BarID=202	l1=0	l2=0	BarID=202	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=268	BarID=203	l1=0	l2=0	BarID=203	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=269	BarID=204	l1=0	l2=0	BarID=204	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=270	BarID=205	l1=0	l2=0	BarID=205	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=271	BarID=206	l1=0	l2=0	BarID=206	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=272	BarID=207	l1=0	l2=0	BarID=207	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=273	BarID=208	l1=0	l2=0	BarID=208	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=274	BarID=209	l1=0	l2=0	BarID=209	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=275	BarID=210	l1=0	l2=0	BarID=210	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=276	BarID=211	l1=0	l2=0	BarID=211	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=277	BarID=212	l1=0	l2=0	BarID=212	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=278	BarID=213	l1=0	l2=0	BarID=213	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=279	BarID=214	l1=0	l2=0	BarID=214	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=280	BarID=215	l1=0	l2=0	BarID=215	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=281	BarID=216	l1=0	l2=0	BarID=216	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=282	BarID=217	l1=0	l2=0	BarID=217	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=283	BarID=218	l1=0	l2=0	BarID=218	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=284	BarID=219	l1=0	l2=0	BarID=219	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=285	BarID=220	l1=0	l2=0	BarID=220	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=286	BarID=221	l1=0	l2=0	BarID=221	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=287	BarID=222	l1=0	l2=0	BarID=222	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=288	BarID=223	l1=0	l2=0	BarID=223	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=289	BarID=224	l1=0	l2=0	BarID=224	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=290	BarID=225	l1=0	l2=0	BarID=225	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=291	BarID=226	l1=0	l2=0	BarID=226	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=292	BarID=227	l1=0	l2=0	BarID=227	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=293	BarID=228	l1=0	l2=0	BarID=228	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=294	BarID=229	l1=0	l2=0	BarID=229	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=295	BarID=230	l1=0	l2=0	BarID=230	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=296	BarID=231	l1=0	l2=0	BarID=231	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=297	BarID=232	l1=0	l2=0	BarID=232	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=298	BarID=233	l1=0	l2=0	BarID=233	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=299	BarID=234	l1=0	l2=0	BarID=234	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=300	BarID=235	l1=0	l2=0	BarID=235	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=301	BarID=236	l1=0	l2=0	BarID=236	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=302	BarID=237	l1=0	l2=0	BarID=237	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=303	BarID=238	l1=0	l2=0	BarID=238	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=304	BarID=239	l1=0	l2=0	BarID=239	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=305	BarID=240	l1=0	l2=0	BarID=240	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=306	BarID=241	l1=0	l2=0	BarID=241	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=307	BarID=242	l1=0	l2=0	BarID=242	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=308	BarID=243	l1=0	l2=0	BarID=243	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=309	BarID=244	l1=0	l2=0	BarID=244	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=310	BarID=245	l1=0	l2=0	BarID=245	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=311	BarID=246	l1=0	l2=0	BarID=246	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=312	BarID=298	l1=0	l2=0	BarID=298	Case=1	Type=0	Fx=0	Fy=0	Fz=-1
+ID=313	BarID=299	l1=0	l2=0	BarID=299	Case=1	Type=0	Fx=0	Fy=0	Fz=-1
+ID=314	BarID=300	l1=0	l2=0	BarID=300	Case=1	Type=0	Fx=0	Fy=0	Fz=-1
+ID=315	BarID=301	l1=0	l2=0	BarID=301	Case=1	Type=0	Fx=0	Fy=0	Fz=-1
+ID=316	BarID=302	l1=0	l2=0	BarID=302	Case=1	Type=0	Fx=0	Fy=0	Fz=-1
+ID=317	BarID=303	l1=0	l2=0	BarID=303	Case=1	Type=0	Fx=0	Fy=0	Fz=-1
+ID=318	BarID=304	l1=0	l2=0	BarID=304	Case=1	Type=0	Fx=0	Fy=0	Fz=-1
+ID=319	BarID=305	l1=0	l2=0	BarID=305	Case=1	Type=0	Fx=0	Fy=0	Fz=-1
+ID=320	BarID=306	l1=0	l2=0	BarID=306	Case=1	Type=0	Fx=0	Fy=0	Fz=-1
+ID=321	BarID=307	l1=0	l2=0	BarID=307	Case=1	Type=0	Fx=0	Fy=0	Fz=-1
+ID=322	BarID=308	l1=0	l2=0	BarID=308	Case=1	Type=0	Fx=0	Fy=0	Fz=-1
+ID=323	BarID=309	l1=0	l2=0	BarID=309	Case=1	Type=0	Fx=0	Fy=0	Fz=-1
+ID=324	BarID=310	l1=0	l2=0	BarID=310	Case=1	Type=0	Fx=0	Fy=0	Fz=-1
+ID=325	BarID=311	l1=0	l2=0	BarID=311	Case=1	Type=0	Fx=0	Fy=0	Fz=-1
+ID=326	BarID=312	l1=0	l2=0	BarID=312	Case=1	Type=0	Fx=0	Fy=0	Fz=-1
+ID=327	BarID=313	l1=0	l2=0	BarID=313	Case=1	Type=0	Fx=0	Fy=0	Fz=-1
+ID=328	BarID=314	l1=0	l2=0	BarID=314	Case=1	Type=0	Fx=0	Fy=0	Fz=-1
+ID=329	BarID=315	l1=0	l2=0	BarID=315	Case=1	Type=0	Fx=0	Fy=0	Fz=-1
+ID=330	BarID=316	l1=0	l2=0	BarID=316	Case=1	Type=0	Fx=0	Fy=0	Fz=-1
+ID=331	BarID=317	l1=0	l2=0	BarID=317	Case=1	Type=0	Fx=0	Fy=0	Fz=-1
+ID=332	BarID=318	l1=0	l2=0	BarID=318	Case=1	Type=0	Fx=0	Fy=0	Fz=-1
+ID=333	BarID=319	l1=0	l2=0	BarID=319	Case=1	Type=0	Fx=0	Fy=0	Fz=-1
+ID=334	BarID=320	l1=0	l2=0	BarID=320	Case=1	Type=0	Fx=0	Fy=0	Fz=-1
+ID=335	BarID=321	l1=0	l2=0	BarID=321	Case=1	Type=0	Fx=0	Fy=0	Fz=-1
+ID=336	BarID=322	l1=0	l2=0	BarID=322	Case=1	Type=0	Fx=0	Fy=0	Fz=-1
+ID=337	BarID=323	l1=0	l2=0	BarID=323	Case=1	Type=0	Fx=0	Fy=0	Fz=-1
+ID=338	BarID=324	l1=0	l2=0	BarID=324	Case=1	Type=0	Fx=0	Fy=0	Fz=-1
+ID=339	BarID=325	l1=0	l2=0	BarID=325	Case=1	Type=0	Fx=0	Fy=0	Fz=-1
+ID=340	BarID=326	l1=0	l2=0	BarID=326	Case=1	Type=0	Fx=0	Fy=0	Fz=-1
+ID=341	BarID=327	l1=0	l2=0	BarID=327	Case=1	Type=0	Fx=0	Fy=0	Fz=-1
+ID=342	BarID=328	l1=0	l2=0	BarID=328	Case=1	Type=0	Fx=0	Fy=0	Fz=-1
+ID=343	BarID=329	l1=0	l2=0	BarID=329	Case=1	Type=0	Fx=0	Fy=0	Fz=-1
+ID=344	BarID=330	l1=0	l2=0	BarID=330	Case=1	Type=0	Fx=0	Fy=0	Fz=-1
+ID=345	BarID=331	l1=0	l2=0	BarID=331	Case=1	Type=0	Fx=0	Fy=0	Fz=-1
+ID=346	BarID=332	l1=0	l2=0	BarID=332	Case=1	Type=0	Fx=0	Fy=0	Fz=-1
+ID=347	BarID=333	l1=0	l2=0	BarID=333	Case=1	Type=0	Fx=0	Fy=0	Fz=-1
+ID=348	BarID=334	l1=0	l2=0	BarID=334	Case=1	Type=0	Fx=0	Fy=0	Fz=-1
+ID=349	BarID=335	l1=0	l2=0	BarID=335	Case=1	Type=0	Fx=0	Fy=0	Fz=-1
+ID=350	BarID=336	l1=0	l2=0	BarID=336	Case=1	Type=0	Fx=0	Fy=0	Fz=-1
+ID=351	BarID=337	l1=0	l2=0	BarID=337	Case=1	Type=0	Fx=0	Fy=0	Fz=-1
+ID=352	BarID=338	l1=0	l2=0	BarID=338	Case=1	Type=0	Fx=0	Fy=0	Fz=-1
+ID=353	BarID=339	l1=0	l2=0	BarID=339	Case=1	Type=0	Fx=0	Fy=0	Fz=-1
+ID=354	BarID=340	l1=0	l2=0	BarID=340	Case=1	Type=0	Fx=0	Fy=0	Fz=-1
+ID=355	BarID=373	l1=0	l2=0	BarID=373	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=356	BarID=374	l1=0	l2=0	BarID=374	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=357	BarID=375	l1=0	l2=0	BarID=375	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=358	BarID=404	l1=0	l2=0	BarID=404	Case=2	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=359	BarID=404	l1=0	l2=0	BarID=404	Case=3	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=360	BarID=404	l1=0	l2=0	BarID=404	Case=4	Type=0	Fx=0	Fy=0	Fz=0.5
+ID=361	BarID=405	l1=0	l2=0	BarID=405	Case=2	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=362	BarID=405	l1=0	l2=0	BarID=405	Case=3	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=363	BarID=405	l1=0	l2=0	BarID=405	Case=4	Type=0	Fx=0	Fy=0	Fz=0.5
+ID=366	BarID=412	l1=0	l2=0	BarID=412	Case=2	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=367	BarID=412	l1=0	l2=0	BarID=412	Case=3	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=368	BarID=412	l1=0	l2=0	BarID=412	Case=4	Type=0	Fx=0	Fy=0	Fz=0.5
+ID=369	BarID=416	l1=0	l2=0	BarID=416	Case=2	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=370	BarID=416	l1=0	l2=0	BarID=416	Case=3	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=371	BarID=416	l1=0	l2=0	BarID=416	Case=4	Type=0	Fx=0	Fy=0	Fz=0.5
+ID=372	BarID=418	l1=0	l2=0	BarID=418	Case=2	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=373	BarID=418	l1=0	l2=0	BarID=418	Case=3	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=374	BarID=418	l1=0	l2=0	BarID=418	Case=4	Type=0	Fx=0	Fy=0	Fz=0.5
+ID=375	BarID=419	l1=0	l2=0	BarID=419	Case=2	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=376	BarID=419	l1=0	l2=0	BarID=419	Case=3	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=377	BarID=419	l1=0	l2=0	BarID=419	Case=4	Type=0	Fx=0	Fy=0	Fz=0.5
+ID=378	BarID=423	l1=0	l2=0	BarID=423	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=379	BarID=425	l1=0	l2=0	BarID=425	Case=2	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=380	BarID=425	l1=0	l2=0	BarID=425	Case=3	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=381	BarID=425	l1=0	l2=0	BarID=425	Case=4	Type=0	Fx=0	Fy=0	Fz=0.5
+ID=382	BarID=426	l1=0	l2=0	BarID=426	Case=2	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=383	BarID=426	l1=0	l2=0	BarID=426	Case=3	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=384	BarID=426	l1=0	l2=0	BarID=426	Case=4	Type=0	Fx=0	Fy=0	Fz=0.5
+ID=391	BarID=436	l1=0	l2=0	BarID=436	Case=2	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=392	BarID=436	l1=0	l2=0	BarID=436	Case=3	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=393	BarID=436	l1=0	l2=0	BarID=436	Case=4	Type=0	Fx=0	Fy=0	Fz=0.5
+ID=394	BarID=440	l1=0	l2=0	BarID=440	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=399	BarID=445	l1=0	l2=0	BarID=445	Case=2	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=400	BarID=445	l1=0	l2=0	BarID=445	Case=3	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=401	BarID=445	l1=0	l2=0	BarID=445	Case=4	Type=0	Fx=0	Fy=0	Fz=0.5
+ID=403	BarID=450	l1=0	l2=0	BarID=450	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=404	BarID=452	l1=0	l2=0	BarID=452	Case=2	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=405	BarID=452	l1=0	l2=0	BarID=452	Case=3	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=406	BarID=452	l1=0	l2=0	BarID=452	Case=4	Type=0	Fx=0	Fy=0	Fz=0.5
+ID=407	BarID=453	l1=0	l2=0	BarID=453	Case=2	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=408	BarID=453	l1=0	l2=0	BarID=453	Case=3	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=409	BarID=453	l1=0	l2=0	BarID=453	Case=4	Type=0	Fx=0	Fy=0	Fz=0.5
+ID=411	BarID=458	l1=0	l2=0	BarID=458	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=412	BarID=460	l1=0	l2=0	BarID=460	Case=2	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=413	BarID=460	l1=0	l2=0	BarID=460	Case=3	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=414	BarID=460	l1=0	l2=0	BarID=460	Case=4	Type=0	Fx=0	Fy=0	Fz=0.5
+ID=415	BarID=461	l1=0	l2=0	BarID=461	Case=2	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=416	BarID=461	l1=0	l2=0	BarID=461	Case=3	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=417	BarID=461	l1=0	l2=0	BarID=461	Case=4	Type=0	Fx=0	Fy=0	Fz=0.5
+ID=419	BarID=466	l1=0	l2=0	BarID=466	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=420	BarID=467	l1=0	l2=0	BarID=467	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=421	BarID=470	l1=0	l2=0	BarID=470	Case=2	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=422	BarID=470	l1=0	l2=0	BarID=470	Case=3	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=423	BarID=470	l1=0	l2=0	BarID=470	Case=4	Type=0	Fx=0	Fy=0	Fz=0.5
+ID=424	BarID=471	l1=0	l2=0	BarID=471	Case=2	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=425	BarID=471	l1=0	l2=0	BarID=471	Case=3	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=426	BarID=471	l1=0	l2=0	BarID=471	Case=4	Type=0	Fx=0	Fy=0	Fz=0.5
+ID=427	BarID=475	l1=0	l2=0	BarID=475	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=429	BarID=477	l1=0	l2=0	BarID=477	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=430	BarID=478	l1=0	l2=0	BarID=478	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=431	BarID=480	l1=0	l2=0	BarID=480	Case=1	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=432	BarID=481	l1=0	l2=0	BarID=481	Case=2	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=433	BarID=481	l1=0	l2=0	BarID=481	Case=3	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=434	BarID=481	l1=0	l2=0	BarID=481	Case=4	Type=0	Fx=0	Fy=0	Fz=0.5
+ID=435	BarID=482	l1=0	l2=0	BarID=482	Case=2	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=436	BarID=482	l1=0	l2=0	BarID=482	Case=3	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=437	BarID=482	l1=0	l2=0	BarID=482	Case=4	Type=0	Fx=0	Fy=0	Fz=0.5
+ID=438	BarID=483	l1=0	l2=0	BarID=483	Case=2	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=439	BarID=483	l1=0	l2=0	BarID=483	Case=3	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=440	BarID=483	l1=0	l2=0	BarID=483	Case=4	Type=0	Fx=0	Fy=0	Fz=0.5
+ID=441	BarID=486	l1=0	l2=0	BarID=486	Case=2	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=442	BarID=486	l1=0	l2=0	BarID=486	Case=3	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=443	BarID=486	l1=0	l2=0	BarID=486	Case=4	Type=0	Fx=0	Fy=0	Fz=0.5
+ID=444	BarID=487	l1=0	l2=0	BarID=487	Case=2	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=445	BarID=487	l1=0	l2=0	BarID=487	Case=3	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=446	BarID=487	l1=0	l2=0	BarID=487	Case=4	Type=0	Fx=0	Fy=0	Fz=0.5
+ID=447	BarID=488	l1=0	l2=0	BarID=488	Case=2	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=448	BarID=488	l1=0	l2=0	BarID=488	Case=3	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=449	BarID=488	l1=0	l2=0	BarID=488	Case=4	Type=0	Fx=0	Fy=0	Fz=0.5
+ID=450	BarID=491	l1=0	l2=0	BarID=491	Case=2	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=451	BarID=491	l1=0	l2=0	BarID=491	Case=3	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=452	BarID=491	l1=0	l2=0	BarID=491	Case=4	Type=0	Fx=0	Fy=0	Fz=0.5
+ID=453	BarID=492	l1=0	l2=0	BarID=492	Case=2	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=454	BarID=492	l1=0	l2=0	BarID=492	Case=3	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=455	BarID=492	l1=0	l2=0	BarID=492	Case=4	Type=0	Fx=0	Fy=0	Fz=0.5
+ID=456	BarID=493	l1=0	l2=0	BarID=493	Case=2	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=457	BarID=493	l1=0	l2=0	BarID=493	Case=3	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=458	BarID=493	l1=0	l2=0	BarID=493	Case=4	Type=0	Fx=0	Fy=0	Fz=0.5
+ID=459	BarID=496	l1=0	l2=0	BarID=496	Case=2	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=460	BarID=496	l1=0	l2=0	BarID=496	Case=3	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=461	BarID=496	l1=0	l2=0	BarID=496	Case=4	Type=0	Fx=0	Fy=0	Fz=0.5
+ID=462	BarID=497	l1=0	l2=0	BarID=497	Case=2	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=463	BarID=497	l1=0	l2=0	BarID=497	Case=3	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=464	BarID=497	l1=0	l2=0	BarID=497	Case=4	Type=0	Fx=0	Fy=0	Fz=0.5
+ID=465	BarID=498	l1=0	l2=0	BarID=498	Case=2	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=466	BarID=498	l1=0	l2=0	BarID=498	Case=3	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=467	BarID=498	l1=0	l2=0	BarID=498	Case=4	Type=0	Fx=0	Fy=0	Fz=0.5
+ID=468	BarID=501	l1=0	l2=0	BarID=501	Case=2	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=469	BarID=501	l1=0	l2=0	BarID=501	Case=3	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=470	BarID=501	l1=0	l2=0	BarID=501	Case=4	Type=0	Fx=0	Fy=0	Fz=0.5
+ID=471	BarID=502	l1=0	l2=0	BarID=502	Case=2	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=472	BarID=502	l1=0	l2=0	BarID=502	Case=3	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=473	BarID=502	l1=0	l2=0	BarID=502	Case=4	Type=0	Fx=0	Fy=0	Fz=0.5
+ID=474	BarID=503	l1=0	l2=0	BarID=503	Case=2	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=475	BarID=503	l1=0	l2=0	BarID=503	Case=3	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=476	BarID=503	l1=0	l2=0	BarID=503	Case=4	Type=0	Fx=0	Fy=0	Fz=0.5
+ID=477	BarID=506	l1=0	l2=0	BarID=506	Case=2	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=478	BarID=506	l1=0	l2=0	BarID=506	Case=3	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=479	BarID=506	l1=0	l2=0	BarID=506	Case=4	Type=0	Fx=0	Fy=0	Fz=0.5
+ID=480	BarID=507	l1=0	l2=0	BarID=507	Case=2	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=481	BarID=507	l1=0	l2=0	BarID=507	Case=3	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=482	BarID=507	l1=0	l2=0	BarID=507	Case=4	Type=0	Fx=0	Fy=0	Fz=0.5
+ID=483	BarID=508	l1=0	l2=0	BarID=508	Case=2	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=484	BarID=508	l1=0	l2=0	BarID=508	Case=3	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=485	BarID=508	l1=0	l2=0	BarID=508	Case=4	Type=0	Fx=0	Fy=0	Fz=0.5
+ID=486	BarID=511	l1=0	l2=0	BarID=511	Case=1	Type=0	Fx=0	Fy=0	Fz=-1
+ID=487	BarID=512	l1=0	l2=0	BarID=512	Case=1	Type=0	Fx=0	Fy=0	Fz=-1
+ID=488	BarID=513	l1=0	l2=0	BarID=513	Case=1	Type=0	Fx=0	Fy=0	Fz=-1
+ID=489	BarID=514	l1=0	l2=0	BarID=514	Case=1	Type=0	Fx=0	Fy=0	Fz=-1
+ID=490	BarID=518	l1=0	l2=0	BarID=518	Case=2	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=491	BarID=518	l1=0	l2=0	BarID=518	Case=3	Type=0	Fx=0	Fy=0	Fz=-0.5
+ID=492	BarID=518	l1=0	l2=0	BarID=518	Case=4	Type=0	Fx=0	Fy=0	Fz=0.5
+barPunctLoads
+barThermalLoads
+nodalDisplacements
+nodalReactions
+barInternForces
+areaSections
+areas

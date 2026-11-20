@@ -1,0 +1,63 @@
+CEF3D_File_ver=0
+programParams
+Name=Units	Value=kN,kg,m,C
+Name=Analyzed	Value=0
+Name=SelfWeight Case	Value=0
+Name=ActiveLoad Case	Value=0
+Name=Frame Divisions	Value=3
+Name=Pdelta Iters	Value=1
+Name=Pdelta Load Comb	Value={0}{1}
+materials
+ID=1	Name=AceroG50	Type=0	v=0.3	E=204000000	G=78000000	M=7800	W=78	fc=0	fy=0	fu=0
+sections
+ID=0	Name=cuadrada	Type=0	MaterialID=1	MaterialName=AceroG50	h=0.2	b=0.2	tw=0.2	tf=0.2	Ag=0.04000000000000001	Iyy=0.00013333333333333337	Izz=0.00013333333333333337	Iyz=0	Tor=0.0002253333333333334	Acyy=0.03333333333333334	Aczz=0.03333333333333334	Syy=0.0013333333333333335	Szz=0.0013333333333333335	Pyy=0.0020000000000000005	Pzz=0.0020000000000000005	ryy=0.05773502691896258	rzz=0.05773502691896258
+gridCoordsX
+ID=0	Coord=0.0	coordSys=Default
+ID=1	Coord=0.5	coordSys=Default
+ID=2	Coord=1.0	coordSys=Default
+ID=3	Coord=1.5	coordSys=Default
+ID=4	Coord=2.0	coordSys=Default
+ID=5	Coord=2.5	coordSys=Default
+ID=6	Coord=3.0	coordSys=Default
+gridCoordsY
+ID=0	Coord=0	coordSys=Default
+gridCoordsZ
+ID=0	Coord=0	coordSys=Default
+nodes
+ID=1	label=1	X=0.0	Y=0	Z=0
+ID=2	label=2	X=0.5	Y=0	Z=0
+ID=3	label=3	X=1.0	Y=0	Z=0
+ID=4	label=4	X=1.5	Y=0	Z=0
+ID=5	label=5	X=2.0	Y=0	Z=0
+ID=6	label=6	X=2.5	Y=0	Z=0
+ID=7	label=7	X=3.0	Y=0	Z=0
+bars
+ID=1	label=1	startNode=1	endNode=2	SectionID=0	SectionName=cuadrada	unused=3	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=2	label=2	startNode=2	endNode=3	SectionID=0	SectionName=cuadrada	unused=3	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=3	label=3	startNode=3	endNode=4	SectionID=0	SectionName=cuadrada	unused=3	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=4	label=4	startNode=4	endNode=5	SectionID=0	SectionName=cuadrada	unused=3	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=5	label=5	startNode=5	endNode=6	SectionID=0	SectionName=cuadrada	unused=3	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=6	label=6	startNode=6	endNode=7	SectionID=0	SectionName=cuadrada	unused=3	Rotation=0	releases=0	offsetY=0	offsetZ=0
+nodalRestraints
+ID=1	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=2	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=3	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=4	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=5	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=6	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=7	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+nodalConstraints
+loadCases
+ID=0	Name=Dead	Type=0
+loadCombs
+ID=0	Name=Comb1	Type=0	Case=0	Factor=1
+nodalLoads
+ID=1	NodeID=7	Case=0	Fx=0	Fy=0	Fz=-10	Mx=0	My=0	Mz=0
+barDistrLoads
+barPunctLoads
+barThermalLoads
+nodalDisplacements
+nodalReactions
+barInternForces
+areaSections
+areas

@@ -1,0 +1,279 @@
+CEF3D_File_ver=0
+programParams
+Name=Units	Value=kN,kg,m,C
+Name=Analyzed	Value=0
+Name=SelfWeight Case	Value=0
+Name=ActiveLoad Case	Value=0
+Name=Frame Divisions	Value=3
+Name=Pdelta Iters	Value=1
+Name=Pdelta Load Comb	Value={0}{1}
+materials
+ID=1	Name=AceroG50	Type=0	v=0.3	E=204000000	G=78000000	M=7800	W=78	fc=0	fy=0	fu=0
+sections
+gridCoordsX
+ID=0	Coord=0.0	coordSys=Default
+ID=1	Coord=0.5	coordSys=Default
+ID=2	Coord=1.0	coordSys=Default
+ID=3	Coord=1.5	coordSys=Default
+ID=4	Coord=2.0	coordSys=Default
+ID=5	Coord=2.5	coordSys=Default
+ID=6	Coord=3.0	coordSys=Default
+ID=7	Coord=3.5	coordSys=Default
+ID=8	Coord=4.0	coordSys=Default
+gridCoordsY
+ID=0	Coord=0.0	coordSys=Default
+ID=1	Coord=0.5	coordSys=Default
+ID=2	Coord=1.0	coordSys=Default
+ID=3	Coord=1.5	coordSys=Default
+ID=4	Coord=2.0	coordSys=Default
+ID=5	Coord=2.5	coordSys=Default
+ID=6	Coord=3.0	coordSys=Default
+ID=7	Coord=3.5	coordSys=Default
+ID=8	Coord=4.0	coordSys=Default
+gridCoordsZ
+ID=0	Coord=0	coordSys=Default
+nodes
+ID=1	label=1	X=0.0	Y=0.0	Z=0
+ID=2	label=2	X=0.5	Y=0.0	Z=0
+ID=3	label=3	X=1.0	Y=0.0	Z=0
+ID=4	label=4	X=1.5	Y=0.0	Z=0
+ID=5	label=5	X=2.0	Y=0.0	Z=0
+ID=6	label=6	X=2.5	Y=0.0	Z=0
+ID=7	label=7	X=3.0	Y=0.0	Z=0
+ID=8	label=8	X=3.5	Y=0.0	Z=0
+ID=9	label=9	X=4.0	Y=0.0	Z=0
+ID=10	label=10	X=0.0	Y=0.5	Z=0
+ID=11	label=11	X=0.5	Y=0.5	Z=0
+ID=12	label=12	X=1.0	Y=0.5	Z=0
+ID=13	label=13	X=1.5	Y=0.5	Z=0
+ID=14	label=14	X=2.0	Y=0.5	Z=0
+ID=15	label=15	X=2.5	Y=0.5	Z=0
+ID=16	label=16	X=3.0	Y=0.5	Z=0
+ID=17	label=17	X=3.5	Y=0.5	Z=0
+ID=18	label=18	X=4.0	Y=0.5	Z=0
+ID=19	label=19	X=0.0	Y=1.0	Z=0
+ID=20	label=20	X=0.5	Y=1.0	Z=0
+ID=21	label=21	X=1.0	Y=1.0	Z=0
+ID=22	label=22	X=1.5	Y=1.0	Z=0
+ID=23	label=23	X=2.0	Y=1.0	Z=0
+ID=24	label=24	X=2.5	Y=1.0	Z=0
+ID=25	label=25	X=3.0	Y=1.0	Z=0
+ID=26	label=26	X=3.5	Y=1.0	Z=0
+ID=27	label=27	X=4.0	Y=1.0	Z=0
+ID=28	label=28	X=0.0	Y=1.5	Z=0
+ID=29	label=29	X=0.5	Y=1.5	Z=0
+ID=30	label=30	X=1.0	Y=1.5	Z=0
+ID=31	label=31	X=1.5	Y=1.5	Z=0
+ID=32	label=32	X=2.0	Y=1.5	Z=0
+ID=33	label=33	X=2.5	Y=1.5	Z=0
+ID=34	label=34	X=3.0	Y=1.5	Z=0
+ID=35	label=35	X=3.5	Y=1.5	Z=0
+ID=36	label=36	X=4.0	Y=1.5	Z=0
+ID=37	label=37	X=0.0	Y=2.0	Z=0
+ID=38	label=38	X=0.5	Y=2.0	Z=0
+ID=39	label=39	X=1.0	Y=2.0	Z=0
+ID=40	label=40	X=1.5	Y=2.0	Z=0
+ID=41	label=41	X=2.0	Y=2.0	Z=0
+ID=42	label=42	X=2.5	Y=2.0	Z=0
+ID=43	label=43	X=3.0	Y=2.0	Z=0
+ID=44	label=44	X=3.5	Y=2.0	Z=0
+ID=45	label=45	X=4.0	Y=2.0	Z=0
+ID=46	label=46	X=0.0	Y=2.5	Z=0
+ID=47	label=47	X=0.5	Y=2.5	Z=0
+ID=48	label=48	X=1.0	Y=2.5	Z=0
+ID=49	label=49	X=1.5	Y=2.5	Z=0
+ID=50	label=50	X=2.0	Y=2.5	Z=0
+ID=51	label=51	X=2.5	Y=2.5	Z=0
+ID=52	label=52	X=3.0	Y=2.5	Z=0
+ID=53	label=53	X=3.5	Y=2.5	Z=0
+ID=54	label=54	X=4.0	Y=2.5	Z=0
+ID=55	label=55	X=0.0	Y=3.0	Z=0
+ID=56	label=56	X=0.5	Y=3.0	Z=0
+ID=57	label=57	X=1.0	Y=3.0	Z=0
+ID=58	label=58	X=1.5	Y=3.0	Z=0
+ID=59	label=59	X=2.0	Y=3.0	Z=0
+ID=60	label=60	X=2.5	Y=3.0	Z=0
+ID=61	label=61	X=3.0	Y=3.0	Z=0
+ID=62	label=62	X=3.5	Y=3.0	Z=0
+ID=63	label=63	X=4.0	Y=3.0	Z=0
+ID=64	label=64	X=0.0	Y=3.5	Z=0
+ID=65	label=65	X=0.5	Y=3.5	Z=0
+ID=66	label=66	X=1.0	Y=3.5	Z=0
+ID=67	label=67	X=1.5	Y=3.5	Z=0
+ID=68	label=68	X=2.0	Y=3.5	Z=0
+ID=69	label=69	X=2.5	Y=3.5	Z=0
+ID=70	label=70	X=3.0	Y=3.5	Z=0
+ID=71	label=71	X=3.5	Y=3.5	Z=0
+ID=72	label=72	X=4.0	Y=3.5	Z=0
+ID=73	label=73	X=0.0	Y=4.0	Z=0
+ID=74	label=74	X=0.5	Y=4.0	Z=0
+ID=75	label=75	X=1.0	Y=4.0	Z=0
+ID=76	label=76	X=1.5	Y=4.0	Z=0
+ID=77	label=77	X=2.0	Y=4.0	Z=0
+ID=78	label=78	X=2.5	Y=4.0	Z=0
+ID=79	label=79	X=3.0	Y=4.0	Z=0
+ID=80	label=80	X=3.5	Y=4.0	Z=0
+ID=81	label=81	X=4.0	Y=4.0	Z=0
+bars
+nodalRestraints
+ID=1	ux=1	uy=1	uz=1	rx=0	ry=0	rz=1
+ID=2	ux=1	uy=1	uz=1	rx=0	ry=0	rz=1
+ID=3	ux=1	uy=1	uz=1	rx=0	ry=0	rz=1
+ID=4	ux=1	uy=1	uz=1	rx=0	ry=0	rz=1
+ID=5	ux=1	uy=1	uz=1	rx=0	ry=0	rz=1
+ID=6	ux=1	uy=1	uz=1	rx=0	ry=0	rz=1
+ID=7	ux=1	uy=1	uz=1	rx=0	ry=0	rz=1
+ID=8	ux=1	uy=1	uz=1	rx=0	ry=0	rz=1
+ID=9	ux=1	uy=1	uz=1	rx=0	ry=0	rz=1
+ID=10	ux=1	uy=1	uz=1	rx=0	ry=0	rz=1
+ID=11	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=12	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=13	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=14	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=15	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=16	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=17	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=18	ux=1	uy=1	uz=1	rx=0	ry=0	rz=1
+ID=19	ux=1	uy=1	uz=1	rx=0	ry=0	rz=1
+ID=20	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=21	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=22	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=23	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=24	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=25	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=26	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=27	ux=1	uy=1	uz=1	rx=0	ry=0	rz=1
+ID=28	ux=1	uy=1	uz=1	rx=0	ry=0	rz=1
+ID=29	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=30	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=31	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=32	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=33	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=34	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=35	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=36	ux=1	uy=1	uz=1	rx=0	ry=0	rz=1
+ID=37	ux=1	uy=1	uz=1	rx=0	ry=0	rz=1
+ID=38	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=39	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=40	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=41	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=42	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=43	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=44	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=45	ux=1	uy=1	uz=1	rx=0	ry=0	rz=1
+ID=46	ux=1	uy=1	uz=1	rx=0	ry=0	rz=1
+ID=47	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=48	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=49	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=50	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=51	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=52	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=53	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=54	ux=1	uy=1	uz=1	rx=0	ry=0	rz=1
+ID=55	ux=1	uy=1	uz=1	rx=0	ry=0	rz=1
+ID=56	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=57	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=58	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=59	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=60	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=61	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=62	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=63	ux=1	uy=1	uz=1	rx=0	ry=0	rz=1
+ID=64	ux=1	uy=1	uz=1	rx=0	ry=0	rz=1
+ID=65	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=66	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=67	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=68	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=69	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=70	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=71	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=72	ux=1	uy=1	uz=1	rx=0	ry=0	rz=1
+ID=73	ux=1	uy=1	uz=1	rx=0	ry=0	rz=1
+ID=74	ux=1	uy=1	uz=1	rx=0	ry=0	rz=1
+ID=75	ux=1	uy=1	uz=1	rx=0	ry=0	rz=1
+ID=76	ux=1	uy=1	uz=1	rx=0	ry=0	rz=1
+ID=77	ux=1	uy=1	uz=1	rx=0	ry=0	rz=1
+ID=78	ux=1	uy=1	uz=1	rx=0	ry=0	rz=1
+ID=79	ux=1	uy=1	uz=1	rx=0	ry=0	rz=1
+ID=80	ux=1	uy=1	uz=1	rx=0	ry=0	rz=1
+ID=81	ux=1	uy=1	uz=1	rx=0	ry=0	rz=1
+nodalConstraints
+loadCases
+ID=0	Name=Dead	Type=0
+loadCombs
+ID=0	Name=Comb1	Type=0	Case=0	Factor=1
+nodalLoads
+ID=1	NodeID=41	Case=0	Fx=0	Fy=0	Fz=-100	Mx=0	My=0	Mz=0
+barDistrLoads
+barPunctLoads
+barThermalLoads
+nodalDisplacements
+nodalReactions
+barInternForces
+areaSections
+ID=1	Name=Losa	Kind=1	MaterialID=1	MaterialName=AceroG50	Thickness=0.1
+areas
+ID=1	label=1	SectionID=1	SectionName=Losa	Node1=1	Node2=2	Node3=11	Node4=10
+ID=2	label=2	SectionID=1	SectionName=Losa	Node1=2	Node2=3	Node3=12	Node4=11
+ID=3	label=3	SectionID=1	SectionName=Losa	Node1=3	Node2=4	Node3=13	Node4=12
+ID=4	label=4	SectionID=1	SectionName=Losa	Node1=4	Node2=5	Node3=14	Node4=13
+ID=5	label=5	SectionID=1	SectionName=Losa	Node1=5	Node2=6	Node3=15	Node4=14
+ID=6	label=6	SectionID=1	SectionName=Losa	Node1=6	Node2=7	Node3=16	Node4=15
+ID=7	label=7	SectionID=1	SectionName=Losa	Node1=7	Node2=8	Node3=17	Node4=16
+ID=8	label=8	SectionID=1	SectionName=Losa	Node1=8	Node2=9	Node3=18	Node4=17
+ID=9	label=9	SectionID=1	SectionName=Losa	Node1=10	Node2=11	Node3=20	Node4=19
+ID=10	label=10	SectionID=1	SectionName=Losa	Node1=11	Node2=12	Node3=21	Node4=20
+ID=11	label=11	SectionID=1	SectionName=Losa	Node1=12	Node2=13	Node3=22	Node4=21
+ID=12	label=12	SectionID=1	SectionName=Losa	Node1=13	Node2=14	Node3=23	Node4=22
+ID=13	label=13	SectionID=1	SectionName=Losa	Node1=14	Node2=15	Node3=24	Node4=23
+ID=14	label=14	SectionID=1	SectionName=Losa	Node1=15	Node2=16	Node3=25	Node4=24
+ID=15	label=15	SectionID=1	SectionName=Losa	Node1=16	Node2=17	Node3=26	Node4=25
+ID=16	label=16	SectionID=1	SectionName=Losa	Node1=17	Node2=18	Node3=27	Node4=26
+ID=17	label=17	SectionID=1	SectionName=Losa	Node1=19	Node2=20	Node3=29	Node4=28
+ID=18	label=18	SectionID=1	SectionName=Losa	Node1=20	Node2=21	Node3=30	Node4=29
+ID=19	label=19	SectionID=1	SectionName=Losa	Node1=21	Node2=22	Node3=31	Node4=30
+ID=20	label=20	SectionID=1	SectionName=Losa	Node1=22	Node2=23	Node3=32	Node4=31
+ID=21	label=21	SectionID=1	SectionName=Losa	Node1=23	Node2=24	Node3=33	Node4=32
+ID=22	label=22	SectionID=1	SectionName=Losa	Node1=24	Node2=25	Node3=34	Node4=33
+ID=23	label=23	SectionID=1	SectionName=Losa	Node1=25	Node2=26	Node3=35	Node4=34
+ID=24	label=24	SectionID=1	SectionName=Losa	Node1=26	Node2=27	Node3=36	Node4=35
+ID=25	label=25	SectionID=1	SectionName=Losa	Node1=28	Node2=29	Node3=38	Node4=37
+ID=26	label=26	SectionID=1	SectionName=Losa	Node1=29	Node2=30	Node3=39	Node4=38
+ID=27	label=27	SectionID=1	SectionName=Losa	Node1=30	Node2=31	Node3=40	Node4=39
+ID=28	label=28	SectionID=1	SectionName=Losa	Node1=31	Node2=32	Node3=41	Node4=40
+ID=29	label=29	SectionID=1	SectionName=Losa	Node1=32	Node2=33	Node3=42	Node4=41
+ID=30	label=30	SectionID=1	SectionName=Losa	Node1=33	Node2=34	Node3=43	Node4=42
+ID=31	label=31	SectionID=1	SectionName=Losa	Node1=34	Node2=35	Node3=44	Node4=43
+ID=32	label=32	SectionID=1	SectionName=Losa	Node1=35	Node2=36	Node3=45	Node4=44
+ID=33	label=33	SectionID=1	SectionName=Losa	Node1=37	Node2=38	Node3=47	Node4=46
+ID=34	label=34	SectionID=1	SectionName=Losa	Node1=38	Node2=39	Node3=48	Node4=47
+ID=35	label=35	SectionID=1	SectionName=Losa	Node1=39	Node2=40	Node3=49	Node4=48
+ID=36	label=36	SectionID=1	SectionName=Losa	Node1=40	Node2=41	Node3=50	Node4=49
+ID=37	label=37	SectionID=1	SectionName=Losa	Node1=41	Node2=42	Node3=51	Node4=50
+ID=38	label=38	SectionID=1	SectionName=Losa	Node1=42	Node2=43	Node3=52	Node4=51
+ID=39	label=39	SectionID=1	SectionName=Losa	Node1=43	Node2=44	Node3=53	Node4=52
+ID=40	label=40	SectionID=1	SectionName=Losa	Node1=44	Node2=45	Node3=54	Node4=53
+ID=41	label=41	SectionID=1	SectionName=Losa	Node1=46	Node2=47	Node3=56	Node4=55
+ID=42	label=42	SectionID=1	SectionName=Losa	Node1=47	Node2=48	Node3=57	Node4=56
+ID=43	label=43	SectionID=1	SectionName=Losa	Node1=48	Node2=49	Node3=58	Node4=57
+ID=44	label=44	SectionID=1	SectionName=Losa	Node1=49	Node2=50	Node3=59	Node4=58
+ID=45	label=45	SectionID=1	SectionName=Losa	Node1=50	Node2=51	Node3=60	Node4=59
+ID=46	label=46	SectionID=1	SectionName=Losa	Node1=51	Node2=52	Node3=61	Node4=60
+ID=47	label=47	SectionID=1	SectionName=Losa	Node1=52	Node2=53	Node3=62	Node4=61
+ID=48	label=48	SectionID=1	SectionName=Losa	Node1=53	Node2=54	Node3=63	Node4=62
+ID=49	label=49	SectionID=1	SectionName=Losa	Node1=55	Node2=56	Node3=65	Node4=64
+ID=50	label=50	SectionID=1	SectionName=Losa	Node1=56	Node2=57	Node3=66	Node4=65
+ID=51	label=51	SectionID=1	SectionName=Losa	Node1=57	Node2=58	Node3=67	Node4=66
+ID=52	label=52	SectionID=1	SectionName=Losa	Node1=58	Node2=59	Node3=68	Node4=67
+ID=53	label=53	SectionID=1	SectionName=Losa	Node1=59	Node2=60	Node3=69	Node4=68
+ID=54	label=54	SectionID=1	SectionName=Losa	Node1=60	Node2=61	Node3=70	Node4=69
+ID=55	label=55	SectionID=1	SectionName=Losa	Node1=61	Node2=62	Node3=71	Node4=70
+ID=56	label=56	SectionID=1	SectionName=Losa	Node1=62	Node2=63	Node3=72	Node4=71
+ID=57	label=57	SectionID=1	SectionName=Losa	Node1=64	Node2=65	Node3=74	Node4=73
+ID=58	label=58	SectionID=1	SectionName=Losa	Node1=65	Node2=66	Node3=75	Node4=74
+ID=59	label=59	SectionID=1	SectionName=Losa	Node1=66	Node2=67	Node3=76	Node4=75
+ID=60	label=60	SectionID=1	SectionName=Losa	Node1=67	Node2=68	Node3=77	Node4=76
+ID=61	label=61	SectionID=1	SectionName=Losa	Node1=68	Node2=69	Node3=78	Node4=77
+ID=62	label=62	SectionID=1	SectionName=Losa	Node1=69	Node2=70	Node3=79	Node4=78
+ID=63	label=63	SectionID=1	SectionName=Losa	Node1=70	Node2=71	Node3=80	Node4=79
+ID=64	label=64	SectionID=1	SectionName=Losa	Node1=71	Node2=72	Node3=81	Node4=80

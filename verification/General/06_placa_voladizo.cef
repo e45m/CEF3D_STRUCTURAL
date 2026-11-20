@@ -1,0 +1,119 @@
+CEF3D_File_ver=0
+programParams
+Name=Units	Value=kN,kg,m,C
+Name=Analyzed	Value=0
+Name=SelfWeight Case	Value=0
+Name=ActiveLoad Case	Value=0
+Name=Frame Divisions	Value=3
+Name=Pdelta Iters	Value=1
+Name=Pdelta Load Comb	Value={0}{1}
+materials
+ID=1	Name=AceroG50	Type=0	v=0.3	E=204000000	G=78000000	M=7800	W=78	fc=0	fy=0	fu=0
+sections
+gridCoordsX
+ID=0	Coord=0.0	coordSys=Default
+ID=1	Coord=0.25	coordSys=Default
+ID=2	Coord=0.5	coordSys=Default
+ID=3	Coord=0.75	coordSys=Default
+ID=4	Coord=1.0	coordSys=Default
+ID=5	Coord=1.25	coordSys=Default
+ID=6	Coord=1.5	coordSys=Default
+ID=7	Coord=1.75	coordSys=Default
+ID=8	Coord=2.0	coordSys=Default
+gridCoordsY
+ID=0	Coord=0.0	coordSys=Default
+ID=1	Coord=0.25	coordSys=Default
+ID=2	Coord=0.5	coordSys=Default
+gridCoordsZ
+ID=0	Coord=0	coordSys=Default
+nodes
+ID=1	label=1	X=0.0	Y=0.0	Z=0
+ID=2	label=2	X=0.25	Y=0.0	Z=0
+ID=3	label=3	X=0.5	Y=0.0	Z=0
+ID=4	label=4	X=0.75	Y=0.0	Z=0
+ID=5	label=5	X=1.0	Y=0.0	Z=0
+ID=6	label=6	X=1.25	Y=0.0	Z=0
+ID=7	label=7	X=1.5	Y=0.0	Z=0
+ID=8	label=8	X=1.75	Y=0.0	Z=0
+ID=9	label=9	X=2.0	Y=0.0	Z=0
+ID=10	label=10	X=0.0	Y=0.25	Z=0
+ID=11	label=11	X=0.25	Y=0.25	Z=0
+ID=12	label=12	X=0.5	Y=0.25	Z=0
+ID=13	label=13	X=0.75	Y=0.25	Z=0
+ID=14	label=14	X=1.0	Y=0.25	Z=0
+ID=15	label=15	X=1.25	Y=0.25	Z=0
+ID=16	label=16	X=1.5	Y=0.25	Z=0
+ID=17	label=17	X=1.75	Y=0.25	Z=0
+ID=18	label=18	X=2.0	Y=0.25	Z=0
+ID=19	label=19	X=0.0	Y=0.5	Z=0
+ID=20	label=20	X=0.25	Y=0.5	Z=0
+ID=21	label=21	X=0.5	Y=0.5	Z=0
+ID=22	label=22	X=0.75	Y=0.5	Z=0
+ID=23	label=23	X=1.0	Y=0.5	Z=0
+ID=24	label=24	X=1.25	Y=0.5	Z=0
+ID=25	label=25	X=1.5	Y=0.5	Z=0
+ID=26	label=26	X=1.75	Y=0.5	Z=0
+ID=27	label=27	X=2.0	Y=0.5	Z=0
+bars
+nodalRestraints
+ID=1	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=2	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=3	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=4	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=5	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=6	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=7	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=8	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=9	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=10	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=11	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=12	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=13	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=14	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=15	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=16	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=17	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=18	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=19	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=20	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=21	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=22	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=23	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=24	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=25	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=26	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+ID=27	ux=1	uy=1	uz=0	rx=0	ry=0	rz=1
+nodalConstraints
+loadCases
+ID=0	Name=Dead	Type=0
+loadCombs
+ID=0	Name=Comb1	Type=0	Case=0	Factor=1
+nodalLoads
+ID=1	NodeID=9	Case=0	Fx=0	Fy=0	Fz=-0.25	Mx=0	My=0	Mz=0
+ID=2	NodeID=18	Case=0	Fx=0	Fy=0	Fz=-0.5	Mx=0	My=0	Mz=0
+ID=3	NodeID=27	Case=0	Fx=0	Fy=0	Fz=-0.25	Mx=0	My=0	Mz=0
+barDistrLoads
+barPunctLoads
+barThermalLoads
+nodalDisplacements
+nodalReactions
+barInternForces
+areaSections
+ID=1	Name=Losa	Kind=1	MaterialID=1	MaterialName=AceroG50	Thickness=0.05
+areas
+ID=1	label=1	SectionID=1	SectionName=Losa	Node1=1	Node2=2	Node3=11	Node4=10
+ID=2	label=2	SectionID=1	SectionName=Losa	Node1=2	Node2=3	Node3=12	Node4=11
+ID=3	label=3	SectionID=1	SectionName=Losa	Node1=3	Node2=4	Node3=13	Node4=12
+ID=4	label=4	SectionID=1	SectionName=Losa	Node1=4	Node2=5	Node3=14	Node4=13
+ID=5	label=5	SectionID=1	SectionName=Losa	Node1=5	Node2=6	Node3=15	Node4=14
+ID=6	label=6	SectionID=1	SectionName=Losa	Node1=6	Node2=7	Node3=16	Node4=15
+ID=7	label=7	SectionID=1	SectionName=Losa	Node1=7	Node2=8	Node3=17	Node4=16
+ID=8	label=8	SectionID=1	SectionName=Losa	Node1=8	Node2=9	Node3=18	Node4=17
+ID=9	label=9	SectionID=1	SectionName=Losa	Node1=10	Node2=11	Node3=20	Node4=19
+ID=10	label=10	SectionID=1	SectionName=Losa	Node1=11	Node2=12	Node3=21	Node4=20
+ID=11	label=11	SectionID=1	SectionName=Losa	Node1=12	Node2=13	Node3=22	Node4=21
+ID=12	label=12	SectionID=1	SectionName=Losa	Node1=13	Node2=14	Node3=23	Node4=22
+ID=13	label=13	SectionID=1	SectionName=Losa	Node1=14	Node2=15	Node3=24	Node4=23
+ID=14	label=14	SectionID=1	SectionName=Losa	Node1=15	Node2=16	Node3=25	Node4=24
+ID=15	label=15	SectionID=1	SectionName=Losa	Node1=16	Node2=17	Node3=26	Node4=25
+ID=16	label=16	SectionID=1	SectionName=Losa	Node1=17	Node2=18	Node3=27	Node4=26

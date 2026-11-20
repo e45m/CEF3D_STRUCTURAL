@@ -1,0 +1,138 @@
+CEF3D_File_ver=0
+programParams
+Name=Units	Value=kN,kg,m,C
+Name=Analyzed	Value=0
+Name=SelfWeight Case	Value=0
+Name=ActiveLoad Case	Value=0
+Name=Frame Divisions	Value=3
+Name=Pdelta Iters	Value=1
+Name=Pdelta Load Comb	Value={0}{1}
+materials
+ID=1	Name=AceroG50	Type=0	v=0.3	E=204000000	G=78000000	M=7800	W=78	fc=0	fy=0	fu=0
+sections
+ID=0	Name=cuadrada	Type=0	MaterialID=1	MaterialName=AceroG50	h=0.2	b=0.2	tw=0.2	tf=0.2	Ag=0.04000000000000001	Iyy=0.00013333333333333337	Izz=0.00013333333333333337	Iyz=0	Tor=0.0002253333333333334	Acyy=0.03333333333333334	Aczz=0.03333333333333334	Syy=0.0013333333333333335	Szz=0.0013333333333333335	Pyy=0.0020000000000000005	Pzz=0.0020000000000000005	ryy=0.05773502691896258	rzz=0.05773502691896258
+gridCoordsX
+ID=0	Coord=0.0	coordSys=Default
+ID=1	Coord=0.5	coordSys=Default
+ID=2	Coord=1.0	coordSys=Default
+ID=3	Coord=1.5	coordSys=Default
+ID=4	Coord=2.0	coordSys=Default
+ID=5	Coord=2.5	coordSys=Default
+ID=6	Coord=3.0	coordSys=Default
+ID=7	Coord=3.5	coordSys=Default
+ID=8	Coord=4.0	coordSys=Default
+ID=9	Coord=4.5	coordSys=Default
+ID=10	Coord=5.0	coordSys=Default
+ID=11	Coord=5.5	coordSys=Default
+ID=12	Coord=6.0	coordSys=Default
+ID=13	Coord=6.5	coordSys=Default
+ID=14	Coord=7.0	coordSys=Default
+ID=15	Coord=7.5	coordSys=Default
+ID=16	Coord=8.0	coordSys=Default
+ID=17	Coord=8.5	coordSys=Default
+ID=18	Coord=9.0	coordSys=Default
+ID=19	Coord=9.5	coordSys=Default
+ID=20	Coord=10.0	coordSys=Default
+gridCoordsY
+ID=0	Coord=0	coordSys=Default
+gridCoordsZ
+ID=0	Coord=0	coordSys=Default
+nodes
+ID=1	label=1	X=0.0	Y=0	Z=0
+ID=2	label=2	X=0.5	Y=0	Z=0
+ID=3	label=3	X=1.0	Y=0	Z=0
+ID=4	label=4	X=1.5	Y=0	Z=0
+ID=5	label=5	X=2.0	Y=0	Z=0
+ID=6	label=6	X=2.5	Y=0	Z=0
+ID=7	label=7	X=3.0	Y=0	Z=0
+ID=8	label=8	X=3.5	Y=0	Z=0
+ID=9	label=9	X=4.0	Y=0	Z=0
+ID=10	label=10	X=4.5	Y=0	Z=0
+ID=11	label=11	X=5.0	Y=0	Z=0
+ID=12	label=12	X=5.5	Y=0	Z=0
+ID=13	label=13	X=6.0	Y=0	Z=0
+ID=14	label=14	X=6.5	Y=0	Z=0
+ID=15	label=15	X=7.0	Y=0	Z=0
+ID=16	label=16	X=7.5	Y=0	Z=0
+ID=17	label=17	X=8.0	Y=0	Z=0
+ID=18	label=18	X=8.5	Y=0	Z=0
+ID=19	label=19	X=9.0	Y=0	Z=0
+ID=20	label=20	X=9.5	Y=0	Z=0
+ID=21	label=21	X=10.0	Y=0	Z=0
+bars
+ID=1	label=1	startNode=1	endNode=2	SectionID=0	SectionName=cuadrada	unused=3	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=2	label=2	startNode=2	endNode=3	SectionID=0	SectionName=cuadrada	unused=3	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=3	label=3	startNode=3	endNode=4	SectionID=0	SectionName=cuadrada	unused=3	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=4	label=4	startNode=4	endNode=5	SectionID=0	SectionName=cuadrada	unused=3	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=5	label=5	startNode=5	endNode=6	SectionID=0	SectionName=cuadrada	unused=3	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=6	label=6	startNode=6	endNode=7	SectionID=0	SectionName=cuadrada	unused=3	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=7	label=7	startNode=7	endNode=8	SectionID=0	SectionName=cuadrada	unused=3	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=8	label=8	startNode=8	endNode=9	SectionID=0	SectionName=cuadrada	unused=3	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=9	label=9	startNode=9	endNode=10	SectionID=0	SectionName=cuadrada	unused=3	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=10	label=10	startNode=10	endNode=11	SectionID=0	SectionName=cuadrada	unused=3	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=11	label=11	startNode=11	endNode=12	SectionID=0	SectionName=cuadrada	unused=3	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=12	label=12	startNode=12	endNode=13	SectionID=0	SectionName=cuadrada	unused=3	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=13	label=13	startNode=13	endNode=14	SectionID=0	SectionName=cuadrada	unused=3	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=14	label=14	startNode=14	endNode=15	SectionID=0	SectionName=cuadrada	unused=3	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=15	label=15	startNode=15	endNode=16	SectionID=0	SectionName=cuadrada	unused=3	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=16	label=16	startNode=16	endNode=17	SectionID=0	SectionName=cuadrada	unused=3	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=17	label=17	startNode=17	endNode=18	SectionID=0	SectionName=cuadrada	unused=3	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=18	label=18	startNode=18	endNode=19	SectionID=0	SectionName=cuadrada	unused=3	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=19	label=19	startNode=19	endNode=20	SectionID=0	SectionName=cuadrada	unused=3	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=20	label=20	startNode=20	endNode=21	SectionID=0	SectionName=cuadrada	unused=3	Rotation=0	releases=0	offsetY=0	offsetZ=0
+nodalRestraints
+ID=1	ux=1	uy=1	uz=1	rx=1	ry=0	rz=0
+ID=2	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=3	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=4	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=5	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=6	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=7	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=8	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=9	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=10	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=11	ux=0	uy=1	uz=1	rx=0	ry=0	rz=0
+ID=12	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=13	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=14	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=15	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=16	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=17	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=18	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=19	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=20	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=21	ux=0	uy=1	uz=1	rx=0	ry=0	rz=0
+nodalConstraints
+loadCases
+ID=0	Name=Dead	Type=0
+loadCombs
+ID=0	Name=Comb1	Type=0	Case=0	Factor=1
+nodalLoads
+barDistrLoads
+ID=1	BarID=1	l1=0	l2=1	BarID=1	Case=0	Type=1	Fx=0	Fy=0	Fz=-10
+ID=2	BarID=2	l1=0	l2=1	BarID=2	Case=0	Type=1	Fx=0	Fy=0	Fz=-10
+ID=3	BarID=3	l1=0	l2=1	BarID=3	Case=0	Type=1	Fx=0	Fy=0	Fz=-10
+ID=4	BarID=4	l1=0	l2=1	BarID=4	Case=0	Type=1	Fx=0	Fy=0	Fz=-10
+ID=5	BarID=5	l1=0	l2=1	BarID=5	Case=0	Type=1	Fx=0	Fy=0	Fz=-10
+ID=6	BarID=6	l1=0	l2=1	BarID=6	Case=0	Type=1	Fx=0	Fy=0	Fz=-10
+ID=7	BarID=7	l1=0	l2=1	BarID=7	Case=0	Type=1	Fx=0	Fy=0	Fz=-10
+ID=8	BarID=8	l1=0	l2=1	BarID=8	Case=0	Type=1	Fx=0	Fy=0	Fz=-10
+ID=9	BarID=9	l1=0	l2=1	BarID=9	Case=0	Type=1	Fx=0	Fy=0	Fz=-10
+ID=10	BarID=10	l1=0	l2=1	BarID=10	Case=0	Type=1	Fx=0	Fy=0	Fz=-10
+ID=11	BarID=11	l1=0	l2=1	BarID=11	Case=0	Type=1	Fx=0	Fy=0	Fz=-10
+ID=12	BarID=12	l1=0	l2=1	BarID=12	Case=0	Type=1	Fx=0	Fy=0	Fz=-10
+ID=13	BarID=13	l1=0	l2=1	BarID=13	Case=0	Type=1	Fx=0	Fy=0	Fz=-10
+ID=14	BarID=14	l1=0	l2=1	BarID=14	Case=0	Type=1	Fx=0	Fy=0	Fz=-10
+ID=15	BarID=15	l1=0	l2=1	BarID=15	Case=0	Type=1	Fx=0	Fy=0	Fz=-10
+ID=16	BarID=16	l1=0	l2=1	BarID=16	Case=0	Type=1	Fx=0	Fy=0	Fz=-10
+ID=17	BarID=17	l1=0	l2=1	BarID=17	Case=0	Type=1	Fx=0	Fy=0	Fz=-10
+ID=18	BarID=18	l1=0	l2=1	BarID=18	Case=0	Type=1	Fx=0	Fy=0	Fz=-10
+ID=19	BarID=19	l1=0	l2=1	BarID=19	Case=0	Type=1	Fx=0	Fy=0	Fz=-10
+ID=20	BarID=20	l1=0	l2=1	BarID=20	Case=0	Type=1	Fx=0	Fy=0	Fz=-10
+barPunctLoads
+barThermalLoads
+nodalDisplacements
+nodalReactions
+barInternForces
+areaSections
+areas

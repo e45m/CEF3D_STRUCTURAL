@@ -1,0 +1,2514 @@
+CEF3D_File_ver=0
+programParams
+Name=Units	Value=kN,kg,m,C
+Name=Analyzed	Value=0
+Name=SelfWeight Case	Value=0
+Name=ActiveLoad Case	Value=0
+Name=Frame Divisions	Value=3
+Name=Pdelta Iters	Value=1
+Name=Pdelta Load Comb	Value={0}{1}
+materials
+ID=1	Name=AceroG50	Type=0	v=0.3	E=204000000	G=78000000	M=7800	W=78	fc=0	fy=0	fu=0
+sections
+ID=0	Name=perno_M20	Type=0	MaterialID=1	MaterialName=AceroG50	h=0.017725	b=0.017725	tw=0.017725	tf=0.017725	Ag=0.00031417562500000003	Iyy=8.225526945345054e-09	Izz=8.225526945345054e-09	Iyz=0	Tor=1.3878109062186176e-08	Acyy=0.00026181302083333333	Aczz=0.00026181302083333333	Syy=9.281271588541669e-07	Szz=9.281271588541669e-07	Pyy=1.3921907382812504e-06	Pzz=1.3921907382812504e-06	ryy=0.005116766760693059	rzz=0.005116766760693059
+gridCoordsX
+ID=0	Coord=-0.1425	coordSys=Default
+ID=1	Coord=-0.095	coordSys=Default
+ID=2	Coord=-0.0475	coordSys=Default
+ID=3	Coord=0	coordSys=Default
+ID=4	Coord=0.0475	coordSys=Default
+ID=5	Coord=0.095	coordSys=Default
+ID=6	Coord=0.1425	coordSys=Default
+ID=7	Coord=0.16	coordSys=Default
+ID=8	Coord=0.22	coordSys=Default
+ID=9	Coord=0.28	coordSys=Default
+ID=10	Coord=0.36	coordSys=Default
+ID=11	Coord=0.46	coordSys=Default
+ID=12	Coord=0.58	coordSys=Default
+ID=13	Coord=0.72	coordSys=Default
+ID=14	Coord=0.9	coordSys=Default
+ID=15	Coord=1.1	coordSys=Default
+ID=16	Coord=1.3	coordSys=Default
+ID=17	Coord=1.5	coordSys=Default
+ID=18	Coord=1.66	coordSys=Default
+gridCoordsY
+ID=0	Coord=-0.1	coordSys=Default
+ID=1	Coord=-0.075	coordSys=Default
+ID=2	Coord=-0.05	coordSys=Default
+ID=3	Coord=-0.025	coordSys=Default
+ID=4	Coord=0	coordSys=Default
+ID=5	Coord=0.025	coordSys=Default
+ID=6	Coord=0.05	coordSys=Default
+ID=7	Coord=0.075	coordSys=Default
+ID=8	Coord=0.1	coordSys=Default
+gridCoordsZ
+ID=0	Coord=-0.75	coordSys=Default
+ID=1	Coord=-0.6	coordSys=Default
+ID=2	Coord=-0.45	coordSys=Default
+ID=3	Coord=-0.33	coordSys=Default
+ID=4	Coord=-0.25	coordSys=Default
+ID=5	Coord=-0.2	coordSys=Default
+ID=6	Coord=-0.18	coordSys=Default
+ID=7	Coord=-0.144	coordSys=Default
+ID=8	Coord=-0.1	coordSys=Default
+ID=9	Coord=-0.05	coordSys=Default
+ID=10	Coord=0	coordSys=Default
+ID=11	Coord=0.05	coordSys=Default
+ID=12	Coord=0.1	coordSys=Default
+ID=13	Coord=0.144	coordSys=Default
+ID=14	Coord=0.18	coordSys=Default
+ID=15	Coord=0.2	coordSys=Default
+ID=16	Coord=0.25	coordSys=Default
+ID=17	Coord=0.33	coordSys=Default
+ID=18	Coord=0.45	coordSys=Default
+ID=19	Coord=0.6	coordSys=Default
+ID=20	Coord=0.75	coordSys=Default
+nodes
+ID=1	label=1	X=-0.1425	Y=-0.1	Z=-0.75
+ID=2	label=2	X=0.1425	Y=-0.1	Z=-0.75
+ID=3	label=3	X=-0.1425	Y=-0.075	Z=-0.75
+ID=4	label=4	X=0.1425	Y=-0.075	Z=-0.75
+ID=5	label=5	X=-0.1425	Y=-0.05	Z=-0.75
+ID=6	label=6	X=0.1425	Y=-0.05	Z=-0.75
+ID=7	label=7	X=-0.1425	Y=-0.025	Z=-0.75
+ID=8	label=8	X=0.1425	Y=-0.025	Z=-0.75
+ID=9	label=9	X=-0.1425	Y=0	Z=-0.75
+ID=10	label=10	X=-0.095	Y=0	Z=-0.75
+ID=11	label=11	X=-0.0475	Y=0	Z=-0.75
+ID=12	label=12	X=0	Y=0	Z=-0.75
+ID=13	label=13	X=0.0475	Y=0	Z=-0.75
+ID=14	label=14	X=0.095	Y=0	Z=-0.75
+ID=15	label=15	X=0.1425	Y=0	Z=-0.75
+ID=16	label=16	X=-0.1425	Y=0.025	Z=-0.75
+ID=17	label=17	X=0.1425	Y=0.025	Z=-0.75
+ID=18	label=18	X=-0.1425	Y=0.05	Z=-0.75
+ID=19	label=19	X=0.1425	Y=0.05	Z=-0.75
+ID=20	label=20	X=-0.1425	Y=0.075	Z=-0.75
+ID=21	label=21	X=0.1425	Y=0.075	Z=-0.75
+ID=22	label=22	X=-0.1425	Y=0.1	Z=-0.75
+ID=23	label=23	X=0.1425	Y=0.1	Z=-0.75
+ID=24	label=24	X=-0.1425	Y=-0.1	Z=-0.6
+ID=25	label=25	X=0.1425	Y=-0.1	Z=-0.6
+ID=26	label=26	X=-0.1425	Y=-0.075	Z=-0.6
+ID=27	label=27	X=0.1425	Y=-0.075	Z=-0.6
+ID=28	label=28	X=-0.1425	Y=-0.05	Z=-0.6
+ID=29	label=29	X=0.1425	Y=-0.05	Z=-0.6
+ID=30	label=30	X=-0.1425	Y=-0.025	Z=-0.6
+ID=31	label=31	X=0.1425	Y=-0.025	Z=-0.6
+ID=32	label=32	X=-0.1425	Y=0	Z=-0.6
+ID=33	label=33	X=-0.095	Y=0	Z=-0.6
+ID=34	label=34	X=-0.0475	Y=0	Z=-0.6
+ID=35	label=35	X=0	Y=0	Z=-0.6
+ID=36	label=36	X=0.0475	Y=0	Z=-0.6
+ID=37	label=37	X=0.095	Y=0	Z=-0.6
+ID=38	label=38	X=0.1425	Y=0	Z=-0.6
+ID=39	label=39	X=-0.1425	Y=0.025	Z=-0.6
+ID=40	label=40	X=0.1425	Y=0.025	Z=-0.6
+ID=41	label=41	X=-0.1425	Y=0.05	Z=-0.6
+ID=42	label=42	X=0.1425	Y=0.05	Z=-0.6
+ID=43	label=43	X=-0.1425	Y=0.075	Z=-0.6
+ID=44	label=44	X=0.1425	Y=0.075	Z=-0.6
+ID=45	label=45	X=-0.1425	Y=0.1	Z=-0.6
+ID=46	label=46	X=0.1425	Y=0.1	Z=-0.6
+ID=47	label=47	X=-0.1425	Y=-0.1	Z=-0.45
+ID=48	label=48	X=0.1425	Y=-0.1	Z=-0.45
+ID=49	label=49	X=-0.1425	Y=-0.075	Z=-0.45
+ID=50	label=50	X=0.1425	Y=-0.075	Z=-0.45
+ID=51	label=51	X=-0.1425	Y=-0.05	Z=-0.45
+ID=52	label=52	X=0.1425	Y=-0.05	Z=-0.45
+ID=53	label=53	X=-0.1425	Y=-0.025	Z=-0.45
+ID=54	label=54	X=0.1425	Y=-0.025	Z=-0.45
+ID=55	label=55	X=-0.1425	Y=0	Z=-0.45
+ID=56	label=56	X=-0.095	Y=0	Z=-0.45
+ID=57	label=57	X=-0.0475	Y=0	Z=-0.45
+ID=58	label=58	X=0	Y=0	Z=-0.45
+ID=59	label=59	X=0.0475	Y=0	Z=-0.45
+ID=60	label=60	X=0.095	Y=0	Z=-0.45
+ID=61	label=61	X=0.1425	Y=0	Z=-0.45
+ID=62	label=62	X=-0.1425	Y=0.025	Z=-0.45
+ID=63	label=63	X=0.1425	Y=0.025	Z=-0.45
+ID=64	label=64	X=-0.1425	Y=0.05	Z=-0.45
+ID=65	label=65	X=0.1425	Y=0.05	Z=-0.45
+ID=66	label=66	X=-0.1425	Y=0.075	Z=-0.45
+ID=67	label=67	X=0.1425	Y=0.075	Z=-0.45
+ID=68	label=68	X=-0.1425	Y=0.1	Z=-0.45
+ID=69	label=69	X=0.1425	Y=0.1	Z=-0.45
+ID=70	label=70	X=-0.1425	Y=-0.1	Z=-0.33
+ID=71	label=71	X=0.1425	Y=-0.1	Z=-0.33
+ID=72	label=72	X=-0.1425	Y=-0.075	Z=-0.33
+ID=73	label=73	X=0.1425	Y=-0.075	Z=-0.33
+ID=74	label=74	X=-0.1425	Y=-0.05	Z=-0.33
+ID=75	label=75	X=0.1425	Y=-0.05	Z=-0.33
+ID=76	label=76	X=-0.1425	Y=-0.025	Z=-0.33
+ID=77	label=77	X=0.1425	Y=-0.025	Z=-0.33
+ID=78	label=78	X=-0.1425	Y=0	Z=-0.33
+ID=79	label=79	X=-0.095	Y=0	Z=-0.33
+ID=80	label=80	X=-0.0475	Y=0	Z=-0.33
+ID=81	label=81	X=0	Y=0	Z=-0.33
+ID=82	label=82	X=0.0475	Y=0	Z=-0.33
+ID=83	label=83	X=0.095	Y=0	Z=-0.33
+ID=84	label=84	X=0.1425	Y=0	Z=-0.33
+ID=85	label=85	X=-0.1425	Y=0.025	Z=-0.33
+ID=86	label=86	X=0.1425	Y=0.025	Z=-0.33
+ID=87	label=87	X=-0.1425	Y=0.05	Z=-0.33
+ID=88	label=88	X=0.1425	Y=0.05	Z=-0.33
+ID=89	label=89	X=-0.1425	Y=0.075	Z=-0.33
+ID=90	label=90	X=0.1425	Y=0.075	Z=-0.33
+ID=91	label=91	X=-0.1425	Y=0.1	Z=-0.33
+ID=92	label=92	X=0.1425	Y=0.1	Z=-0.33
+ID=93	label=93	X=-0.1425	Y=-0.1	Z=-0.25
+ID=94	label=94	X=0.1425	Y=-0.1	Z=-0.25
+ID=95	label=95	X=-0.1425	Y=-0.075	Z=-0.25
+ID=96	label=96	X=0.1425	Y=-0.075	Z=-0.25
+ID=97	label=97	X=-0.1425	Y=-0.05	Z=-0.25
+ID=98	label=98	X=0.1425	Y=-0.05	Z=-0.25
+ID=99	label=99	X=-0.1425	Y=-0.025	Z=-0.25
+ID=100	label=100	X=0.1425	Y=-0.025	Z=-0.25
+ID=101	label=101	X=-0.1425	Y=0	Z=-0.25
+ID=102	label=102	X=-0.095	Y=0	Z=-0.25
+ID=103	label=103	X=-0.0475	Y=0	Z=-0.25
+ID=104	label=104	X=0	Y=0	Z=-0.25
+ID=105	label=105	X=0.0475	Y=0	Z=-0.25
+ID=106	label=106	X=0.095	Y=0	Z=-0.25
+ID=107	label=107	X=0.1425	Y=0	Z=-0.25
+ID=108	label=108	X=-0.1425	Y=0.025	Z=-0.25
+ID=109	label=109	X=0.1425	Y=0.025	Z=-0.25
+ID=110	label=110	X=-0.1425	Y=0.05	Z=-0.25
+ID=111	label=111	X=0.1425	Y=0.05	Z=-0.25
+ID=112	label=112	X=-0.1425	Y=0.075	Z=-0.25
+ID=113	label=113	X=0.1425	Y=0.075	Z=-0.25
+ID=114	label=114	X=-0.1425	Y=0.1	Z=-0.25
+ID=115	label=115	X=0.1425	Y=0.1	Z=-0.25
+ID=116	label=116	X=-0.1425	Y=-0.1	Z=-0.2
+ID=117	label=117	X=0.1425	Y=-0.1	Z=-0.2
+ID=118	label=118	X=0.16	Y=-0.1	Z=-0.2
+ID=119	label=119	X=-0.1425	Y=-0.075	Z=-0.2
+ID=120	label=120	X=0.1425	Y=-0.075	Z=-0.2
+ID=121	label=121	X=0.16	Y=-0.075	Z=-0.2
+ID=122	label=122	X=-0.1425	Y=-0.05	Z=-0.2
+ID=123	label=123	X=0.1425	Y=-0.05	Z=-0.2
+ID=124	label=124	X=0.16	Y=-0.05	Z=-0.2
+ID=125	label=125	X=-0.1425	Y=-0.025	Z=-0.2
+ID=126	label=126	X=0.1425	Y=-0.025	Z=-0.2
+ID=127	label=127	X=0.16	Y=-0.025	Z=-0.2
+ID=128	label=128	X=-0.1425	Y=0	Z=-0.2
+ID=129	label=129	X=-0.095	Y=0	Z=-0.2
+ID=130	label=130	X=-0.0475	Y=0	Z=-0.2
+ID=131	label=131	X=0	Y=0	Z=-0.2
+ID=132	label=132	X=0.0475	Y=0	Z=-0.2
+ID=133	label=133	X=0.095	Y=0	Z=-0.2
+ID=134	label=134	X=0.1425	Y=0	Z=-0.2
+ID=135	label=135	X=0.16	Y=0	Z=-0.2
+ID=136	label=136	X=-0.1425	Y=0.025	Z=-0.2
+ID=137	label=137	X=0.1425	Y=0.025	Z=-0.2
+ID=138	label=138	X=0.16	Y=0.025	Z=-0.2
+ID=139	label=139	X=-0.1425	Y=0.05	Z=-0.2
+ID=140	label=140	X=0.1425	Y=0.05	Z=-0.2
+ID=141	label=141	X=0.16	Y=0.05	Z=-0.2
+ID=142	label=142	X=-0.1425	Y=0.075	Z=-0.2
+ID=143	label=143	X=0.1425	Y=0.075	Z=-0.2
+ID=144	label=144	X=0.16	Y=0.075	Z=-0.2
+ID=145	label=145	X=-0.1425	Y=0.1	Z=-0.2
+ID=146	label=146	X=0.1425	Y=0.1	Z=-0.2
+ID=147	label=147	X=0.16	Y=0.1	Z=-0.2
+ID=148	label=148	X=-0.1425	Y=-0.1	Z=-0.18
+ID=149	label=149	X=0.1425	Y=-0.1	Z=-0.18
+ID=150	label=150	X=0.16	Y=-0.1	Z=-0.18
+ID=151	label=151	X=-0.1425	Y=-0.075	Z=-0.18
+ID=152	label=152	X=0.1425	Y=-0.075	Z=-0.18
+ID=153	label=153	X=0.16	Y=-0.075	Z=-0.18
+ID=154	label=154	X=-0.1425	Y=-0.05	Z=-0.18
+ID=155	label=155	X=0.1425	Y=-0.05	Z=-0.18
+ID=156	label=156	X=0.16	Y=-0.05	Z=-0.18
+ID=157	label=157	X=-0.1425	Y=-0.025	Z=-0.18
+ID=158	label=158	X=0.1425	Y=-0.025	Z=-0.18
+ID=159	label=159	X=0.16	Y=-0.025	Z=-0.18
+ID=160	label=160	X=-0.1425	Y=0	Z=-0.18
+ID=161	label=161	X=-0.095	Y=0	Z=-0.18
+ID=162	label=162	X=-0.0475	Y=0	Z=-0.18
+ID=163	label=163	X=0	Y=0	Z=-0.18
+ID=164	label=164	X=0.0475	Y=0	Z=-0.18
+ID=165	label=165	X=0.095	Y=0	Z=-0.18
+ID=166	label=166	X=0.1425	Y=0	Z=-0.18
+ID=167	label=167	X=0.16	Y=0	Z=-0.18
+ID=168	label=168	X=-0.1425	Y=0.025	Z=-0.18
+ID=169	label=169	X=0.1425	Y=0.025	Z=-0.18
+ID=170	label=170	X=0.16	Y=0.025	Z=-0.18
+ID=171	label=171	X=-0.1425	Y=0.05	Z=-0.18
+ID=172	label=172	X=0.1425	Y=0.05	Z=-0.18
+ID=173	label=173	X=0.16	Y=0.05	Z=-0.18
+ID=174	label=174	X=-0.1425	Y=0.075	Z=-0.18
+ID=175	label=175	X=0.1425	Y=0.075	Z=-0.18
+ID=176	label=176	X=0.16	Y=0.075	Z=-0.18
+ID=177	label=177	X=-0.1425	Y=0.1	Z=-0.18
+ID=178	label=178	X=0.1425	Y=0.1	Z=-0.18
+ID=179	label=179	X=0.16	Y=0.1	Z=-0.18
+ID=180	label=180	X=-0.1425	Y=-0.1	Z=-0.144
+ID=181	label=181	X=-0.095	Y=-0.1	Z=-0.144
+ID=182	label=182	X=-0.0475	Y=-0.1	Z=-0.144
+ID=183	label=183	X=0	Y=-0.1	Z=-0.144
+ID=184	label=184	X=0.0475	Y=-0.1	Z=-0.144
+ID=185	label=185	X=0.095	Y=-0.1	Z=-0.144
+ID=186	label=186	X=0.1425	Y=-0.1	Z=-0.144
+ID=187	label=187	X=0.16	Y=-0.1	Z=-0.144
+ID=188	label=188	X=-0.1425	Y=-0.075	Z=-0.144
+ID=189	label=189	X=-0.095	Y=-0.075	Z=-0.144
+ID=190	label=190	X=-0.0475	Y=-0.075	Z=-0.144
+ID=191	label=191	X=0	Y=-0.075	Z=-0.144
+ID=192	label=192	X=0.0475	Y=-0.075	Z=-0.144
+ID=193	label=193	X=0.095	Y=-0.075	Z=-0.144
+ID=194	label=194	X=0.1425	Y=-0.075	Z=-0.144
+ID=195	label=195	X=0.16	Y=-0.075	Z=-0.144
+ID=196	label=196	X=0.22	Y=-0.075	Z=-0.144
+ID=197	label=197	X=0.28	Y=-0.075	Z=-0.144
+ID=198	label=198	X=0.36	Y=-0.075	Z=-0.144
+ID=199	label=199	X=0.46	Y=-0.075	Z=-0.144
+ID=200	label=200	X=0.58	Y=-0.075	Z=-0.144
+ID=201	label=201	X=0.72	Y=-0.075	Z=-0.144
+ID=202	label=202	X=0.9	Y=-0.075	Z=-0.144
+ID=203	label=203	X=1.1	Y=-0.075	Z=-0.144
+ID=204	label=204	X=1.3	Y=-0.075	Z=-0.144
+ID=205	label=205	X=1.5	Y=-0.075	Z=-0.144
+ID=206	label=206	X=1.66	Y=-0.075	Z=-0.144
+ID=207	label=207	X=-0.1425	Y=-0.05	Z=-0.144
+ID=208	label=208	X=-0.095	Y=-0.05	Z=-0.144
+ID=209	label=209	X=-0.0475	Y=-0.05	Z=-0.144
+ID=210	label=210	X=0	Y=-0.05	Z=-0.144
+ID=211	label=211	X=0.0475	Y=-0.05	Z=-0.144
+ID=212	label=212	X=0.095	Y=-0.05	Z=-0.144
+ID=213	label=213	X=0.1425	Y=-0.05	Z=-0.144
+ID=214	label=214	X=0.16	Y=-0.05	Z=-0.144
+ID=215	label=215	X=0.22	Y=-0.05	Z=-0.144
+ID=216	label=216	X=0.28	Y=-0.05	Z=-0.144
+ID=217	label=217	X=0.36	Y=-0.05	Z=-0.144
+ID=218	label=218	X=0.46	Y=-0.05	Z=-0.144
+ID=219	label=219	X=0.58	Y=-0.05	Z=-0.144
+ID=220	label=220	X=0.72	Y=-0.05	Z=-0.144
+ID=221	label=221	X=0.9	Y=-0.05	Z=-0.144
+ID=222	label=222	X=1.1	Y=-0.05	Z=-0.144
+ID=223	label=223	X=1.3	Y=-0.05	Z=-0.144
+ID=224	label=224	X=1.5	Y=-0.05	Z=-0.144
+ID=225	label=225	X=1.66	Y=-0.05	Z=-0.144
+ID=226	label=226	X=-0.1425	Y=-0.025	Z=-0.144
+ID=227	label=227	X=-0.095	Y=-0.025	Z=-0.144
+ID=228	label=228	X=-0.0475	Y=-0.025	Z=-0.144
+ID=229	label=229	X=0	Y=-0.025	Z=-0.144
+ID=230	label=230	X=0.0475	Y=-0.025	Z=-0.144
+ID=231	label=231	X=0.095	Y=-0.025	Z=-0.144
+ID=232	label=232	X=0.1425	Y=-0.025	Z=-0.144
+ID=233	label=233	X=0.16	Y=-0.025	Z=-0.144
+ID=234	label=234	X=0.22	Y=-0.025	Z=-0.144
+ID=235	label=235	X=0.28	Y=-0.025	Z=-0.144
+ID=236	label=236	X=0.36	Y=-0.025	Z=-0.144
+ID=237	label=237	X=0.46	Y=-0.025	Z=-0.144
+ID=238	label=238	X=0.58	Y=-0.025	Z=-0.144
+ID=239	label=239	X=0.72	Y=-0.025	Z=-0.144
+ID=240	label=240	X=0.9	Y=-0.025	Z=-0.144
+ID=241	label=241	X=1.1	Y=-0.025	Z=-0.144
+ID=242	label=242	X=1.3	Y=-0.025	Z=-0.144
+ID=243	label=243	X=1.5	Y=-0.025	Z=-0.144
+ID=244	label=244	X=1.66	Y=-0.025	Z=-0.144
+ID=245	label=245	X=-0.1425	Y=0	Z=-0.144
+ID=246	label=246	X=-0.095	Y=0	Z=-0.144
+ID=247	label=247	X=-0.0475	Y=0	Z=-0.144
+ID=248	label=248	X=0	Y=0	Z=-0.144
+ID=249	label=249	X=0.0475	Y=0	Z=-0.144
+ID=250	label=250	X=0.095	Y=0	Z=-0.144
+ID=251	label=251	X=0.1425	Y=0	Z=-0.144
+ID=252	label=252	X=0.16	Y=0	Z=-0.144
+ID=253	label=253	X=0.22	Y=0	Z=-0.144
+ID=254	label=254	X=0.28	Y=0	Z=-0.144
+ID=255	label=255	X=0.36	Y=0	Z=-0.144
+ID=256	label=256	X=0.46	Y=0	Z=-0.144
+ID=257	label=257	X=0.58	Y=0	Z=-0.144
+ID=258	label=258	X=0.72	Y=0	Z=-0.144
+ID=259	label=259	X=0.9	Y=0	Z=-0.144
+ID=260	label=260	X=1.1	Y=0	Z=-0.144
+ID=261	label=261	X=1.3	Y=0	Z=-0.144
+ID=262	label=262	X=1.5	Y=0	Z=-0.144
+ID=263	label=263	X=1.66	Y=0	Z=-0.144
+ID=264	label=264	X=-0.1425	Y=0.025	Z=-0.144
+ID=265	label=265	X=-0.095	Y=0.025	Z=-0.144
+ID=266	label=266	X=-0.0475	Y=0.025	Z=-0.144
+ID=267	label=267	X=0	Y=0.025	Z=-0.144
+ID=268	label=268	X=0.0475	Y=0.025	Z=-0.144
+ID=269	label=269	X=0.095	Y=0.025	Z=-0.144
+ID=270	label=270	X=0.1425	Y=0.025	Z=-0.144
+ID=271	label=271	X=0.16	Y=0.025	Z=-0.144
+ID=272	label=272	X=0.22	Y=0.025	Z=-0.144
+ID=273	label=273	X=0.28	Y=0.025	Z=-0.144
+ID=274	label=274	X=0.36	Y=0.025	Z=-0.144
+ID=275	label=275	X=0.46	Y=0.025	Z=-0.144
+ID=276	label=276	X=0.58	Y=0.025	Z=-0.144
+ID=277	label=277	X=0.72	Y=0.025	Z=-0.144
+ID=278	label=278	X=0.9	Y=0.025	Z=-0.144
+ID=279	label=279	X=1.1	Y=0.025	Z=-0.144
+ID=280	label=280	X=1.3	Y=0.025	Z=-0.144
+ID=281	label=281	X=1.5	Y=0.025	Z=-0.144
+ID=282	label=282	X=1.66	Y=0.025	Z=-0.144
+ID=283	label=283	X=-0.1425	Y=0.05	Z=-0.144
+ID=284	label=284	X=-0.095	Y=0.05	Z=-0.144
+ID=285	label=285	X=-0.0475	Y=0.05	Z=-0.144
+ID=286	label=286	X=0	Y=0.05	Z=-0.144
+ID=287	label=287	X=0.0475	Y=0.05	Z=-0.144
+ID=288	label=288	X=0.095	Y=0.05	Z=-0.144
+ID=289	label=289	X=0.1425	Y=0.05	Z=-0.144
+ID=290	label=290	X=0.16	Y=0.05	Z=-0.144
+ID=291	label=291	X=0.22	Y=0.05	Z=-0.144
+ID=292	label=292	X=0.28	Y=0.05	Z=-0.144
+ID=293	label=293	X=0.36	Y=0.05	Z=-0.144
+ID=294	label=294	X=0.46	Y=0.05	Z=-0.144
+ID=295	label=295	X=0.58	Y=0.05	Z=-0.144
+ID=296	label=296	X=0.72	Y=0.05	Z=-0.144
+ID=297	label=297	X=0.9	Y=0.05	Z=-0.144
+ID=298	label=298	X=1.1	Y=0.05	Z=-0.144
+ID=299	label=299	X=1.3	Y=0.05	Z=-0.144
+ID=300	label=300	X=1.5	Y=0.05	Z=-0.144
+ID=301	label=301	X=1.66	Y=0.05	Z=-0.144
+ID=302	label=302	X=-0.1425	Y=0.075	Z=-0.144
+ID=303	label=303	X=-0.095	Y=0.075	Z=-0.144
+ID=304	label=304	X=-0.0475	Y=0.075	Z=-0.144
+ID=305	label=305	X=0	Y=0.075	Z=-0.144
+ID=306	label=306	X=0.0475	Y=0.075	Z=-0.144
+ID=307	label=307	X=0.095	Y=0.075	Z=-0.144
+ID=308	label=308	X=0.1425	Y=0.075	Z=-0.144
+ID=309	label=309	X=0.16	Y=0.075	Z=-0.144
+ID=310	label=310	X=0.22	Y=0.075	Z=-0.144
+ID=311	label=311	X=0.28	Y=0.075	Z=-0.144
+ID=312	label=312	X=0.36	Y=0.075	Z=-0.144
+ID=313	label=313	X=0.46	Y=0.075	Z=-0.144
+ID=314	label=314	X=0.58	Y=0.075	Z=-0.144
+ID=315	label=315	X=0.72	Y=0.075	Z=-0.144
+ID=316	label=316	X=0.9	Y=0.075	Z=-0.144
+ID=317	label=317	X=1.1	Y=0.075	Z=-0.144
+ID=318	label=318	X=1.3	Y=0.075	Z=-0.144
+ID=319	label=319	X=1.5	Y=0.075	Z=-0.144
+ID=320	label=320	X=1.66	Y=0.075	Z=-0.144
+ID=321	label=321	X=-0.1425	Y=0.1	Z=-0.144
+ID=322	label=322	X=-0.095	Y=0.1	Z=-0.144
+ID=323	label=323	X=-0.0475	Y=0.1	Z=-0.144
+ID=324	label=324	X=0	Y=0.1	Z=-0.144
+ID=325	label=325	X=0.0475	Y=0.1	Z=-0.144
+ID=326	label=326	X=0.095	Y=0.1	Z=-0.144
+ID=327	label=327	X=0.1425	Y=0.1	Z=-0.144
+ID=328	label=328	X=0.16	Y=0.1	Z=-0.144
+ID=329	label=329	X=-0.1425	Y=-0.1	Z=-0.1
+ID=330	label=330	X=0.1425	Y=-0.1	Z=-0.1
+ID=331	label=331	X=0.16	Y=-0.1	Z=-0.1
+ID=332	label=332	X=-0.1425	Y=-0.075	Z=-0.1
+ID=333	label=333	X=0.1425	Y=-0.075	Z=-0.1
+ID=334	label=334	X=0.16	Y=-0.075	Z=-0.1
+ID=335	label=335	X=-0.1425	Y=-0.05	Z=-0.1
+ID=336	label=336	X=0.1425	Y=-0.05	Z=-0.1
+ID=337	label=337	X=0.16	Y=-0.05	Z=-0.1
+ID=338	label=338	X=-0.1425	Y=-0.025	Z=-0.1
+ID=339	label=339	X=0.1425	Y=-0.025	Z=-0.1
+ID=340	label=340	X=0.16	Y=-0.025	Z=-0.1
+ID=341	label=341	X=-0.1425	Y=0	Z=-0.1
+ID=342	label=342	X=-0.095	Y=0	Z=-0.1
+ID=343	label=343	X=-0.0475	Y=0	Z=-0.1
+ID=344	label=344	X=0	Y=0	Z=-0.1
+ID=345	label=345	X=0.0475	Y=0	Z=-0.1
+ID=346	label=346	X=0.095	Y=0	Z=-0.1
+ID=347	label=347	X=0.1425	Y=0	Z=-0.1
+ID=348	label=348	X=0.16	Y=0	Z=-0.1
+ID=349	label=349	X=-0.1425	Y=0.025	Z=-0.1
+ID=350	label=350	X=0.1425	Y=0.025	Z=-0.1
+ID=351	label=351	X=0.16	Y=0.025	Z=-0.1
+ID=352	label=352	X=-0.1425	Y=0.05	Z=-0.1
+ID=353	label=353	X=0.1425	Y=0.05	Z=-0.1
+ID=354	label=354	X=0.16	Y=0.05	Z=-0.1
+ID=355	label=355	X=-0.1425	Y=0.075	Z=-0.1
+ID=356	label=356	X=0.1425	Y=0.075	Z=-0.1
+ID=357	label=357	X=0.16	Y=0.075	Z=-0.1
+ID=358	label=358	X=-0.1425	Y=0.1	Z=-0.1
+ID=359	label=359	X=0.1425	Y=0.1	Z=-0.1
+ID=360	label=360	X=0.16	Y=0.1	Z=-0.1
+ID=361	label=361	X=-0.1425	Y=-0.1	Z=-0.05
+ID=362	label=362	X=0.1425	Y=-0.1	Z=-0.05
+ID=363	label=363	X=0.16	Y=-0.1	Z=-0.05
+ID=364	label=364	X=-0.1425	Y=-0.075	Z=-0.05
+ID=365	label=365	X=0.1425	Y=-0.075	Z=-0.05
+ID=366	label=366	X=0.16	Y=-0.075	Z=-0.05
+ID=367	label=367	X=-0.1425	Y=-0.05	Z=-0.05
+ID=368	label=368	X=0.1425	Y=-0.05	Z=-0.05
+ID=369	label=369	X=0.16	Y=-0.05	Z=-0.05
+ID=370	label=370	X=-0.1425	Y=-0.025	Z=-0.05
+ID=371	label=371	X=0.1425	Y=-0.025	Z=-0.05
+ID=372	label=372	X=0.16	Y=-0.025	Z=-0.05
+ID=373	label=373	X=-0.1425	Y=0	Z=-0.05
+ID=374	label=374	X=-0.095	Y=0	Z=-0.05
+ID=375	label=375	X=-0.0475	Y=0	Z=-0.05
+ID=376	label=376	X=0	Y=0	Z=-0.05
+ID=377	label=377	X=0.0475	Y=0	Z=-0.05
+ID=378	label=378	X=0.095	Y=0	Z=-0.05
+ID=379	label=379	X=0.1425	Y=0	Z=-0.05
+ID=380	label=380	X=0.16	Y=0	Z=-0.05
+ID=381	label=381	X=-0.1425	Y=0.025	Z=-0.05
+ID=382	label=382	X=0.1425	Y=0.025	Z=-0.05
+ID=383	label=383	X=0.16	Y=0.025	Z=-0.05
+ID=384	label=384	X=-0.1425	Y=0.05	Z=-0.05
+ID=385	label=385	X=0.1425	Y=0.05	Z=-0.05
+ID=386	label=386	X=0.16	Y=0.05	Z=-0.05
+ID=387	label=387	X=-0.1425	Y=0.075	Z=-0.05
+ID=388	label=388	X=0.1425	Y=0.075	Z=-0.05
+ID=389	label=389	X=0.16	Y=0.075	Z=-0.05
+ID=390	label=390	X=-0.1425	Y=0.1	Z=-0.05
+ID=391	label=391	X=0.1425	Y=0.1	Z=-0.05
+ID=392	label=392	X=0.16	Y=0.1	Z=-0.05
+ID=393	label=393	X=-0.1425	Y=-0.1	Z=0
+ID=394	label=394	X=0.1425	Y=-0.1	Z=0
+ID=395	label=395	X=0.16	Y=-0.1	Z=0
+ID=396	label=396	X=-0.1425	Y=-0.075	Z=0
+ID=397	label=397	X=0.1425	Y=-0.075	Z=0
+ID=398	label=398	X=0.16	Y=-0.075	Z=0
+ID=399	label=399	X=-0.1425	Y=-0.05	Z=0
+ID=400	label=400	X=0.1425	Y=-0.05	Z=0
+ID=401	label=401	X=0.16	Y=-0.05	Z=0
+ID=402	label=402	X=-0.1425	Y=-0.025	Z=0
+ID=403	label=403	X=0.1425	Y=-0.025	Z=0
+ID=404	label=404	X=0.16	Y=-0.025	Z=0
+ID=405	label=405	X=-0.1425	Y=0	Z=0
+ID=406	label=406	X=-0.095	Y=0	Z=0
+ID=407	label=407	X=-0.0475	Y=0	Z=0
+ID=408	label=408	X=0	Y=0	Z=0
+ID=409	label=409	X=0.0475	Y=0	Z=0
+ID=410	label=410	X=0.095	Y=0	Z=0
+ID=411	label=411	X=0.1425	Y=0	Z=0
+ID=412	label=412	X=0.16	Y=0	Z=0
+ID=413	label=413	X=-0.1425	Y=0.025	Z=0
+ID=414	label=414	X=0.1425	Y=0.025	Z=0
+ID=415	label=415	X=0.16	Y=0.025	Z=0
+ID=416	label=416	X=-0.1425	Y=0.05	Z=0
+ID=417	label=417	X=0.1425	Y=0.05	Z=0
+ID=418	label=418	X=0.16	Y=0.05	Z=0
+ID=419	label=419	X=-0.1425	Y=0.075	Z=0
+ID=420	label=420	X=0.1425	Y=0.075	Z=0
+ID=421	label=421	X=0.16	Y=0.075	Z=0
+ID=422	label=422	X=-0.1425	Y=0.1	Z=0
+ID=423	label=423	X=0.1425	Y=0.1	Z=0
+ID=424	label=424	X=0.16	Y=0.1	Z=0
+ID=425	label=425	X=-0.1425	Y=-0.1	Z=0.05
+ID=426	label=426	X=0.1425	Y=-0.1	Z=0.05
+ID=427	label=427	X=0.16	Y=-0.1	Z=0.05
+ID=428	label=428	X=-0.1425	Y=-0.075	Z=0.05
+ID=429	label=429	X=0.1425	Y=-0.075	Z=0.05
+ID=430	label=430	X=0.16	Y=-0.075	Z=0.05
+ID=431	label=431	X=-0.1425	Y=-0.05	Z=0.05
+ID=432	label=432	X=0.1425	Y=-0.05	Z=0.05
+ID=433	label=433	X=0.16	Y=-0.05	Z=0.05
+ID=434	label=434	X=-0.1425	Y=-0.025	Z=0.05
+ID=435	label=435	X=0.1425	Y=-0.025	Z=0.05
+ID=436	label=436	X=0.16	Y=-0.025	Z=0.05
+ID=437	label=437	X=-0.1425	Y=0	Z=0.05
+ID=438	label=438	X=-0.095	Y=0	Z=0.05
+ID=439	label=439	X=-0.0475	Y=0	Z=0.05
+ID=440	label=440	X=0	Y=0	Z=0.05
+ID=441	label=441	X=0.0475	Y=0	Z=0.05
+ID=442	label=442	X=0.095	Y=0	Z=0.05
+ID=443	label=443	X=0.1425	Y=0	Z=0.05
+ID=444	label=444	X=0.16	Y=0	Z=0.05
+ID=445	label=445	X=-0.1425	Y=0.025	Z=0.05
+ID=446	label=446	X=0.1425	Y=0.025	Z=0.05
+ID=447	label=447	X=0.16	Y=0.025	Z=0.05
+ID=448	label=448	X=-0.1425	Y=0.05	Z=0.05
+ID=449	label=449	X=0.1425	Y=0.05	Z=0.05
+ID=450	label=450	X=0.16	Y=0.05	Z=0.05
+ID=451	label=451	X=-0.1425	Y=0.075	Z=0.05
+ID=452	label=452	X=0.1425	Y=0.075	Z=0.05
+ID=453	label=453	X=0.16	Y=0.075	Z=0.05
+ID=454	label=454	X=-0.1425	Y=0.1	Z=0.05
+ID=455	label=455	X=0.1425	Y=0.1	Z=0.05
+ID=456	label=456	X=0.16	Y=0.1	Z=0.05
+ID=457	label=457	X=-0.1425	Y=-0.1	Z=0.1
+ID=458	label=458	X=0.1425	Y=-0.1	Z=0.1
+ID=459	label=459	X=0.16	Y=-0.1	Z=0.1
+ID=460	label=460	X=-0.1425	Y=-0.075	Z=0.1
+ID=461	label=461	X=0.1425	Y=-0.075	Z=0.1
+ID=462	label=462	X=0.16	Y=-0.075	Z=0.1
+ID=463	label=463	X=-0.1425	Y=-0.05	Z=0.1
+ID=464	label=464	X=0.1425	Y=-0.05	Z=0.1
+ID=465	label=465	X=0.16	Y=-0.05	Z=0.1
+ID=466	label=466	X=-0.1425	Y=-0.025	Z=0.1
+ID=467	label=467	X=0.1425	Y=-0.025	Z=0.1
+ID=468	label=468	X=0.16	Y=-0.025	Z=0.1
+ID=469	label=469	X=-0.1425	Y=0	Z=0.1
+ID=470	label=470	X=-0.095	Y=0	Z=0.1
+ID=471	label=471	X=-0.0475	Y=0	Z=0.1
+ID=472	label=472	X=0	Y=0	Z=0.1
+ID=473	label=473	X=0.0475	Y=0	Z=0.1
+ID=474	label=474	X=0.095	Y=0	Z=0.1
+ID=475	label=475	X=0.1425	Y=0	Z=0.1
+ID=476	label=476	X=0.16	Y=0	Z=0.1
+ID=477	label=477	X=-0.1425	Y=0.025	Z=0.1
+ID=478	label=478	X=0.1425	Y=0.025	Z=0.1
+ID=479	label=479	X=0.16	Y=0.025	Z=0.1
+ID=480	label=480	X=-0.1425	Y=0.05	Z=0.1
+ID=481	label=481	X=0.1425	Y=0.05	Z=0.1
+ID=482	label=482	X=0.16	Y=0.05	Z=0.1
+ID=483	label=483	X=-0.1425	Y=0.075	Z=0.1
+ID=484	label=484	X=0.1425	Y=0.075	Z=0.1
+ID=485	label=485	X=0.16	Y=0.075	Z=0.1
+ID=486	label=486	X=-0.1425	Y=0.1	Z=0.1
+ID=487	label=487	X=0.1425	Y=0.1	Z=0.1
+ID=488	label=488	X=0.16	Y=0.1	Z=0.1
+ID=489	label=489	X=-0.1425	Y=-0.1	Z=0.144
+ID=490	label=490	X=-0.095	Y=-0.1	Z=0.144
+ID=491	label=491	X=-0.0475	Y=-0.1	Z=0.144
+ID=492	label=492	X=0	Y=-0.1	Z=0.144
+ID=493	label=493	X=0.0475	Y=-0.1	Z=0.144
+ID=494	label=494	X=0.095	Y=-0.1	Z=0.144
+ID=495	label=495	X=0.1425	Y=-0.1	Z=0.144
+ID=496	label=496	X=0.16	Y=-0.1	Z=0.144
+ID=497	label=497	X=-0.1425	Y=-0.075	Z=0.144
+ID=498	label=498	X=-0.095	Y=-0.075	Z=0.144
+ID=499	label=499	X=-0.0475	Y=-0.075	Z=0.144
+ID=500	label=500	X=0	Y=-0.075	Z=0.144
+ID=501	label=501	X=0.0475	Y=-0.075	Z=0.144
+ID=502	label=502	X=0.095	Y=-0.075	Z=0.144
+ID=503	label=503	X=0.1425	Y=-0.075	Z=0.144
+ID=504	label=504	X=0.16	Y=-0.075	Z=0.144
+ID=505	label=505	X=0.22	Y=-0.075	Z=0.144
+ID=506	label=506	X=0.28	Y=-0.075	Z=0.144
+ID=507	label=507	X=0.36	Y=-0.075	Z=0.144
+ID=508	label=508	X=0.46	Y=-0.075	Z=0.144
+ID=509	label=509	X=0.58	Y=-0.075	Z=0.144
+ID=510	label=510	X=0.72	Y=-0.075	Z=0.144
+ID=511	label=511	X=0.9	Y=-0.075	Z=0.144
+ID=512	label=512	X=1.1	Y=-0.075	Z=0.144
+ID=513	label=513	X=1.3	Y=-0.075	Z=0.144
+ID=514	label=514	X=1.5	Y=-0.075	Z=0.144
+ID=515	label=515	X=1.66	Y=-0.075	Z=0.144
+ID=516	label=516	X=-0.1425	Y=-0.05	Z=0.144
+ID=517	label=517	X=-0.095	Y=-0.05	Z=0.144
+ID=518	label=518	X=-0.0475	Y=-0.05	Z=0.144
+ID=519	label=519	X=0	Y=-0.05	Z=0.144
+ID=520	label=520	X=0.0475	Y=-0.05	Z=0.144
+ID=521	label=521	X=0.095	Y=-0.05	Z=0.144
+ID=522	label=522	X=0.1425	Y=-0.05	Z=0.144
+ID=523	label=523	X=0.16	Y=-0.05	Z=0.144
+ID=524	label=524	X=0.22	Y=-0.05	Z=0.144
+ID=525	label=525	X=0.28	Y=-0.05	Z=0.144
+ID=526	label=526	X=0.36	Y=-0.05	Z=0.144
+ID=527	label=527	X=0.46	Y=-0.05	Z=0.144
+ID=528	label=528	X=0.58	Y=-0.05	Z=0.144
+ID=529	label=529	X=0.72	Y=-0.05	Z=0.144
+ID=530	label=530	X=0.9	Y=-0.05	Z=0.144
+ID=531	label=531	X=1.1	Y=-0.05	Z=0.144
+ID=532	label=532	X=1.3	Y=-0.05	Z=0.144
+ID=533	label=533	X=1.5	Y=-0.05	Z=0.144
+ID=534	label=534	X=1.66	Y=-0.05	Z=0.144
+ID=535	label=535	X=-0.1425	Y=-0.025	Z=0.144
+ID=536	label=536	X=-0.095	Y=-0.025	Z=0.144
+ID=537	label=537	X=-0.0475	Y=-0.025	Z=0.144
+ID=538	label=538	X=0	Y=-0.025	Z=0.144
+ID=539	label=539	X=0.0475	Y=-0.025	Z=0.144
+ID=540	label=540	X=0.095	Y=-0.025	Z=0.144
+ID=541	label=541	X=0.1425	Y=-0.025	Z=0.144
+ID=542	label=542	X=0.16	Y=-0.025	Z=0.144
+ID=543	label=543	X=0.22	Y=-0.025	Z=0.144
+ID=544	label=544	X=0.28	Y=-0.025	Z=0.144
+ID=545	label=545	X=0.36	Y=-0.025	Z=0.144
+ID=546	label=546	X=0.46	Y=-0.025	Z=0.144
+ID=547	label=547	X=0.58	Y=-0.025	Z=0.144
+ID=548	label=548	X=0.72	Y=-0.025	Z=0.144
+ID=549	label=549	X=0.9	Y=-0.025	Z=0.144
+ID=550	label=550	X=1.1	Y=-0.025	Z=0.144
+ID=551	label=551	X=1.3	Y=-0.025	Z=0.144
+ID=552	label=552	X=1.5	Y=-0.025	Z=0.144
+ID=553	label=553	X=1.66	Y=-0.025	Z=0.144
+ID=554	label=554	X=-0.1425	Y=0	Z=0.144
+ID=555	label=555	X=-0.095	Y=0	Z=0.144
+ID=556	label=556	X=-0.0475	Y=0	Z=0.144
+ID=557	label=557	X=0	Y=0	Z=0.144
+ID=558	label=558	X=0.0475	Y=0	Z=0.144
+ID=559	label=559	X=0.095	Y=0	Z=0.144
+ID=560	label=560	X=0.1425	Y=0	Z=0.144
+ID=561	label=561	X=0.16	Y=0	Z=0.144
+ID=562	label=562	X=0.22	Y=0	Z=0.144
+ID=563	label=563	X=0.28	Y=0	Z=0.144
+ID=564	label=564	X=0.36	Y=0	Z=0.144
+ID=565	label=565	X=0.46	Y=0	Z=0.144
+ID=566	label=566	X=0.58	Y=0	Z=0.144
+ID=567	label=567	X=0.72	Y=0	Z=0.144
+ID=568	label=568	X=0.9	Y=0	Z=0.144
+ID=569	label=569	X=1.1	Y=0	Z=0.144
+ID=570	label=570	X=1.3	Y=0	Z=0.144
+ID=571	label=571	X=1.5	Y=0	Z=0.144
+ID=572	label=572	X=1.66	Y=0	Z=0.144
+ID=573	label=573	X=-0.1425	Y=0.025	Z=0.144
+ID=574	label=574	X=-0.095	Y=0.025	Z=0.144
+ID=575	label=575	X=-0.0475	Y=0.025	Z=0.144
+ID=576	label=576	X=0	Y=0.025	Z=0.144
+ID=577	label=577	X=0.0475	Y=0.025	Z=0.144
+ID=578	label=578	X=0.095	Y=0.025	Z=0.144
+ID=579	label=579	X=0.1425	Y=0.025	Z=0.144
+ID=580	label=580	X=0.16	Y=0.025	Z=0.144
+ID=581	label=581	X=0.22	Y=0.025	Z=0.144
+ID=582	label=582	X=0.28	Y=0.025	Z=0.144
+ID=583	label=583	X=0.36	Y=0.025	Z=0.144
+ID=584	label=584	X=0.46	Y=0.025	Z=0.144
+ID=585	label=585	X=0.58	Y=0.025	Z=0.144
+ID=586	label=586	X=0.72	Y=0.025	Z=0.144
+ID=587	label=587	X=0.9	Y=0.025	Z=0.144
+ID=588	label=588	X=1.1	Y=0.025	Z=0.144
+ID=589	label=589	X=1.3	Y=0.025	Z=0.144
+ID=590	label=590	X=1.5	Y=0.025	Z=0.144
+ID=591	label=591	X=1.66	Y=0.025	Z=0.144
+ID=592	label=592	X=-0.1425	Y=0.05	Z=0.144
+ID=593	label=593	X=-0.095	Y=0.05	Z=0.144
+ID=594	label=594	X=-0.0475	Y=0.05	Z=0.144
+ID=595	label=595	X=0	Y=0.05	Z=0.144
+ID=596	label=596	X=0.0475	Y=0.05	Z=0.144
+ID=597	label=597	X=0.095	Y=0.05	Z=0.144
+ID=598	label=598	X=0.1425	Y=0.05	Z=0.144
+ID=599	label=599	X=0.16	Y=0.05	Z=0.144
+ID=600	label=600	X=0.22	Y=0.05	Z=0.144
+ID=601	label=601	X=0.28	Y=0.05	Z=0.144
+ID=602	label=602	X=0.36	Y=0.05	Z=0.144
+ID=603	label=603	X=0.46	Y=0.05	Z=0.144
+ID=604	label=604	X=0.58	Y=0.05	Z=0.144
+ID=605	label=605	X=0.72	Y=0.05	Z=0.144
+ID=606	label=606	X=0.9	Y=0.05	Z=0.144
+ID=607	label=607	X=1.1	Y=0.05	Z=0.144
+ID=608	label=608	X=1.3	Y=0.05	Z=0.144
+ID=609	label=609	X=1.5	Y=0.05	Z=0.144
+ID=610	label=610	X=1.66	Y=0.05	Z=0.144
+ID=611	label=611	X=-0.1425	Y=0.075	Z=0.144
+ID=612	label=612	X=-0.095	Y=0.075	Z=0.144
+ID=613	label=613	X=-0.0475	Y=0.075	Z=0.144
+ID=614	label=614	X=0	Y=0.075	Z=0.144
+ID=615	label=615	X=0.0475	Y=0.075	Z=0.144
+ID=616	label=616	X=0.095	Y=0.075	Z=0.144
+ID=617	label=617	X=0.1425	Y=0.075	Z=0.144
+ID=618	label=618	X=0.16	Y=0.075	Z=0.144
+ID=619	label=619	X=0.22	Y=0.075	Z=0.144
+ID=620	label=620	X=0.28	Y=0.075	Z=0.144
+ID=621	label=621	X=0.36	Y=0.075	Z=0.144
+ID=622	label=622	X=0.46	Y=0.075	Z=0.144
+ID=623	label=623	X=0.58	Y=0.075	Z=0.144
+ID=624	label=624	X=0.72	Y=0.075	Z=0.144
+ID=625	label=625	X=0.9	Y=0.075	Z=0.144
+ID=626	label=626	X=1.1	Y=0.075	Z=0.144
+ID=627	label=627	X=1.3	Y=0.075	Z=0.144
+ID=628	label=628	X=1.5	Y=0.075	Z=0.144
+ID=629	label=629	X=1.66	Y=0.075	Z=0.144
+ID=630	label=630	X=-0.1425	Y=0.1	Z=0.144
+ID=631	label=631	X=-0.095	Y=0.1	Z=0.144
+ID=632	label=632	X=-0.0475	Y=0.1	Z=0.144
+ID=633	label=633	X=0	Y=0.1	Z=0.144
+ID=634	label=634	X=0.0475	Y=0.1	Z=0.144
+ID=635	label=635	X=0.095	Y=0.1	Z=0.144
+ID=636	label=636	X=0.1425	Y=0.1	Z=0.144
+ID=637	label=637	X=0.16	Y=0.1	Z=0.144
+ID=638	label=638	X=-0.1425	Y=-0.1	Z=0.18
+ID=639	label=639	X=0.1425	Y=-0.1	Z=0.18
+ID=640	label=640	X=0.16	Y=-0.1	Z=0.18
+ID=641	label=641	X=-0.1425	Y=-0.075	Z=0.18
+ID=642	label=642	X=0.1425	Y=-0.075	Z=0.18
+ID=643	label=643	X=0.16	Y=-0.075	Z=0.18
+ID=644	label=644	X=-0.1425	Y=-0.05	Z=0.18
+ID=645	label=645	X=0.1425	Y=-0.05	Z=0.18
+ID=646	label=646	X=0.16	Y=-0.05	Z=0.18
+ID=647	label=647	X=-0.1425	Y=-0.025	Z=0.18
+ID=648	label=648	X=0.1425	Y=-0.025	Z=0.18
+ID=649	label=649	X=0.16	Y=-0.025	Z=0.18
+ID=650	label=650	X=-0.1425	Y=0	Z=0.18
+ID=651	label=651	X=-0.095	Y=0	Z=0.18
+ID=652	label=652	X=-0.0475	Y=0	Z=0.18
+ID=653	label=653	X=0	Y=0	Z=0.18
+ID=654	label=654	X=0.0475	Y=0	Z=0.18
+ID=655	label=655	X=0.095	Y=0	Z=0.18
+ID=656	label=656	X=0.1425	Y=0	Z=0.18
+ID=657	label=657	X=0.16	Y=0	Z=0.18
+ID=658	label=658	X=-0.1425	Y=0.025	Z=0.18
+ID=659	label=659	X=0.1425	Y=0.025	Z=0.18
+ID=660	label=660	X=0.16	Y=0.025	Z=0.18
+ID=661	label=661	X=-0.1425	Y=0.05	Z=0.18
+ID=662	label=662	X=0.1425	Y=0.05	Z=0.18
+ID=663	label=663	X=0.16	Y=0.05	Z=0.18
+ID=664	label=664	X=-0.1425	Y=0.075	Z=0.18
+ID=665	label=665	X=0.1425	Y=0.075	Z=0.18
+ID=666	label=666	X=0.16	Y=0.075	Z=0.18
+ID=667	label=667	X=-0.1425	Y=0.1	Z=0.18
+ID=668	label=668	X=0.1425	Y=0.1	Z=0.18
+ID=669	label=669	X=0.16	Y=0.1	Z=0.18
+ID=670	label=670	X=-0.1425	Y=-0.1	Z=0.2
+ID=671	label=671	X=0.1425	Y=-0.1	Z=0.2
+ID=672	label=672	X=0.16	Y=-0.1	Z=0.2
+ID=673	label=673	X=-0.1425	Y=-0.075	Z=0.2
+ID=674	label=674	X=0.1425	Y=-0.075	Z=0.2
+ID=675	label=675	X=0.16	Y=-0.075	Z=0.2
+ID=676	label=676	X=-0.1425	Y=-0.05	Z=0.2
+ID=677	label=677	X=0.1425	Y=-0.05	Z=0.2
+ID=678	label=678	X=0.16	Y=-0.05	Z=0.2
+ID=679	label=679	X=-0.1425	Y=-0.025	Z=0.2
+ID=680	label=680	X=0.1425	Y=-0.025	Z=0.2
+ID=681	label=681	X=0.16	Y=-0.025	Z=0.2
+ID=682	label=682	X=-0.1425	Y=0	Z=0.2
+ID=683	label=683	X=-0.095	Y=0	Z=0.2
+ID=684	label=684	X=-0.0475	Y=0	Z=0.2
+ID=685	label=685	X=0	Y=0	Z=0.2
+ID=686	label=686	X=0.0475	Y=0	Z=0.2
+ID=687	label=687	X=0.095	Y=0	Z=0.2
+ID=688	label=688	X=0.1425	Y=0	Z=0.2
+ID=689	label=689	X=0.16	Y=0	Z=0.2
+ID=690	label=690	X=-0.1425	Y=0.025	Z=0.2
+ID=691	label=691	X=0.1425	Y=0.025	Z=0.2
+ID=692	label=692	X=0.16	Y=0.025	Z=0.2
+ID=693	label=693	X=-0.1425	Y=0.05	Z=0.2
+ID=694	label=694	X=0.1425	Y=0.05	Z=0.2
+ID=695	label=695	X=0.16	Y=0.05	Z=0.2
+ID=696	label=696	X=-0.1425	Y=0.075	Z=0.2
+ID=697	label=697	X=0.1425	Y=0.075	Z=0.2
+ID=698	label=698	X=0.16	Y=0.075	Z=0.2
+ID=699	label=699	X=-0.1425	Y=0.1	Z=0.2
+ID=700	label=700	X=0.1425	Y=0.1	Z=0.2
+ID=701	label=701	X=0.16	Y=0.1	Z=0.2
+ID=702	label=702	X=-0.1425	Y=-0.1	Z=0.25
+ID=703	label=703	X=0.1425	Y=-0.1	Z=0.25
+ID=704	label=704	X=-0.1425	Y=-0.075	Z=0.25
+ID=705	label=705	X=0.1425	Y=-0.075	Z=0.25
+ID=706	label=706	X=-0.1425	Y=-0.05	Z=0.25
+ID=707	label=707	X=0.1425	Y=-0.05	Z=0.25
+ID=708	label=708	X=-0.1425	Y=-0.025	Z=0.25
+ID=709	label=709	X=0.1425	Y=-0.025	Z=0.25
+ID=710	label=710	X=-0.1425	Y=0	Z=0.25
+ID=711	label=711	X=-0.095	Y=0	Z=0.25
+ID=712	label=712	X=-0.0475	Y=0	Z=0.25
+ID=713	label=713	X=0	Y=0	Z=0.25
+ID=714	label=714	X=0.0475	Y=0	Z=0.25
+ID=715	label=715	X=0.095	Y=0	Z=0.25
+ID=716	label=716	X=0.1425	Y=0	Z=0.25
+ID=717	label=717	X=-0.1425	Y=0.025	Z=0.25
+ID=718	label=718	X=0.1425	Y=0.025	Z=0.25
+ID=719	label=719	X=-0.1425	Y=0.05	Z=0.25
+ID=720	label=720	X=0.1425	Y=0.05	Z=0.25
+ID=721	label=721	X=-0.1425	Y=0.075	Z=0.25
+ID=722	label=722	X=0.1425	Y=0.075	Z=0.25
+ID=723	label=723	X=-0.1425	Y=0.1	Z=0.25
+ID=724	label=724	X=0.1425	Y=0.1	Z=0.25
+ID=725	label=725	X=-0.1425	Y=-0.1	Z=0.33
+ID=726	label=726	X=0.1425	Y=-0.1	Z=0.33
+ID=727	label=727	X=-0.1425	Y=-0.075	Z=0.33
+ID=728	label=728	X=0.1425	Y=-0.075	Z=0.33
+ID=729	label=729	X=-0.1425	Y=-0.05	Z=0.33
+ID=730	label=730	X=0.1425	Y=-0.05	Z=0.33
+ID=731	label=731	X=-0.1425	Y=-0.025	Z=0.33
+ID=732	label=732	X=0.1425	Y=-0.025	Z=0.33
+ID=733	label=733	X=-0.1425	Y=0	Z=0.33
+ID=734	label=734	X=-0.095	Y=0	Z=0.33
+ID=735	label=735	X=-0.0475	Y=0	Z=0.33
+ID=736	label=736	X=0	Y=0	Z=0.33
+ID=737	label=737	X=0.0475	Y=0	Z=0.33
+ID=738	label=738	X=0.095	Y=0	Z=0.33
+ID=739	label=739	X=0.1425	Y=0	Z=0.33
+ID=740	label=740	X=-0.1425	Y=0.025	Z=0.33
+ID=741	label=741	X=0.1425	Y=0.025	Z=0.33
+ID=742	label=742	X=-0.1425	Y=0.05	Z=0.33
+ID=743	label=743	X=0.1425	Y=0.05	Z=0.33
+ID=744	label=744	X=-0.1425	Y=0.075	Z=0.33
+ID=745	label=745	X=0.1425	Y=0.075	Z=0.33
+ID=746	label=746	X=-0.1425	Y=0.1	Z=0.33
+ID=747	label=747	X=0.1425	Y=0.1	Z=0.33
+ID=748	label=748	X=-0.1425	Y=-0.1	Z=0.45
+ID=749	label=749	X=0.1425	Y=-0.1	Z=0.45
+ID=750	label=750	X=-0.1425	Y=-0.075	Z=0.45
+ID=751	label=751	X=0.1425	Y=-0.075	Z=0.45
+ID=752	label=752	X=-0.1425	Y=-0.05	Z=0.45
+ID=753	label=753	X=0.1425	Y=-0.05	Z=0.45
+ID=754	label=754	X=-0.1425	Y=-0.025	Z=0.45
+ID=755	label=755	X=0.1425	Y=-0.025	Z=0.45
+ID=756	label=756	X=-0.1425	Y=0	Z=0.45
+ID=757	label=757	X=-0.095	Y=0	Z=0.45
+ID=758	label=758	X=-0.0475	Y=0	Z=0.45
+ID=759	label=759	X=0	Y=0	Z=0.45
+ID=760	label=760	X=0.0475	Y=0	Z=0.45
+ID=761	label=761	X=0.095	Y=0	Z=0.45
+ID=762	label=762	X=0.1425	Y=0	Z=0.45
+ID=763	label=763	X=-0.1425	Y=0.025	Z=0.45
+ID=764	label=764	X=0.1425	Y=0.025	Z=0.45
+ID=765	label=765	X=-0.1425	Y=0.05	Z=0.45
+ID=766	label=766	X=0.1425	Y=0.05	Z=0.45
+ID=767	label=767	X=-0.1425	Y=0.075	Z=0.45
+ID=768	label=768	X=0.1425	Y=0.075	Z=0.45
+ID=769	label=769	X=-0.1425	Y=0.1	Z=0.45
+ID=770	label=770	X=0.1425	Y=0.1	Z=0.45
+ID=771	label=771	X=-0.1425	Y=-0.1	Z=0.6
+ID=772	label=772	X=0.1425	Y=-0.1	Z=0.6
+ID=773	label=773	X=-0.1425	Y=-0.075	Z=0.6
+ID=774	label=774	X=0.1425	Y=-0.075	Z=0.6
+ID=775	label=775	X=-0.1425	Y=-0.05	Z=0.6
+ID=776	label=776	X=0.1425	Y=-0.05	Z=0.6
+ID=777	label=777	X=-0.1425	Y=-0.025	Z=0.6
+ID=778	label=778	X=0.1425	Y=-0.025	Z=0.6
+ID=779	label=779	X=-0.1425	Y=0	Z=0.6
+ID=780	label=780	X=-0.095	Y=0	Z=0.6
+ID=781	label=781	X=-0.0475	Y=0	Z=0.6
+ID=782	label=782	X=0	Y=0	Z=0.6
+ID=783	label=783	X=0.0475	Y=0	Z=0.6
+ID=784	label=784	X=0.095	Y=0	Z=0.6
+ID=785	label=785	X=0.1425	Y=0	Z=0.6
+ID=786	label=786	X=-0.1425	Y=0.025	Z=0.6
+ID=787	label=787	X=0.1425	Y=0.025	Z=0.6
+ID=788	label=788	X=-0.1425	Y=0.05	Z=0.6
+ID=789	label=789	X=0.1425	Y=0.05	Z=0.6
+ID=790	label=790	X=-0.1425	Y=0.075	Z=0.6
+ID=791	label=791	X=0.1425	Y=0.075	Z=0.6
+ID=792	label=792	X=-0.1425	Y=0.1	Z=0.6
+ID=793	label=793	X=0.1425	Y=0.1	Z=0.6
+ID=794	label=794	X=-0.1425	Y=-0.1	Z=0.75
+ID=795	label=795	X=0.1425	Y=-0.1	Z=0.75
+ID=796	label=796	X=-0.1425	Y=-0.075	Z=0.75
+ID=797	label=797	X=0.1425	Y=-0.075	Z=0.75
+ID=798	label=798	X=-0.1425	Y=-0.05	Z=0.75
+ID=799	label=799	X=0.1425	Y=-0.05	Z=0.75
+ID=800	label=800	X=-0.1425	Y=-0.025	Z=0.75
+ID=801	label=801	X=0.1425	Y=-0.025	Z=0.75
+ID=802	label=802	X=-0.1425	Y=0	Z=0.75
+ID=803	label=803	X=-0.095	Y=0	Z=0.75
+ID=804	label=804	X=-0.0475	Y=0	Z=0.75
+ID=805	label=805	X=0	Y=0	Z=0.75
+ID=806	label=806	X=0.0475	Y=0	Z=0.75
+ID=807	label=807	X=0.095	Y=0	Z=0.75
+ID=808	label=808	X=0.1425	Y=0	Z=0.75
+ID=809	label=809	X=-0.1425	Y=0.025	Z=0.75
+ID=810	label=810	X=0.1425	Y=0.025	Z=0.75
+ID=811	label=811	X=-0.1425	Y=0.05	Z=0.75
+ID=812	label=812	X=0.1425	Y=0.05	Z=0.75
+ID=813	label=813	X=-0.1425	Y=0.075	Z=0.75
+ID=814	label=814	X=0.1425	Y=0.075	Z=0.75
+ID=815	label=815	X=-0.1425	Y=0.1	Z=0.75
+ID=816	label=816	X=0.1425	Y=0.1	Z=0.75
+bars
+ID=1	label=1	startNode=155	endNode=156	SectionID=0	SectionName=perno_M20	unused=3	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=2	label=2	startNode=336	endNode=337	SectionID=0	SectionName=perno_M20	unused=3	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=3	label=3	startNode=464	endNode=465	SectionID=0	SectionName=perno_M20	unused=3	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=4	label=4	startNode=645	endNode=646	SectionID=0	SectionName=perno_M20	unused=3	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=5	label=5	startNode=172	endNode=173	SectionID=0	SectionName=perno_M20	unused=3	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=6	label=6	startNode=353	endNode=354	SectionID=0	SectionName=perno_M20	unused=3	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=7	label=7	startNode=481	endNode=482	SectionID=0	SectionName=perno_M20	unused=3	Rotation=0	releases=0	offsetY=0	offsetZ=0
+ID=8	label=8	startNode=662	endNode=663	SectionID=0	SectionName=perno_M20	unused=3	Rotation=0	releases=0	offsetY=0	offsetZ=0
+nodalRestraints
+ID=1	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=2	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=3	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=4	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=5	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=6	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=7	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=8	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=9	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=10	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=11	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=12	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=13	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=14	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=15	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=16	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=17	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=18	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=19	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=20	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=21	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=22	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=23	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=24	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=25	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=26	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=27	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=28	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=29	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=30	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=31	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=32	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=33	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=34	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=35	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=36	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=37	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=38	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=39	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=40	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=41	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=42	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=43	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=44	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=45	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=46	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=47	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=48	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=49	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=50	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=51	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=52	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=53	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=54	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=55	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=56	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=57	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=58	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=59	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=60	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=61	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=62	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=63	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=64	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=65	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=66	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=67	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=68	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=69	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=70	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=71	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=72	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=73	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=74	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=75	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=76	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=77	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=78	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=79	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=80	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=81	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=82	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=83	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=84	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=85	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=86	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=87	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=88	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=89	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=90	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=91	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=92	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=93	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=94	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=95	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=96	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=97	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=98	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=99	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=100	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=101	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=102	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=103	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=104	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=105	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=106	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=107	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=108	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=109	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=110	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=111	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=112	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=113	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=114	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=115	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=116	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=117	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=118	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=119	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=120	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=121	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=122	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=123	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=124	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=125	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=126	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=127	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=128	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=129	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=130	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=131	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=132	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=133	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=134	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=135	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=136	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=137	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=138	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=139	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=140	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=141	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=142	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=143	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=144	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=145	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=146	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=147	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=148	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=149	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=150	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=151	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=152	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=153	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=154	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=155	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=156	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=157	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=158	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=159	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=160	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=161	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=162	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=163	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=164	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=165	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=166	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=167	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=168	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=169	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=170	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=171	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=172	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=173	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=174	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=175	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=176	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=177	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=178	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=179	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=180	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=181	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=182	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=183	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=184	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=185	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=186	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=187	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=188	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=189	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=190	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=191	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=192	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=193	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=194	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=195	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=196	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=197	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=198	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=199	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=200	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=201	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=202	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=203	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=204	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=205	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=206	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=207	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=208	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=209	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=210	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=211	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=212	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=213	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=214	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=215	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=216	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=217	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=218	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=219	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=220	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=221	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=222	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=223	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=224	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=225	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=226	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=227	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=228	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=229	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=230	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=231	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=232	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=233	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=234	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=235	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=236	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=237	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=238	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=239	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=240	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=241	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=242	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=243	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=244	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=245	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=246	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=247	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=248	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=249	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=250	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=251	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=252	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=253	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=254	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=255	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=256	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=257	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=258	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=259	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=260	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=261	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=262	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=263	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=264	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=265	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=266	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=267	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=268	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=269	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=270	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=271	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=272	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=273	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=274	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=275	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=276	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=277	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=278	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=279	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=280	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=281	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=282	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=283	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=284	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=285	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=286	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=287	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=288	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=289	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=290	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=291	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=292	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=293	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=294	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=295	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=296	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=297	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=298	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=299	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=300	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=301	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=302	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=303	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=304	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=305	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=306	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=307	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=308	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=309	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=310	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=311	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=312	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=313	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=314	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=315	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=316	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=317	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=318	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=319	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=320	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=321	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=322	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=323	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=324	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=325	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=326	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=327	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=328	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=329	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=330	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=331	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=332	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=333	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=334	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=335	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=336	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=337	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=338	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=339	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=340	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=341	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=342	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=343	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=344	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=345	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=346	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=347	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=348	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=349	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=350	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=351	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=352	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=353	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=354	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=355	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=356	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=357	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=358	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=359	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=360	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=361	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=362	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=363	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=364	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=365	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=366	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=367	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=368	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=369	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=370	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=371	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=372	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=373	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=374	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=375	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=376	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=377	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=378	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=379	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=380	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=381	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=382	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=383	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=384	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=385	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=386	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=387	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=388	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=389	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=390	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=391	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=392	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=393	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=394	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=395	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=396	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=397	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=398	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=399	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=400	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=401	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=402	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=403	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=404	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=405	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=406	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=407	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=408	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=409	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=410	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=411	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=412	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=413	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=414	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=415	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=416	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=417	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=418	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=419	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=420	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=421	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=422	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=423	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=424	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=425	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=426	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=427	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=428	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=429	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=430	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=431	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=432	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=433	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=434	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=435	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=436	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=437	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=438	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=439	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=440	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=441	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=442	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=443	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=444	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=445	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=446	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=447	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=448	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=449	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=450	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=451	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=452	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=453	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=454	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=455	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=456	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=457	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=458	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=459	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=460	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=461	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=462	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=463	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=464	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=465	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=466	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=467	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=468	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=469	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=470	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=471	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=472	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=473	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=474	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=475	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=476	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=477	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=478	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=479	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=480	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=481	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=482	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=483	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=484	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=485	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=486	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=487	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=488	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=489	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=490	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=491	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=492	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=493	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=494	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=495	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=496	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=497	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=498	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=499	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=500	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=501	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=502	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=503	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=504	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=505	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=506	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=507	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=508	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=509	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=510	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=511	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=512	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=513	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=514	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=515	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=516	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=517	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=518	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=519	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=520	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=521	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=522	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=523	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=524	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=525	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=526	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=527	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=528	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=529	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=530	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=531	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=532	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=533	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=534	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=535	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=536	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=537	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=538	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=539	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=540	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=541	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=542	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=543	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=544	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=545	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=546	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=547	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=548	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=549	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=550	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=551	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=552	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=553	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=554	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=555	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=556	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=557	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=558	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=559	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=560	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=561	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=562	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=563	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=564	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=565	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=566	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=567	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=568	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=569	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=570	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=571	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=572	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=573	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=574	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=575	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=576	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=577	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=578	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=579	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=580	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=581	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=582	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=583	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=584	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=585	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=586	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=587	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=588	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=589	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=590	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=591	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=592	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=593	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=594	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=595	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=596	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=597	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=598	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=599	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=600	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=601	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=602	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=603	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=604	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=605	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=606	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=607	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=608	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=609	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=610	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=611	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=612	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=613	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=614	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=615	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=616	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=617	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=618	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=619	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=620	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=621	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=622	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=623	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=624	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=625	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=626	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=627	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=628	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=629	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=630	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=631	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=632	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=633	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=634	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=635	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=636	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=637	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=638	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=639	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=640	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=641	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=642	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=643	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=644	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=645	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=646	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=647	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=648	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=649	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=650	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=651	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=652	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=653	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=654	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=655	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=656	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=657	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=658	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=659	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=660	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=661	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=662	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=663	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=664	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=665	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=666	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=667	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=668	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=669	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=670	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=671	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=672	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=673	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=674	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=675	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=676	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=677	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=678	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=679	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=680	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=681	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=682	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=683	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=684	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=685	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=686	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=687	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=688	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=689	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=690	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=691	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=692	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=693	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=694	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=695	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=696	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=697	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=698	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=699	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=700	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=701	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=702	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=703	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=704	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=705	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=706	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=707	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=708	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=709	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=710	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=711	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=712	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=713	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=714	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=715	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=716	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=717	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=718	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=719	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=720	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=721	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=722	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=723	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=724	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=725	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=726	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=727	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=728	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=729	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=730	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=731	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=732	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=733	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=734	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=735	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=736	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=737	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=738	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=739	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=740	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=741	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=742	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=743	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=744	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=745	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=746	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=747	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=748	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=749	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=750	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=751	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=752	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=753	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=754	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=755	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=756	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=757	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=758	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=759	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=760	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=761	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=762	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=763	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=764	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=765	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=766	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=767	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=768	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=769	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=770	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=771	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=772	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=773	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=774	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=775	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=776	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=777	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=778	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=779	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=780	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=781	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=782	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=783	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=784	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=785	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=786	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=787	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=788	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=789	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=790	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=791	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=792	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=793	ux=0	uy=0	uz=0	rx=0	ry=0	rz=0
+ID=794	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=795	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=796	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=797	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=798	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=799	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=800	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=801	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=802	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=803	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=804	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=805	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=806	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=807	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=808	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=809	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=810	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=811	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=812	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=813	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=814	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=815	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+ID=816	ux=1	uy=1	uz=1	rx=1	ry=1	rz=1
+nodalConstraints
+loadCases
+ID=0	Name=Dead	Type=0
+loadCombs
+ID=0	Name=Comb1	Type=0	Case=0	Factor=1
+nodalLoads
+ID=1	NodeID=263	Case=0	Fx=0	Fy=0	Fz=-25	Mx=0	My=0	Mz=0
+ID=2	NodeID=572	Case=0	Fx=0	Fy=0	Fz=-25	Mx=0	My=0	Mz=0
+barDistrLoads
+barPunctLoads
+barThermalLoads
+nodalDisplacements
+nodalReactions
+barInternForces
+areaSections
+ID=1	Name=AlaColumna	Kind=1	MaterialID=1	MaterialName=AceroG50	Thickness=0.015
+ID=2	Name=AlmaColumna	Kind=1	MaterialID=1	MaterialName=AceroG50	Thickness=0.009
+ID=3	Name=AlaViga	Kind=1	MaterialID=1	MaterialName=AceroG50	Thickness=0.012
+ID=4	Name=AlmaViga	Kind=1	MaterialID=1	MaterialName=AceroG50	Thickness=0.008
+ID=5	Name=PlacaExtremo	Kind=1	MaterialID=1	MaterialName=AceroG50	Thickness=0.02
+ID=6	Name=Rigidizador	Kind=1	MaterialID=1	MaterialName=AceroG50	Thickness=0.012
+areas
+ID=1	label=1	SectionID=1	SectionName=AlaColumna	Node1=2	Node2=4	Node3=27	Node4=25
+ID=2	label=2	SectionID=1	SectionName=AlaColumna	Node1=25	Node2=27	Node3=50	Node4=48
+ID=3	label=3	SectionID=1	SectionName=AlaColumna	Node1=48	Node2=50	Node3=73	Node4=71
+ID=4	label=4	SectionID=1	SectionName=AlaColumna	Node1=71	Node2=73	Node3=96	Node4=94
+ID=5	label=5	SectionID=1	SectionName=AlaColumna	Node1=94	Node2=96	Node3=120	Node4=117
+ID=6	label=6	SectionID=1	SectionName=AlaColumna	Node1=117	Node2=120	Node3=152	Node4=149
+ID=7	label=7	SectionID=1	SectionName=AlaColumna	Node1=149	Node2=152	Node3=194	Node4=186
+ID=8	label=8	SectionID=1	SectionName=AlaColumna	Node1=186	Node2=194	Node3=333	Node4=330
+ID=9	label=9	SectionID=1	SectionName=AlaColumna	Node1=330	Node2=333	Node3=365	Node4=362
+ID=10	label=10	SectionID=1	SectionName=AlaColumna	Node1=362	Node2=365	Node3=397	Node4=394
+ID=11	label=11	SectionID=1	SectionName=AlaColumna	Node1=394	Node2=397	Node3=429	Node4=426
+ID=12	label=12	SectionID=1	SectionName=AlaColumna	Node1=426	Node2=429	Node3=461	Node4=458
+ID=13	label=13	SectionID=1	SectionName=AlaColumna	Node1=458	Node2=461	Node3=503	Node4=495
+ID=14	label=14	SectionID=1	SectionName=AlaColumna	Node1=495	Node2=503	Node3=642	Node4=639
+ID=15	label=15	SectionID=1	SectionName=AlaColumna	Node1=639	Node2=642	Node3=674	Node4=671
+ID=16	label=16	SectionID=1	SectionName=AlaColumna	Node1=671	Node2=674	Node3=705	Node4=703
+ID=17	label=17	SectionID=1	SectionName=AlaColumna	Node1=703	Node2=705	Node3=728	Node4=726
+ID=18	label=18	SectionID=1	SectionName=AlaColumna	Node1=726	Node2=728	Node3=751	Node4=749
+ID=19	label=19	SectionID=1	SectionName=AlaColumna	Node1=749	Node2=751	Node3=774	Node4=772
+ID=20	label=20	SectionID=1	SectionName=AlaColumna	Node1=772	Node2=774	Node3=797	Node4=795
+ID=21	label=21	SectionID=1	SectionName=AlaColumna	Node1=4	Node2=6	Node3=29	Node4=27
+ID=22	label=22	SectionID=1	SectionName=AlaColumna	Node1=27	Node2=29	Node3=52	Node4=50
+ID=23	label=23	SectionID=1	SectionName=AlaColumna	Node1=50	Node2=52	Node3=75	Node4=73
+ID=24	label=24	SectionID=1	SectionName=AlaColumna	Node1=73	Node2=75	Node3=98	Node4=96
+ID=25	label=25	SectionID=1	SectionName=AlaColumna	Node1=96	Node2=98	Node3=123	Node4=120
+ID=26	label=26	SectionID=1	SectionName=AlaColumna	Node1=120	Node2=123	Node3=155	Node4=152
+ID=27	label=27	SectionID=1	SectionName=AlaColumna	Node1=152	Node2=155	Node3=213	Node4=194
+ID=28	label=28	SectionID=1	SectionName=AlaColumna	Node1=194	Node2=213	Node3=336	Node4=333
+ID=29	label=29	SectionID=1	SectionName=AlaColumna	Node1=333	Node2=336	Node3=368	Node4=365
+ID=30	label=30	SectionID=1	SectionName=AlaColumna	Node1=365	Node2=368	Node3=400	Node4=397
+ID=31	label=31	SectionID=1	SectionName=AlaColumna	Node1=397	Node2=400	Node3=432	Node4=429
+ID=32	label=32	SectionID=1	SectionName=AlaColumna	Node1=429	Node2=432	Node3=464	Node4=461
+ID=33	label=33	SectionID=1	SectionName=AlaColumna	Node1=461	Node2=464	Node3=522	Node4=503
+ID=34	label=34	SectionID=1	SectionName=AlaColumna	Node1=503	Node2=522	Node3=645	Node4=642
+ID=35	label=35	SectionID=1	SectionName=AlaColumna	Node1=642	Node2=645	Node3=677	Node4=674
+ID=36	label=36	SectionID=1	SectionName=AlaColumna	Node1=674	Node2=677	Node3=707	Node4=705
+ID=37	label=37	SectionID=1	SectionName=AlaColumna	Node1=705	Node2=707	Node3=730	Node4=728
+ID=38	label=38	SectionID=1	SectionName=AlaColumna	Node1=728	Node2=730	Node3=753	Node4=751
+ID=39	label=39	SectionID=1	SectionName=AlaColumna	Node1=751	Node2=753	Node3=776	Node4=774
+ID=40	label=40	SectionID=1	SectionName=AlaColumna	Node1=774	Node2=776	Node3=799	Node4=797
+ID=41	label=41	SectionID=1	SectionName=AlaColumna	Node1=6	Node2=8	Node3=31	Node4=29
+ID=42	label=42	SectionID=1	SectionName=AlaColumna	Node1=29	Node2=31	Node3=54	Node4=52
+ID=43	label=43	SectionID=1	SectionName=AlaColumna	Node1=52	Node2=54	Node3=77	Node4=75
+ID=44	label=44	SectionID=1	SectionName=AlaColumna	Node1=75	Node2=77	Node3=100	Node4=98
+ID=45	label=45	SectionID=1	SectionName=AlaColumna	Node1=98	Node2=100	Node3=126	Node4=123
+ID=46	label=46	SectionID=1	SectionName=AlaColumna	Node1=123	Node2=126	Node3=158	Node4=155
+ID=47	label=47	SectionID=1	SectionName=AlaColumna	Node1=155	Node2=158	Node3=232	Node4=213
+ID=48	label=48	SectionID=1	SectionName=AlaColumna	Node1=213	Node2=232	Node3=339	Node4=336
+ID=49	label=49	SectionID=1	SectionName=AlaColumna	Node1=336	Node2=339	Node3=371	Node4=368
+ID=50	label=50	SectionID=1	SectionName=AlaColumna	Node1=368	Node2=371	Node3=403	Node4=400
+ID=51	label=51	SectionID=1	SectionName=AlaColumna	Node1=400	Node2=403	Node3=435	Node4=432
+ID=52	label=52	SectionID=1	SectionName=AlaColumna	Node1=432	Node2=435	Node3=467	Node4=464
+ID=53	label=53	SectionID=1	SectionName=AlaColumna	Node1=464	Node2=467	Node3=541	Node4=522
+ID=54	label=54	SectionID=1	SectionName=AlaColumna	Node1=522	Node2=541	Node3=648	Node4=645
+ID=55	label=55	SectionID=1	SectionName=AlaColumna	Node1=645	Node2=648	Node3=680	Node4=677
+ID=56	label=56	SectionID=1	SectionName=AlaColumna	Node1=677	Node2=680	Node3=709	Node4=707
+ID=57	label=57	SectionID=1	SectionName=AlaColumna	Node1=707	Node2=709	Node3=732	Node4=730
+ID=58	label=58	SectionID=1	SectionName=AlaColumna	Node1=730	Node2=732	Node3=755	Node4=753
+ID=59	label=59	SectionID=1	SectionName=AlaColumna	Node1=753	Node2=755	Node3=778	Node4=776
+ID=60	label=60	SectionID=1	SectionName=AlaColumna	Node1=776	Node2=778	Node3=801	Node4=799
+ID=61	label=61	SectionID=1	SectionName=AlaColumna	Node1=8	Node2=15	Node3=38	Node4=31
+ID=62	label=62	SectionID=1	SectionName=AlaColumna	Node1=31	Node2=38	Node3=61	Node4=54
+ID=63	label=63	SectionID=1	SectionName=AlaColumna	Node1=54	Node2=61	Node3=84	Node4=77
+ID=64	label=64	SectionID=1	SectionName=AlaColumna	Node1=77	Node2=84	Node3=107	Node4=100
+ID=65	label=65	SectionID=1	SectionName=AlaColumna	Node1=100	Node2=107	Node3=134	Node4=126
+ID=66	label=66	SectionID=1	SectionName=AlaColumna	Node1=126	Node2=134	Node3=166	Node4=158
+ID=67	label=67	SectionID=1	SectionName=AlaColumna	Node1=158	Node2=166	Node3=251	Node4=232
+ID=68	label=68	SectionID=1	SectionName=AlaColumna	Node1=232	Node2=251	Node3=347	Node4=339
+ID=69	label=69	SectionID=1	SectionName=AlaColumna	Node1=339	Node2=347	Node3=379	Node4=371
+ID=70	label=70	SectionID=1	SectionName=AlaColumna	Node1=371	Node2=379	Node3=411	Node4=403
+ID=71	label=71	SectionID=1	SectionName=AlaColumna	Node1=403	Node2=411	Node3=443	Node4=435
+ID=72	label=72	SectionID=1	SectionName=AlaColumna	Node1=435	Node2=443	Node3=475	Node4=467
+ID=73	label=73	SectionID=1	SectionName=AlaColumna	Node1=467	Node2=475	Node3=560	Node4=541
+ID=74	label=74	SectionID=1	SectionName=AlaColumna	Node1=541	Node2=560	Node3=656	Node4=648
+ID=75	label=75	SectionID=1	SectionName=AlaColumna	Node1=648	Node2=656	Node3=688	Node4=680
+ID=76	label=76	SectionID=1	SectionName=AlaColumna	Node1=680	Node2=688	Node3=716	Node4=709
+ID=77	label=77	SectionID=1	SectionName=AlaColumna	Node1=709	Node2=716	Node3=739	Node4=732
+ID=78	label=78	SectionID=1	SectionName=AlaColumna	Node1=732	Node2=739	Node3=762	Node4=755
+ID=79	label=79	SectionID=1	SectionName=AlaColumna	Node1=755	Node2=762	Node3=785	Node4=778
+ID=80	label=80	SectionID=1	SectionName=AlaColumna	Node1=778	Node2=785	Node3=808	Node4=801
+ID=81	label=81	SectionID=1	SectionName=AlaColumna	Node1=15	Node2=17	Node3=40	Node4=38
+ID=82	label=82	SectionID=1	SectionName=AlaColumna	Node1=38	Node2=40	Node3=63	Node4=61
+ID=83	label=83	SectionID=1	SectionName=AlaColumna	Node1=61	Node2=63	Node3=86	Node4=84
+ID=84	label=84	SectionID=1	SectionName=AlaColumna	Node1=84	Node2=86	Node3=109	Node4=107
+ID=85	label=85	SectionID=1	SectionName=AlaColumna	Node1=107	Node2=109	Node3=137	Node4=134
+ID=86	label=86	SectionID=1	SectionName=AlaColumna	Node1=134	Node2=137	Node3=169	Node4=166
+ID=87	label=87	SectionID=1	SectionName=AlaColumna	Node1=166	Node2=169	Node3=270	Node4=251
+ID=88	label=88	SectionID=1	SectionName=AlaColumna	Node1=251	Node2=270	Node3=350	Node4=347
+ID=89	label=89	SectionID=1	SectionName=AlaColumna	Node1=347	Node2=350	Node3=382	Node4=379
+ID=90	label=90	SectionID=1	SectionName=AlaColumna	Node1=379	Node2=382	Node3=414	Node4=411
+ID=91	label=91	SectionID=1	SectionName=AlaColumna	Node1=411	Node2=414	Node3=446	Node4=443
+ID=92	label=92	SectionID=1	SectionName=AlaColumna	Node1=443	Node2=446	Node3=478	Node4=475
+ID=93	label=93	SectionID=1	SectionName=AlaColumna	Node1=475	Node2=478	Node3=579	Node4=560
+ID=94	label=94	SectionID=1	SectionName=AlaColumna	Node1=560	Node2=579	Node3=659	Node4=656
+ID=95	label=95	SectionID=1	SectionName=AlaColumna	Node1=656	Node2=659	Node3=691	Node4=688
+ID=96	label=96	SectionID=1	SectionName=AlaColumna	Node1=688	Node2=691	Node3=718	Node4=716
+ID=97	label=97	SectionID=1	SectionName=AlaColumna	Node1=716	Node2=718	Node3=741	Node4=739
+ID=98	label=98	SectionID=1	SectionName=AlaColumna	Node1=739	Node2=741	Node3=764	Node4=762
+ID=99	label=99	SectionID=1	SectionName=AlaColumna	Node1=762	Node2=764	Node3=787	Node4=785
+ID=100	label=100	SectionID=1	SectionName=AlaColumna	Node1=785	Node2=787	Node3=810	Node4=808
+ID=101	label=101	SectionID=1	SectionName=AlaColumna	Node1=17	Node2=19	Node3=42	Node4=40
+ID=102	label=102	SectionID=1	SectionName=AlaColumna	Node1=40	Node2=42	Node3=65	Node4=63
+ID=103	label=103	SectionID=1	SectionName=AlaColumna	Node1=63	Node2=65	Node3=88	Node4=86
+ID=104	label=104	SectionID=1	SectionName=AlaColumna	Node1=86	Node2=88	Node3=111	Node4=109
+ID=105	label=105	SectionID=1	SectionName=AlaColumna	Node1=109	Node2=111	Node3=140	Node4=137
+ID=106	label=106	SectionID=1	SectionName=AlaColumna	Node1=137	Node2=140	Node3=172	Node4=169
+ID=107	label=107	SectionID=1	SectionName=AlaColumna	Node1=169	Node2=172	Node3=289	Node4=270
+ID=108	label=108	SectionID=1	SectionName=AlaColumna	Node1=270	Node2=289	Node3=353	Node4=350
+ID=109	label=109	SectionID=1	SectionName=AlaColumna	Node1=350	Node2=353	Node3=385	Node4=382
+ID=110	label=110	SectionID=1	SectionName=AlaColumna	Node1=382	Node2=385	Node3=417	Node4=414
+ID=111	label=111	SectionID=1	SectionName=AlaColumna	Node1=414	Node2=417	Node3=449	Node4=446
+ID=112	label=112	SectionID=1	SectionName=AlaColumna	Node1=446	Node2=449	Node3=481	Node4=478
+ID=113	label=113	SectionID=1	SectionName=AlaColumna	Node1=478	Node2=481	Node3=598	Node4=579
+ID=114	label=114	SectionID=1	SectionName=AlaColumna	Node1=579	Node2=598	Node3=662	Node4=659
+ID=115	label=115	SectionID=1	SectionName=AlaColumna	Node1=659	Node2=662	Node3=694	Node4=691
+ID=116	label=116	SectionID=1	SectionName=AlaColumna	Node1=691	Node2=694	Node3=720	Node4=718
+ID=117	label=117	SectionID=1	SectionName=AlaColumna	Node1=718	Node2=720	Node3=743	Node4=741
+ID=118	label=118	SectionID=1	SectionName=AlaColumna	Node1=741	Node2=743	Node3=766	Node4=764
+ID=119	label=119	SectionID=1	SectionName=AlaColumna	Node1=764	Node2=766	Node3=789	Node4=787
+ID=120	label=120	SectionID=1	SectionName=AlaColumna	Node1=787	Node2=789	Node3=812	Node4=810
+ID=121	label=121	SectionID=1	SectionName=AlaColumna	Node1=19	Node2=21	Node3=44	Node4=42
+ID=122	label=122	SectionID=1	SectionName=AlaColumna	Node1=42	Node2=44	Node3=67	Node4=65
+ID=123	label=123	SectionID=1	SectionName=AlaColumna	Node1=65	Node2=67	Node3=90	Node4=88
+ID=124	label=124	SectionID=1	SectionName=AlaColumna	Node1=88	Node2=90	Node3=113	Node4=111
+ID=125	label=125	SectionID=1	SectionName=AlaColumna	Node1=111	Node2=113	Node3=143	Node4=140
+ID=126	label=126	SectionID=1	SectionName=AlaColumna	Node1=140	Node2=143	Node3=175	Node4=172
+ID=127	label=127	SectionID=1	SectionName=AlaColumna	Node1=172	Node2=175	Node3=308	Node4=289
+ID=128	label=128	SectionID=1	SectionName=AlaColumna	Node1=289	Node2=308	Node3=356	Node4=353
+ID=129	label=129	SectionID=1	SectionName=AlaColumna	Node1=353	Node2=356	Node3=388	Node4=385
+ID=130	label=130	SectionID=1	SectionName=AlaColumna	Node1=385	Node2=388	Node3=420	Node4=417
+ID=131	label=131	SectionID=1	SectionName=AlaColumna	Node1=417	Node2=420	Node3=452	Node4=449
+ID=132	label=132	SectionID=1	SectionName=AlaColumna	Node1=449	Node2=452	Node3=484	Node4=481
+ID=133	label=133	SectionID=1	SectionName=AlaColumna	Node1=481	Node2=484	Node3=617	Node4=598
+ID=134	label=134	SectionID=1	SectionName=AlaColumna	Node1=598	Node2=617	Node3=665	Node4=662
+ID=135	label=135	SectionID=1	SectionName=AlaColumna	Node1=662	Node2=665	Node3=697	Node4=694
+ID=136	label=136	SectionID=1	SectionName=AlaColumna	Node1=694	Node2=697	Node3=722	Node4=720
+ID=137	label=137	SectionID=1	SectionName=AlaColumna	Node1=720	Node2=722	Node3=745	Node4=743
+ID=138	label=138	SectionID=1	SectionName=AlaColumna	Node1=743	Node2=745	Node3=768	Node4=766
+ID=139	label=139	SectionID=1	SectionName=AlaColumna	Node1=766	Node2=768	Node3=791	Node4=789
+ID=140	label=140	SectionID=1	SectionName=AlaColumna	Node1=789	Node2=791	Node3=814	Node4=812
+ID=141	label=141	SectionID=1	SectionName=AlaColumna	Node1=21	Node2=23	Node3=46	Node4=44
+ID=142	label=142	SectionID=1	SectionName=AlaColumna	Node1=44	Node2=46	Node3=69	Node4=67
+ID=143	label=143	SectionID=1	SectionName=AlaColumna	Node1=67	Node2=69	Node3=92	Node4=90
+ID=144	label=144	SectionID=1	SectionName=AlaColumna	Node1=90	Node2=92	Node3=115	Node4=113
+ID=145	label=145	SectionID=1	SectionName=AlaColumna	Node1=113	Node2=115	Node3=146	Node4=143
+ID=146	label=146	SectionID=1	SectionName=AlaColumna	Node1=143	Node2=146	Node3=178	Node4=175
+ID=147	label=147	SectionID=1	SectionName=AlaColumna	Node1=175	Node2=178	Node3=327	Node4=308
+ID=148	label=148	SectionID=1	SectionName=AlaColumna	Node1=308	Node2=327	Node3=359	Node4=356
+ID=149	label=149	SectionID=1	SectionName=AlaColumna	Node1=356	Node2=359	Node3=391	Node4=388
+ID=150	label=150	SectionID=1	SectionName=AlaColumna	Node1=388	Node2=391	Node3=423	Node4=420
+ID=151	label=151	SectionID=1	SectionName=AlaColumna	Node1=420	Node2=423	Node3=455	Node4=452
+ID=152	label=152	SectionID=1	SectionName=AlaColumna	Node1=452	Node2=455	Node3=487	Node4=484
+ID=153	label=153	SectionID=1	SectionName=AlaColumna	Node1=484	Node2=487	Node3=636	Node4=617
+ID=154	label=154	SectionID=1	SectionName=AlaColumna	Node1=617	Node2=636	Node3=668	Node4=665
+ID=155	label=155	SectionID=1	SectionName=AlaColumna	Node1=665	Node2=668	Node3=700	Node4=697
+ID=156	label=156	SectionID=1	SectionName=AlaColumna	Node1=697	Node2=700	Node3=724	Node4=722
+ID=157	label=157	SectionID=1	SectionName=AlaColumna	Node1=722	Node2=724	Node3=747	Node4=745
+ID=158	label=158	SectionID=1	SectionName=AlaColumna	Node1=745	Node2=747	Node3=770	Node4=768
+ID=159	label=159	SectionID=1	SectionName=AlaColumna	Node1=768	Node2=770	Node3=793	Node4=791
+ID=160	label=160	SectionID=1	SectionName=AlaColumna	Node1=791	Node2=793	Node3=816	Node4=814
+ID=161	label=161	SectionID=1	SectionName=AlaColumna	Node1=1	Node2=3	Node3=26	Node4=24
+ID=162	label=162	SectionID=1	SectionName=AlaColumna	Node1=24	Node2=26	Node3=49	Node4=47
+ID=163	label=163	SectionID=1	SectionName=AlaColumna	Node1=47	Node2=49	Node3=72	Node4=70
+ID=164	label=164	SectionID=1	SectionName=AlaColumna	Node1=70	Node2=72	Node3=95	Node4=93
+ID=165	label=165	SectionID=1	SectionName=AlaColumna	Node1=93	Node2=95	Node3=119	Node4=116
+ID=166	label=166	SectionID=1	SectionName=AlaColumna	Node1=116	Node2=119	Node3=151	Node4=148
+ID=167	label=167	SectionID=1	SectionName=AlaColumna	Node1=148	Node2=151	Node3=188	Node4=180
+ID=168	label=168	SectionID=1	SectionName=AlaColumna	Node1=180	Node2=188	Node3=332	Node4=329
+ID=169	label=169	SectionID=1	SectionName=AlaColumna	Node1=329	Node2=332	Node3=364	Node4=361
+ID=170	label=170	SectionID=1	SectionName=AlaColumna	Node1=361	Node2=364	Node3=396	Node4=393
+ID=171	label=171	SectionID=1	SectionName=AlaColumna	Node1=393	Node2=396	Node3=428	Node4=425
+ID=172	label=172	SectionID=1	SectionName=AlaColumna	Node1=425	Node2=428	Node3=460	Node4=457
+ID=173	label=173	SectionID=1	SectionName=AlaColumna	Node1=457	Node2=460	Node3=497	Node4=489
+ID=174	label=174	SectionID=1	SectionName=AlaColumna	Node1=489	Node2=497	Node3=641	Node4=638
+ID=175	label=175	SectionID=1	SectionName=AlaColumna	Node1=638	Node2=641	Node3=673	Node4=670
+ID=176	label=176	SectionID=1	SectionName=AlaColumna	Node1=670	Node2=673	Node3=704	Node4=702
+ID=177	label=177	SectionID=1	SectionName=AlaColumna	Node1=702	Node2=704	Node3=727	Node4=725
+ID=178	label=178	SectionID=1	SectionName=AlaColumna	Node1=725	Node2=727	Node3=750	Node4=748
+ID=179	label=179	SectionID=1	SectionName=AlaColumna	Node1=748	Node2=750	Node3=773	Node4=771
+ID=180	label=180	SectionID=1	SectionName=AlaColumna	Node1=771	Node2=773	Node3=796	Node4=794
+ID=181	label=181	SectionID=1	SectionName=AlaColumna	Node1=3	Node2=5	Node3=28	Node4=26
+ID=182	label=182	SectionID=1	SectionName=AlaColumna	Node1=26	Node2=28	Node3=51	Node4=49
+ID=183	label=183	SectionID=1	SectionName=AlaColumna	Node1=49	Node2=51	Node3=74	Node4=72
+ID=184	label=184	SectionID=1	SectionName=AlaColumna	Node1=72	Node2=74	Node3=97	Node4=95
+ID=185	label=185	SectionID=1	SectionName=AlaColumna	Node1=95	Node2=97	Node3=122	Node4=119
+ID=186	label=186	SectionID=1	SectionName=AlaColumna	Node1=119	Node2=122	Node3=154	Node4=151
+ID=187	label=187	SectionID=1	SectionName=AlaColumna	Node1=151	Node2=154	Node3=207	Node4=188
+ID=188	label=188	SectionID=1	SectionName=AlaColumna	Node1=188	Node2=207	Node3=335	Node4=332
+ID=189	label=189	SectionID=1	SectionName=AlaColumna	Node1=332	Node2=335	Node3=367	Node4=364
+ID=190	label=190	SectionID=1	SectionName=AlaColumna	Node1=364	Node2=367	Node3=399	Node4=396
+ID=191	label=191	SectionID=1	SectionName=AlaColumna	Node1=396	Node2=399	Node3=431	Node4=428
+ID=192	label=192	SectionID=1	SectionName=AlaColumna	Node1=428	Node2=431	Node3=463	Node4=460
+ID=193	label=193	SectionID=1	SectionName=AlaColumna	Node1=460	Node2=463	Node3=516	Node4=497
+ID=194	label=194	SectionID=1	SectionName=AlaColumna	Node1=497	Node2=516	Node3=644	Node4=641
+ID=195	label=195	SectionID=1	SectionName=AlaColumna	Node1=641	Node2=644	Node3=676	Node4=673
+ID=196	label=196	SectionID=1	SectionName=AlaColumna	Node1=673	Node2=676	Node3=706	Node4=704
+ID=197	label=197	SectionID=1	SectionName=AlaColumna	Node1=704	Node2=706	Node3=729	Node4=727
+ID=198	label=198	SectionID=1	SectionName=AlaColumna	Node1=727	Node2=729	Node3=752	Node4=750
+ID=199	label=199	SectionID=1	SectionName=AlaColumna	Node1=750	Node2=752	Node3=775	Node4=773
+ID=200	label=200	SectionID=1	SectionName=AlaColumna	Node1=773	Node2=775	Node3=798	Node4=796
+ID=201	label=201	SectionID=1	SectionName=AlaColumna	Node1=5	Node2=7	Node3=30	Node4=28
+ID=202	label=202	SectionID=1	SectionName=AlaColumna	Node1=28	Node2=30	Node3=53	Node4=51
+ID=203	label=203	SectionID=1	SectionName=AlaColumna	Node1=51	Node2=53	Node3=76	Node4=74
+ID=204	label=204	SectionID=1	SectionName=AlaColumna	Node1=74	Node2=76	Node3=99	Node4=97
+ID=205	label=205	SectionID=1	SectionName=AlaColumna	Node1=97	Node2=99	Node3=125	Node4=122
+ID=206	label=206	SectionID=1	SectionName=AlaColumna	Node1=122	Node2=125	Node3=157	Node4=154
+ID=207	label=207	SectionID=1	SectionName=AlaColumna	Node1=154	Node2=157	Node3=226	Node4=207
+ID=208	label=208	SectionID=1	SectionName=AlaColumna	Node1=207	Node2=226	Node3=338	Node4=335
+ID=209	label=209	SectionID=1	SectionName=AlaColumna	Node1=335	Node2=338	Node3=370	Node4=367
+ID=210	label=210	SectionID=1	SectionName=AlaColumna	Node1=367	Node2=370	Node3=402	Node4=399
+ID=211	label=211	SectionID=1	SectionName=AlaColumna	Node1=399	Node2=402	Node3=434	Node4=431
+ID=212	label=212	SectionID=1	SectionName=AlaColumna	Node1=431	Node2=434	Node3=466	Node4=463
+ID=213	label=213	SectionID=1	SectionName=AlaColumna	Node1=463	Node2=466	Node3=535	Node4=516
+ID=214	label=214	SectionID=1	SectionName=AlaColumna	Node1=516	Node2=535	Node3=647	Node4=644
+ID=215	label=215	SectionID=1	SectionName=AlaColumna	Node1=644	Node2=647	Node3=679	Node4=676
+ID=216	label=216	SectionID=1	SectionName=AlaColumna	Node1=676	Node2=679	Node3=708	Node4=706
+ID=217	label=217	SectionID=1	SectionName=AlaColumna	Node1=706	Node2=708	Node3=731	Node4=729
+ID=218	label=218	SectionID=1	SectionName=AlaColumna	Node1=729	Node2=731	Node3=754	Node4=752
+ID=219	label=219	SectionID=1	SectionName=AlaColumna	Node1=752	Node2=754	Node3=777	Node4=775
+ID=220	label=220	SectionID=1	SectionName=AlaColumna	Node1=775	Node2=777	Node3=800	Node4=798
+ID=221	label=221	SectionID=1	SectionName=AlaColumna	Node1=7	Node2=9	Node3=32	Node4=30
+ID=222	label=222	SectionID=1	SectionName=AlaColumna	Node1=30	Node2=32	Node3=55	Node4=53
+ID=223	label=223	SectionID=1	SectionName=AlaColumna	Node1=53	Node2=55	Node3=78	Node4=76
+ID=224	label=224	SectionID=1	SectionName=AlaColumna	Node1=76	Node2=78	Node3=101	Node4=99
+ID=225	label=225	SectionID=1	SectionName=AlaColumna	Node1=99	Node2=101	Node3=128	Node4=125
+ID=226	label=226	SectionID=1	SectionName=AlaColumna	Node1=125	Node2=128	Node3=160	Node4=157
+ID=227	label=227	SectionID=1	SectionName=AlaColumna	Node1=157	Node2=160	Node3=245	Node4=226
+ID=228	label=228	SectionID=1	SectionName=AlaColumna	Node1=226	Node2=245	Node3=341	Node4=338
+ID=229	label=229	SectionID=1	SectionName=AlaColumna	Node1=338	Node2=341	Node3=373	Node4=370
+ID=230	label=230	SectionID=1	SectionName=AlaColumna	Node1=370	Node2=373	Node3=405	Node4=402
+ID=231	label=231	SectionID=1	SectionName=AlaColumna	Node1=402	Node2=405	Node3=437	Node4=434
+ID=232	label=232	SectionID=1	SectionName=AlaColumna	Node1=434	Node2=437	Node3=469	Node4=466
+ID=233	label=233	SectionID=1	SectionName=AlaColumna	Node1=466	Node2=469	Node3=554	Node4=535
+ID=234	label=234	SectionID=1	SectionName=AlaColumna	Node1=535	Node2=554	Node3=650	Node4=647
+ID=235	label=235	SectionID=1	SectionName=AlaColumna	Node1=647	Node2=650	Node3=682	Node4=679
+ID=236	label=236	SectionID=1	SectionName=AlaColumna	Node1=679	Node2=682	Node3=710	Node4=708
+ID=237	label=237	SectionID=1	SectionName=AlaColumna	Node1=708	Node2=710	Node3=733	Node4=731
+ID=238	label=238	SectionID=1	SectionName=AlaColumna	Node1=731	Node2=733	Node3=756	Node4=754
+ID=239	label=239	SectionID=1	SectionName=AlaColumna	Node1=754	Node2=756	Node3=779	Node4=777
+ID=240	label=240	SectionID=1	SectionName=AlaColumna	Node1=777	Node2=779	Node3=802	Node4=800
+ID=241	label=241	SectionID=1	SectionName=AlaColumna	Node1=9	Node2=16	Node3=39	Node4=32
+ID=242	label=242	SectionID=1	SectionName=AlaColumna	Node1=32	Node2=39	Node3=62	Node4=55
+ID=243	label=243	SectionID=1	SectionName=AlaColumna	Node1=55	Node2=62	Node3=85	Node4=78
+ID=244	label=244	SectionID=1	SectionName=AlaColumna	Node1=78	Node2=85	Node3=108	Node4=101
+ID=245	label=245	SectionID=1	SectionName=AlaColumna	Node1=101	Node2=108	Node3=136	Node4=128
+ID=246	label=246	SectionID=1	SectionName=AlaColumna	Node1=128	Node2=136	Node3=168	Node4=160
+ID=247	label=247	SectionID=1	SectionName=AlaColumna	Node1=160	Node2=168	Node3=264	Node4=245
+ID=248	label=248	SectionID=1	SectionName=AlaColumna	Node1=245	Node2=264	Node3=349	Node4=341
+ID=249	label=249	SectionID=1	SectionName=AlaColumna	Node1=341	Node2=349	Node3=381	Node4=373
+ID=250	label=250	SectionID=1	SectionName=AlaColumna	Node1=373	Node2=381	Node3=413	Node4=405
+ID=251	label=251	SectionID=1	SectionName=AlaColumna	Node1=405	Node2=413	Node3=445	Node4=437
+ID=252	label=252	SectionID=1	SectionName=AlaColumna	Node1=437	Node2=445	Node3=477	Node4=469
+ID=253	label=253	SectionID=1	SectionName=AlaColumna	Node1=469	Node2=477	Node3=573	Node4=554
+ID=254	label=254	SectionID=1	SectionName=AlaColumna	Node1=554	Node2=573	Node3=658	Node4=650
+ID=255	label=255	SectionID=1	SectionName=AlaColumna	Node1=650	Node2=658	Node3=690	Node4=682
+ID=256	label=256	SectionID=1	SectionName=AlaColumna	Node1=682	Node2=690	Node3=717	Node4=710
+ID=257	label=257	SectionID=1	SectionName=AlaColumna	Node1=710	Node2=717	Node3=740	Node4=733
+ID=258	label=258	SectionID=1	SectionName=AlaColumna	Node1=733	Node2=740	Node3=763	Node4=756
+ID=259	label=259	SectionID=1	SectionName=AlaColumna	Node1=756	Node2=763	Node3=786	Node4=779
+ID=260	label=260	SectionID=1	SectionName=AlaColumna	Node1=779	Node2=786	Node3=809	Node4=802
+ID=261	label=261	SectionID=1	SectionName=AlaColumna	Node1=16	Node2=18	Node3=41	Node4=39
+ID=262	label=262	SectionID=1	SectionName=AlaColumna	Node1=39	Node2=41	Node3=64	Node4=62
+ID=263	label=263	SectionID=1	SectionName=AlaColumna	Node1=62	Node2=64	Node3=87	Node4=85
+ID=264	label=264	SectionID=1	SectionName=AlaColumna	Node1=85	Node2=87	Node3=110	Node4=108
+ID=265	label=265	SectionID=1	SectionName=AlaColumna	Node1=108	Node2=110	Node3=139	Node4=136
+ID=266	label=266	SectionID=1	SectionName=AlaColumna	Node1=136	Node2=139	Node3=171	Node4=168
+ID=267	label=267	SectionID=1	SectionName=AlaColumna	Node1=168	Node2=171	Node3=283	Node4=264
+ID=268	label=268	SectionID=1	SectionName=AlaColumna	Node1=264	Node2=283	Node3=352	Node4=349
+ID=269	label=269	SectionID=1	SectionName=AlaColumna	Node1=349	Node2=352	Node3=384	Node4=381
+ID=270	label=270	SectionID=1	SectionName=AlaColumna	Node1=381	Node2=384	Node3=416	Node4=413
+ID=271	label=271	SectionID=1	SectionName=AlaColumna	Node1=413	Node2=416	Node3=448	Node4=445
+ID=272	label=272	SectionID=1	SectionName=AlaColumna	Node1=445	Node2=448	Node3=480	Node4=477
+ID=273	label=273	SectionID=1	SectionName=AlaColumna	Node1=477	Node2=480	Node3=592	Node4=573
+ID=274	label=274	SectionID=1	SectionName=AlaColumna	Node1=573	Node2=592	Node3=661	Node4=658
+ID=275	label=275	SectionID=1	SectionName=AlaColumna	Node1=658	Node2=661	Node3=693	Node4=690
+ID=276	label=276	SectionID=1	SectionName=AlaColumna	Node1=690	Node2=693	Node3=719	Node4=717
+ID=277	label=277	SectionID=1	SectionName=AlaColumna	Node1=717	Node2=719	Node3=742	Node4=740
+ID=278	label=278	SectionID=1	SectionName=AlaColumna	Node1=740	Node2=742	Node3=765	Node4=763
+ID=279	label=279	SectionID=1	SectionName=AlaColumna	Node1=763	Node2=765	Node3=788	Node4=786
+ID=280	label=280	SectionID=1	SectionName=AlaColumna	Node1=786	Node2=788	Node3=811	Node4=809
+ID=281	label=281	SectionID=1	SectionName=AlaColumna	Node1=18	Node2=20	Node3=43	Node4=41
+ID=282	label=282	SectionID=1	SectionName=AlaColumna	Node1=41	Node2=43	Node3=66	Node4=64
+ID=283	label=283	SectionID=1	SectionName=AlaColumna	Node1=64	Node2=66	Node3=89	Node4=87
+ID=284	label=284	SectionID=1	SectionName=AlaColumna	Node1=87	Node2=89	Node3=112	Node4=110
+ID=285	label=285	SectionID=1	SectionName=AlaColumna	Node1=110	Node2=112	Node3=142	Node4=139
+ID=286	label=286	SectionID=1	SectionName=AlaColumna	Node1=139	Node2=142	Node3=174	Node4=171
+ID=287	label=287	SectionID=1	SectionName=AlaColumna	Node1=171	Node2=174	Node3=302	Node4=283
+ID=288	label=288	SectionID=1	SectionName=AlaColumna	Node1=283	Node2=302	Node3=355	Node4=352
+ID=289	label=289	SectionID=1	SectionName=AlaColumna	Node1=352	Node2=355	Node3=387	Node4=384
+ID=290	label=290	SectionID=1	SectionName=AlaColumna	Node1=384	Node2=387	Node3=419	Node4=416
+ID=291	label=291	SectionID=1	SectionName=AlaColumna	Node1=416	Node2=419	Node3=451	Node4=448
+ID=292	label=292	SectionID=1	SectionName=AlaColumna	Node1=448	Node2=451	Node3=483	Node4=480
+ID=293	label=293	SectionID=1	SectionName=AlaColumna	Node1=480	Node2=483	Node3=611	Node4=592
+ID=294	label=294	SectionID=1	SectionName=AlaColumna	Node1=592	Node2=611	Node3=664	Node4=661
+ID=295	label=295	SectionID=1	SectionName=AlaColumna	Node1=661	Node2=664	Node3=696	Node4=693
+ID=296	label=296	SectionID=1	SectionName=AlaColumna	Node1=693	Node2=696	Node3=721	Node4=719
+ID=297	label=297	SectionID=1	SectionName=AlaColumna	Node1=719	Node2=721	Node3=744	Node4=742
+ID=298	label=298	SectionID=1	SectionName=AlaColumna	Node1=742	Node2=744	Node3=767	Node4=765
+ID=299	label=299	SectionID=1	SectionName=AlaColumna	Node1=765	Node2=767	Node3=790	Node4=788
+ID=300	label=300	SectionID=1	SectionName=AlaColumna	Node1=788	Node2=790	Node3=813	Node4=811
+ID=301	label=301	SectionID=1	SectionName=AlaColumna	Node1=20	Node2=22	Node3=45	Node4=43
+ID=302	label=302	SectionID=1	SectionName=AlaColumna	Node1=43	Node2=45	Node3=68	Node4=66
+ID=303	label=303	SectionID=1	SectionName=AlaColumna	Node1=66	Node2=68	Node3=91	Node4=89
+ID=304	label=304	SectionID=1	SectionName=AlaColumna	Node1=89	Node2=91	Node3=114	Node4=112
+ID=305	label=305	SectionID=1	SectionName=AlaColumna	Node1=112	Node2=114	Node3=145	Node4=142
+ID=306	label=306	SectionID=1	SectionName=AlaColumna	Node1=142	Node2=145	Node3=177	Node4=174
+ID=307	label=307	SectionID=1	SectionName=AlaColumna	Node1=174	Node2=177	Node3=321	Node4=302
+ID=308	label=308	SectionID=1	SectionName=AlaColumna	Node1=302	Node2=321	Node3=358	Node4=355
+ID=309	label=309	SectionID=1	SectionName=AlaColumna	Node1=355	Node2=358	Node3=390	Node4=387
+ID=310	label=310	SectionID=1	SectionName=AlaColumna	Node1=387	Node2=390	Node3=422	Node4=419
+ID=311	label=311	SectionID=1	SectionName=AlaColumna	Node1=419	Node2=422	Node3=454	Node4=451
+ID=312	label=312	SectionID=1	SectionName=AlaColumna	Node1=451	Node2=454	Node3=486	Node4=483
+ID=313	label=313	SectionID=1	SectionName=AlaColumna	Node1=483	Node2=486	Node3=630	Node4=611
+ID=314	label=314	SectionID=1	SectionName=AlaColumna	Node1=611	Node2=630	Node3=667	Node4=664
+ID=315	label=315	SectionID=1	SectionName=AlaColumna	Node1=664	Node2=667	Node3=699	Node4=696
+ID=316	label=316	SectionID=1	SectionName=AlaColumna	Node1=696	Node2=699	Node3=723	Node4=721
+ID=317	label=317	SectionID=1	SectionName=AlaColumna	Node1=721	Node2=723	Node3=746	Node4=744
+ID=318	label=318	SectionID=1	SectionName=AlaColumna	Node1=744	Node2=746	Node3=769	Node4=767
+ID=319	label=319	SectionID=1	SectionName=AlaColumna	Node1=767	Node2=769	Node3=792	Node4=790
+ID=320	label=320	SectionID=1	SectionName=AlaColumna	Node1=790	Node2=792	Node3=815	Node4=813
+ID=321	label=321	SectionID=2	SectionName=AlmaColumna	Node1=9	Node2=32	Node3=33	Node4=10
+ID=322	label=322	SectionID=2	SectionName=AlmaColumna	Node1=10	Node2=33	Node3=34	Node4=11
+ID=323	label=323	SectionID=2	SectionName=AlmaColumna	Node1=11	Node2=34	Node3=35	Node4=12
+ID=324	label=324	SectionID=2	SectionName=AlmaColumna	Node1=12	Node2=35	Node3=36	Node4=13
+ID=325	label=325	SectionID=2	SectionName=AlmaColumna	Node1=13	Node2=36	Node3=37	Node4=14
+ID=326	label=326	SectionID=2	SectionName=AlmaColumna	Node1=14	Node2=37	Node3=38	Node4=15
+ID=327	label=327	SectionID=2	SectionName=AlmaColumna	Node1=32	Node2=55	Node3=56	Node4=33
+ID=328	label=328	SectionID=2	SectionName=AlmaColumna	Node1=33	Node2=56	Node3=57	Node4=34
+ID=329	label=329	SectionID=2	SectionName=AlmaColumna	Node1=34	Node2=57	Node3=58	Node4=35
+ID=330	label=330	SectionID=2	SectionName=AlmaColumna	Node1=35	Node2=58	Node3=59	Node4=36
+ID=331	label=331	SectionID=2	SectionName=AlmaColumna	Node1=36	Node2=59	Node3=60	Node4=37
+ID=332	label=332	SectionID=2	SectionName=AlmaColumna	Node1=37	Node2=60	Node3=61	Node4=38
+ID=333	label=333	SectionID=2	SectionName=AlmaColumna	Node1=55	Node2=78	Node3=79	Node4=56
+ID=334	label=334	SectionID=2	SectionName=AlmaColumna	Node1=56	Node2=79	Node3=80	Node4=57
+ID=335	label=335	SectionID=2	SectionName=AlmaColumna	Node1=57	Node2=80	Node3=81	Node4=58
+ID=336	label=336	SectionID=2	SectionName=AlmaColumna	Node1=58	Node2=81	Node3=82	Node4=59
+ID=337	label=337	SectionID=2	SectionName=AlmaColumna	Node1=59	Node2=82	Node3=83	Node4=60
+ID=338	label=338	SectionID=2	SectionName=AlmaColumna	Node1=60	Node2=83	Node3=84	Node4=61
+ID=339	label=339	SectionID=2	SectionName=AlmaColumna	Node1=78	Node2=101	Node3=102	Node4=79
+ID=340	label=340	SectionID=2	SectionName=AlmaColumna	Node1=79	Node2=102	Node3=103	Node4=80
+ID=341	label=341	SectionID=2	SectionName=AlmaColumna	Node1=80	Node2=103	Node3=104	Node4=81
+ID=342	label=342	SectionID=2	SectionName=AlmaColumna	Node1=81	Node2=104	Node3=105	Node4=82
+ID=343	label=343	SectionID=2	SectionName=AlmaColumna	Node1=82	Node2=105	Node3=106	Node4=83
+ID=344	label=344	SectionID=2	SectionName=AlmaColumna	Node1=83	Node2=106	Node3=107	Node4=84
+ID=345	label=345	SectionID=2	SectionName=AlmaColumna	Node1=101	Node2=128	Node3=129	Node4=102
+ID=346	label=346	SectionID=2	SectionName=AlmaColumna	Node1=102	Node2=129	Node3=130	Node4=103
+ID=347	label=347	SectionID=2	SectionName=AlmaColumna	Node1=103	Node2=130	Node3=131	Node4=104
+ID=348	label=348	SectionID=2	SectionName=AlmaColumna	Node1=104	Node2=131	Node3=132	Node4=105
+ID=349	label=349	SectionID=2	SectionName=AlmaColumna	Node1=105	Node2=132	Node3=133	Node4=106
+ID=350	label=350	SectionID=2	SectionName=AlmaColumna	Node1=106	Node2=133	Node3=134	Node4=107
+ID=351	label=351	SectionID=2	SectionName=AlmaColumna	Node1=128	Node2=160	Node3=161	Node4=129
+ID=352	label=352	SectionID=2	SectionName=AlmaColumna	Node1=129	Node2=161	Node3=162	Node4=130
+ID=353	label=353	SectionID=2	SectionName=AlmaColumna	Node1=130	Node2=162	Node3=163	Node4=131
+ID=354	label=354	SectionID=2	SectionName=AlmaColumna	Node1=131	Node2=163	Node3=164	Node4=132
+ID=355	label=355	SectionID=2	SectionName=AlmaColumna	Node1=132	Node2=164	Node3=165	Node4=133
+ID=356	label=356	SectionID=2	SectionName=AlmaColumna	Node1=133	Node2=165	Node3=166	Node4=134
+ID=357	label=357	SectionID=2	SectionName=AlmaColumna	Node1=160	Node2=245	Node3=246	Node4=161
+ID=358	label=358	SectionID=2	SectionName=AlmaColumna	Node1=161	Node2=246	Node3=247	Node4=162
+ID=359	label=359	SectionID=2	SectionName=AlmaColumna	Node1=162	Node2=247	Node3=248	Node4=163
+ID=360	label=360	SectionID=2	SectionName=AlmaColumna	Node1=163	Node2=248	Node3=249	Node4=164
+ID=361	label=361	SectionID=2	SectionName=AlmaColumna	Node1=164	Node2=249	Node3=250	Node4=165
+ID=362	label=362	SectionID=2	SectionName=AlmaColumna	Node1=165	Node2=250	Node3=251	Node4=166
+ID=363	label=363	SectionID=2	SectionName=AlmaColumna	Node1=245	Node2=341	Node3=342	Node4=246
+ID=364	label=364	SectionID=2	SectionName=AlmaColumna	Node1=246	Node2=342	Node3=343	Node4=247
+ID=365	label=365	SectionID=2	SectionName=AlmaColumna	Node1=247	Node2=343	Node3=344	Node4=248
+ID=366	label=366	SectionID=2	SectionName=AlmaColumna	Node1=248	Node2=344	Node3=345	Node4=249
+ID=367	label=367	SectionID=2	SectionName=AlmaColumna	Node1=249	Node2=345	Node3=346	Node4=250
+ID=368	label=368	SectionID=2	SectionName=AlmaColumna	Node1=250	Node2=346	Node3=347	Node4=251
+ID=369	label=369	SectionID=2	SectionName=AlmaColumna	Node1=341	Node2=373	Node3=374	Node4=342
+ID=370	label=370	SectionID=2	SectionName=AlmaColumna	Node1=342	Node2=374	Node3=375	Node4=343
+ID=371	label=371	SectionID=2	SectionName=AlmaColumna	Node1=343	Node2=375	Node3=376	Node4=344
+ID=372	label=372	SectionID=2	SectionName=AlmaColumna	Node1=344	Node2=376	Node3=377	Node4=345
+ID=373	label=373	SectionID=2	SectionName=AlmaColumna	Node1=345	Node2=377	Node3=378	Node4=346
+ID=374	label=374	SectionID=2	SectionName=AlmaColumna	Node1=346	Node2=378	Node3=379	Node4=347
+ID=375	label=375	SectionID=2	SectionName=AlmaColumna	Node1=373	Node2=405	Node3=406	Node4=374
+ID=376	label=376	SectionID=2	SectionName=AlmaColumna	Node1=374	Node2=406	Node3=407	Node4=375
+ID=377	label=377	SectionID=2	SectionName=AlmaColumna	Node1=375	Node2=407	Node3=408	Node4=376
+ID=378	label=378	SectionID=2	SectionName=AlmaColumna	Node1=376	Node2=408	Node3=409	Node4=377
+ID=379	label=379	SectionID=2	SectionName=AlmaColumna	Node1=377	Node2=409	Node3=410	Node4=378
+ID=380	label=380	SectionID=2	SectionName=AlmaColumna	Node1=378	Node2=410	Node3=411	Node4=379
+ID=381	label=381	SectionID=2	SectionName=AlmaColumna	Node1=405	Node2=437	Node3=438	Node4=406
+ID=382	label=382	SectionID=2	SectionName=AlmaColumna	Node1=406	Node2=438	Node3=439	Node4=407
+ID=383	label=383	SectionID=2	SectionName=AlmaColumna	Node1=407	Node2=439	Node3=440	Node4=408
+ID=384	label=384	SectionID=2	SectionName=AlmaColumna	Node1=408	Node2=440	Node3=441	Node4=409
+ID=385	label=385	SectionID=2	SectionName=AlmaColumna	Node1=409	Node2=441	Node3=442	Node4=410
+ID=386	label=386	SectionID=2	SectionName=AlmaColumna	Node1=410	Node2=442	Node3=443	Node4=411
+ID=387	label=387	SectionID=2	SectionName=AlmaColumna	Node1=437	Node2=469	Node3=470	Node4=438
+ID=388	label=388	SectionID=2	SectionName=AlmaColumna	Node1=438	Node2=470	Node3=471	Node4=439
+ID=389	label=389	SectionID=2	SectionName=AlmaColumna	Node1=439	Node2=471	Node3=472	Node4=440
+ID=390	label=390	SectionID=2	SectionName=AlmaColumna	Node1=440	Node2=472	Node3=473	Node4=441
+ID=391	label=391	SectionID=2	SectionName=AlmaColumna	Node1=441	Node2=473	Node3=474	Node4=442
+ID=392	label=392	SectionID=2	SectionName=AlmaColumna	Node1=442	Node2=474	Node3=475	Node4=443
+ID=393	label=393	SectionID=2	SectionName=AlmaColumna	Node1=469	Node2=554	Node3=555	Node4=470
+ID=394	label=394	SectionID=2	SectionName=AlmaColumna	Node1=470	Node2=555	Node3=556	Node4=471
+ID=395	label=395	SectionID=2	SectionName=AlmaColumna	Node1=471	Node2=556	Node3=557	Node4=472
+ID=396	label=396	SectionID=2	SectionName=AlmaColumna	Node1=472	Node2=557	Node3=558	Node4=473
+ID=397	label=397	SectionID=2	SectionName=AlmaColumna	Node1=473	Node2=558	Node3=559	Node4=474
+ID=398	label=398	SectionID=2	SectionName=AlmaColumna	Node1=474	Node2=559	Node3=560	Node4=475
+ID=399	label=399	SectionID=2	SectionName=AlmaColumna	Node1=554	Node2=650	Node3=651	Node4=555
+ID=400	label=400	SectionID=2	SectionName=AlmaColumna	Node1=555	Node2=651	Node3=652	Node4=556
+ID=401	label=401	SectionID=2	SectionName=AlmaColumna	Node1=556	Node2=652	Node3=653	Node4=557
+ID=402	label=402	SectionID=2	SectionName=AlmaColumna	Node1=557	Node2=653	Node3=654	Node4=558
+ID=403	label=403	SectionID=2	SectionName=AlmaColumna	Node1=558	Node2=654	Node3=655	Node4=559
+ID=404	label=404	SectionID=2	SectionName=AlmaColumna	Node1=559	Node2=655	Node3=656	Node4=560
+ID=405	label=405	SectionID=2	SectionName=AlmaColumna	Node1=650	Node2=682	Node3=683	Node4=651
+ID=406	label=406	SectionID=2	SectionName=AlmaColumna	Node1=651	Node2=683	Node3=684	Node4=652
+ID=407	label=407	SectionID=2	SectionName=AlmaColumna	Node1=652	Node2=684	Node3=685	Node4=653
+ID=408	label=408	SectionID=2	SectionName=AlmaColumna	Node1=653	Node2=685	Node3=686	Node4=654
+ID=409	label=409	SectionID=2	SectionName=AlmaColumna	Node1=654	Node2=686	Node3=687	Node4=655
+ID=410	label=410	SectionID=2	SectionName=AlmaColumna	Node1=655	Node2=687	Node3=688	Node4=656
+ID=411	label=411	SectionID=2	SectionName=AlmaColumna	Node1=682	Node2=710	Node3=711	Node4=683
+ID=412	label=412	SectionID=2	SectionName=AlmaColumna	Node1=683	Node2=711	Node3=712	Node4=684
+ID=413	label=413	SectionID=2	SectionName=AlmaColumna	Node1=684	Node2=712	Node3=713	Node4=685
+ID=414	label=414	SectionID=2	SectionName=AlmaColumna	Node1=685	Node2=713	Node3=714	Node4=686
+ID=415	label=415	SectionID=2	SectionName=AlmaColumna	Node1=686	Node2=714	Node3=715	Node4=687
+ID=416	label=416	SectionID=2	SectionName=AlmaColumna	Node1=687	Node2=715	Node3=716	Node4=688
+ID=417	label=417	SectionID=2	SectionName=AlmaColumna	Node1=710	Node2=733	Node3=734	Node4=711
+ID=418	label=418	SectionID=2	SectionName=AlmaColumna	Node1=711	Node2=734	Node3=735	Node4=712
+ID=419	label=419	SectionID=2	SectionName=AlmaColumna	Node1=712	Node2=735	Node3=736	Node4=713
+ID=420	label=420	SectionID=2	SectionName=AlmaColumna	Node1=713	Node2=736	Node3=737	Node4=714
+ID=421	label=421	SectionID=2	SectionName=AlmaColumna	Node1=714	Node2=737	Node3=738	Node4=715
+ID=422	label=422	SectionID=2	SectionName=AlmaColumna	Node1=715	Node2=738	Node3=739	Node4=716
+ID=423	label=423	SectionID=2	SectionName=AlmaColumna	Node1=733	Node2=756	Node3=757	Node4=734
+ID=424	label=424	SectionID=2	SectionName=AlmaColumna	Node1=734	Node2=757	Node3=758	Node4=735
+ID=425	label=425	SectionID=2	SectionName=AlmaColumna	Node1=735	Node2=758	Node3=759	Node4=736
+ID=426	label=426	SectionID=2	SectionName=AlmaColumna	Node1=736	Node2=759	Node3=760	Node4=737
+ID=427	label=427	SectionID=2	SectionName=AlmaColumna	Node1=737	Node2=760	Node3=761	Node4=738
+ID=428	label=428	SectionID=2	SectionName=AlmaColumna	Node1=738	Node2=761	Node3=762	Node4=739
+ID=429	label=429	SectionID=2	SectionName=AlmaColumna	Node1=756	Node2=779	Node3=780	Node4=757
+ID=430	label=430	SectionID=2	SectionName=AlmaColumna	Node1=757	Node2=780	Node3=781	Node4=758
+ID=431	label=431	SectionID=2	SectionName=AlmaColumna	Node1=758	Node2=781	Node3=782	Node4=759
+ID=432	label=432	SectionID=2	SectionName=AlmaColumna	Node1=759	Node2=782	Node3=783	Node4=760
+ID=433	label=433	SectionID=2	SectionName=AlmaColumna	Node1=760	Node2=783	Node3=784	Node4=761
+ID=434	label=434	SectionID=2	SectionName=AlmaColumna	Node1=761	Node2=784	Node3=785	Node4=762
+ID=435	label=435	SectionID=2	SectionName=AlmaColumna	Node1=779	Node2=802	Node3=803	Node4=780
+ID=436	label=436	SectionID=2	SectionName=AlmaColumna	Node1=780	Node2=803	Node3=804	Node4=781
+ID=437	label=437	SectionID=2	SectionName=AlmaColumna	Node1=781	Node2=804	Node3=805	Node4=782
+ID=438	label=438	SectionID=2	SectionName=AlmaColumna	Node1=782	Node2=805	Node3=806	Node4=783
+ID=439	label=439	SectionID=2	SectionName=AlmaColumna	Node1=783	Node2=806	Node3=807	Node4=784
+ID=440	label=440	SectionID=2	SectionName=AlmaColumna	Node1=784	Node2=807	Node3=808	Node4=785
+ID=441	label=441	SectionID=6	SectionName=Rigidizador	Node1=489	Node2=490	Node3=498	Node4=497
+ID=442	label=442	SectionID=6	SectionName=Rigidizador	Node1=497	Node2=498	Node3=517	Node4=516
+ID=443	label=443	SectionID=6	SectionName=Rigidizador	Node1=516	Node2=517	Node3=536	Node4=535
+ID=444	label=444	SectionID=6	SectionName=Rigidizador	Node1=535	Node2=536	Node3=555	Node4=554
+ID=445	label=445	SectionID=6	SectionName=Rigidizador	Node1=554	Node2=555	Node3=574	Node4=573
+ID=446	label=446	SectionID=6	SectionName=Rigidizador	Node1=573	Node2=574	Node3=593	Node4=592
+ID=447	label=447	SectionID=6	SectionName=Rigidizador	Node1=592	Node2=593	Node3=612	Node4=611
+ID=448	label=448	SectionID=6	SectionName=Rigidizador	Node1=611	Node2=612	Node3=631	Node4=630
+ID=449	label=449	SectionID=6	SectionName=Rigidizador	Node1=490	Node2=491	Node3=499	Node4=498
+ID=450	label=450	SectionID=6	SectionName=Rigidizador	Node1=498	Node2=499	Node3=518	Node4=517
+ID=451	label=451	SectionID=6	SectionName=Rigidizador	Node1=517	Node2=518	Node3=537	Node4=536
+ID=452	label=452	SectionID=6	SectionName=Rigidizador	Node1=536	Node2=537	Node3=556	Node4=555
+ID=453	label=453	SectionID=6	SectionName=Rigidizador	Node1=555	Node2=556	Node3=575	Node4=574
+ID=454	label=454	SectionID=6	SectionName=Rigidizador	Node1=574	Node2=575	Node3=594	Node4=593
+ID=455	label=455	SectionID=6	SectionName=Rigidizador	Node1=593	Node2=594	Node3=613	Node4=612
+ID=456	label=456	SectionID=6	SectionName=Rigidizador	Node1=612	Node2=613	Node3=632	Node4=631
+ID=457	label=457	SectionID=6	SectionName=Rigidizador	Node1=491	Node2=492	Node3=500	Node4=499
+ID=458	label=458	SectionID=6	SectionName=Rigidizador	Node1=499	Node2=500	Node3=519	Node4=518
+ID=459	label=459	SectionID=6	SectionName=Rigidizador	Node1=518	Node2=519	Node3=538	Node4=537
+ID=460	label=460	SectionID=6	SectionName=Rigidizador	Node1=537	Node2=538	Node3=557	Node4=556
+ID=461	label=461	SectionID=6	SectionName=Rigidizador	Node1=556	Node2=557	Node3=576	Node4=575
+ID=462	label=462	SectionID=6	SectionName=Rigidizador	Node1=575	Node2=576	Node3=595	Node4=594
+ID=463	label=463	SectionID=6	SectionName=Rigidizador	Node1=594	Node2=595	Node3=614	Node4=613
+ID=464	label=464	SectionID=6	SectionName=Rigidizador	Node1=613	Node2=614	Node3=633	Node4=632
+ID=465	label=465	SectionID=6	SectionName=Rigidizador	Node1=492	Node2=493	Node3=501	Node4=500
+ID=466	label=466	SectionID=6	SectionName=Rigidizador	Node1=500	Node2=501	Node3=520	Node4=519
+ID=467	label=467	SectionID=6	SectionName=Rigidizador	Node1=519	Node2=520	Node3=539	Node4=538
+ID=468	label=468	SectionID=6	SectionName=Rigidizador	Node1=538	Node2=539	Node3=558	Node4=557
+ID=469	label=469	SectionID=6	SectionName=Rigidizador	Node1=557	Node2=558	Node3=577	Node4=576
+ID=470	label=470	SectionID=6	SectionName=Rigidizador	Node1=576	Node2=577	Node3=596	Node4=595
+ID=471	label=471	SectionID=6	SectionName=Rigidizador	Node1=595	Node2=596	Node3=615	Node4=614
+ID=472	label=472	SectionID=6	SectionName=Rigidizador	Node1=614	Node2=615	Node3=634	Node4=633
+ID=473	label=473	SectionID=6	SectionName=Rigidizador	Node1=493	Node2=494	Node3=502	Node4=501
+ID=474	label=474	SectionID=6	SectionName=Rigidizador	Node1=501	Node2=502	Node3=521	Node4=520
+ID=475	label=475	SectionID=6	SectionName=Rigidizador	Node1=520	Node2=521	Node3=540	Node4=539
+ID=476	label=476	SectionID=6	SectionName=Rigidizador	Node1=539	Node2=540	Node3=559	Node4=558
+ID=477	label=477	SectionID=6	SectionName=Rigidizador	Node1=558	Node2=559	Node3=578	Node4=577
+ID=478	label=478	SectionID=6	SectionName=Rigidizador	Node1=577	Node2=578	Node3=597	Node4=596
+ID=479	label=479	SectionID=6	SectionName=Rigidizador	Node1=596	Node2=597	Node3=616	Node4=615
+ID=480	label=480	SectionID=6	SectionName=Rigidizador	Node1=615	Node2=616	Node3=635	Node4=634
+ID=481	label=481	SectionID=6	SectionName=Rigidizador	Node1=494	Node2=495	Node3=503	Node4=502
+ID=482	label=482	SectionID=6	SectionName=Rigidizador	Node1=502	Node2=503	Node3=522	Node4=521
+ID=483	label=483	SectionID=6	SectionName=Rigidizador	Node1=521	Node2=522	Node3=541	Node4=540
+ID=484	label=484	SectionID=6	SectionName=Rigidizador	Node1=540	Node2=541	Node3=560	Node4=559
+ID=485	label=485	SectionID=6	SectionName=Rigidizador	Node1=559	Node2=560	Node3=579	Node4=578
+ID=486	label=486	SectionID=6	SectionName=Rigidizador	Node1=578	Node2=579	Node3=598	Node4=597
+ID=487	label=487	SectionID=6	SectionName=Rigidizador	Node1=597	Node2=598	Node3=617	Node4=616
+ID=488	label=488	SectionID=6	SectionName=Rigidizador	Node1=616	Node2=617	Node3=636	Node4=635
+ID=489	label=489	SectionID=3	SectionName=AlaViga	Node1=504	Node2=505	Node3=524	Node4=523
+ID=490	label=490	SectionID=3	SectionName=AlaViga	Node1=523	Node2=524	Node3=543	Node4=542
+ID=491	label=491	SectionID=3	SectionName=AlaViga	Node1=542	Node2=543	Node3=562	Node4=561
+ID=492	label=492	SectionID=3	SectionName=AlaViga	Node1=561	Node2=562	Node3=581	Node4=580
+ID=493	label=493	SectionID=3	SectionName=AlaViga	Node1=580	Node2=581	Node3=600	Node4=599
+ID=494	label=494	SectionID=3	SectionName=AlaViga	Node1=599	Node2=600	Node3=619	Node4=618
+ID=495	label=495	SectionID=3	SectionName=AlaViga	Node1=505	Node2=506	Node3=525	Node4=524
+ID=496	label=496	SectionID=3	SectionName=AlaViga	Node1=524	Node2=525	Node3=544	Node4=543
+ID=497	label=497	SectionID=3	SectionName=AlaViga	Node1=543	Node2=544	Node3=563	Node4=562
+ID=498	label=498	SectionID=3	SectionName=AlaViga	Node1=562	Node2=563	Node3=582	Node4=581
+ID=499	label=499	SectionID=3	SectionName=AlaViga	Node1=581	Node2=582	Node3=601	Node4=600
+ID=500	label=500	SectionID=3	SectionName=AlaViga	Node1=600	Node2=601	Node3=620	Node4=619
+ID=501	label=501	SectionID=3	SectionName=AlaViga	Node1=506	Node2=507	Node3=526	Node4=525
+ID=502	label=502	SectionID=3	SectionName=AlaViga	Node1=525	Node2=526	Node3=545	Node4=544
+ID=503	label=503	SectionID=3	SectionName=AlaViga	Node1=544	Node2=545	Node3=564	Node4=563
+ID=504	label=504	SectionID=3	SectionName=AlaViga	Node1=563	Node2=564	Node3=583	Node4=582
+ID=505	label=505	SectionID=3	SectionName=AlaViga	Node1=582	Node2=583	Node3=602	Node4=601
+ID=506	label=506	SectionID=3	SectionName=AlaViga	Node1=601	Node2=602	Node3=621	Node4=620
+ID=507	label=507	SectionID=3	SectionName=AlaViga	Node1=507	Node2=508	Node3=527	Node4=526
+ID=508	label=508	SectionID=3	SectionName=AlaViga	Node1=526	Node2=527	Node3=546	Node4=545
+ID=509	label=509	SectionID=3	SectionName=AlaViga	Node1=545	Node2=546	Node3=565	Node4=564
+ID=510	label=510	SectionID=3	SectionName=AlaViga	Node1=564	Node2=565	Node3=584	Node4=583
+ID=511	label=511	SectionID=3	SectionName=AlaViga	Node1=583	Node2=584	Node3=603	Node4=602
+ID=512	label=512	SectionID=3	SectionName=AlaViga	Node1=602	Node2=603	Node3=622	Node4=621
+ID=513	label=513	SectionID=3	SectionName=AlaViga	Node1=508	Node2=509	Node3=528	Node4=527
+ID=514	label=514	SectionID=3	SectionName=AlaViga	Node1=527	Node2=528	Node3=547	Node4=546
+ID=515	label=515	SectionID=3	SectionName=AlaViga	Node1=546	Node2=547	Node3=566	Node4=565
+ID=516	label=516	SectionID=3	SectionName=AlaViga	Node1=565	Node2=566	Node3=585	Node4=584
+ID=517	label=517	SectionID=3	SectionName=AlaViga	Node1=584	Node2=585	Node3=604	Node4=603
+ID=518	label=518	SectionID=3	SectionName=AlaViga	Node1=603	Node2=604	Node3=623	Node4=622
+ID=519	label=519	SectionID=3	SectionName=AlaViga	Node1=509	Node2=510	Node3=529	Node4=528
+ID=520	label=520	SectionID=3	SectionName=AlaViga	Node1=528	Node2=529	Node3=548	Node4=547
+ID=521	label=521	SectionID=3	SectionName=AlaViga	Node1=547	Node2=548	Node3=567	Node4=566
+ID=522	label=522	SectionID=3	SectionName=AlaViga	Node1=566	Node2=567	Node3=586	Node4=585
+ID=523	label=523	SectionID=3	SectionName=AlaViga	Node1=585	Node2=586	Node3=605	Node4=604
+ID=524	label=524	SectionID=3	SectionName=AlaViga	Node1=604	Node2=605	Node3=624	Node4=623
+ID=525	label=525	SectionID=3	SectionName=AlaViga	Node1=510	Node2=511	Node3=530	Node4=529
+ID=526	label=526	SectionID=3	SectionName=AlaViga	Node1=529	Node2=530	Node3=549	Node4=548
+ID=527	label=527	SectionID=3	SectionName=AlaViga	Node1=548	Node2=549	Node3=568	Node4=567
+ID=528	label=528	SectionID=3	SectionName=AlaViga	Node1=567	Node2=568	Node3=587	Node4=586
+ID=529	label=529	SectionID=3	SectionName=AlaViga	Node1=586	Node2=587	Node3=606	Node4=605
+ID=530	label=530	SectionID=3	SectionName=AlaViga	Node1=605	Node2=606	Node3=625	Node4=624
+ID=531	label=531	SectionID=3	SectionName=AlaViga	Node1=511	Node2=512	Node3=531	Node4=530
+ID=532	label=532	SectionID=3	SectionName=AlaViga	Node1=530	Node2=531	Node3=550	Node4=549
+ID=533	label=533	SectionID=3	SectionName=AlaViga	Node1=549	Node2=550	Node3=569	Node4=568
+ID=534	label=534	SectionID=3	SectionName=AlaViga	Node1=568	Node2=569	Node3=588	Node4=587
+ID=535	label=535	SectionID=3	SectionName=AlaViga	Node1=587	Node2=588	Node3=607	Node4=606
+ID=536	label=536	SectionID=3	SectionName=AlaViga	Node1=606	Node2=607	Node3=626	Node4=625
+ID=537	label=537	SectionID=3	SectionName=AlaViga	Node1=512	Node2=513	Node3=532	Node4=531
+ID=538	label=538	SectionID=3	SectionName=AlaViga	Node1=531	Node2=532	Node3=551	Node4=550
+ID=539	label=539	SectionID=3	SectionName=AlaViga	Node1=550	Node2=551	Node3=570	Node4=569
+ID=540	label=540	SectionID=3	SectionName=AlaViga	Node1=569	Node2=570	Node3=589	Node4=588
+ID=541	label=541	SectionID=3	SectionName=AlaViga	Node1=588	Node2=589	Node3=608	Node4=607
+ID=542	label=542	SectionID=3	SectionName=AlaViga	Node1=607	Node2=608	Node3=627	Node4=626
+ID=543	label=543	SectionID=3	SectionName=AlaViga	Node1=513	Node2=514	Node3=533	Node4=532
+ID=544	label=544	SectionID=3	SectionName=AlaViga	Node1=532	Node2=533	Node3=552	Node4=551
+ID=545	label=545	SectionID=3	SectionName=AlaViga	Node1=551	Node2=552	Node3=571	Node4=570
+ID=546	label=546	SectionID=3	SectionName=AlaViga	Node1=570	Node2=571	Node3=590	Node4=589
+ID=547	label=547	SectionID=3	SectionName=AlaViga	Node1=589	Node2=590	Node3=609	Node4=608
+ID=548	label=548	SectionID=3	SectionName=AlaViga	Node1=608	Node2=609	Node3=628	Node4=627
+ID=549	label=549	SectionID=3	SectionName=AlaViga	Node1=514	Node2=515	Node3=534	Node4=533
+ID=550	label=550	SectionID=3	SectionName=AlaViga	Node1=533	Node2=534	Node3=553	Node4=552
+ID=551	label=551	SectionID=3	SectionName=AlaViga	Node1=552	Node2=553	Node3=572	Node4=571
+ID=552	label=552	SectionID=3	SectionName=AlaViga	Node1=571	Node2=572	Node3=591	Node4=590
+ID=553	label=553	SectionID=3	SectionName=AlaViga	Node1=590	Node2=591	Node3=610	Node4=609
+ID=554	label=554	SectionID=3	SectionName=AlaViga	Node1=609	Node2=610	Node3=629	Node4=628
+ID=555	label=555	SectionID=6	SectionName=Rigidizador	Node1=180	Node2=181	Node3=189	Node4=188
+ID=556	label=556	SectionID=6	SectionName=Rigidizador	Node1=188	Node2=189	Node3=208	Node4=207
+ID=557	label=557	SectionID=6	SectionName=Rigidizador	Node1=207	Node2=208	Node3=227	Node4=226
+ID=558	label=558	SectionID=6	SectionName=Rigidizador	Node1=226	Node2=227	Node3=246	Node4=245
+ID=559	label=559	SectionID=6	SectionName=Rigidizador	Node1=245	Node2=246	Node3=265	Node4=264
+ID=560	label=560	SectionID=6	SectionName=Rigidizador	Node1=264	Node2=265	Node3=284	Node4=283
+ID=561	label=561	SectionID=6	SectionName=Rigidizador	Node1=283	Node2=284	Node3=303	Node4=302
+ID=562	label=562	SectionID=6	SectionName=Rigidizador	Node1=302	Node2=303	Node3=322	Node4=321
+ID=563	label=563	SectionID=6	SectionName=Rigidizador	Node1=181	Node2=182	Node3=190	Node4=189
+ID=564	label=564	SectionID=6	SectionName=Rigidizador	Node1=189	Node2=190	Node3=209	Node4=208
+ID=565	label=565	SectionID=6	SectionName=Rigidizador	Node1=208	Node2=209	Node3=228	Node4=227
+ID=566	label=566	SectionID=6	SectionName=Rigidizador	Node1=227	Node2=228	Node3=247	Node4=246
+ID=567	label=567	SectionID=6	SectionName=Rigidizador	Node1=246	Node2=247	Node3=266	Node4=265
+ID=568	label=568	SectionID=6	SectionName=Rigidizador	Node1=265	Node2=266	Node3=285	Node4=284
+ID=569	label=569	SectionID=6	SectionName=Rigidizador	Node1=284	Node2=285	Node3=304	Node4=303
+ID=570	label=570	SectionID=6	SectionName=Rigidizador	Node1=303	Node2=304	Node3=323	Node4=322
+ID=571	label=571	SectionID=6	SectionName=Rigidizador	Node1=182	Node2=183	Node3=191	Node4=190
+ID=572	label=572	SectionID=6	SectionName=Rigidizador	Node1=190	Node2=191	Node3=210	Node4=209
+ID=573	label=573	SectionID=6	SectionName=Rigidizador	Node1=209	Node2=210	Node3=229	Node4=228
+ID=574	label=574	SectionID=6	SectionName=Rigidizador	Node1=228	Node2=229	Node3=248	Node4=247
+ID=575	label=575	SectionID=6	SectionName=Rigidizador	Node1=247	Node2=248	Node3=267	Node4=266
+ID=576	label=576	SectionID=6	SectionName=Rigidizador	Node1=266	Node2=267	Node3=286	Node4=285
+ID=577	label=577	SectionID=6	SectionName=Rigidizador	Node1=285	Node2=286	Node3=305	Node4=304
+ID=578	label=578	SectionID=6	SectionName=Rigidizador	Node1=304	Node2=305	Node3=324	Node4=323
+ID=579	label=579	SectionID=6	SectionName=Rigidizador	Node1=183	Node2=184	Node3=192	Node4=191
+ID=580	label=580	SectionID=6	SectionName=Rigidizador	Node1=191	Node2=192	Node3=211	Node4=210
+ID=581	label=581	SectionID=6	SectionName=Rigidizador	Node1=210	Node2=211	Node3=230	Node4=229
+ID=582	label=582	SectionID=6	SectionName=Rigidizador	Node1=229	Node2=230	Node3=249	Node4=248
+ID=583	label=583	SectionID=6	SectionName=Rigidizador	Node1=248	Node2=249	Node3=268	Node4=267
+ID=584	label=584	SectionID=6	SectionName=Rigidizador	Node1=267	Node2=268	Node3=287	Node4=286
+ID=585	label=585	SectionID=6	SectionName=Rigidizador	Node1=286	Node2=287	Node3=306	Node4=305
+ID=586	label=586	SectionID=6	SectionName=Rigidizador	Node1=305	Node2=306	Node3=325	Node4=324
+ID=587	label=587	SectionID=6	SectionName=Rigidizador	Node1=184	Node2=185	Node3=193	Node4=192
+ID=588	label=588	SectionID=6	SectionName=Rigidizador	Node1=192	Node2=193	Node3=212	Node4=211
+ID=589	label=589	SectionID=6	SectionName=Rigidizador	Node1=211	Node2=212	Node3=231	Node4=230
+ID=590	label=590	SectionID=6	SectionName=Rigidizador	Node1=230	Node2=231	Node3=250	Node4=249
+ID=591	label=591	SectionID=6	SectionName=Rigidizador	Node1=249	Node2=250	Node3=269	Node4=268
+ID=592	label=592	SectionID=6	SectionName=Rigidizador	Node1=268	Node2=269	Node3=288	Node4=287
+ID=593	label=593	SectionID=6	SectionName=Rigidizador	Node1=287	Node2=288	Node3=307	Node4=306
+ID=594	label=594	SectionID=6	SectionName=Rigidizador	Node1=306	Node2=307	Node3=326	Node4=325
+ID=595	label=595	SectionID=6	SectionName=Rigidizador	Node1=185	Node2=186	Node3=194	Node4=193
+ID=596	label=596	SectionID=6	SectionName=Rigidizador	Node1=193	Node2=194	Node3=213	Node4=212
+ID=597	label=597	SectionID=6	SectionName=Rigidizador	Node1=212	Node2=213	Node3=232	Node4=231
+ID=598	label=598	SectionID=6	SectionName=Rigidizador	Node1=231	Node2=232	Node3=251	Node4=250
+ID=599	label=599	SectionID=6	SectionName=Rigidizador	Node1=250	Node2=251	Node3=270	Node4=269
+ID=600	label=600	SectionID=6	SectionName=Rigidizador	Node1=269	Node2=270	Node3=289	Node4=288
+ID=601	label=601	SectionID=6	SectionName=Rigidizador	Node1=288	Node2=289	Node3=308	Node4=307
+ID=602	label=602	SectionID=6	SectionName=Rigidizador	Node1=307	Node2=308	Node3=327	Node4=326
+ID=603	label=603	SectionID=3	SectionName=AlaViga	Node1=195	Node2=196	Node3=215	Node4=214
+ID=604	label=604	SectionID=3	SectionName=AlaViga	Node1=214	Node2=215	Node3=234	Node4=233
+ID=605	label=605	SectionID=3	SectionName=AlaViga	Node1=233	Node2=234	Node3=253	Node4=252
+ID=606	label=606	SectionID=3	SectionName=AlaViga	Node1=252	Node2=253	Node3=272	Node4=271
+ID=607	label=607	SectionID=3	SectionName=AlaViga	Node1=271	Node2=272	Node3=291	Node4=290
+ID=608	label=608	SectionID=3	SectionName=AlaViga	Node1=290	Node2=291	Node3=310	Node4=309
+ID=609	label=609	SectionID=3	SectionName=AlaViga	Node1=196	Node2=197	Node3=216	Node4=215
+ID=610	label=610	SectionID=3	SectionName=AlaViga	Node1=215	Node2=216	Node3=235	Node4=234
+ID=611	label=611	SectionID=3	SectionName=AlaViga	Node1=234	Node2=235	Node3=254	Node4=253
+ID=612	label=612	SectionID=3	SectionName=AlaViga	Node1=253	Node2=254	Node3=273	Node4=272
+ID=613	label=613	SectionID=3	SectionName=AlaViga	Node1=272	Node2=273	Node3=292	Node4=291
+ID=614	label=614	SectionID=3	SectionName=AlaViga	Node1=291	Node2=292	Node3=311	Node4=310
+ID=615	label=615	SectionID=3	SectionName=AlaViga	Node1=197	Node2=198	Node3=217	Node4=216
+ID=616	label=616	SectionID=3	SectionName=AlaViga	Node1=216	Node2=217	Node3=236	Node4=235
+ID=617	label=617	SectionID=3	SectionName=AlaViga	Node1=235	Node2=236	Node3=255	Node4=254
+ID=618	label=618	SectionID=3	SectionName=AlaViga	Node1=254	Node2=255	Node3=274	Node4=273
+ID=619	label=619	SectionID=3	SectionName=AlaViga	Node1=273	Node2=274	Node3=293	Node4=292
+ID=620	label=620	SectionID=3	SectionName=AlaViga	Node1=292	Node2=293	Node3=312	Node4=311
+ID=621	label=621	SectionID=3	SectionName=AlaViga	Node1=198	Node2=199	Node3=218	Node4=217
+ID=622	label=622	SectionID=3	SectionName=AlaViga	Node1=217	Node2=218	Node3=237	Node4=236
+ID=623	label=623	SectionID=3	SectionName=AlaViga	Node1=236	Node2=237	Node3=256	Node4=255
+ID=624	label=624	SectionID=3	SectionName=AlaViga	Node1=255	Node2=256	Node3=275	Node4=274
+ID=625	label=625	SectionID=3	SectionName=AlaViga	Node1=274	Node2=275	Node3=294	Node4=293
+ID=626	label=626	SectionID=3	SectionName=AlaViga	Node1=293	Node2=294	Node3=313	Node4=312
+ID=627	label=627	SectionID=3	SectionName=AlaViga	Node1=199	Node2=200	Node3=219	Node4=218
+ID=628	label=628	SectionID=3	SectionName=AlaViga	Node1=218	Node2=219	Node3=238	Node4=237
+ID=629	label=629	SectionID=3	SectionName=AlaViga	Node1=237	Node2=238	Node3=257	Node4=256
+ID=630	label=630	SectionID=3	SectionName=AlaViga	Node1=256	Node2=257	Node3=276	Node4=275
+ID=631	label=631	SectionID=3	SectionName=AlaViga	Node1=275	Node2=276	Node3=295	Node4=294
+ID=632	label=632	SectionID=3	SectionName=AlaViga	Node1=294	Node2=295	Node3=314	Node4=313
+ID=633	label=633	SectionID=3	SectionName=AlaViga	Node1=200	Node2=201	Node3=220	Node4=219
+ID=634	label=634	SectionID=3	SectionName=AlaViga	Node1=219	Node2=220	Node3=239	Node4=238
+ID=635	label=635	SectionID=3	SectionName=AlaViga	Node1=238	Node2=239	Node3=258	Node4=257
+ID=636	label=636	SectionID=3	SectionName=AlaViga	Node1=257	Node2=258	Node3=277	Node4=276
+ID=637	label=637	SectionID=3	SectionName=AlaViga	Node1=276	Node2=277	Node3=296	Node4=295
+ID=638	label=638	SectionID=3	SectionName=AlaViga	Node1=295	Node2=296	Node3=315	Node4=314
+ID=639	label=639	SectionID=3	SectionName=AlaViga	Node1=201	Node2=202	Node3=221	Node4=220
+ID=640	label=640	SectionID=3	SectionName=AlaViga	Node1=220	Node2=221	Node3=240	Node4=239
+ID=641	label=641	SectionID=3	SectionName=AlaViga	Node1=239	Node2=240	Node3=259	Node4=258
+ID=642	label=642	SectionID=3	SectionName=AlaViga	Node1=258	Node2=259	Node3=278	Node4=277
+ID=643	label=643	SectionID=3	SectionName=AlaViga	Node1=277	Node2=278	Node3=297	Node4=296
+ID=644	label=644	SectionID=3	SectionName=AlaViga	Node1=296	Node2=297	Node3=316	Node4=315
+ID=645	label=645	SectionID=3	SectionName=AlaViga	Node1=202	Node2=203	Node3=222	Node4=221
+ID=646	label=646	SectionID=3	SectionName=AlaViga	Node1=221	Node2=222	Node3=241	Node4=240
+ID=647	label=647	SectionID=3	SectionName=AlaViga	Node1=240	Node2=241	Node3=260	Node4=259
+ID=648	label=648	SectionID=3	SectionName=AlaViga	Node1=259	Node2=260	Node3=279	Node4=278
+ID=649	label=649	SectionID=3	SectionName=AlaViga	Node1=278	Node2=279	Node3=298	Node4=297
+ID=650	label=650	SectionID=3	SectionName=AlaViga	Node1=297	Node2=298	Node3=317	Node4=316
+ID=651	label=651	SectionID=3	SectionName=AlaViga	Node1=203	Node2=204	Node3=223	Node4=222
+ID=652	label=652	SectionID=3	SectionName=AlaViga	Node1=222	Node2=223	Node3=242	Node4=241
+ID=653	label=653	SectionID=3	SectionName=AlaViga	Node1=241	Node2=242	Node3=261	Node4=260
+ID=654	label=654	SectionID=3	SectionName=AlaViga	Node1=260	Node2=261	Node3=280	Node4=279
+ID=655	label=655	SectionID=3	SectionName=AlaViga	Node1=279	Node2=280	Node3=299	Node4=298
+ID=656	label=656	SectionID=3	SectionName=AlaViga	Node1=298	Node2=299	Node3=318	Node4=317
+ID=657	label=657	SectionID=3	SectionName=AlaViga	Node1=204	Node2=205	Node3=224	Node4=223
+ID=658	label=658	SectionID=3	SectionName=AlaViga	Node1=223	Node2=224	Node3=243	Node4=242
+ID=659	label=659	SectionID=3	SectionName=AlaViga	Node1=242	Node2=243	Node3=262	Node4=261
+ID=660	label=660	SectionID=3	SectionName=AlaViga	Node1=261	Node2=262	Node3=281	Node4=280
+ID=661	label=661	SectionID=3	SectionName=AlaViga	Node1=280	Node2=281	Node3=300	Node4=299
+ID=662	label=662	SectionID=3	SectionName=AlaViga	Node1=299	Node2=300	Node3=319	Node4=318
+ID=663	label=663	SectionID=3	SectionName=AlaViga	Node1=205	Node2=206	Node3=225	Node4=224
+ID=664	label=664	SectionID=3	SectionName=AlaViga	Node1=224	Node2=225	Node3=244	Node4=243
+ID=665	label=665	SectionID=3	SectionName=AlaViga	Node1=243	Node2=244	Node3=263	Node4=262
+ID=666	label=666	SectionID=3	SectionName=AlaViga	Node1=262	Node2=263	Node3=282	Node4=281
+ID=667	label=667	SectionID=3	SectionName=AlaViga	Node1=281	Node2=282	Node3=301	Node4=300
+ID=668	label=668	SectionID=3	SectionName=AlaViga	Node1=300	Node2=301	Node3=320	Node4=319
+ID=669	label=669	SectionID=5	SectionName=PlacaExtremo	Node1=118	Node2=121	Node3=153	Node4=150
+ID=670	label=670	SectionID=5	SectionName=PlacaExtremo	Node1=150	Node2=153	Node3=195	Node4=187
+ID=671	label=671	SectionID=5	SectionName=PlacaExtremo	Node1=187	Node2=195	Node3=334	Node4=331
+ID=672	label=672	SectionID=5	SectionName=PlacaExtremo	Node1=331	Node2=334	Node3=366	Node4=363
+ID=673	label=673	SectionID=5	SectionName=PlacaExtremo	Node1=363	Node2=366	Node3=398	Node4=395
+ID=674	label=674	SectionID=5	SectionName=PlacaExtremo	Node1=395	Node2=398	Node3=430	Node4=427
+ID=675	label=675	SectionID=5	SectionName=PlacaExtremo	Node1=427	Node2=430	Node3=462	Node4=459
+ID=676	label=676	SectionID=5	SectionName=PlacaExtremo	Node1=459	Node2=462	Node3=504	Node4=496
+ID=677	label=677	SectionID=5	SectionName=PlacaExtremo	Node1=496	Node2=504	Node3=643	Node4=640
+ID=678	label=678	SectionID=5	SectionName=PlacaExtremo	Node1=640	Node2=643	Node3=675	Node4=672
+ID=679	label=679	SectionID=5	SectionName=PlacaExtremo	Node1=121	Node2=124	Node3=156	Node4=153
+ID=680	label=680	SectionID=5	SectionName=PlacaExtremo	Node1=153	Node2=156	Node3=214	Node4=195
+ID=681	label=681	SectionID=5	SectionName=PlacaExtremo	Node1=195	Node2=214	Node3=337	Node4=334
+ID=682	label=682	SectionID=5	SectionName=PlacaExtremo	Node1=334	Node2=337	Node3=369	Node4=366
+ID=683	label=683	SectionID=5	SectionName=PlacaExtremo	Node1=366	Node2=369	Node3=401	Node4=398
+ID=684	label=684	SectionID=5	SectionName=PlacaExtremo	Node1=398	Node2=401	Node3=433	Node4=430
+ID=685	label=685	SectionID=5	SectionName=PlacaExtremo	Node1=430	Node2=433	Node3=465	Node4=462
+ID=686	label=686	SectionID=5	SectionName=PlacaExtremo	Node1=462	Node2=465	Node3=523	Node4=504
+ID=687	label=687	SectionID=5	SectionName=PlacaExtremo	Node1=504	Node2=523	Node3=646	Node4=643
+ID=688	label=688	SectionID=5	SectionName=PlacaExtremo	Node1=643	Node2=646	Node3=678	Node4=675
+ID=689	label=689	SectionID=5	SectionName=PlacaExtremo	Node1=124	Node2=127	Node3=159	Node4=156
+ID=690	label=690	SectionID=5	SectionName=PlacaExtremo	Node1=156	Node2=159	Node3=233	Node4=214
+ID=691	label=691	SectionID=5	SectionName=PlacaExtremo	Node1=214	Node2=233	Node3=340	Node4=337
+ID=692	label=692	SectionID=5	SectionName=PlacaExtremo	Node1=337	Node2=340	Node3=372	Node4=369
+ID=693	label=693	SectionID=5	SectionName=PlacaExtremo	Node1=369	Node2=372	Node3=404	Node4=401
+ID=694	label=694	SectionID=5	SectionName=PlacaExtremo	Node1=401	Node2=404	Node3=436	Node4=433
+ID=695	label=695	SectionID=5	SectionName=PlacaExtremo	Node1=433	Node2=436	Node3=468	Node4=465
+ID=696	label=696	SectionID=5	SectionName=PlacaExtremo	Node1=465	Node2=468	Node3=542	Node4=523
+ID=697	label=697	SectionID=5	SectionName=PlacaExtremo	Node1=523	Node2=542	Node3=649	Node4=646
+ID=698	label=698	SectionID=5	SectionName=PlacaExtremo	Node1=646	Node2=649	Node3=681	Node4=678
+ID=699	label=699	SectionID=5	SectionName=PlacaExtremo	Node1=127	Node2=135	Node3=167	Node4=159
+ID=700	label=700	SectionID=5	SectionName=PlacaExtremo	Node1=159	Node2=167	Node3=252	Node4=233
+ID=701	label=701	SectionID=5	SectionName=PlacaExtremo	Node1=233	Node2=252	Node3=348	Node4=340
+ID=702	label=702	SectionID=5	SectionName=PlacaExtremo	Node1=340	Node2=348	Node3=380	Node4=372
+ID=703	label=703	SectionID=5	SectionName=PlacaExtremo	Node1=372	Node2=380	Node3=412	Node4=404
+ID=704	label=704	SectionID=5	SectionName=PlacaExtremo	Node1=404	Node2=412	Node3=444	Node4=436
+ID=705	label=705	SectionID=5	SectionName=PlacaExtremo	Node1=436	Node2=444	Node3=476	Node4=468
+ID=706	label=706	SectionID=5	SectionName=PlacaExtremo	Node1=468	Node2=476	Node3=561	Node4=542
+ID=707	label=707	SectionID=5	SectionName=PlacaExtremo	Node1=542	Node2=561	Node3=657	Node4=649
+ID=708	label=708	SectionID=5	SectionName=PlacaExtremo	Node1=649	Node2=657	Node3=689	Node4=681
+ID=709	label=709	SectionID=5	SectionName=PlacaExtremo	Node1=135	Node2=138	Node3=170	Node4=167
+ID=710	label=710	SectionID=5	SectionName=PlacaExtremo	Node1=167	Node2=170	Node3=271	Node4=252
+ID=711	label=711	SectionID=5	SectionName=PlacaExtremo	Node1=252	Node2=271	Node3=351	Node4=348
+ID=712	label=712	SectionID=5	SectionName=PlacaExtremo	Node1=348	Node2=351	Node3=383	Node4=380
+ID=713	label=713	SectionID=5	SectionName=PlacaExtremo	Node1=380	Node2=383	Node3=415	Node4=412
+ID=714	label=714	SectionID=5	SectionName=PlacaExtremo	Node1=412	Node2=415	Node3=447	Node4=444
+ID=715	label=715	SectionID=5	SectionName=PlacaExtremo	Node1=444	Node2=447	Node3=479	Node4=476
+ID=716	label=716	SectionID=5	SectionName=PlacaExtremo	Node1=476	Node2=479	Node3=580	Node4=561
+ID=717	label=717	SectionID=5	SectionName=PlacaExtremo	Node1=561	Node2=580	Node3=660	Node4=657
+ID=718	label=718	SectionID=5	SectionName=PlacaExtremo	Node1=657	Node2=660	Node3=692	Node4=689
+ID=719	label=719	SectionID=5	SectionName=PlacaExtremo	Node1=138	Node2=141	Node3=173	Node4=170
+ID=720	label=720	SectionID=5	SectionName=PlacaExtremo	Node1=170	Node2=173	Node3=290	Node4=271
+ID=721	label=721	SectionID=5	SectionName=PlacaExtremo	Node1=271	Node2=290	Node3=354	Node4=351
+ID=722	label=722	SectionID=5	SectionName=PlacaExtremo	Node1=351	Node2=354	Node3=386	Node4=383
+ID=723	label=723	SectionID=5	SectionName=PlacaExtremo	Node1=383	Node2=386	Node3=418	Node4=415
+ID=724	label=724	SectionID=5	SectionName=PlacaExtremo	Node1=415	Node2=418	Node3=450	Node4=447
+ID=725	label=725	SectionID=5	SectionName=PlacaExtremo	Node1=447	Node2=450	Node3=482	Node4=479
+ID=726	label=726	SectionID=5	SectionName=PlacaExtremo	Node1=479	Node2=482	Node3=599	Node4=580
+ID=727	label=727	SectionID=5	SectionName=PlacaExtremo	Node1=580	Node2=599	Node3=663	Node4=660
+ID=728	label=728	SectionID=5	SectionName=PlacaExtremo	Node1=660	Node2=663	Node3=695	Node4=692
+ID=729	label=729	SectionID=5	SectionName=PlacaExtremo	Node1=141	Node2=144	Node3=176	Node4=173
+ID=730	label=730	SectionID=5	SectionName=PlacaExtremo	Node1=173	Node2=176	Node3=309	Node4=290
+ID=731	label=731	SectionID=5	SectionName=PlacaExtremo	Node1=290	Node2=309	Node3=357	Node4=354
+ID=732	label=732	SectionID=5	SectionName=PlacaExtremo	Node1=354	Node2=357	Node3=389	Node4=386
+ID=733	label=733	SectionID=5	SectionName=PlacaExtremo	Node1=386	Node2=389	Node3=421	Node4=418
+ID=734	label=734	SectionID=5	SectionName=PlacaExtremo	Node1=418	Node2=421	Node3=453	Node4=450
+ID=735	label=735	SectionID=5	SectionName=PlacaExtremo	Node1=450	Node2=453	Node3=485	Node4=482
+ID=736	label=736	SectionID=5	SectionName=PlacaExtremo	Node1=482	Node2=485	Node3=618	Node4=599
+ID=737	label=737	SectionID=5	SectionName=PlacaExtremo	Node1=599	Node2=618	Node3=666	Node4=663
+ID=738	label=738	SectionID=5	SectionName=PlacaExtremo	Node1=663	Node2=666	Node3=698	Node4=695
+ID=739	label=739	SectionID=5	SectionName=PlacaExtremo	Node1=144	Node2=147	Node3=179	Node4=176
+ID=740	label=740	SectionID=5	SectionName=PlacaExtremo	Node1=176	Node2=179	Node3=328	Node4=309
+ID=741	label=741	SectionID=5	SectionName=PlacaExtremo	Node1=309	Node2=328	Node3=360	Node4=357
+ID=742	label=742	SectionID=5	SectionName=PlacaExtremo	Node1=357	Node2=360	Node3=392	Node4=389
+ID=743	label=743	SectionID=5	SectionName=PlacaExtremo	Node1=389	Node2=392	Node3=424	Node4=421
+ID=744	label=744	SectionID=5	SectionName=PlacaExtremo	Node1=421	Node2=424	Node3=456	Node4=453
+ID=745	label=745	SectionID=5	SectionName=PlacaExtremo	Node1=453	Node2=456	Node3=488	Node4=485
+ID=746	label=746	SectionID=5	SectionName=PlacaExtremo	Node1=485	Node2=488	Node3=637	Node4=618
+ID=747	label=747	SectionID=5	SectionName=PlacaExtremo	Node1=618	Node2=637	Node3=669	Node4=666
+ID=748	label=748	SectionID=5	SectionName=PlacaExtremo	Node1=666	Node2=669	Node3=701	Node4=698
+ID=749	label=749	SectionID=4	SectionName=AlmaViga	Node1=650	Node2=682	Node3=683	Node4=651
+ID=750	label=750	SectionID=4	SectionName=AlmaViga	Node1=651	Node2=683	Node3=684	Node4=652
+ID=751	label=751	SectionID=4	SectionName=AlmaViga	Node1=652	Node2=684	Node3=685	Node4=653
+ID=752	label=752	SectionID=4	SectionName=AlmaViga	Node1=653	Node2=685	Node3=686	Node4=654
+ID=753	label=753	SectionID=4	SectionName=AlmaViga	Node1=654	Node2=686	Node3=687	Node4=655
+ID=754	label=754	SectionID=4	SectionName=AlmaViga	Node1=655	Node2=687	Node3=688	Node4=656
+ID=755	label=755	SectionID=4	SectionName=AlmaViga	Node1=682	Node2=710	Node3=711	Node4=683
+ID=756	label=756	SectionID=4	SectionName=AlmaViga	Node1=683	Node2=711	Node3=712	Node4=684
+ID=757	label=757	SectionID=4	SectionName=AlmaViga	Node1=684	Node2=712	Node3=713	Node4=685
+ID=758	label=758	SectionID=4	SectionName=AlmaViga	Node1=685	Node2=713	Node3=714	Node4=686
+ID=759	label=759	SectionID=4	SectionName=AlmaViga	Node1=686	Node2=714	Node3=715	Node4=687
+ID=760	label=760	SectionID=4	SectionName=AlmaViga	Node1=687	Node2=715	Node3=716	Node4=688
+ID=761	label=761	SectionID=4	SectionName=AlmaViga	Node1=710	Node2=733	Node3=734	Node4=711
+ID=762	label=762	SectionID=4	SectionName=AlmaViga	Node1=711	Node2=734	Node3=735	Node4=712
+ID=763	label=763	SectionID=4	SectionName=AlmaViga	Node1=712	Node2=735	Node3=736	Node4=713
+ID=764	label=764	SectionID=4	SectionName=AlmaViga	Node1=713	Node2=736	Node3=737	Node4=714
+ID=765	label=765	SectionID=4	SectionName=AlmaViga	Node1=714	Node2=737	Node3=738	Node4=715
+ID=766	label=766	SectionID=4	SectionName=AlmaViga	Node1=715	Node2=738	Node3=739	Node4=716
+ID=767	label=767	SectionID=4	SectionName=AlmaViga	Node1=733	Node2=756	Node3=757	Node4=734
+ID=768	label=768	SectionID=4	SectionName=AlmaViga	Node1=734	Node2=757	Node3=758	Node4=735
+ID=769	label=769	SectionID=4	SectionName=AlmaViga	Node1=735	Node2=758	Node3=759	Node4=736
+ID=770	label=770	SectionID=4	SectionName=AlmaViga	Node1=736	Node2=759	Node3=760	Node4=737
+ID=771	label=771	SectionID=4	SectionName=AlmaViga	Node1=737	Node2=760	Node3=761	Node4=738
+ID=772	label=772	SectionID=4	SectionName=AlmaViga	Node1=738	Node2=761	Node3=762	Node4=739
+ID=773	label=773	SectionID=4	SectionName=AlmaViga	Node1=756	Node2=779	Node3=780	Node4=757
+ID=774	label=774	SectionID=4	SectionName=AlmaViga	Node1=757	Node2=780	Node3=781	Node4=758
+ID=775	label=775	SectionID=4	SectionName=AlmaViga	Node1=758	Node2=781	Node3=782	Node4=759
+ID=776	label=776	SectionID=4	SectionName=AlmaViga	Node1=759	Node2=782	Node3=783	Node4=760
+ID=777	label=777	SectionID=4	SectionName=AlmaViga	Node1=760	Node2=783	Node3=784	Node4=761
+ID=778	label=778	SectionID=4	SectionName=AlmaViga	Node1=761	Node2=784	Node3=785	Node4=762
+ID=779	label=779	SectionID=4	SectionName=AlmaViga	Node1=779	Node2=802	Node3=803	Node4=780
+ID=780	label=780	SectionID=4	SectionName=AlmaViga	Node1=780	Node2=803	Node3=804	Node4=781
+ID=781	label=781	SectionID=4	SectionName=AlmaViga	Node1=781	Node2=804	Node3=805	Node4=782
+ID=782	label=782	SectionID=4	SectionName=AlmaViga	Node1=782	Node2=805	Node3=806	Node4=783
+ID=783	label=783	SectionID=4	SectionName=AlmaViga	Node1=783	Node2=806	Node3=807	Node4=784
+ID=784	label=784	SectionID=4	SectionName=AlmaViga	Node1=784	Node2=807	Node3=808	Node4=785
